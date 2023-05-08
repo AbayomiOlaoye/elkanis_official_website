@@ -3,6 +3,17 @@ import Nav from '../Nav/Nav';
 import Button from '../sub/button';
 import Video from '../../assets/backgrounds/drone-view.mp4';
 import Smart from '../sub/smart';
+import FeaturedProject from '../sub/feature';
+// import PRODUCTS from '../../storage/product';
+import ARTICLES from '../../storage/articles';
+
+const product = ARTICLES.map((product) => (
+  <FeaturedProject
+    key={product.id}
+    featureImg="../../assets/products/livestock_hd.svg"
+    headline={product.featureHeadline}
+  />
+));
 
 const Home = () => (
   <div className="home--container">
@@ -37,17 +48,21 @@ const Home = () => (
       <Smart />
       <article className="climate-art">
         <h2 className="green-title-text">Climate Smart Technology</h2>
-        <p className="hero--text w-6 sub-text green">
+        <p className="hero--text w-6 sub-text deep--green">
           Through the use of remote sensing, satellite imagery and improved seeds, the company
           is able to monitorand manage 64,000 hectares of rice fields in real-time, optimizing
           resource utilization and minimizing environmental impact.
         </p>
-        <p className="hero--text w-6 sub-text green">
+        <p className="hero--text w-6 sub-text deep--green">
           This approach not only ensures the production of healthy and safe rice, but also helps
           to conserve precious natural resources, making it a win-win for both consumers and
           the environment.
         </p>
       </article>
+    </section>
+    <section className="feature--div flex">
+      <h3 className="sub--theme light--green">Our Featured Products</h3>
+      {product}
     </section>
   </div>
 );
