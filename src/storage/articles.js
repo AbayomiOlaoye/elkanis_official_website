@@ -1,9 +1,27 @@
+// Featured Images
+import fLiveImg from '../assets/products/livestock_hd.svg';
+import fFiemsImg from '../assets/products/fiems_hd.svg';
+import fRiceImg from '../assets/products/rice_hd.svg';
+
+// Icons
+import farmChick from '../assets/icons/man_chick.svg';
+import inputIcon from '../assets/icons/man_rice.svg';
+import yieldIcon from '../assets/icons/rice.svg';
+import landIcon from '../assets/icons/land.svg';
+import farmersIcon from '../assets/icons/farmers.svg';
+
+// Product Images
+import pLiveImg from '../assets/products/live_bg.svg';
+import pFiemsImg from '../assets/products/fiems_bg.svg';
+import pRiceImg from '../assets/products/rice_bags.svg';
+import mobImg from '../assets/products/mobile_app.svg';
+
 const ARTICLES = [
   {
     id: 'livestock',
-    featureImg: '../../assets/products/livestock_hd.svg',
+    featureImg: fLiveImg,
     featureHeadline: 'El-kanis Livestock Supplements',
-    productImage: '../assets/products/live_bg.svg',
+    productImage: pLiveImg,
     intro: [
       'El-kanis and Partners also specializes in livestock supplement production. As the demand for meat and animal-based products continues to rise, the need for high-quality and sustainable livestock feed becomes increasingly important.',
       'El-kanis and Partners harnesses technology to develop innovative livestock supplements that are formulated to meet the nutritional needs of animals, while also minimizing the use of harmful additives and promoting animal welfare.',
@@ -12,12 +30,12 @@ const ARTICLES = [
     stats: {
       yields: '',
       farmer: {
-        icon: '../assests/icons/man_chick.svg',
+        icon: farmChick,
         counter: 12670,
         info: 'Livestock Farmers',
       },
       input: {
-        icon: '../assests/icons/man_rice.svg',
+        icon: inputIcon,
         counter: 860,
         info: 'Agro Input Suppliers',
       },
@@ -26,9 +44,10 @@ const ARTICLES = [
   },
   {
     id: 'fiems',
-    featureImg: '../../assets/products/livestock_hd.svg',
+    featureImg: fFiemsImg,
     featureHeadline: 'Farmers Information & Enterprise Management System (FIEMS)',
-    productImage: '../assets/products/fiems_bg.svg',
+    productImage: pFiemsImg,
+    addImg: mobImg,
     intro: [
       'A digital platform that assist farmers in managing various aspects of their agricultural operations and other related activities. FIEMS typically provide farmers with tools and features that help them make informed decisions, optimize their resources, and improve their productivity and profitability.',
       'FIEMS support online and offline data collection, facilitate record keeping, and generate easily shareable reports for agricultural efficiency.',
@@ -41,12 +60,12 @@ const ARTICLES = [
     stats: {
       yields: '',
       farmer: {
-        icon: '../assests/icons/man_chick.svg',
+        icon: farmChick,
         counter: 12670,
         info: 'Livestock Farmers',
       },
       input: {
-        icon: '../assests/icons/man_rice.svg',
+        icon: inputIcon,
         counter: 860,
         info: 'Agro Input Suppliers',
       },
@@ -55,9 +74,9 @@ const ARTICLES = [
   },
   {
     id: 'elkanRice',
-    featureImg: '../../assets/products/rice_hd.svg',
-    featureHeadline: 'El-kanis Livestock Supplement Products',
-    productImage: '../assets/products/rice_bags.svg',
+    featureImg: fRiceImg,
+    featureHeadline: 'El-kanis Parboiled Rice',
+    productImage: pRiceImg,
     intro: [
       'El-kanis and Partners also specializes in livestock supplement production. As the demand for meat and animal-based products continues to rise, the need for high-quality and sustainable livestock feed becomes increasingly important.',
       'El-kanis and Partners harnesses technology to develop innovative livestock supplements that are formulated to meet the nutritional needs of animals, while also minimizing the use of harmful additives and promoting animal welfare.',
@@ -65,22 +84,22 @@ const ARTICLES = [
     result: '',
     stats: {
       yields: {
-        icon: '../assests/icons/rice.svg',
+        icon: yieldIcon,
         counter: 11439,
         info: 'Metric tons of rice paddy processed',
       },
       farmer: {
-        icon: '../assests/icons/farmers.svg',
+        icon: farmersIcon,
         counter: 28652,
         info: 'Rice Farmers (50% women)',
       },
       input: {
-        icon: '../assests/icons/man_rice.svg',
+        icon: inputIcon,
         counter: 860,
         info: 'Agro Input Suppliers',
       },
       land: {
-        icon: '../assests/icons/land.svg',
+        icon: landIcon,
         counter: 64652,
         info: 'Hectares of rice fields',
       },

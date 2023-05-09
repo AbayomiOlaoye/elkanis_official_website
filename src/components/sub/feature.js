@@ -1,15 +1,15 @@
 import { PropTypes } from 'prop-types';
 
-const FeaturedProject = ({ featureImg, headline }) => (
+const FeaturedProduct = ({ featureImg, headline }) => (
   <article className="feature--pro">
     <img src={featureImg} alt={headline} className="feature--img" />
     <h3 className="feature--title white ">{headline}</h3>
   </article>
 );
 
-FeaturedProject.propTypes = {
+FeaturedProduct.propTypes = {
   featureImg: PropTypes.string.isRequired,
   headline: PropTypes.string.isRequired,
 };
 
-export default FeaturedProject;
+export default FeaturedProduct;
