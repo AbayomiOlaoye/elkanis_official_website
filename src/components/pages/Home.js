@@ -7,6 +7,7 @@ import Product from '../sections/features/Product';
 import Service from '../sections/features/Service';
 import Funnel from '../sections/Funnel';
 import Sponsors from '../sections/Sponsors';
+import Footer from '../sections/Footer';
 
 const Home = () => (
   <div className="home--container">
@@ -18,6 +19,7 @@ const Home = () => (
     <Service />
     <Funnel />
     <Sponsors />
+    <Footer />
   </div>
 );
 
