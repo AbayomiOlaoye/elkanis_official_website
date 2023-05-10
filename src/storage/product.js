@@ -1,8 +1,12 @@
+import heavyWeight from '../assets/products/heavy_weight.png';
+import stopper from '../assets/products/stopper.svg';
+import booster from '../assets/products/booster.png';
+
 const PRODUCTS = [
   {
     id: 'heavyWeight',
     product: 'El-kanis Heavy Weight™',
-    productImage: '../assets/products/heavy_weight.svg',
+    productImage: heavyWeight,
     keyFeatures: '',
     productInfo: 'This is a fat-powered vitamin for improved animal production, weight gain, good water intake, rapid growth, strong bone and good carcasses quality. It helps to control wet litter, mortality control and balances calcium phosphorus.',
     benefits: [
@@ -26,7 +30,7 @@ const PRODUCTS = [
   {
     id: 'stopper',
     product: 'El-kanis Stopper Solution™',
-    productImage: '../assets/products/stopper.svg',
+    productImage: stopper,
     productInfo: 'This is a natural solution for protecting broilers, broiler-breeders and non-caged layers against Eimeria infection, Fowl typhoid, Coccidiosis, Diarrhea and Chronic Respiratory Disease (CRD).',
     keyFeatures: '',
     benefits: [
@@ -48,7 +52,7 @@ const PRODUCTS = [
   {
     id: 'booster',
     product: 'El-kanis Optimum Booster Solution™',
-    productImage: '../assets/products/stopper.svg',
+    productImage: booster,
     productInfo: 'This product provides vitamins for optimal animal performance. It is very effective in supporting animal immunity and health. It is fortified with amino acids and vitamins and causes rapid weight gain and double breast development.',
     keyFeatures: [
       'Unique blend of all essential nutrients - amino 1 acids, vitamins, electrolytes & minerals',

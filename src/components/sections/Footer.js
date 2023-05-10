@@ -1,6 +1,7 @@
-import { AiOutlineFieldTime } from "react-icons/ai"; 
-import { TiMail } from "react-icons/ti"; 
-import { IoCallOutline, IoLocationOutline } from "react-icons/io";
+import { AiOutlineFieldTime } from 'react-icons/ai';
+import { TiMail } from 'react-icons/ti';
+import { CiLocationOn } from 'react-icons/ci';
+import { IoCallOutline } from 'react-icons/io';
 import React from 'react';
 import { Logo } from '../Nav/Nav';
 
@@ -9,7 +10,7 @@ const Footer = () => (
     <img src={Logo} alt="elkanis & partners' logo" />
     <small className="footer__links flex column">
       <div className="footer__links--top flex">
-        <IoLocationOutline className="footer--icon" />
+        <CiLocationOn className="footer--icon" />
         <p className="footer--text">
           1 Enen Afaha Street, Opposite LG Showroom
           Ikot Ekpene Road, Uyo, Akwa Ibom State - Nigeria

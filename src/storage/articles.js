@@ -1,7 +1,7 @@
 // Featured Images
-import fLiveImg from '../assets/products/livestock_hd.svg';
+import fLiveImg from '../assets/products/livestock_hd.png';
 import fFiemsImg from '../assets/products/fiems_hd.svg';
-import fRiceImg from '../assets/products/rice_hd.svg';
+import fRiceImg from '../assets/products/rice_hd.png';
 
 // Icons
 import farmChick from '../assets/icons/man_chick.svg';
@@ -11,10 +11,10 @@ import landIcon from '../assets/icons/land.svg';
 import farmersIcon from '../assets/icons/farmers.svg';
 
 // Product Images
-import pLiveImg from '../assets/products/live_bg.svg';
+import pLiveImg from '../assets/products/live_bg.png';
 import pFiemsImg from '../assets/products/fiems_bg.svg';
-import pRiceImg from '../assets/products/rice_bags.svg';
-import mobImg from '../assets/products/mobile_app.svg';
+import pRiceImg from '../assets/products/rice_bags.png';
+import mobImg from '../assets/products/mobile_app.png';
 
 const ARTICLES = [
   {

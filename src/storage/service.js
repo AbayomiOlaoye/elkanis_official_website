@@ -1,6 +1,7 @@
-import proImg from '../assets/services/agric_project_card.svg';
-import riceImg from '../assets/services/rice_pro.svg';
-import researchImg from '../assets/services/research.svg';
+// Images for featured services
+import proImg from '../assets/services/agric_project_card.png';
+import riceImg from '../assets/services/rice_pro.png';
+import researchImg from '../assets/services/research.png';
 
 const FeaturedService = [
   {
