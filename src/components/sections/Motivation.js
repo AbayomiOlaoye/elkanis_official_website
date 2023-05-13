@@ -15,8 +15,8 @@ const Motivation = () => (
       </p>
     </div>
     <div className="backgd" />
-    <Smart />
-    <article className="climate-art">
+    <Smart class="ml--120" />
+    <article className="climate-art ml--120">
       <h2 className="green-title-text">Climate Smart Technology</h2>
       <p className="hero--text w-6 sub-text deep--green">
         Through the use of remote sensing, satellite imagery and improved seeds, the company
