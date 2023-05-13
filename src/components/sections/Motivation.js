@@ -1,9 +1,10 @@
 import React from 'react';
 import Smart from '../sub/smart';
+import './css/sections.css';
 
 const Motivation = () => (
-  <section className="motivation div">
-    <div className="sub--hero--div">
+  <section className="motivation div w--100">
+    <div className="sub--hero--div ml--120">
       <h2 className="green-title-text">What Motivates Us</h2>
       <p className="hero--text w-6 sub-text green">
         With a mission to provide sustainable and nutritious food options to consumers,
@@ -13,6 +14,7 @@ const Motivation = () => (
         to optimize food production while minimizing environmental impact.
       </p>
     </div>
+    <div className="backgd" />
     <Smart />
     <article className="climate-art">
       <h2 className="green-title-text">Climate Smart Technology</h2>

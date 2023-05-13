@@ -2,7 +2,7 @@
 import { PropTypes } from 'prop-types';
 
 const Button = ({ text }) => (
-  <button type="button" className="w-6">
+  <button type="button" className="button">
     {text}
   </button>
 );

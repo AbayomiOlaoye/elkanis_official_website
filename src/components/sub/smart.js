@@ -1,9 +1,9 @@
-import Corn from '../../assets/generic/corn.svg';
-import Worker from '../../assets/generic/workman.svg';
-import Drone from '../../assets/generic/wk_drone.svg';
-import Rice from '../../assets/generic/rice_trans.svg';
-import Pepper from '../../assets/generic/pepper.svg';
-import AgTech from '../../assets/generic/agritech.svg';
+import Corn from '../../assets/generic/corn.png';
+import Worker from '../../assets/generic/workman.png';
+import Drone from '../../assets/generic/wk_drone.png';
+import Rice from '../../assets/generic/rice_trans.png';
+import Pepper from '../../assets/generic/pepper.png';
+import AgTech from '../../assets/generic/agritech.png';
 
 const Smart = () => (
   <figure className="gallery flex">

@@ -1,0 +1,67 @@
+.video--container {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 700px;
+}
+
+.home--container {
+  position: relative;
+  top: -20px;
+  background-image: url('../../../assets/generic/drones.svg');
+  background-repeat: no-repeat;
+  background-position: 91% 13%;
+  background-size: 35%;
+}
+
+.video--container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 700px;
+  width: 100%;
+  background: rgba(14, 16, 4, 0.6);
+  filter: blur(2px);
+  z-index: 5;
+}
+
+.media {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video--overlay {
+  position: relative;
+  top: 25%;
+  z-index: 10;
+  color: var(--white);
+  max-width: 60%;
+  text-shadow: 0 12px 12px #000;
+}
+
+.hero--title {
+  font-size: 4.7vw;
+  font-weight: var(--wgt--300);
+  line-height: 1.1;
+  margin: 0.5rem 0 2rem 0;
+  letter-spacing: 1.9px;
+}
+
+.hero--bold {
+  font-weight: var(--wgt--500);
+}
+
+.hero--text {
+  font-weight: var(--wgt--400);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  max-width: 75%;
+}

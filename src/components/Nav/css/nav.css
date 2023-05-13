@@ -1,0 +1,44 @@
+.main--container {
+  position: relative;
+  height: 100%;
+}
+
+.header--container {
+  width: var(--w--90);
+  position: absolute;
+  justify-content: var(--space-between);
+  padding: var(--size--16) 2vh;
+  z-index: 2;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  background: var(--nav--bg);
+  background-blend-mode: overlay;
+  border-radius: 8px;
+  align-content: center;
+}
+
+.logo {
+  width: 100%;
+  margin-top: 6px;
+  display: block;
+  height: 30px;
+}
+
+.nav--item {
+  color: var(--white);
+  font-size: calc(10px + 0.3vmin);
+}
+
+.nav--list {
+  gap: var(--size--28);
+  font-size: var(--size--16);
+  align-items: center;
+  height: 100%;
+}
+
+.logo--link {
+  height: 100%;
+  align-content: center;
+}

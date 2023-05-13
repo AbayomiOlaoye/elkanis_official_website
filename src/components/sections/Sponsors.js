@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import SPONSORS from '../../storage/sponsors';
 
 const Sponsors = () => {
@@ -12,4 +12,4 @@ const Sponsors = () => {
   );
 };
 
-export default Sponsors;
+export default memo(Sponsors);
