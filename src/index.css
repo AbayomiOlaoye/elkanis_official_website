@@ -152,7 +152,7 @@ body {
 }
 
 .temp--font {
-  font-family: var(--tiempos-fine)
+  font-family: var(--tiempos-fine), sans-serif;
 }
 
 .ml--120 {
@@ -171,13 +171,3 @@ body {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-
-/* .myBox{
-  text-align:center;
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(90deg, #C3EE00 0%, #91AA2B 100%);
-
-  border-image-slice: 1;
-  width:100%;
-}
-*/

@@ -16,7 +16,7 @@ const Hero = () => (
         <span className="hero--bold"> food production </span>
         with technology
       </h1>
-      <p className="hero--text">
+      <p className="hero--text white">
         El-kanis and Partners is a leading food production company that is changing the game in
         the agriculture sector in Nigeria by leveraging cutting-edge technology to produce
         high-quality rice and livestock supplements

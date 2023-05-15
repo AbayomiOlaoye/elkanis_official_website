@@ -5,14 +5,17 @@ import Rice from '../../assets/generic/rice_trans.png';
 import Pepper from '../../assets/generic/pepper.png';
 import AgTech from '../../assets/generic/agritech.png';
 
+const images = [Corn, Worker, Drone, Rice, Pepper, AgTech];
+const imageList = images.map((image) => (
+  <div className="image--container w--100" key={image}>
+    <img src={image} className="gallery--item w--100" alt="" />
+    <div className="image--overlay" />
+  </div>
+));
+
 const Smart = () => (
-  <figure className="gallery flex ml--120">
-    <img src={Corn} alt="healthy corn from smart tech" />
-    <img src={Worker} alt="a farmer in the rice field" />
-    <img src={Drone} alt="buzzing drone on the farm" />
-    <img src={Rice} alt="farmer transporting processed rice" />
-    <img src={Pepper} alt="harvested hybrid pepper" />
-    <img src={AgTech} alt="internet of things (IoT) on the farm" />
+  <figure className="gallery grid">
+    {imageList}
   </figure>
 );
 
