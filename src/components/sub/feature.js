@@ -3,11 +3,7 @@ import { PropTypes } from 'prop-types';
 import Card from 'react-bootstrap/Card';
 
 const FeaturedProduct = ({ featureImg, headline }) => (
-  // <article className="feature--pro">
-  //   <img src={featureImg} alt={headline} className="feature--img" />
-  //   <h3 className="feature--title white ">{headline}</h3>
-  // </article>
-  <Card className="feature--pro flex column" style={{ width: '18rem', background: 'white' }}>
+  <Card className="feature--pro flex column" style={{ width: '21rem', background: 'white' }}>
     <div className="img--div">
       <Card.Img variant="top" className="feature--img" src={featureImg} />
     </div>

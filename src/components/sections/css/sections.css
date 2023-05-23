@@ -1,11 +1,12 @@
 /* What Motivates Us */
 .motivation {
   position: relative;
-  top: -150px;
+  top: -190px;
   left: 0;
   z-index: 6000;
   width: 100%;
-  height: max-content;
+  height: 900px;
+  padding-top: 600px;
   justify-content: center;
   align-items: center;
   background-image:
@@ -13,7 +14,6 @@
     url('../../../assets/generic/dotted_hero.svg');
   background-size: 100%, 100%;
   background-repeat: no-repeat, no-repeat;
-  padding-top: 15rem;
 }
 
 .sub--hero {
@@ -22,12 +22,12 @@
 }
 
 .sub--hero--div {
-  height: 75vh;
-  padding-top: 3rem;
+  height: 700px;
+  padding-top: 180px;
   background-image: url('../../../assets/backgrounds/globe.png'), url('../../../assets/backgrounds/motivate_bg.png');
   background-repeat: no-repeat, no-repeat;
-  background-size: 70%, 30%;
-  background-position: center, top right;
+  background-size: 60%, 35%;
+  background-position: 200px center, top right;
   z-index: 40000;
 }
 
@@ -90,7 +90,7 @@
 
 .climate-art {
   position: absolute;
-  top: 1000px;
+  top: 1150px;
   width: 80%;
   background: #fff;
   margin: 0 auto;
@@ -107,6 +107,10 @@
 
 .sub-text {
   line-height: 1.5;
+}
+
+.motive {
+  height: 300px;
 }
 
 /* ********************** */
@@ -127,19 +131,22 @@
 
 .feature--div {
   position: relative;
-  top: -150px;
+  top: 350px;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  padding-bottom: 45px;
+  width: var(--w--100);
+  padding: 200px 0 65px 0;
+  margin-bottom: 2rem;
 }
 
 .feature--container {
-  margin: 0 auto;
-  width: var(--w--90);
-  justify-content: center;
-  gap: 1rem;
+  margin: 1rem auto 0;
+  width: var(--w--100);
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
   height: auto;
+  padding: 2rem 20rem;
 }
 
 .img--div {
@@ -186,11 +193,15 @@ div:nth-child(odd) > div.card-body > div.card-title {
 }
 
 .feature--header {
-  padding: 2rem 14rem;
+  padding: 2rem 20rem 0;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   color: var(--primary--04);
+}
+
+section:nth-child(4) {
+  top: 150px;
 }
 
 hr.hr--theme {
@@ -200,10 +211,14 @@ hr.hr--theme {
 
 .sub--theme {
   font-size: var(--size--32);
-  min-width: 325px;
+  font-weight: var(--wgt--400);
+  min-width: 400px;
 }
 
 /* ************** */
+div.react-multi-carousel-list > ul > li:nth-child(14) > img {
+  margin-left: 3rem;
+}
 
 /* Featured Services */
 
@@ -231,4 +246,135 @@ section:nth-child(4) > div.feature--container.flex > div > div.img--div > img {
   border-radius: 30px 30px 0 0;
   width: 100%;
   height: 100%;
+}
+
+/* ************** */
+
+/* Funnel Section */
+.funnel--page--container {
+  width: var(--w--70);
+  font-family: 'Inter', sans-serif, 'Open Sans', 'Helvetica Neue';
+  background: var(--white);
+  justify-content: center;
+  align-items: center;
+  padding: 97px 265px;
+  box-shadow: 0 8px 16px rgba(171, 190, 209, 0.4);
+}
+
+.funnel--title {
+  font-weight: var(--wgt--700);
+  font-size: var(--size--36);
+  max-width: 400px;
+  color: #464646;
+  text-align: center;
+  padding: 1rem 0;
+  line-height: 44px;
+}
+
+.funnel--description {
+  font-weight: 500;
+  color: #707070;
+}
+
+.funnel--input {
+  min-width: 529px;
+  height: 56px;
+  box-shadow: 0 6px 12px rgba(171, 190, 209, 0.3);
+  border-radius: 8px;
+  border: none;
+  margin-top: 52px;
+  padding: 4px 4px 4px 12px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+::placeholder {
+  color: #b1b2b4;
+}
+
+.funnel--btn {
+  width: 117px;
+  margin-top: 0;
+  height: 48px;
+  border-radius: 10px;
+}
+
+/* ************* */
+
+/* Sponsors */
+.react-multi-carousel-list {
+  width: 80%;
+  margin: 2.5rem auto 0;
+  gap: 5rem;
+}
+
+/* ************* */
+
+/* Footer Page */
+.footer--container {
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  top: 400px;
+  padding: 43px 192px;
+  background-color: var(--primary--03);
+}
+
+.form {
+  border: 1px solid #91aa2b;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.input-div {
+  width: 100%;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.text-input {
+  height: 40px;
+}
+
+.contact__form--input {
+  background: #ecf8c1;
+  border: 1px solid #455214;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  width: 100%;
+  padding: 10px;
+}
+
+.contact__form--input::placeholder {
+  color: #455214;
+}
+
+textarea {
+  margin: 0.5rem 0;
+}
+
+.contact__form--btn {
+  width: max-content;
+  padding: 12px 1.5rem;
+  border: none;
+  background: #91aa2b;
+  border-radius: 10px;
+  color: #f2f7de;
+  font-weight: 600;
+  font-size: 20px;
+  height: 60px;
+}
+
+.footer__links {
+  max-width: 300px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer__links--top {
+  gap: 0.5rem;
+}
+
+.footer--icon {
+  width: 20px;
+  height: 20px;
 }

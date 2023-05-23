@@ -6,7 +6,7 @@ const Motivation = () => (
   <section className="motivation div w--100 flex column">
     <div className="sub--hero--div ml--120">
       <h2 className="green-title-text main--title max--text-1 border-image temp--font">What Motivates Us</h2>
-      <p className="hero--text w-6 sub-text one green">
+      <p className="hero--text motive w-6 sub-text one green">
         With a mission to provide sustainable and nutritious food options to consumers,
         El-kanis and Partners has established itself as a pioneer in the agricultural
         sector by utilizing
@@ -14,7 +14,6 @@ const Motivation = () => (
         to optimize food production while minimizing environmental impact.
       </p>
     </div>
-    <div className="backgd" />
     <Smart />
     <article className="climate-art flex column ml--120">
       <h2 className="climate--title green-title-text temp--font">Climate Smart Technology</h2>
