@@ -1,18 +1,15 @@
 /* What Motivates Us */
-
-/* .motivation {
-  position: relative;
-  z-index: 60;
-} */
-
 .motivation {
   position: relative;
   top: -150px;
   left: 0;
   z-index: 6000;
   width: 100%;
-  height: 650px;
-  background-image: url('../../../assets/backgrounds/jombo.svg'), url('../../../assets/generic/dotted_hero.svg');
+  justify-content: center;
+  align-items: center;
+  background-image:
+    url('../../../assets/backgrounds/jombo.svg'),
+    url('../../../assets/generic/dotted_hero.svg');
   background-size: 100%, 100%;
   background-repeat: no-repeat, no-repeat;
   padding-top: 15rem;
@@ -24,9 +21,13 @@
 }
 
 .sub--hero--div {
-  background-image: url('../../../assets/backgrounds/globe.png');
-  background-repeat: no-repeat;
-  background-size: auto;
+  height: 75vh;
+  padding-top: 3rem;
+  background-image: url('../../../assets/backgrounds/globe.png'), url('../../../assets/backgrounds/motivate_bg.png');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 70%, 30%;
+  background-position: center, top right;
+  z-index: 40000;
 }
 
 .gallery {
@@ -64,17 +65,54 @@
 
 .border-image {
   border-left: 5px solid transparent;
-  border-image: linear-gradient(25deg, #c3ee00 0%, #91aa2b 100%);
+  border-image: linear-gradient(25deg, #c3ee00 0%, #91aa2b 70%);
   border-image-slice: 1;
   width: 100%;
   padding-left: 1rem;
 }
 
 .max--text-1 {
-  max-width: 40%;
+  width: 35%;
 }
 
-/*
-.green {
+.main--title {
+  margin: 2rem 0 1rem 0;
+}
 
-} */
+.one {
+  max-width: 65%;
+}
+
+.dark-text {
+  font-weight: 600;
+}
+
+.climate-art {
+  position: absolute;
+  top: 1000px;
+  width: 80%;
+  background: #fff;
+  margin: 0 auto;
+  padding: 2.5rem 118px;
+  align-items: center;
+  justify-content: center;
+}
+
+.climate--title {
+  max-width: 60%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.sub-text {
+  line-height: 1.5;
+}
+
+/* End of Motivation CSS */
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
