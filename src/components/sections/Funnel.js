@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Funnel = () => (
-  <section className="funnel--page div">
+  <section className="funnel--page div" style={{ backgroundImage: "url('../../assets/backgrounds/form_bg.png')" }}>
     <div className="funnel--page--container flex column">
       <h2 className="funnel--title">Get the latest news in Agritech</h2>
       <p className="funnel--description">By subscribing to our newsletter</p>

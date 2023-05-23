@@ -12,9 +12,12 @@ const Product = () => {
   ));
   return (
     <>
-      <section className="feature--div flex">
-        <h3 className="sub--theme light--green">Our Featured Products</h3>
-        {product}
+      <section className="feature--div product flex column">
+        <div className="feature--header flex w--100">
+          <h3 className="sub--theme temp--font light--green">Our Featured Products</h3>
+          <hr className="hr--theme w--100" />
+        </div>
+        <div className="feature--container flex">{product}</div>
       </section>
     </>
   );
