@@ -1,0 +1,44 @@
+.d-flex {
+  display: flex;
+}
+
+.j-c-c {
+  justify-content: center;
+}
+
+.a-i-c {
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.relative {
+  position: relative;
+}
+
+.w--100 {
+  width: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.image--overlay {
+  position: absolute;
+  top: 22.5vh;
+  left: 10%;
+  width: 80%;
+  height: 35vh;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+  background: rgba(69, 82, 20, 0.6);
+}
+
+.hero--title {
+  top: 85%;
+  font-weight: 600;
+  font-size: 75px;
+  color: var(--primary--08);
+}
