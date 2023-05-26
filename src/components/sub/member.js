@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { IoIosArrowDown } from 'react-icons/io';
 
-const Member = ({ key, member }) => {
+const Member = ({ member }) => {
   const partial = (
-    <div className="team--action flex">
+    <div className="team--action flex column">
       <h4 className="team--name">{member.designation}</h4>
       <h5 className="team--role">{member.name}</h5>
       <p className="team--text">{member.headshot}</p>
@@ -14,11 +14,11 @@ const Member = ({ key, member }) => {
   );
 
   const full = (
-    <div className="full team--action flex">
+    <div className="full team--action flex column">
       <h4 className="team--name">{member.designation}</h4>
       <h5 className="team--role">{member.name}</h5>
       <p className="team--text">{member.Intro}</p>
-      <div className="team--skills flex">
+      <div className="team--skills flex column">
 
         <div className="team--skills--left flex column">
           <h5 className="team--skills--title">Expertise</h5>
@@ -52,19 +52,30 @@ const Member = ({ key, member }) => {
   };
 
   return (
-    <div className="team--member flex column" key={key}>
+    <div className="team--member flex column" key={member.id}>
       <img src={member.image} alt={member.name} className="team--img" />
       { isReadMore ? full : partial }
       <a href="#" className="team--action--text" onClick={ReadMore}>
-        { isReadMore ? `Know More ${<IoIosArrowDown />}` : `Know Less ${<MdKeyboardArrowUp />}`}
+        { isReadMore
+          ? (
+            <button type="button">
+              Know Less
+              <MdKeyboardArrowUp />
+            </button>
+          ) : (
+            <button type="button">
+              Know More
+              <IoIosArrowDown />
+            </button>
+          )}
       </a>
     </div>
   );
 };
 
 Member.propTypes = {
-  key: PropTypes.number.isRequired,
   member: PropTypes.shape({
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     designation: PropTypes.string.isRequired,
     headshot: PropTypes.string.isRequired,

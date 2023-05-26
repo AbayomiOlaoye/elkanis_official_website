@@ -4,7 +4,7 @@ import heroBg from '../../../assets/backgrounds/vid_placeholder.png';
 import hero from '../../../assets/generic/feature_hd.png';
 import '../css/about.css';
 
-const Top = ({ title }) => {
+const Top = ({ title, id }) => {
   const heroStyle = {
     backgroundImage: `url(${heroBg})`,
     backgroundSize: 'cover',
@@ -15,7 +15,7 @@ const Top = ({ title }) => {
   };
 
   return (
-    <div className="top--container relative d-flex column j-c-c a-i-c" style={heroStyle}>
+    <div id={id} className="top--container relative d-flex column j-c-c a-i-c" style={heroStyle}>
       <img
         src={hero}
         alt="hero"
@@ -24,7 +24,7 @@ const Top = ({ title }) => {
           {
             top: '20vh',
             width: '80%',
-            height: '35vh',
+            height: '40vh',
             textAlign: 'center',
             boxShadow: '0 32px 20px rgba(0, 0, 0, 0.05)',
           }
@@ -40,6 +40,7 @@ const Top = ({ title }) => {
 
 Top.propTypes = {
   title: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Top;
