@@ -2,6 +2,7 @@ import React from 'react';
 import Top from '../sections/aboutUs/top';
 import riceTrans from '../../assets/generic/rice_trans.png';
 import Team from '../../storage/team';
+import Member from '../sub/member';
 
 const About = () => {
   const handleClick = () => {
@@ -91,12 +92,7 @@ const About = () => {
         </div>
         <div className="team--div grid">
           {Team.map((member) => (
-            <div className="team--member flex column" key={member.id}>
-              <img src={member.image} alt={member.name} className="team--img" />
-              <h4 className="team--name">{member.name}</h4>
-              <h5 className="team--role">{member.role}</h5>
-              <p className="team--text">{member.text}</p>
-            </div>
+            <Member key={member.id} member={member} />
           ))}
         </div>
       </article>
