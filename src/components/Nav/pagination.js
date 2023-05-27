@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const Pagination = ({ id }) => (
-  <section className="pagination">
-    <a href={`#${id}`} className="footer--link">Go to Top</a>
-    <Link to="/" className="footer--link">Back to Homepage</Link>
+  <section className="pagination d-flex" style={{ marginBottom: '48px' }}>
+    <a href={`#${id}`} className="footer--link d-block">Go to Top</a>
+    <Link to="/" className="footer--link d-block">Back to Homepage</Link>
   </section>
 );
 

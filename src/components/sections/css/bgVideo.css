@@ -51,6 +51,7 @@
 
 .hero--title {
   font-size: 4.7vw;
+  max-width: 800px;
   font-weight: var(--wgt--300);
   line-height: 1.1;
   margin: 0.5rem 0 2rem 0;

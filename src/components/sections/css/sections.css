@@ -45,7 +45,7 @@
   display: inline-block;
 }
 
-.image--overlay {
+.image--overlay--main {
   position: absolute;
   top: 0;
   left: 0;

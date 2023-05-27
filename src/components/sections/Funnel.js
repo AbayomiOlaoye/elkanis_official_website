@@ -11,7 +11,7 @@ const Funnel = () => (
     }
   >
     <img src={FormBg} alt="form background" className="funnel--bg" style={{ width: '100%', height: '100%' }} />
-    <div className="funnel--overlay image--overlay" style={{ height: '100%' }} />
+    <div className="funnel--overlay image--overlay--main" style={{ height: '100%', width: '100%' }} />
     <div className="funnel--page--container flex column" style={{ position: 'absolute', top: '400px', height: 'max-content' }}>
       <h2 className="funnel--title">Get the latest news in Agritech</h2>
       <p className="funnel--description">By subscribing to our newsletter</p>

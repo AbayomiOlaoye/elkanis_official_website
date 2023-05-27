@@ -23,8 +23,8 @@ const Top = ({ title, id }) => {
         style={
           {
             top: '20vh',
-            width: '80%',
-            height: '40vh',
+            width: '70%',
+            height: '30vh',
             textAlign: 'center',
             boxShadow: '0 32px 20px rgba(0, 0, 0, 0.05)',
           }

@@ -7,12 +7,12 @@
   width: var(--w--90);
   position: absolute;
   justify-content: var(--space-between);
-  padding: var(--size--16) 2vh;
+  padding: 2vh 5vh;
   z-index: 2;
-  top: 50px;
+  top: 100px;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 60px;
+  height: 100px;
   background: var(--nav--bg);
   background-blend-mode: overlay;
   border-radius: 8px;
@@ -20,15 +20,16 @@
 }
 
 .logo {
-  width: 100%;
+  width: 130%;
   margin-top: 6px;
   display: block;
-  height: 30px;
+  height: 50px;
 }
 
 .nav--item {
   color: var(--white);
-  font-size: calc(10px + 0.3vmin);
+  font-size: 1.2rem;
+  font-weight: var(--wgt--600);
 }
 
 .nav--list {

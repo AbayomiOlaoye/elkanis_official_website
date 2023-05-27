@@ -22,23 +22,212 @@
   width: 100%;
 }
 
+.w--70 {
+  width: 70%;
+}
+
+.g--32 {
+  gap: 2rem;
+}
+
+.w--80 {
+  width: 80%;
+}
+
+.w--90 {
+  width: 90%;
+}
+
 .absolute {
   position: absolute;
 }
 
+.grid {
+  display: grid;
+}
+
 .image--overlay {
   position: absolute;
-  top: 20vh;
-  left: 10%;
-  width: 80%;
-  height: 40vh;
+  top: 25vh;
+  left: 15%;
+  width: 70%;
+  height: 30vh;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
   background: rgba(69, 82, 20, 0.6);
 }
 
 .hero--title {
-  top: 85%;
+  top: 90%;
   font-weight: 600;
   font-size: 75px;
   color: var(--primary--08);
+}
+
+.page--content {
+  margin-top: 20vh;
+}
+
+.about--bg {
+  background-image: url('../../../assets/backgrounds/globe.png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: 50% 73%;
+}
+
+.text--just {
+  text-align: justify;
+}
+
+.boarder {
+  padding-left: 1rem;
+  border-left: 5px solid transparent;
+  border-image: linear-gradient(25deg, #c3ee00 0%, #91aa2b 70%);
+  border-image-slice: 1;
+}
+
+.rice--img {
+  width: 100%;
+  height: 70%;
+  background-color: #bbcf79;
+  box-shadow: 10px 16px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 120px 120px 120px 0;
+}
+
+.rice--img--div {
+  position: relative;
+  height: 100%;
+}
+
+.d-block {
+  display: block;
+}
+
+.span--overlay {
+  position: absolute;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 120px 120px 120px 0;
+  background: rgba(69, 82, 20, 0.6);
+}
+
+.team--div {
+  margin: 3rem 0 45rem 0;
+  gap: 5rem 3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.team--img {
+  max-width: 100%;
+  width: 30%;
+  border-radius: 50%;
+  background-color: #bfca90;
+  border: none;
+  z-index: 5;
+}
+
+.drive-us {
+  grid-template-columns: 2fr 1fr;
+}
+
+.para-one {
+  margin: 1rem 0 2rem 0;
+}
+
+.mini-title {
+  font-size: var(--size--49);
+  color: var(--primary--07);
+}
+
+h3.special-title {
+  max-width: 45%;
+}
+
+.vision--container {
+  background-color: var(--primary--04);
+  padding: 3rem 5rem;
+  color: #fff;
+  justify-content: flex-start;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gap-one {
+  gap: 1rem;
+}
+
+.one--point {
+  line-height: 28px;
+}
+
+.g--48 {
+  gap: 3rem;
+}
+
+.m-40 {
+  margin-bottom: var(--size--32);
+}
+
+.vision--div {
+  min-height: 500px;
+  padding: 0 2rem;
+}
+
+.tech--section {
+  grid-template-columns: 1fr 2fr;
+}
+
+.icon {
+  width: 40px;
+}
+
+.team--action--button > button {
+  background: transparent;
+  padding: 0.5rem 1rem;
+  display: flex;
+  border: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--primary--05);
+}
+
+.team--member {
+  align-self: flex-start;
+}
+
+.footer--link {
+  color: #3c4044;
+}
+
+.footer--link:nth-of-type(1) {
+  padding-right: 2rem;
+  margin-right: 2rem;
+  border-right: 1px solid;
+}
+
+.team--role {
+  font-weight: 700;
+  font-size: 2vw;
+  color: var(--primary--04);
+}
+
+.team--name {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1vw;
+  color: #91aa2b;
+}
+
+.team--text {
+  font-size: 16px;
+}
+
+ul.team--skills--list {
+  margin-left: 2rem;
+  list-style-type: disc;
+}
+
+.team--skills--card {
+  margin-top: 1.5rem;
 }
