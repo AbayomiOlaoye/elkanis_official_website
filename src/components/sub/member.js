@@ -16,12 +16,18 @@ const Member = ({ member }) => {
         setIsReadMore(false);
       }
     };
-    document.addEventListener('click', handleClick);
+    document.addEventListener('click', handleClick, true);
     return () => document.removeEventListener('click', handleClick);
   }, [isReadMore]);
 
   const handleReadMore = () => {
     setIsReadMore(!isReadMore);
+    if (isReadMore) {
+      document.querySelector('.team--member').scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+    }
   };
 
   const partial = (
@@ -47,7 +53,7 @@ const Member = ({ member }) => {
       className="full absolute team--action text--just d-flex column a-i-c"
       style={
         {
-          top: '3.5vw',
+          top: '4vw',
           backgroundColor: 'var(--primary--04)',
           color: '#fff',
           padding: '60px 18px 32px',
@@ -57,7 +63,7 @@ const Member = ({ member }) => {
       }
     >
       <h5 className="team--name" style={{ color: 'var(--primary--08)' }}>{member.designation}</h5>
-      <h4 className="team--role" style={{ color: 'var(--primary--06)' }}>{member.name}</h4>
+      <h4 className="team--role" style={{ color: 'var(--primary--06)', marginBottom: '1rem' }}>{member.name}</h4>
       <p className="team--text">{member.Intro}</p>
       <div className="team--skills relative flex column w--100">
 
@@ -103,7 +109,12 @@ const Member = ({ member }) => {
   );
 
   return (
-    <div className="team--member d-flex relative column a-i-c" key={member.id} ref={teamRef}>
+    <div
+      className="team--member d-flex relative column a-i-c"
+      key={member.id}
+      ref={teamRef}
+      style={{ zIndex: isReadMore ? '100' : '10' }}
+    >
       <img src={member.image} alt={member.name} className="team--img" />
       { isReadMore ? full : partial }
     </div>

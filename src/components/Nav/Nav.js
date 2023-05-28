@@ -30,7 +30,13 @@ const Nav = () => (
             <Link to="/blog" className="nav--item">Blog</Link>
           </li>
           <li className="nav--item--container list">
-            <Link to="/contact" className="nav--item">Contact</Link>
+            <Link
+              to="/"
+              state={{ scrollToSection: 'contact-us' }}
+              className="nav--item"
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
