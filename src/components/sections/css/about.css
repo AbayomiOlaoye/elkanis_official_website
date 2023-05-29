@@ -145,12 +145,39 @@ h3.special-title {
   max-width: 45%;
 }
 
+.push--left::after {
+  content: '';
+  position: absolute;
+  top: 60vh;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  background-image: url('../../../assets/backgrounds/abt_line_bg.svg');
+  background-repeat: no-repeat;
+  background-position: 0 20vh;
+  background-size: 15% 30%;
+}
+
 .vision--container {
   background-color: var(--primary--04);
   padding: 3rem 5rem;
   color: #fff;
   justify-content: flex-start;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.vision--container::after {
+  content: '';
+  position: absolute;
+  top: 10vh;
+  left: 82%;
+  width: 30%;
+  height: 60vh;
+  overflow: hidden;
+  background-image: url('../../../assets/backgrounds/miss_line_bg.png');
+  background-repeat: no-repeat;
+  background-position: 100% 20vh;
+  background-size: 65% 45%;
 }
 
 .gap-one {
@@ -231,4 +258,10 @@ ul.team--skills--list {
 
 .team--skills--card {
   margin-top: 1.5rem;
+}
+
+/* Product Features */
+.page--link {
+  font-weight: 600;
+  color: white;
 }

@@ -19,7 +19,7 @@ const About = () => (
         leveraging cutting-edge technology to produce high-quality
         rice and livestock supplements.
       </p>
-      <article className="drive-us g--32 grid a-i-c w--70">
+      <article className="drive-us push--left g--32 grid a-i-c w--70">
         <div className="drive-us--text flex flow column">
           <h3 style={{ fontSize: '68px' }} className="green-title-text special-title temp--font light--green">What Drives Us</h3>
           <p className="sub--text para-one text--just">
@@ -43,7 +43,7 @@ const About = () => (
         </div>
       </article>
     </div>
-    <article className="vision--container w--80 grid">
+    <article className="vision--container relative w--80 grid">
       <div className="vision--div d-flex g--32 column a-i-c">
         <div className="vision--title--div gap-one d-flex column a-i-c">
           <img src={vision} alt="vision" className="vision--img icon d-block" />

@@ -58,7 +58,7 @@ const ARTICLES = [
       'FIEMS send reminders to extension agents to follow up on low-performing farmers.',
     ],
     stats: {
-      yields: '',
+      yields: {},
       farmer: {
         icon: farmChick,
         counter: 12670,
@@ -69,7 +69,7 @@ const ARTICLES = [
         counter: 860,
         info: 'Agro Input Suppliers',
       },
-      land: '',
+      land: {},
     },
   },
   {

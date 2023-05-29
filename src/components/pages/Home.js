@@ -11,7 +11,6 @@ import Product from '../sections/features/ProductFeat';
 import Service from '../sections/features/ServiceFeat';
 import Funnel from '../sections/Funnel';
 import Sponsors from '../sections/Sponsors';
-// import Footer from '../Nav/Footer';
 import { Logo } from '../Nav/Nav';
 
 const Home = () => {

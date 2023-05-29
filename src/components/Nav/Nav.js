@@ -32,7 +32,7 @@ const Nav = () => (
           <li className="nav--item--container list">
             <Link
               to="/"
-              state={{ scrollToSection: 'contact-us' }}
+              state={{ scrollToSection: 'name' }}
               className="nav--item"
             >
               Contact

@@ -4,7 +4,11 @@ import heroBg from '../../../assets/backgrounds/vid_placeholder.png';
 import hero from '../../../assets/generic/feature_hd.png';
 import '../css/about.css';
 
-const Top = ({ title, id }) => {
+const Top = (
+  {
+    title, id, linkOne, linkTwo, linkThree,
+  },
+) => {
   const heroStyle = {
     backgroundImage: `url(${heroBg})`,
     backgroundSize: 'cover',
@@ -34,6 +38,18 @@ const Top = ({ title, id }) => {
       <h1 className="temp--font hero--title absolute">
         {title}
       </h1>
+      {
+        linkOne && (
+          <div
+            className="top--links absolute d-flex j-c-c g--32 a-i-c"
+            style={{ top: '47vh', borderTop: '1px solid #fff', paddingTop: '1vh' }}
+          >
+            <a href={`#${linkOne.id}`} className="page--link">{linkOne.link}</a>
+            <a href={`#${linkTwo.id}`} className="page--link">{linkTwo.link}</a>
+            <a href={`#${linkThree.id}`} className="page--link">{linkThree.link}</a>
+          </div>
+        )
+}
     </div>
   );
 };
@@ -41,6 +57,15 @@ const Top = ({ title, id }) => {
 Top.propTypes = {
   title: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
+  linkOne: PropTypes.string,
+  linkTwo: PropTypes.string,
+  linkThree: PropTypes.string,
+};
+
+Top.defaultProps = {
+  linkOne: '',
+  linkTwo: '',
+  linkThree: '',
 };
 
 export default Top;
