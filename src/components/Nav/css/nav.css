@@ -20,8 +20,8 @@
 }
 
 .logo {
-  width: 130%;
-  margin-top: 6px;
+  align-self: center;
+  max-width: 100%;
   display: block;
   height: 50px;
 }

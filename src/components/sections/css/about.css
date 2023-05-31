@@ -94,6 +94,13 @@
   border-radius: 120px 120px 120px 0;
 }
 
+.dashed {
+  border: 1px dashed var(--primary--03);
+  border-radius: 120px 120px 120px 0;
+  padding: 0.35rem;
+  background: transparent;
+}
+
 .rice--img--div {
   position: relative;
   height: 100%;
@@ -101,6 +108,18 @@
 
 .d-block {
   display: block;
+}
+
+.after--effect::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 97%;
+  height: 97%;
+  transform: translate(-50%, -50%);
+  border-radius: 120px 120px 120px 0;
+  background: rgba(69, 82, 20, 0.6);
 }
 
 .span--overlay {
@@ -272,7 +291,7 @@ ul.team--skills--list {
 }
 
 .about--product {
-  margin-bottom: 2rem;
+  margin: 3rem 0;
   background: #f2f7de;
 }
 
@@ -285,20 +304,23 @@ ul.team--skills--list {
   margin-bottom: 90px;
 }
 
-div.counter-yields {
-  background-color: var(--primary--04);
-  color: #fff;
+.counter-land,
+.counter-input,
+.counter-ivr {
+  background-color: var(--primary--08);
+  color: #6f8321;
 }
 
-.counter-farmer {
+.counter-farmer,
+.drones-div .counter-land {
   background-color: var(--primary--06);
   color: #2a310c;
 }
 
-.counter-land,
-.counter-input {
-  background-color: var(--primary--08);
-  color: #6f8321;
+div.counter-yields,
+.drones-div .counter-farmer {
+  background-color: var(--primary--04);
+  color: #fff;
 }
 
 /* Product Details */
@@ -307,7 +329,8 @@ div.counter-yields {
   margin-bottom: 2rem;
 }
 
-.product--card--div:nth-of-type(even) {
+.product--card--div:nth-of-type(even),
+.row--reverse {
   flex-direction: row-reverse;
 }
 
@@ -347,6 +370,7 @@ ul.disc {
 .product--nav--item {
   font-size: 22px;
   border: none;
+  cursor: pointer;
   background: transparent;
   color: var(--primary--03);
 }

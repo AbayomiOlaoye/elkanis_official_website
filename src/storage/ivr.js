@@ -1,20 +1,25 @@
+import { farmersIcon, landIcon } from './articles';
+import Ivr from '../assets/icons/Vector.svg';
+
 const IVR = [
   {
     id: 'ivr',
-    yields: {
-      icon: '../assests/icons/rice.svg',
-      counter: 250241,
-      info: 'Metric tons of rice paddy processed',
-    },
-    farmer: {
-      icon: '../assests/icons/farmers.svg',
-      counter: 28652,
-      info: 'Rice Farmers (50% women)',
-    },
-    land: {
-      icon: '../assests/icons/land.svg',
-      counter: 64652,
-      info: 'Hectares of rice fields',
+    stats: {
+      farmer: {
+        icon: farmersIcon,
+        counter: 250341,
+        info: 'Farmers profiled',
+      },
+      land: {
+        icon: landIcon,
+        counter: 118300,
+        info: 'Hectares of farmland mapped',
+      },
+      ivr: {
+        icon: Ivr,
+        counter: 23299,
+        info: 'IVR users',
+      },
     },
   },
 ];

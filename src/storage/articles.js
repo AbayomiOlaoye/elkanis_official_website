@@ -105,4 +105,8 @@ const ARTICLES = [
   },
 ];
 
+export {
+  farmersIcon, landIcon,
+};
+
 export default ARTICLES;
