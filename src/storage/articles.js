@@ -28,7 +28,7 @@ const ARTICLES = [
     ],
     result: '',
     stats: {
-      yields: '',
+      yields: {},
       farmer: {
         icon: farmChick,
         counter: 12670,
@@ -39,7 +39,7 @@ const ARTICLES = [
         counter: 860,
         info: 'Agro Input Suppliers',
       },
-      land: '',
+      land: {},
     },
   },
   {
@@ -78,8 +78,10 @@ const ARTICLES = [
     featureHeadline: 'El-kanis Parboiled Rice',
     productImage: pRiceImg,
     intro: [
-      'El-kanis and Partners also specializes in livestock supplement production. As the demand for meat and animal-based products continues to rise, the need for high-quality and sustainable livestock feed becomes increasingly important.',
-      'El-kanis and Partners harnesses technology to develop innovative livestock supplements that are formulated to meet the nutritional needs of animals, while also minimizing the use of harmful additives and promoting animal welfare.',
+      'El-kanis premium parboiled rice is a high-quality rice product that has undergone a specialized parboiling process that helps to preserve its nutritional content and enhance its texture and flavor.',
+      'The parboiling process involves soaking the rice in water and then steaming it under pressure before removing the hull and bran layers. This process helps to retain more of the nutrients found in the rice, including thiamin, niacin, and vitamin B6, while also making it easier to digest.',
+      'El-kanis premium parboiled rice is carefully sourced through outgrower programs with thousands of rural farmers and also from our farms, processed internally by El-kanis Mills to ensure the highest quality and consistency. It is available in a range of packaging sizes ranging from 5kg, 10kg, 25kg, and 50kg to meet the needs of different consumers and can be found in grocery stores and supermarkets across Nigeria and beyond.',
+      'If you are looking for a high-quality rice product that is nutritious, flavourful, and versatile, El-kanis premium parboiled rice is an excellent choice.',
     ],
     result: '',
     stats: {
@@ -93,11 +95,7 @@ const ARTICLES = [
         counter: 28652,
         info: 'Rice Farmers (50% women)',
       },
-      input: {
-        icon: inputIcon,
-        counter: 860,
-        info: 'Agro Input Suppliers',
-      },
+      input: {},
       land: {
         icon: landIcon,
         counter: 64652,

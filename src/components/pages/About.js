@@ -13,13 +13,13 @@ const About = () => (
   <div className="sub--container about--bg flex column j-c-c a-i-c">
     <Top title="About Us" id="AboutUs" />
     <div className="about--content page--content margin j-c-c a-i-c flex column">
-      <p className="about--text boarder w--70 text--just">
+      <p className="about--text boarder w--80 text--just">
         El-kanis and Partners is a leading food production company that
         is changing the game in the agriculture sector in Nigeria by
         leveraging cutting-edge technology to produce high-quality
         rice and livestock supplements.
       </p>
-      <article className="drive-us push--left g--32 grid a-i-c w--70">
+      <article className="drive-us push--left g--32 grid a-i-c w--80">
         <div className="drive-us--text flex flow column">
           <h3 style={{ fontSize: '68px' }} className="green-title-text special-title temp--font light--green">What Drives Us</h3>
           <p className="sub--text para-one text--just">
@@ -72,7 +72,7 @@ const About = () => (
         </p>
       </div>
     </article>
-    <article className="drive-us tech--section g--32 grid w--70" style={{ marginTop: '5vh' }}>
+    <article className="drive-us tech--section g--32 grid w--80" style={{ marginTop: '5vh' }}>
       <div className="rice--img--div w--100 d-flex a-i-c">
         <img src={riceTrans} alt="A man transporting rice" className="rice--img" />
         <div className="span--overlay w--100" />

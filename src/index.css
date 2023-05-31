@@ -162,12 +162,16 @@ body {
 .button {
   background-color: var(--primary--01);
   color: var(--white);
-  padding: 1rem 1.5rem;
+  padding: 8% 3%;
   border: none;
   border-radius: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.5vw;
   margin-top: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+
+.j-s-b {
+  justify-content: space-between;
 }

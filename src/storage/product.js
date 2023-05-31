@@ -61,11 +61,10 @@ const PRODUCTS = [
       'Probiotic as a part of pack in separate chamber 4 for long term viability',
       'Please Read All Label Information on Delivery',
     ],
-    benefits: ['Increases egg production',
-      ' Increases immunity to stress',
-      ' Prevents bacterial infection in Chicks, Grower and Broiler',
-      'Improves absorptions of nutrients from Gastro-Intestinal Tract',
-      'Also Improves FCR and Weight Gains',
+    benefits: [
+      'Accelerates growth of animals at early stage of life',
+      'Helps In faster recovery from diseases and infections',
+      'Enables uniform and fast growth to marketable body weight',
     ],
     howItWorks: [
       'EL-KANIS - HEAVY WEIGHT™ Organic boosters provide a number of essential nutrients that chickens need to stay healthy and grow properly.',

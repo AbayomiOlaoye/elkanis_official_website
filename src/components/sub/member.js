@@ -31,14 +31,14 @@ const Member = ({ member }) => {
   };
 
   const partial = (
-    <div className="team--action text--just d-flex column a-i-c">
+    <div className="team--action d-flex column a-i-c">
       <h5 className="team--name">{member.designation}</h5>
       <h4 className="team--role">{member.name}</h4>
-      <p className="team--text">{member.headshot}</p>
+      <p className="team--text text--just">{member.headshot}</p>
       <a
-        className="team--action--button a-i-c absolute"
+        className="team--action--button a-i-c relative"
         onClick={handleReadMore}
-        style={{ top: '27vh', alignSelf: 'center' }}
+        style={{ top: '3vh', alignSelf: 'center' }}
       >
         <button type="button">
           Know More

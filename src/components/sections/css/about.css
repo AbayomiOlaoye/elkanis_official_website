@@ -48,10 +48,10 @@
 
 .image--overlay {
   position: absolute;
-  top: 25vh;
-  left: 15%;
-  width: 70%;
-  height: 30vh;
+  top: 35vh;
+  left: 10%;
+  width: 80%;
+  height: 50vh;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
   background: rgba(69, 82, 20, 0.6);
 }
@@ -64,14 +64,15 @@
 }
 
 .page--content {
-  margin-top: 20vh;
+  padding-top: 30vh;
+  background-color: #f9faf7;
 }
 
 .about--bg {
   background-image: url('../../../assets/backgrounds/globe.png');
   background-repeat: no-repeat;
   background-size: 70%;
-  background-position: 50% 73%;
+  background-position: 50% 70%;
 }
 
 .text--just {
@@ -128,7 +129,8 @@
 }
 
 .drive-us {
-  margin-top: 2rem;
+  justify-self: flex-start;
+  width: 80%;
   grid-template-columns: 2fr 1fr;
 }
 
@@ -148,20 +150,22 @@ h3.special-title {
 .push--left::after {
   content: '';
   position: absolute;
-  top: 60vh;
+  top: 100vh;
   left: 0;
   width: 100%;
   height: 60vh;
   background-image: url('../../../assets/backgrounds/abt_line_bg.svg');
   background-repeat: no-repeat;
   background-position: 0 20vh;
-  background-size: 15% 30%;
+  background-size: 10% 30%;
 }
 
 .vision--container {
+  width: 90%;
   background-color: var(--primary--04);
   padding: 3rem 5rem;
   color: #fff;
+  margin-top: 2rem;
   justify-content: flex-start;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -169,8 +173,8 @@ h3.special-title {
 .vision--container::after {
   content: '';
   position: absolute;
-  top: 10vh;
-  left: 82%;
+  top: 25vh;
+  left: 75.5%;
   width: 30%;
   height: 60vh;
   overflow: hidden;
@@ -262,6 +266,99 @@ ul.team--skills--list {
 
 /* Product Features */
 .page--link {
+  font-size: 17px;
   font-weight: 600;
   color: white;
+}
+
+.about--product {
+  margin-bottom: 2rem;
+  background: #f2f7de;
+}
+
+/* Statistics Config */
+.stat--div {
+  max-width: 175px;
+  box-shadow: 0 6px 12px rgba(171, 190, 209, 0.3);
+  border-radius: 20.2044px;
+  padding: 2rem;
+  margin-bottom: 90px;
+}
+
+div.counter-yields {
+  background-color: var(--primary--04);
+  color: #fff;
+}
+
+.counter-farmer {
+  background-color: var(--primary--06);
+  color: #2a310c;
+}
+
+.counter-land,
+.counter-input {
+  background-color: var(--primary--08);
+  color: #6f8321;
+}
+
+/* Product Details */
+.product--card--div {
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.product--card--div:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.product--img--div {
+  padding: 1.2rem;
+  min-width: 20%;
+  background: #ecf8c1;
+  border-radius: 20px;
+  height: max-content;
+}
+
+.product--nav {
+  width: 70%;
+  margin-bottom: 0.8rem;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--primary--03);
+  gap: 15%;
+}
+
+ul.disc {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+.dosage.hide,
+.lister.hide,
+.how-it-works {
+  display: none;
+}
+
+.lister.show,
+.dosage.show,
+.how-it-works {
+  display: block;
+}
+
+.product--nav--item {
+  font-size: 22px;
+  border: none;
+  background: transparent;
+  color: var(--primary--03);
+}
+
+.product--nav--item.active {
+  padding-bottom: 0.3rem;
+  border-bottom: 4px solid var(--primary--04);
+  font-weight: 700;
+  color: var(--primary--04);
+}
+
+article.drive--us.g--32.d-flex {
+  width: 100%;
+  padding: 3rem 0;
 }

@@ -14,7 +14,7 @@ const Top = (
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    height: '40vh',
+    height: '60vh',
     width: '100%',
   };
 
@@ -26,9 +26,9 @@ const Top = (
         className="hero--img relative"
         style={
           {
-            top: '20vh',
-            width: '70%',
-            height: '30vh',
+            top: '30vh',
+            width: '80%',
+            height: '50vh',
             textAlign: 'center',
             boxShadow: '0 32px 20px rgba(0, 0, 0, 0.05)',
           }
@@ -42,7 +42,7 @@ const Top = (
         linkOne && (
           <div
             className="top--links absolute d-flex j-c-c g--32 a-i-c"
-            style={{ top: '47vh', borderTop: '1px solid #fff', paddingTop: '1vh' }}
+            style={{ top: '70vh', borderTop: '1px solid #fff', paddingTop: '1vh' }}
           >
             <a href={`#${linkOne.id}`} className="page--link">{linkOne.link}</a>
             <a href={`#${linkTwo.id}`} className="page--link">{linkTwo.link}</a>
@@ -57,9 +57,9 @@ const Top = (
 Top.propTypes = {
   title: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
-  linkOne: PropTypes.string,
-  linkTwo: PropTypes.string,
-  linkThree: PropTypes.string,
+  linkOne: PropTypes.objectOf(PropTypes.string),
+  linkTwo: PropTypes.objectOf(PropTypes.string),
+  linkThree: PropTypes.objectOf(PropTypes.string),
 };
 
 Top.defaultProps = {
