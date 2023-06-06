@@ -16,6 +16,7 @@ const Top = (
     backgroundRepeat: 'no-repeat',
     height: '60vh',
     width: '100%',
+    zIndex: '1',
   };
 
   return (

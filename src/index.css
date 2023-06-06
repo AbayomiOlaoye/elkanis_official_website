@@ -143,6 +143,14 @@ body {
   width: 100%;
 }
 
+.w--60 {
+  width: 60%;
+}
+
+.w--90 {
+  width: 90%;
+}
+
 .max--100 {
   max-width: 100%;
 }
@@ -162,7 +170,7 @@ body {
 .button {
   background-color: var(--primary--01);
   color: var(--white);
-  padding: 8% 3%;
+  padding: 4% 3%;
   border: none;
   border-radius: 0.5rem;
   font-size: 1.5vw;

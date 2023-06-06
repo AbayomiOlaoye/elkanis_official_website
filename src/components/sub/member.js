@@ -56,7 +56,7 @@ const Member = ({ member }) => {
           top: '4vw',
           backgroundColor: 'var(--primary--04)',
           color: '#fff',
-          padding: '60px 18px 32px',
+          padding: '40px 18px 32px',
           borderRadius: '12px',
           border: 'none',
         }

@@ -25,6 +25,8 @@ const Statistics = ({ stats }) => {
     };
   }, [stats]);
 
+  const formatCount = (value) => value.toLocaleString();
+
   return (
     <>
       {Object.keys(stats).map((key) => {
@@ -35,7 +37,7 @@ const Statistics = ({ stats }) => {
             <div className={`stat--div d-flex column a-i-c ${counterClassName}`} key={key} style={{ maxWidth: '175px' }}>
               <img src={stat.icon} alt="icon" className="stat--icon" />
               <p className="stat--text" style={{ fontSize: '32px', fontWeight: '700' }}>
-                {counters[key] || stat.counter}
+                {formatCount(counters[key] || stat.counter)}
                 <span className="plus">+</span>
               </p>
               <p className="stat--text" style={{ fontSize: '14px', fontWeight: '600', textAlign: 'center' }}>{stat.info}</p>

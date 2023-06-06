@@ -1,6 +1,6 @@
 import React from 'react';
 import Top from '../sections/jumbotron/top';
-import riceTrans from '../../assets/generic/rice_trans.png';
+import riceTrans from '../../assets/generic/rice_transport.svg';
 import Team from '../../storage/team';
 import Member from '../sub/member';
 import '../sections/css/about.css';
@@ -37,9 +37,8 @@ const About = () => (
             minimizing the impact on the environment.
           </p>
         </div>
-        <div className="rice--img--div w--100 d-flex a-i-c">
+        <div className="rice--img--diva w--100 d-flex a-i-c">
           <img src={riceTrans} alt="A man transporting rice" className="rice--img" />
-          <div className="span--overlay w--100" />
         </div>
       </article>
     </div>

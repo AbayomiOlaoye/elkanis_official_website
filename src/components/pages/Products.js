@@ -86,7 +86,7 @@ const Products = () => (
     </article>
 
     <section className="spacial--Img w--80">
-      <img src={Spacial} alt="Geolocation conducted by drones" className="spacial" style={{ maxWidth: '100%' }} />
+      <img src={Spacial} alt="Geolocation conducted by drones" className="spacial" style={{ width: '100%' }} />
     </section>
     <section className="drive us w--80 d-flex column" style={{ padding: '6% 0 20% 20%', gap: '48px' }}>
       <div className="drones-div d-flex relative" style={{ paddingLeft: '20%', gap: '48px' }}>
@@ -100,7 +100,7 @@ const Products = () => (
                   }
             }
           >
-            Agricultural Crone Service
+            Agricultural Drone Service
           </h4>
           <p className="product--card--text text--just" style={{ fontSize: '18px' }}>
             FIEMS leverage on Ag-drones to collect data and information that help farmers
@@ -111,7 +111,7 @@ const Products = () => (
         </div>
       </div>
       <div className="drones-div row--reverse d-flex g--32">
-        <img src={IV} alt="IVR attendant icon" className="drone-drive" style={{ maxWidth: '20%' }} />
+        <img src={IV} alt="IVR attendant icon" className="drone-drive" style={{ maxWidth: '20%', alignSelf: 'flex-start' }} />
         <div className="drone--info">
           <h4
             className="product--card--title temp--font"
