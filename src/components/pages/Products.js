@@ -139,9 +139,10 @@ const Products = () => {
             <img src={IV} alt="IVR attendant icon" className="drone-drive" style={{ width: '100%', alignSelf: 'flex-start' }} />
             <button
               type="button"
+              title="Ask an Agent"
               className="button action--btn"
               style={{ fontSize: '1.15vw', padding: '4% 5%' }}
-              onClick={() => handleOrder('IVR services')}
+              onClick={() => handleOrder('IVR Services')}
             >
               Request Service
             </button>

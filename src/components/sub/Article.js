@@ -1,5 +1,6 @@
 /* eslint-disable react/forbid-prop-types */
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import '../sections/css/about.css';
 import Statistics from './statistics';
@@ -13,16 +14,28 @@ const Article = ({ article, id }) => {
     window.open(`https://wa.me/${PHONE_NUMBER}?text=${message}`, '_blank');
   };
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state && location.state.scrollToSection) {
+      const section = document.getElementById(location.state.scrollToSection);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location.state]);
+
   return (
     <article
       className="drive--us g--32 d-flex"
       style={
         { alignSelf: 'flex-start', width: '90%', marginTop: '4rem' }
-}
+      }
+      id={id}
     >
       <div className="rice--img--div relative w--100 d-flex column a-i-c">
         <img src={article.productImage} alt={article.id} className="livestock--img" style={{ width: '500px', lineHeight: '38px' }} />
-        { id === 'elkanRice' && <button type="button" className="button action--btn" onClick={() => handleOrder('El-kanis Rice')}>Place Order</button>}
+        { id === 'elkanRice' && <button type="button" title="Now in stock!" className="button action--btn" onClick={() => handleOrder('El-kanis Rice')}>Place Order</button>}
       </div>
 
       <div className="cover">
@@ -58,9 +71,9 @@ Article.propTypes = {
         info: PropTypes.string.isRequired,
       }),
       input: PropTypes.shape({
-        icon: PropTypes.string.isRequired,
-        counter: PropTypes.number.isRequired,
-        info: PropTypes.string.isRequired,
+        icon: PropTypes.string,
+        counter: PropTypes.number,
+        info: PropTypes.string,
       }),
       land: PropTypes.object,
     }).isRequired,

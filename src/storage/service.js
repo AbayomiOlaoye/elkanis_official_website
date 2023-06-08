@@ -15,7 +15,7 @@ const FeaturedService = [
     featureHeadline: 'rice cultivation and processing',
   },
   {
-    id: 1,
+    id: 3,
     featureImg: researchImg,
     featureHeadline: 'agricultural research & development and consultancy',
   },

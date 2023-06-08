@@ -95,15 +95,15 @@ const Home = () => {
           </div>
           <div className="footer__links--top flex">
             <SlCallEnd className="footer--icon" />
-            <p className="footer--text">
+            <a href="tel:+2348027331036" className="footer--text" style={{ color: '#fff' }}>
               +234 802 733 1036
-            </p>
+            </a>
           </div>
           <div className="footer__links--top flex">
             <TiMail className="footer--icon" />
-            <p className="footer--text">
+            <a href="mailto:info@elkanisgroup.com" className="footer--text" style={{ color: '#fff' }}>
               info@elkanisgroup.com
-            </p>
+            </a>
           </div>
           <div className="footer__links--top flex">
             <AiOutlineFieldTime className="footer--icon" />

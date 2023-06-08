@@ -2,7 +2,7 @@
 import { PropTypes } from 'prop-types';
 
 const Button = ({ text, action }) => (
-  <button type="button" className="button" onClick={action}>
+  <button title={text === 'Place Order' ? 'Now in stock!' : ''} type="button" className="button" onClick={action}>
     {text}
   </button>
 );

@@ -1,11 +1,10 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-
+// import { useParams } from 'react-router-dom';
 import FeaturedProduct from '../../sub/feature';
 import ARTICLES from '../../../storage/articles';
 
 const Product = () => {
-  const { productId } = useParams();
+  // const { productId } = useParams();
 
   const product = ARTICLES.map((product) => (
     <FeaturedProduct
@@ -13,7 +12,7 @@ const Product = () => {
       id={product.id}
       featureImg={product.featureImg}
       headline={product.featureHeadline}
-      selected={product.id === productId}
+      // selected={product.id === productId}
     />
   ));
   return (
