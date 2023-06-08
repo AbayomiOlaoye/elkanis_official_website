@@ -11,19 +11,18 @@ const Sponsors = () => {
   return (
     <section
       className="sponsors--page flex column"
-      style={{ position: 'relative', top: '350px' }}
+      style={{ position: 'relative', top: '25vh' }}
     >
-      <div className="feature--header flex w--100">
+      <div className="feature--header flex w--80">
         <h3 className="sub--theme temp--font light--green">Our Clients & Partners</h3>
         <hr className="hr--theme w--100" />
       </div>
       <Carousel
-        style={{ justifyContent: 'center', height: 'max-content' }}
+        style={{ justifyContent: 'center', marginTop: '4rem', height: 'max-content' }}
         className="d-flex align-items-center"
         autoPlay
         autoPlaySpeed={2000}
         infinite
-        showArrows
         keyBoardControl
         responsive={configure([6, 6, 2])}
       >

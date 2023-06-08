@@ -30,6 +30,17 @@
   color: var(--white);
   font-size: 1.2rem;
   font-weight: var(--wgt--600);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav--item:hover {
+  background-color: var(--primary--01);
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.nav--item--active {
+  opacity: 0.5;
 }
 
 .nav--list {
@@ -42,4 +53,39 @@
 .logo--link {
   height: 100%;
   align-content: center;
+}
+
+.success {
+  color: var(--alt-white);
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  bottom: -30px;
+  animation: slide-in 0.5s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    bottom: -40px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s forwards;
 }

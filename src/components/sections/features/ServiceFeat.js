@@ -12,12 +12,12 @@ const Service = () => {
   ));
   return (
     <>
-      <section className="feature--div flex column">
-        <div className="feature--header flex w--100">
+      <section className="feature--div services flex column">
+        <div className="feature--header flex w--80">
           <h3 className="sub--theme temp--font light--green">Our Featured Services</h3>
           <hr className="hr--theme w--100" />
         </div>
-        <div className="feature--container flex">{services}</div>
+        <div className="feature--container services flex">{services}</div>
       </section>
     </>
   );

@@ -4,10 +4,10 @@ import riceTrans from '../../assets/generic/rice_transport.svg';
 import Team from '../../storage/team';
 import Member from '../sub/member';
 import '../sections/css/about.css';
-import Pagination from '../Nav/pagination';
 import vision from '../../assets/icons/vision.svg';
 import mission from '../../assets/icons/mission.svg';
 import meet from '../../assets/icons/people_icon.svg';
+import Footer from '../Nav/Footer';
 
 const About = () => (
   <div className="sub--container about--bg flex column j-c-c a-i-c">
@@ -101,7 +101,8 @@ const About = () => (
         ))}
       </div>
     </article>
-    <Pagination id="AboutUs" />
+
+    <Footer />
   </div>
 );
 

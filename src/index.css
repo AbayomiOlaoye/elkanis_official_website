@@ -169,8 +169,8 @@ body {
 
 .button {
   background-color: var(--primary--01);
-  color: var(--white);
-  padding: 4% 3%;
+  color: var(--alt-white);
+  padding: 5% 4%;
   border: none;
   border-radius: 0.5rem;
   font-size: 1.5vw;
@@ -178,6 +178,18 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--primary--05);
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.button:active {
+  background-color: var(--primary--07);
+  color: var(--alt-white);
+  opacity: 0.8;
 }
 
 .j-s-b {

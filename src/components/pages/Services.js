@@ -11,6 +11,7 @@ import cultivation from '../../assets/services/cultivation.png';
 import ricePro from '../../assets/services/rice_pro.png';
 import Statistics from '../sub/statistics';
 import ARTICLES from '../../storage/articles';
+import Footer from '../Nav/Footer';
 // import research from '../../assets/services/research.png';
 
 const Services = () => (
@@ -195,6 +196,8 @@ const Services = () => (
         </div>
       </article>
     </section>
+
+    <Footer />
   </div>
 );
 

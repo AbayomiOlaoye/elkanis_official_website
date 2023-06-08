@@ -6,13 +6,13 @@ const Funnel = () => (
     className="funnel--page div flex column"
     style={
       {
-        position: 'relative', top: '100px', height: 'max-content', justifyContent: 'center', alignItems: 'center',
+        position: 'relative', top: '-25vh', height: 'max-content', justifyContent: 'center', alignItems: 'center',
       }
     }
   >
     <img src={FormBg} alt="form background" className="funnel--bg" style={{ width: '100%', height: '100%' }} />
-    <div className="funnel--overlay image--overlay--main" style={{ height: '100%', width: '100%' }} />
-    <div className="funnel--page--container flex column" style={{ position: 'absolute', top: '400px', height: 'max-content' }}>
+    <div className="funnel--overlay image--overlay--main" style={{ height: '100%', minWidth: '100%' }} />
+    <div className="funnel--page--container flex column" style={{ position: 'absolute', top: '45vh', height: 'max-content' }}>
       <h2 className="funnel--title">Get the latest news in Agritech</h2>
       <p className="funnel--description">By subscribing to our newsletter</p>
       <form action="#" method="POST" className="funnel--form" style={{ position: 'relative', display: 'inline-block' }}>

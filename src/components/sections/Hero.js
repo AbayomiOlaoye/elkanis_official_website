@@ -1,9 +1,9 @@
 /* eslint-disable react/style-prop-object */
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Video from '../../assets/backgrounds/drone-view.mp4';
 import './css/bgVideo.css';
-import Button from '../sub/button';
 
 const Hero = () => (
   <div className="video--container">
@@ -21,7 +21,18 @@ const Hero = () => (
         the agriculture sector in Nigeria by leveraging cutting-edge technology to produce
         high-quality rice and livestock supplements
       </p>
-      <Button text="Learn more" />
+      <Link
+        to="/about-us"
+        className="button"
+        style={{
+          cursor: 'pointer',
+          padding: '18px 24px',
+          color: 'var(--alt-white',
+        }}
+      >
+        Learn more
+
+      </Link>
     </div>
 
   </div>

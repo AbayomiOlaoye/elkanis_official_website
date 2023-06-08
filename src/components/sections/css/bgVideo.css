@@ -42,29 +42,29 @@
 
 .video--overlay {
   position: relative;
-  top: 25%;
+  top: 45vh;
   z-index: 10;
   color: var(--white);
   max-width: 60%;
-  text-shadow: 0 12px 12px #000;
 }
 
 .hero--title {
   font-size: 4.7vw;
-  max-width: 800px;
+  max-width: 100%;
   font-weight: var(--wgt--300);
   line-height: 1.1;
-  margin: 0.5rem 0 2rem 0;
+  text-shadow: 0 12px 12px #000;
+  margin: 0 0 2rem 0;
   letter-spacing: 1.9px;
 }
 
 .hero--bold {
-  font-weight: var(--wgt--500);
+  font-weight: var(--wgt--700);
 }
 
 .hero--text {
   font-weight: var(--wgt--400);
   line-height: 1.5;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
   max-width: 75%;
 }

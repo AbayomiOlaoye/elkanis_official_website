@@ -1,10 +1,12 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/extensions */
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { AiOutlineFieldTime } from 'react-icons/ai';
 import { TiMail } from 'react-icons/ti';
 import { CiLocationOn } from 'react-icons/ci';
 import { SlCallEnd } from 'react-icons/sl';
+import axios from 'axios';
 import Hero from '../sections/Hero';
 import Motivation from '../sections/Motivation';
 import Product from '../sections/features/ProductFeat';
@@ -13,9 +15,17 @@ import Funnel from '../sections/Funnel';
 import Sponsors from '../sections/Sponsors';
 import { Logo } from '../Nav/Nav';
 
+const FORM_ID = 'moqzopay';
+
 const Home = () => {
   const location = useLocation();
   const sectionRef = useRef(null);
+
+  const [animateContent, setAnimateContent] = useState(false);
+
+  useEffect(() => {
+    setAnimateContent(true);
+  }, []);
 
   useEffect(() => {
     if (location.state && location.state.scrollToSection) {
@@ -28,8 +38,35 @@ const Home = () => {
     }
   }, [location.state]);
 
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const data = {
+      name,
+      email,
+      message,
+    };
+
+    try {
+      const res = await axios.post(`https://formspree.io/${FORM_ID}/`, data);
+      if (res.status === 200) {
+        setName('');
+        setEmail('');
+        setMessage('');
+        setStatus('SUCCESS');
+      }
+    } catch (error) {
+      setStatus('ERROR');
+    }
+  };
+
   return (
-    <div className="home--container w--100">
+    <div className={`home--container w--100 ${animateContent ? 'slide-in' : ''}`}>
       <Hero />
       <Motivation />
       <Product />
@@ -75,13 +112,44 @@ const Home = () => {
             </p>
           </div>
         </small>
-        <form className="form flex column">
+        <form className="form flex column" onSubmit={handleSubmit}>
           <div className="input-div flex w-100">
-            <input type="text" name="name" id="name" placeholder="Name" className="contact__form--input text-input" />
-            <input type="email" name="email" id="email" placeholder="Email *" className="contact__form--input text-input" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Name"
+              required
+              className="contact__form--input
+              text-input"
+            />
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email *"
+              className="contact__form--input text-input"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
           </div>
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="Message *" className="contact__form--input" />
-          <button type="submit" className="contact__form--btn">Send Message</button>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message *"
+            className="contact__form--input"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+          />
+          <button type="submit" className="contact__form--btn button" style={{ marginTop: '0' }}>Send Message</button>
+          { status === 'SUCCESS' && <p className="success relative">* Thank you. We will be in touch!!!</p> }
         </form>
       </footer>
     </div>

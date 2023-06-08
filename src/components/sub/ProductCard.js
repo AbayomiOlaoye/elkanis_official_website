@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/forbid-prop-types */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
@@ -50,13 +51,21 @@ const ProductCard = ({ products }) => {
 
   const renderDosage = (product) => product.map((benefit) => <li key={benefit} className="lister--item">{benefit}</li>);
 
+  // Whatsapp message
+  const PHONE_NUMBER = '2348027331036';
+
+  const handleOrder = (name) => {
+    const message = `Hello, I would like to ask about your ${name}`;
+    window.open(`https://wa.me/${PHONE_NUMBER}?text=${message}`, '_blank');
+  };
+
   return (
     <>
       {productState.map((product, index) => (
         <div className="product--card--div d-flex g--32" key={product.id} style={{ lineHeight: '25px' }}>
           <div className="product--img--div d-flex column">
             <img src={product.productImage} alt={product.product} className="product--card--img max--100" />
-            <Button text="Place Order" />
+            <Button text="Place Order" action={() => handleOrder(product.product)} />
           </div>
           <div className="product--card--text--div">
             <h3

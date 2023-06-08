@@ -1,18 +1,17 @@
 /* What Motivates Us */
 .motivation {
   position: relative;
-  top: -190px;
+  top: -30vh;
   left: 0;
   z-index: 6000;
   width: 100%;
-  height: 900px;
-  padding-top: 600px;
   justify-content: center;
   align-items: center;
   background-image:
-    url('../../../assets/backgrounds/jombo.svg'),
+    url('../../../assets/backgrounds/jumbo.svg'),
     url('../../../assets/generic/dotted_hero.svg');
-  background-size: 100%, 100%;
+  background-size: 100% 100%, 100%;
+  background-position: 0 -20vh, 0 4vh;
   background-repeat: no-repeat, no-repeat;
 }
 
@@ -22,12 +21,11 @@
 }
 
 .sub--hero--div {
-  height: 700px;
   padding-top: 180px;
   background-image: url('../../../assets/backgrounds/globe.png'), url('../../../assets/backgrounds/motivate_bg.png');
   background-repeat: no-repeat, no-repeat;
   background-size: 60%, 35%;
-  background-position: 200px center, top right;
+  background-position: 200px center, right 25vh;
   z-index: 40000;
 }
 
@@ -49,7 +47,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  min-width: 100%;
   height: 100%;
   background: rgba(69, 82, 20, 0.6);
 }
@@ -77,7 +75,7 @@
 }
 
 .main--title {
-  margin: 2rem 0 1rem 0;
+  margin: 4rem 0 1rem 0;
 }
 
 .one {
@@ -90,11 +88,11 @@
 
 .climate-art {
   position: absolute;
-  top: 1150px;
+  top: 85%;
   width: 80%;
   background: #fff;
   margin: 0 auto;
-  padding: 2rem 90px;
+  padding: 2rem 3%;
   align-items: center;
   justify-content: center;
 }
@@ -131,51 +129,73 @@
 
 .feature--div {
   position: relative;
-  top: 350px;
+  top: -30vh;
   align-items: center;
   justify-content: center;
   width: var(--w--100);
-  padding: 200px 0 65px 0;
+  padding: 35vh 0 65px 0;
   margin-bottom: 2rem;
+}
+
+.feature--div.services {
+  padding-top: 0;
 }
 
 .feature--container {
   margin: 1rem auto 0;
-  width: var(--w--100);
+  width: var(--w--80);
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
   height: auto;
-  padding: 2rem 18rem;
+  padding-top: 2rem;
 }
 
 .img--div {
+  border-radius: 30px 0;
   width: 100%;
-  height: 100%;
+  height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .feature--img {
-  width: 60%;
-  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+div.feature--container.services.flex img.feature--img {
+  width: 100%;
+  border-radius: 30px 30px 0 0;
 }
 
 .feature--pro {
   align-items: center;
-  height: 430px;
   box-shadow: 0 16px 25px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
+  min-height: 400px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature--pro:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 
 .feature--body {
   width: 100%;
-  height: 100%;
+  min-height: 160px;
   background-color: var(--primary--06);
   border-radius: 0 0 30px 30px;
   padding: 1rem 2.5rem;
 }
+
+/* section:nth-child(4) {
+  top: -10vh;
+  padding-top: 0;
+} */
 
 div:nth-child(odd) > div.feature--body.card-body {
   background-color: var(--primary--05);
@@ -193,7 +213,7 @@ div:nth-child(odd) > div.card-body > div.card-title {
 }
 
 .feature--header {
-  padding: 2rem 20rem 0;
+  padding-top: 4rem;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
@@ -201,7 +221,7 @@ div:nth-child(odd) > div.card-body > div.card-title {
 }
 
 section:nth-child(4) {
-  top: 150px;
+  top: -30vh;
 }
 
 hr.hr--theme {
@@ -212,7 +232,7 @@ hr.hr--theme {
 .sub--theme {
   font-size: var(--size--32);
   font-weight: var(--wgt--400);
-  min-width: 400px;
+  min-width: 30%;
 }
 
 /* ************** */
@@ -276,7 +296,7 @@ section:nth-child(4) > div.feature--container.flex > div > div.img--div > img {
 .funnel--input {
   min-width: 529px;
   height: 56px;
-  box-shadow: 0 6px 12px rgba(171, 190, 209, 0.3);
+  box-shadow: 0 2px 12px rgba(171, 190, 209, 0.3);
   border-radius: 8px;
   border: none;
   margin-top: 52px;
@@ -317,8 +337,8 @@ div.react-multi-carousel-list {
 .footer--container {
   position: relative;
   grid-template-columns: repeat(3, 1fr);
-  top: 400px;
-  padding: 43px 192px;
+  top: 40vh;
+  padding: 5% 10%;
   background-color: var(--primary--03);
 }
 
