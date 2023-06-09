@@ -47,7 +47,7 @@ const Blog = () => {
 
           <div className="project--text">
             {blog.content.map((paragraph, index) => (
-              <p key={index} className="project--description text--just">
+              <p key={index} className="project--description text--just" style={{ margin: '2vw' }}>
                 {paragraph}
               </p>
             ))}

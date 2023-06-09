@@ -20,7 +20,7 @@ const Funnel = () => {
     return null;
   };
 
-  const FORM_ID = 'moqzopay';
+  const FORM_ID = 'mqkovayr';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,7 +30,7 @@ const Funnel = () => {
     };
 
     try {
-      const res = await axios.post(`https://formspree.io/${FORM_ID}/`, data);
+      const res = await axios.post(`https://formspree.io/f/${FORM_ID}/`, data);
       if (res.status === 200) {
         setEmail('');
         setStatus('SUCCESS');

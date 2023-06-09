@@ -29,7 +29,7 @@ const FeaturedProduct = (
       }}
       className="product--link"
     >
-      <Card className="feature--pro flex column" style={{ width: '21rem', background: 'white' }}>
+      <Card className="feature--pro flex column" style={{ width: '100%', background: 'white' }}>
         <div className="img--div">
           <Card.Img variant="top" className="feature--img" src={featureImg} />
         </div>

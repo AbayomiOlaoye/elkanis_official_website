@@ -15,7 +15,7 @@ import Funnel from '../sections/Funnel';
 import Sponsors from '../sections/Sponsors';
 import { Logo } from '../Nav/Nav';
 
-const FORM_ID = 'moqzopay';
+const FORM_ID = 'mrgvwvka';
 
 const Home = () => {
   const location = useLocation();
@@ -67,7 +67,7 @@ const Home = () => {
     };
 
     try {
-      const res = await axios.post(`https://formspree.io/${FORM_ID}/`, data);
+      const res = await axios.post(`https://formspree.io/f/${FORM_ID}/`, data);
       if (res.status === 200) {
         setName('');
         setEmail('');
