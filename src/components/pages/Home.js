@@ -43,6 +43,20 @@ const Home = () => {
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState('');
 
+  const feedBack = () => {
+    if (status === 'SUCCESS') {
+      setTimeout(() => {
+        setStatus(''); // Reset status after showing the success message
+      }, 3000);
+
+      return (
+        <p className="success relative">* Thank you. We will be in touch!!!</p>
+      );
+    }
+
+    return null; // Return null if status is not 'SUCCESS'
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -149,7 +163,7 @@ const Home = () => {
             required
           />
           <button type="submit" className="contact__form--btn button" style={{ marginTop: '0' }}>Send Message</button>
-          { status === 'SUCCESS' && <p className="success relative">* Thank you. We will be in touch!!!</p> }
+          { feedBack() }
         </form>
       </footer>
     </div>

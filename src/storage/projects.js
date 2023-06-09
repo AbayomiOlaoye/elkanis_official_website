@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
 import precision from '../assets/projects/precision.jpg';
 import rufin from '../assets/projects/rufin.png';
 import raamp from '../assets/projects/raamp.png';
@@ -11,11 +10,11 @@ import rice from '../assets/projects/rice.png';
 import akfims from '../assets/projects/akfims.png';
 import vam from '../assets/projects/vam.png';
 
-const Projects = [
+const PROJECTS = [
   {
-    id: uuidv4(),
+    id: 'precision',
     img: precision,
-    theme: 'Impact of precision/digital agriculture and traditional agriculture on africa&#39;s food systems',
+    theme: "IMPACT OF PRECISION/DIGITAL AGRICULTURE AND TRADITIONAL AGRICULTURE ON AFRICA'S FOOD SYSTEMS",
     overview: [
       'The social circumstances and technological environment indicate that several phases of the supply chains will be more receptive to Precision/Digital Agriculture adoption and deployment than others, leading to the interest of the project. El-kanis and Partners and Faculty of Agriculture, University of Uyo intend to explore the subject to research on the costs benefit analysis of Precision/Digital Agriculture and traditional agriculture, a development that will contribute to the benefit of creating an Africa that is properly fed.',
       'The partnership will be contributing to the project for more efficient, climate resilient and sustainable agricultural production and efficient food systems to enhance food security, incomes, and nutrition that benefit small-scale farmers (particularly women and the youth).  There are a number of reasons for creating Precision/Digital Agriculture research network in the context of Africa food security. These include:',
@@ -34,7 +33,7 @@ const Projects = [
     areas: [
       'Detection and diagnostics of plant diseases and pests,',
       'Modeling soil physicochemical properties and composition,',
-      'Supporting farmers’ choices in crop cultivation through the analysis of data collected and transmitted by sensors,',
+      "Supporting farmers' choices in crop cultivation through the analysis of data collected and transmitted by sensors,",
       'Targeting food-insecure populations,',
       'Detecting real-time outbreaks of food-borne diseases,',
       'Recognizing and assessing risks to yields under warmer temperatures and climate variability,',
@@ -45,7 +44,7 @@ const Projects = [
     more: '',
   },
   {
-    id: uuidv4(),
+    id: 'rufin',
     img: rufin,
     theme: 'RURAL FINANCE INSTITUTIONS-BUILDING PROGRAMME (RUFIN)',
     overview: [
@@ -60,10 +59,10 @@ const Projects = [
     subtitle: '',
     areas: [],
     duration: '',
-    more: 'https://dailytrust.com/7yrs-of-rufin-project-fg-ifad-review-impact-on-rural-farmers/',
+    more: '<a href="https://dailytrust.com/7yrs-of-rufin-project-fg-ifad-review-impact-on-rural-farmers/" target="_blank">RUFIN Project</a>',
   },
   {
-    id: uuidv4(),
+    id: 'raamp',
     img: raamp,
     theme: 'AKWA IBOM STATE RURAL ACCESS AND AGRICULTURAL MARKETING PROJECT (RAAMP)',
     overview: [
@@ -77,10 +76,10 @@ const Projects = [
     subtitle: '',
     areas: [],
     duration: '',
-    more: 'https://www.akwaibomraamp.org/',
+    more: '<a href="https://www.akwaibomraamp.org/" target="_blank">Akwa Ibom State RAAMP</a>',
   },
   {
-    id: uuidv4(),
+    id: 'outgrower',
     img: maize,
     theme: 'ODUKPANI MAIZE OUTGROWER PROJECT',
     overview: [
@@ -97,7 +96,7 @@ const Projects = [
     more: '',
   },
   {
-    id: uuidv4(),
+    id: 'ditra',
     img: ditra,
     theme: 'DIGITAL INTERVENTION FOR TRANSFORMATION OF RURAL AGRICULTURE (DITRA)',
     overview: [
@@ -106,7 +105,7 @@ const Projects = [
     action: [],
     result: [
       'Strengthening the capacities of smallholder farmers by connecting seed producers and other Agro- support services providers to farmers to enhance massive penetration and cultivation of staple crops, build resilience',
-      'Facilitate access to markets, including facilitating safe transport, and working to ensure markets remain open and that demand for farmers&#39;s produce remains high.',
+      "Facilitate access to markets, including facilitating safe transport, and working to ensure markets remain open and that demand for farmers' produce remains high.",
       'Deliver up-to-date agriculture-related information to smallholder producers on production, weather, market prices and other important areas in rural areas through digital services.',
       'Building trade capacities through provision of technologies and services that enable smallholder producers to meet quality and sanitary standards of overseas markets.',
     ],
@@ -116,7 +115,7 @@ const Projects = [
     more: '',
   },
   {
-    id: uuidv4(),
+    id: 'aedp',
     img: aedp,
     theme: 'AKWA IBOM AGRICULTURAL DEVELOPMENT PROGRAMME -AGRIBUSINESS ENTERPRISE DEVELOPMENT PROGRAM (AEDP)',
     overview: [
@@ -130,10 +129,10 @@ const Projects = [
     subtitle: '',
     areas: [],
     duration: '',
-    more: 'https://factsreporter.com.ng/2020/11/03/aedp-raises-the-bar-in-agricultural-drive-food-sufficiency/',
+    more: '<a href="https://factsreporter.com.ng/2020/11/03/aedp-raises-the-bar-in-agricultural-drive-food-sufficiency/" target="_blank">AEDP Project</a>',
   },
   {
-    id: uuidv4(),
+    id: 'coconut',
     img: coconut,
     theme: 'OKOBO COCONUT FARM ESTATE PROJECT DEVELOPMENT',
     overview: [
@@ -143,39 +142,39 @@ const Projects = [
     result: [
       'Detection and diagnostics of plant diseases and pests',
       'Modeling soil physicochemical properties and composition,',
-      'Supporting Government&#39;s choices in coconut cultivation through the analysis of data collected and transmitted by sensors,',
+      "Supporting Government's choices in coconut cultivation through the analysis of data collected and transmitted by sensors,",
       'Simulating future yield performance in different environments, and',
       'Identifying improved agricultural management practices',
     ],
     subtitle: '',
     areas: [],
     duration: '',
-    more: 'https://factsreporter.com.ng/2020/11/03/aedp-raises-the-bar-in-agricultural-drive-food-sufficiency/',
+    more: '<a href="https://businessday.ng/news/article/udom-launches-coconut-planting-campaign/" target="_blank">Governor Udom launches coconut farming</a>',
   },
   {
-    id: uuidv4(),
+    id: 'vivr',
     img: vivr,
-    theme: 'ELKANIS VERNACULAR INTERACTIVE VOICE RESPONSE PLATFORM (EIVR)',
+    theme: 'EL-KANIS VERNACULAR INTERACTIVE VOICE RESPONSE PLATFORM (EIVR)',
     overview: [
       'El-kanis Vernacular Interactive Voice Response Platform (EIVR) is a mobile telephony system that supports information dissemination in local dialect between agro-service providers and rural famers for sustainable land management practices increase in food production and resilience to climate extremes. These strengthen rural food production and poverty/hunger reduction amongst poor farmers.',
     ],
     action: [],
     result: [
-      'Improved communication between rural farmers and agencies, via EIVR option that will provide accurate, up-to-date information and answering farmer&#39;s questions, these focal points could help represent rural farmers&#39; needs and concerns',
+      "Improved communication between rural farmers and agencies, via EIVR option that will provide accurate, up-to-date information and answering farmers' questions, these focal points could help represent rural farmers' needs and concerns",
       'The platform will strengthen the capacity of extension service providers to communicate effectively with rural farmers and also support relevant government bodies to communicate effectively with rural farmers through EIVR option.',
-      'EIVR option will help agencies to increase their understanding of rural farmers, and help to develop effective communication and support strategies according to farmers&#39; profiles, needs and sensitivities.  Adoption of EIVR will lead to at least 15% rise in farm income by direct consumer connection to rural farmers, stability of incomes from better demand visibility, while consumers will get better produce and prices.',
+      "EIVR option will help agencies to increase their understanding of rural farmers, and help to develop effective communication and support strategies according to farmers' profiles, needs and sensitivities.  Adoption of EIVR will lead to at least 15% rise in farm income by direct consumer connection to rural farmers, stability of incomes from better demand visibility, while consumers will get better produce and prices.",
     ],
     subtitle: '',
     areas: [],
     duration: '',
-    more: 'https://enews.com.ng/el-kanis-launches-e-platform-to-disseminate-information-to-farmers-in-aibom',
+    more: '<a href="https://enews.com.ng/el-kanis-launches-e-platform-to-disseminate-information-to-farmers-in-aibom" target="_blank">El-kanis launches e-platform to disseminate information to farmers in A’Ibom</a>',
   },
   {
-    id: uuidv4(),
+    id: 'rice_outgrower',
     img: rice,
     theme: 'INI RICE OUTGROWER PROJECT',
     overview: [
-      'An outgrower project developed by El-kanis and Partners with 8,460 farmers currently on the project and cultivating 5,200 hectares of rice. We&#39;re estimating over 18,000 mt of rice paddy at project completion.',
+      "An outgrower project developed by El-kanis and Partners with 8,460 farmers currently on the project and cultivating 5,200 hectares of rice. We're estimating over 18,000 mt of rice paddy at project completion.",
     ],
     action: [],
     result: [
@@ -189,7 +188,7 @@ const Projects = [
     more: '',
   },
   {
-    id: uuidv4(),
+    id: 'akfims',
     img: akfims,
     theme: 'AKWA IBOM FARMERS INFORMATION MANAGEMENT SYSTEM (AKFIMS)',
     overview: [
@@ -202,14 +201,14 @@ const Projects = [
     subtitle: '',
     areas: [],
     duration: '',
-    more: 'https://independent.ng/post-covid-economy-akwa-ibom-digitalizes-farming-for-agribusiness/',
+    more: '<a href="https://independent.ng/post-covid-economy-akwa-ibom-digitalizes-farming-for-agribusiness/" target="_blank">Post-COVID Economy: Akwa Ibom Digitalizes Farming For Agribusiness</a>',
   },
   {
-    id: uuidv4(),
+    id: 'vam',
     img: vam,
     theme: 'REGULATORY REVIEW NIGERIA, FOOD LABELING AND MARKETING PROVISIONS FOR NUTRIENT ENRICHED CROPS, VITAMIN A MAIZE (VAM) AND VITAMIN A CASSAVA (VAC)',
     overview: [
-      'The project was awarded to El-kanis and Partners and is part of the partnership with <a href="https://www.harvestplus.org">HarvestPlus</a> and <a href="https://www.gainhealth.org">GAIN</a> for the  <a href="https://www.harvestplus.org/gain-harvestplus-launch-commercialisation-of-biofortified-crops-programme-in-nigeria/#:~:text=The%20Global%20Alliance%20for%20Improved,in%20Africa&#39;s%20most%20populous%20country">Commercialization of Biofortified Crops (CBC) project</a>. The main objective was to establish the current regulatory frameworks and food industry guidelines on the marketing of biofortified grains, biofortified flour and foods made from biofortified ingredients.This information will be used to create guidelines documents created for businesses involved in biofortification. It will also be used to identify authorities involved in the creation and endorsement of new standards and regulations in this area.',
+      "The project was awarded to El-kanis and Partners and is part of the partnership with <a href='https://www.harvestplus.org' target='_blank'>HarvestPlus</a> and <a href='https://www.gainhealth.org' target='_blank'>GAIN</a> for the  <a href='https://www.harvestplus.org/gain-harvestplus-launch-commercialisation-of-biofortified-crops-programme-in-nigeria/#:~:text=The%20Global%20Alliance%20for%20Improved,in%20Africa's%20most%20populous%20country' target='_blank'>Commercialization of Biofortified Crops (CBC) project</a>. The main objective was to establish the current regulatory frameworks and food industry guidelines on the marketing of biofortified grains, biofortified flour and foods made from biofortified ingredients.<br> This information will be used to create guidelines documents created for businesses involved in biofortification. It will also be used to identify authorities involved in the creation and endorsement of new standards and regulations in this area.",
     ],
     action: [],
     result: [
@@ -224,4 +223,4 @@ const Projects = [
   },
 ];
 
-export default Projects;
+export default PROJECTS;

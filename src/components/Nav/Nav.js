@@ -5,7 +5,7 @@ import './css/nav.css';
 
 const Nav = () => (
   <main className="main--container w--100">
-    <header className="header--container flex" style={{ position: 'sticky' }}>
+    <header className="header--container flex">
       <Link to="/" className="logo--link flex block">
         <img src={Logo} className="logo max--100" alt="elkanis & partners's logo" />
       </Link>
@@ -27,7 +27,7 @@ const Nav = () => (
             <Link to="/projects" className="nav--item">Projects</Link>
           </li>
           <li className="nav--item--container list">
-            <Link to="/blog" className="nav--item">Blog</Link>
+            <Link to="/blogs" className="nav--item">Blog</Link>
           </li>
           <li className="nav--item--container list">
             <Link

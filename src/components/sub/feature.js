@@ -13,7 +13,6 @@ const FeaturedProduct = (
 
   useEffect(() => {
     if (location.state && location.state.scrollToSection) {
-      console.log(location.state.scrollToSection);
       const elem = document.getElementById(location.state.scrollToSection);
       if (elem) {
         elem.scrollIntoView({
@@ -26,7 +25,7 @@ const FeaturedProduct = (
   return (
     <Link
       to={{
-        pathname: `/products#${id}`,
+        pathname: `/products${id}`,
       }}
       className="product--link"
     >

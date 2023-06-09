@@ -26,7 +26,7 @@ const Hero = () => (
         className="button"
         style={{
           cursor: 'pointer',
-          padding: '18px 24px',
+          padding: '2% 3%',
           color: 'var(--alt-white',
         }}
       >
