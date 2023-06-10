@@ -118,16 +118,6 @@
   background: rgba(69, 82, 20, 0.6);
 }
 
-/* .span--overlay {
-  position: absolute;
-  height: 70%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 120px 120px 120px 0;
-  background: rgba(69, 82, 20, 0.6);
-} */
-
 .team--div {
   margin: 3rem 0 45rem 0;
   gap: 5rem 3rem;

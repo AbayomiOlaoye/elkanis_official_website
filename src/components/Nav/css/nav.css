@@ -1,34 +1,40 @@
 .main--container {
   position: relative;
   height: 100%;
+  animation: slide-in 0.5s forwards;
 }
 
 .header--container {
-  width: var(--w--90);
+  width: 95%;
   position: absolute;
   justify-content: var(--space-between);
-  padding: 2vh 5vh;
+  padding: 1vw 3vw;
   z-index: 2;
-  top: 100px;
+  top: 10vh;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 100px;
+  height: 80px;
   background: var(--nav--bg);
   background-blend-mode: overlay;
   border-radius: 8px;
   align-content: center;
 }
 
+.nav--container {
+  height: 100%;
+}
+
 .logo {
   align-self: center;
-  max-width: 100%;
+  max-width: 75%;
   display: block;
-  height: 50px;
 }
 
 .nav--item {
   color: var(--white);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  width: 80%;
   font-weight: var(--wgt--600);
   transition: all 0.3s ease-in-out;
 }
@@ -37,22 +43,51 @@
   background-color: var(--primary--01);
   border-radius: 5px;
   padding: 8px;
+  border-bottom: 1px solid var(--primary--01);
 }
 
 .nav--item--active {
   opacity: 0.5;
 }
 
-.nav--list {
-  gap: var(--size--28);
-  font-size: var(--size--16);
-  align-items: center;
-  height: 100%;
+.exit {
+  position: relative;
 }
 
-.logo--link {
-  height: 100%;
-  align-content: center;
+.hamburger {
+  color: var(--primary--07);
+  align-self: center;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+  transform: scale(1.1);
+}
+
+.hamburger:active {
+  transform: scale(0.9);
+}
+
+.nav--list {
+  flex-direction: column;
+  position: fixed;
+  top: 12vh;
+  left: 0;
+  width: 95vw;
+  height: 100vh;
+  align-items: center;
+  background-color: var(--nav--bg);
+  z-index: 10;
+  border-radius: 8px;
+  padding: 4rem 0;
+  gap: 3rem;
+  transition: all 0.9s ease-in-out;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  animation: slide-in 1s forwards;
 }
 
 .success {
@@ -88,4 +123,44 @@
 
 .slide-in {
   animation: slideIn 0.5s forwards;
+}
+
+.hide--desk {
+  display: inline-flex;
+}
+
+.hide--mob {
+  display: none;
+}
+
+/* -------- <768px------ */
+@media only screen and (min-width: 768px) {
+  .nav--list {
+    position: static;
+    flex-direction: row;
+    gap: var(--size--28);
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    z-index: 0;
+    padding: 0;
+  }
+
+  .header--container {
+    top: 15vh;
+  }
+
+  .hide--desk {
+    display: none;
+  }
+
+  .hide--mob {
+    display: flex;
+  }
+
+  .nav--item {
+    font-size: 1.35vw;
+    width: max-content;
+  }
 }
