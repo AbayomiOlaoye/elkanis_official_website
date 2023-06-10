@@ -11,7 +11,7 @@ const Sponsors = () => {
   return (
     <section
       className="sponsors--page flex column"
-      style={{ position: 'relative', top: '25vh' }}
+      style={{ position: 'relative' }}
     >
       <div className="feature--header flex w--80">
         <h3 className="sub--theme temp--font light--green">Our Clients & Partners</h3>
@@ -24,7 +24,7 @@ const Sponsors = () => {
         autoPlaySpeed={2000}
         infinite
         keyBoardControl
-        responsive={configure([6, 6, 2])}
+        responsive={configure([5, 4, 2])}
       >
         { sponsors }
       </Carousel>

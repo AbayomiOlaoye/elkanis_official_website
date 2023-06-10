@@ -80,7 +80,7 @@
   height: 100vh;
   align-items: center;
   background-color: var(--nav--bg);
-  z-index: 10;
+  z-index: 1000000;
   border-radius: 8px;
   padding: 4rem 0;
   gap: 3rem;

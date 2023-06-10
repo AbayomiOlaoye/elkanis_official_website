@@ -66,17 +66,26 @@
 
 @media only screen and (min-width: 768px) {
   .video--overlay {
-    top: 40vh;
+    top: 50vh;
   }
 
   .video--container::after {
-    background-position: 96% 53%;
-    background-size: 35%;
+    background-position: 96% 48%;
+    background-size: 40%;
+    height: 1200px;
+  }
+
+  .media {
+    height: 1200px;
+  }
+
+  .video--container {
+    height: 1200px;
   }
 
   .hero--text {
     line-height: 1.9;
-    margin-bottom: 3rem;
+    margin: 2rem 0 4rem;
     max-width: 85%;
   }
 }

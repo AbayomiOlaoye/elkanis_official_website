@@ -15,10 +15,10 @@ const Product = () => {
     <>
       <section className="feature--div product flex column">
         <div className="feature--header flex w--80">
-          <h3 className="sub--theme temp--font light--green">Our Featured Products</h3>
-          <hr className="hr--theme w--100" />
+          <h3 className="sub--theme temp--font light--green" style={{ fontSize: '3vw' }}>Our Featured Products</h3>
+          <hr className="hr--theme w--80" />
         </div>
-        <div className="feature--container grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>{product}</div>
+        <div className="feature--container product d-flex">{product}</div>
       </section>
     </>
   );

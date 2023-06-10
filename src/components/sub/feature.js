@@ -29,10 +29,8 @@ const FeaturedProduct = (
       }}
       className="product--link"
     >
-      <Card className="feature--pro flex column" style={{ width: '100%', background: 'white' }}>
-        <div className="img--div">
-          <Card.Img variant="top" className="feature--img" src={featureImg} />
-        </div>
+      <Card className="feature--pro flex column" style={{ background: 'white' }}>
+        <Card.Img variant="top" className="feature--img" src={featureImg} />
         <Card.Body className="feature--body">
           <Card.Title className="feature--title">{headline}</Card.Title>
         </Card.Body>

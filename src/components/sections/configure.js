@@ -9,12 +9,12 @@ const configure = ([desktop, tablet, mobile]) => ({
 
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: desktop || 6,
+    items: desktop || 5,
   },
 
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: tablet || 6,
+    items: tablet || 3,
   },
 
   mobile: {

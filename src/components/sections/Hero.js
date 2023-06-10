@@ -11,7 +11,7 @@ const Hero = () => (
       <source src={Video} type="video/mp4" />
     </video>
     <div className="video--overlay ml--120">
-      <h1 className="hero--title temp--font">
+      <h1 className="hero--title">
         Revolutionizing
         <span className="hero--bold"> food production </span>
         with technology
@@ -25,11 +25,11 @@ const Hero = () => (
         to="/about-us"
         className="button"
         style={{
-          width: '48px',
-          height: '60px',
-          fontSize: '2.5vw',
+          width: '38px',
+          height: '38px',
+          fontSize: '1.5vw',
           cursor: 'pointer',
-          padding: '3% 5%',
+          padding: '2% 3%',
           color: 'var(--alt-white)',
         }}
       >

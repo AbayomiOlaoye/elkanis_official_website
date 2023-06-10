@@ -1,96 +1,94 @@
 /* eslint-disable arrow-body-style */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/extensions */
-// import React, { useRef, useEffect, useState } from 'react';
-import React from 'react';
-// import { useLocation } from 'react-router-dom';
-// import { AiOutlineFieldTime } from 'react-icons/ai';
-// import { TiMail } from 'react-icons/ti';
-// import { CiLocationOn } from 'react-icons/ci';
-// import { SlCallEnd } from 'react-icons/sl';
-// import axios from 'axios';
+import React, { useRef, useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { AiOutlineFieldTime } from 'react-icons/ai';
+import { TiMail } from 'react-icons/ti';
+import { CiLocationOn } from 'react-icons/ci';
+import { SlCallEnd } from 'react-icons/sl';
+import axios from 'axios';
 import Hero from '../sections/Hero';
 import Motivation from '../sections/Motivation';
 import Product from '../sections/features/ProductFeat';
 import Service from '../sections/features/ServiceFeat';
 import Funnel from '../sections/Funnel';
 import Sponsors from '../sections/Sponsors';
-// import { Logo } from '../Nav/Nav';
+import { Logo } from '../Nav/Nav';
 
-// const FORM_ID = 'mrgvwvka';
+const FORM_ID = 'mrgvwvka';
 
 const Home = () => {
-  // const location = useLocation();
-  // const sectionRef = useRef(null);
+  const location = useLocation();
+  const sectionRef = useRef(null);
 
-  // const [animateContent, setAnimateContent] = useState(false);
+  const [animateContent, setAnimateContent] = useState(false);
 
-  // useEffect(() => {
-  //   setAnimateContent(true);
-  // }, []);
+  useEffect(() => {
+    setAnimateContent(true);
+  }, []);
 
-  // useEffect(() => {
-  //   if (location.state && location.state.scrollToSection) {
-  //     const elem = document.getElementById(location.state.scrollToSection);
-  //     if (elem) {
-  //       elem.scrollIntoView({
-  //         behavior: 'smooth',
-  //       });
-  //     }
-  //   }
-  // }, [location.state]);
+  useEffect(() => {
+    if (location.state && location.state.scrollToSection) {
+      const elem = document.getElementById(location.state.scrollToSection);
+      if (elem) {
+        elem.scrollIntoView({
+          behavior: 'smooth',
+        });
+      }
+    }
+  }, [location.state]);
 
-  // const [name, setName] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [message, setMessage] = useState('');
-  // const [status, setStatus] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState('');
 
-  // const feedBack = () => {
-  //   if (status === 'SUCCESS') {
-  //     setTimeout(() => {
-  //       setStatus(''); // Reset status after showing the success message
-  //     }, 3000);
+  const feedBack = () => {
+    if (status === 'SUCCESS') {
+      setTimeout(() => {
+        setStatus('');
+      }, 3000);
 
-  //     return (
-  //       <p className="success relative">* Thank you. We will be in touch!!!</p>
-  //     );
-  //   }
+      return (
+        <p className="success relative">* Thank you. We will be in touch!!!</p>
+      );
+    }
 
-  //   return null; // Return null if status is not 'SUCCESS'
-  // };
+    return null;
+  };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  //   const data = {
-  //     name,
-  //     email,
-  //     message,
-  //   };
+    const data = {
+      name,
+      email,
+      message,
+    };
 
-  //   try {
-  //     const res = await axios.post(`https://formspree.io/f/${FORM_ID}/`, data);
-  //     if (res.status === 200) {
-  //       setName('');
-  //       setEmail('');
-  //       setMessage('');
-  //       setStatus('SUCCESS');
-  //     }
-  //   } catch (error) {
-  //     setStatus('ERROR');
-  //   }
-  // };
-  // {`home--container w--100 ${animateContent ? 'slide-in' : ''}`}
+    try {
+      const res = await axios.post(`https://formspree.io/f/${FORM_ID}/`, data);
+      if (res.status === 200) {
+        setName('');
+        setEmail('');
+        setMessage('');
+        setStatus('SUCCESS');
+      }
+    } catch (error) {
+      setStatus('ERROR');
+    }
+  };
 
   return (
-    <div className="home--container w--100">
+    <div className={`home--container w--100 ${animateContent ? 'slide-in' : ''}`}>
       <Hero />
       <Motivation />
       <Product />
       <Service />
       <Funnel />
       <Sponsors />
-      {/* <footer className="footer--container grid" id="contact-us" ref={sectionRef}>
+      <footer className="footer--container grid" id="contact-us" ref={sectionRef}>
         <img src={Logo} alt="elkanis & partners' logo" className="footer--logo mt-1" />
         <small className="footer__links flex column mt-1">
           <div className="footer__links--top flex">
@@ -121,7 +119,8 @@ const Home = () => {
             <a
               href="mailto:info@elkanisgroup.com"
               className="footer--text"
-              style={{ color: '#fff' }}>
+              style={{ color: '#fff' }}
+            >
               info@elkanisgroup.com
             </a>
           </div>
@@ -170,10 +169,14 @@ const Home = () => {
           />
           <button
             type="submit"
-            className="contact__form--btn button" style={{ marginTop: '0' }}>Send Message</button>
+            className="contact__form--btn button"
+            style={{ marginTop: '0', fontSize: '1.25rem', padding: '3%' }}
+          >
+            Send Message
+          </button>
           { feedBack() }
         </form>
-      </footer> */}
+      </footer>
     </div>
   );
 };
