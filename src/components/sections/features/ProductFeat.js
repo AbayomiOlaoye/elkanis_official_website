@@ -1,4 +1,5 @@
 import React from 'react';
+import 'aos/dist/aos.css';
 import FeaturedProduct from '../../sub/feature';
 import ARTICLES from '../../../storage/articles';
 

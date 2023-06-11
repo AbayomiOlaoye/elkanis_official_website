@@ -1,6 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, { useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 import Card from 'react-bootstrap/Card';
 
@@ -9,25 +11,22 @@ const FeaturedProduct = (
     id, featureImg, headline,
   },
 ) => {
-  const location = useLocation();
-
   useEffect(() => {
-    if (location.state && location.state.scrollToSection) {
-      const elem = document.getElementById(location.state.scrollToSection);
-      if (elem) {
-        elem.scrollIntoView({
-          behavior: 'smooth',
-        });
-      }
-    }
-  }, [location.state]);
+    AOS.init({
+      duration: 2000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
 
   return (
     <Link
       to={{
-        pathname: `/products${id}`,
+        pathname: `/products/${id}`,
+        state: { scrollToSection: id },
       }}
       className="product--link"
+      data-aos="fade-left"
     >
       <Card className="feature--pro flex column" style={{ background: 'white' }}>
         <Card.Img variant="top" className="feature--img" src={featureImg} />

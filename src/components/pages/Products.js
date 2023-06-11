@@ -1,7 +1,7 @@
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable import/no-named-as-default-member */
 import React, { useRef, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import Top from '../sections/jumbotron/top';
 import '../sections/css/about.css';
 import Article from '../sub/Article';
@@ -17,6 +17,7 @@ import Statistics from '../sub/statistics';
 import Footer from '../Nav/Footer';
 
 const Products = () => {
+  const { id } = useParams();
   const location = useLocation();
   const sectionRef = useRef(null);
 
@@ -44,9 +45,9 @@ const Products = () => {
       <Top
         title="Our Products"
         id="Products"
-        linkOne={{ link: 'Livestock Supplement', id: 'livestock' }}
-        linkTwo={{ link: 'Rice', id: 'elkanRice' }}
-        linkThree={{ link: 'FIEMS', id: 'fiems' }}
+        linkOne={{ link: 'Livestock Supplement', id: 'Livestock' }}
+        linkTwo={{ link: 'Rice', id: 'Rice' }}
+        linkThree={{ link: 'FIEMS', id: 'Fiems' }}
       />
 
       <div className="about--content about--product page--content margin j-c-c a-i-c flex column">
@@ -56,7 +57,7 @@ const Products = () => {
           sustainable practices, the company is able to produce food products that are both
           nutritious and environmentally friendly.
         </p>
-        <Article article={ARTICLES[0]} id="livestock" />
+        <Article article={ARTICLES[0]} id="Livestock" />
       </div>
 
       <article className="drive-us g--32 d-flex column w--70" style={{ marginTop: '5vh' }}>
@@ -64,7 +65,7 @@ const Products = () => {
       </article>
 
       <div className="about--product w--100">
-        <Article article={ARTICLES[2]} id="elkanRice" />
+        <Article article={ARTICLES[2]} id="Rice" />
       </div>
 
       <article
@@ -83,13 +84,14 @@ const Products = () => {
         </div>
         <div className="cover">
           <div className="drive-us--text flex gap-one flow column">
-            <h3 id="fiems" style={{ fontSize: '68px', maxWidth: '100%' }} className="green-title-text boarder special-title temp--font light--green">{ARTICLES[1].featureHeadline}</h3>
+            <h3 id="Fiems" style={{ fontSize: '68px', maxWidth: '100%' }} className="green-title-text boarder special-title temp--font light--green">{ARTICLES[1].featureHeadline}</h3>
             <p className="sub--text text--just">{ARTICLES[1].intro[0]}</p>
           </div>
         </div>
       </article>
 
       <article
+        id={id}
         className="drive--us row--reverse relative a-i-c g--48 d-flex"
         style={
           { width: '80%', padding: '0', top: '-12vh' }

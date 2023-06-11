@@ -14,8 +14,8 @@ const Sponsors = () => {
       style={{ position: 'relative' }}
     >
       <div className="feature--header flex w--80">
-        <h3 className="sub--theme temp--font light--green">Our Clients & Partners</h3>
-        <hr className="hr--theme w--100" />
+        <h3 className="sub--theme temp--font light--green" style={{ fontSize: '3vw' }}>Our Clients & Partners</h3>
+        <hr className="hr--theme w--80" />
       </div>
       <Carousel
         style={{ justifyContent: 'center', marginTop: '4rem', height: 'max-content' }}

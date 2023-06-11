@@ -1,10 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import axios from 'axios';
 import FormBg from '../../assets/backgrounds/form_bg.png';
 
 const Funnel = () => {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('');
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
 
   const feedBack = () => {
     if (status === 'SUCCESS') {
@@ -48,11 +58,11 @@ const Funnel = () => {
       }
     }
     >
-      <img src={FormBg} alt="form background" className="funnel--bg" style={{ width: '100%', height: '100%' }} />
+      <img src={FormBg} alt="form background" data-aos="fade-up" className="funnel--bg" style={{ width: '100%', height: '100%' }} />
       <div className="funnel--overlay image--overlay--main" style={{ height: '100%', minWidth: '100%' }} />
-      <div className="funnel--page--container flex column" style={{ height: 'max-content' }}>
+      <div className="funnel--page--container flex column" data-aos="fade-down" style={{ height: 'max-content' }}>
         <h2 className="funnel--title">Get the latest news in Agritech</h2>
-        <p className="funnel--description">By subscribing to our newsletter</p>
+        <p className="funnel--description" data-os="fade-right">By subscribing to our newsletter</p>
         <form onSubmit={handleSubmit} className="funnel--form" style={{ position: 'relative', display: 'inline-block' }}>
           <input
             type="email"

@@ -89,48 +89,50 @@ const Home = () => {
       <Funnel />
       <Sponsors />
       <footer className="footer--container grid" id="contact-us" ref={sectionRef}>
-        <img src={Logo} alt="elkanis & partners' logo" className="footer--logo mt-1" />
-        <small className="footer__links flex column mt-1">
-          <div className="footer__links--top flex">
-            <CiLocationOn className="footer--icon" />
-            <p className="footer--text">
-              1 Enen Afaha Street,
-              <br />
-              Opposite LG Showroom,
-              <br />
-              Ikot Ekpene Road, Uyo,
-              <br />
-              Akwa Ibom State - Nigeria
-              <br />
-              <br />
-              66 Kwame Nkrumah Street,
-              <br />
-              Asokoro, Abuja - Nigeria
-            </p>
-          </div>
-          <div className="footer__links--top flex">
-            <SlCallEnd className="footer--icon" />
-            <a href="tel:+2348027331036" className="footer--text" style={{ color: '#fff' }}>
-              +234 802 733 1036
-            </a>
-          </div>
-          <div className="footer__links--top flex">
-            <TiMail className="footer--icon" />
-            <a
-              href="mailto:info@elkanisgroup.com"
-              className="footer--text"
-              style={{ color: '#fff' }}
-            >
-              info@elkanisgroup.com
-            </a>
-          </div>
-          <div className="footer__links--top flex">
-            <AiOutlineFieldTime className="footer--icon" />
-            <p className="footer--text">
-              Mon - Fri: 8:00am - 5:00pm
-            </p>
-          </div>
-        </small>
+        <div className="footer__top flex column a-i-c gap-one">
+          <img src={Logo} alt="elkanis & partners' logo" className="footer--logo mt-1" />
+          <small className="footer__links flex column mt-1">
+            <div className="footer__links--top flex">
+              <CiLocationOn className="footer--icon" />
+              <p className="footer--text">
+                1 Enen Afaha Street,
+                <br />
+                Opposite LG Showroom,
+                <br />
+                Ikot Ekpene Road, Uyo,
+                <br />
+                Akwa Ibom State - Nigeria
+                <br />
+                <br />
+                66 Kwame Nkrumah Street,
+                <br />
+                Asokoro, Abuja - Nigeria
+              </p>
+            </div>
+            <div className="footer__links--top flex">
+              <SlCallEnd className="footer--icon" />
+              <a href="tel:+2348027331036" className="footer--text" style={{ color: '#fff' }}>
+                +234 802 733 1036
+              </a>
+            </div>
+            <div className="footer__links--top flex">
+              <TiMail className="footer--icon" />
+              <a
+                href="mailto:info@elkanisgroup.com"
+                className="footer--text"
+                style={{ color: '#fff' }}
+              >
+                info@elkanisgroup.com
+              </a>
+            </div>
+            <div className="footer__links--top flex">
+              <AiOutlineFieldTime className="footer--icon" />
+              <p className="footer--text">
+                Mon - Fri: 8:00am - 5:00pm
+              </p>
+            </div>
+          </small>
+        </div>
         <form className="form flex column" onSubmit={handleSubmit}>
           <div className="input-div flex w-100">
             <input
@@ -170,7 +172,6 @@ const Home = () => {
           <button
             type="submit"
             className="contact__form--btn button"
-            style={{ marginTop: '0', fontSize: '1.25rem', padding: '3%' }}
           >
             Send Message
           </button>

@@ -296,9 +296,8 @@ hr.hr--theme {
     font-size: 1.5vw;
   }
 
-  .feature--div.product.flex.column h3.sub--theme,
-  .feature--div.services.flex.column h3.sub--theme {
-    width: 450px;
+  .feature--header.flex h3.sub--theme {
+    width: 50%;
   }
 }
 
@@ -398,7 +397,7 @@ hr.hr--theme {
 
   .funnel--btn {
     font-size: 1.25rem;
-    padding: 10px;
+    padding: 2%;
     right: 10%;
   }
 
@@ -423,11 +422,15 @@ hr.hr--theme {
 
 @media screen and (min-width: 1024px) {
   .sponsors--page {
-    top: 25vh;
+    top: 0;
+  }
+
+  .funnel--btn {
+    right: 11%;
   }
 
   .funnel--page--container {
-    top: 30vh;
+    top: 40vh;
   }
 }
 
@@ -455,9 +458,8 @@ div.react-multi-carousel-list {
 /* Footer Page */
 .footer--container {
   position: relative;
-  grid-template-columns: repeat(3, 1fr);
-  top: 40vh;
-  padding: 5% 10%;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4% 10%;
   background-color: var(--primary--03);
 }
 
@@ -486,6 +488,10 @@ div.react-multi-carousel-list {
   padding: 10px;
 }
 
+.hide--form {
+  display: none;
+}
+
 .contact__form--input::placeholder {
   color: #455214;
 }
@@ -503,8 +509,8 @@ textarea {
   border-radius: 10px;
   color: #f2f7de;
   font-weight: 600;
-  font-size: 20px;
-  height: 60px;
+  font-size: 3vh;
+  height: 48px;
 }
 
 .footer__links {
@@ -521,6 +527,10 @@ textarea {
 .footer--icon {
   width: 20px;
   height: 20px;
+}
+
+.footer--logo {
+  max-width: 80%;
 }
 
 /* Projects */
@@ -553,12 +563,17 @@ textarea {
   max-width: 100%;
   height: 100%;
   cursor: pointer;
-  transition: all 0.8s ease;
+  transition: all 5s ease;
 }
 
 .project--img {
   max-width: 100%;
   min-height: 100%;
+}
+
+.project--img.trans:hover {
+  transform: scale(1.05);
+  transition: all 0.8s ease;
 }
 
 .project--head {
@@ -568,16 +583,16 @@ textarea {
   width: 100%;
   text-transform: uppercase;
   color: var(--alt-white);
-  transition: all 0.8s ease;
+  transition: all 1s ease;
 }
 
 .project--card:hover {
   transform: scale(1.05);
+  transition: all 0.6s ease;
 }
 
 .project--card:hover .project--head {
   display: none;
-  transition: all 0.6s ease;
 }
 
 .project--title {
@@ -625,4 +640,14 @@ div.project--links > ul > li > a:hover {
 
 .blog--slider {
   max-width: 50%;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--primary--03);
+  transform-origin: 0%;
 }

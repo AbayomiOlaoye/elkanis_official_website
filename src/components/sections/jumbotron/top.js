@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import PropTypes from 'prop-types';
 import heroBg from '../../../assets/backgrounds/vid_placeholder.png';
 import hero from '../../../assets/generic/feature_hd.png';
@@ -9,6 +11,14 @@ const Top = (
     title, id, linkOne, linkTwo, linkThree,
   },
 ) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
+
   const heroStyle = {
     backgroundImage: `url(${heroBg})`,
     backgroundSize: 'cover',
@@ -36,12 +46,13 @@ const Top = (
         }
       />
       <div className="image--overlay" />
-      <h1 className="temp--font hero--title absolute">
+      <h1 className="temp--font hero--title absolute" data-aos="zoom-out">
         {title}
       </h1>
       {
         linkOne && (
           <div
+            data-aos="fade-left"
             className="top--links absolute d-flex j-c-c g--32 a-i-c"
             style={{ top: '70vh', borderTop: '1px solid #fff', paddingTop: '1vh' }}
           >

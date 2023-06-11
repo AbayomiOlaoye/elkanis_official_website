@@ -1,6 +1,6 @@
 /* eslint-disable react/forbid-prop-types */
 import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import '../sections/css/about.css';
 import Statistics from './statistics';
@@ -14,6 +14,7 @@ const Article = ({ article, id }) => {
     window.open(`https://wa.me/${PHONE_NUMBER}?text=${message}`, '_blank');
   };
 
+  const { identity } = useParams();
   const location = useLocation();
 
   useEffect(() => {
@@ -33,9 +34,9 @@ const Article = ({ article, id }) => {
       }
       id={id}
     >
-      <div className="rice--img--div relative w--100 d-flex column a-i-c">
+      <div className="rice--img--div relative w--100 d-flex column a-i-c" id={identity}>
         <img src={article.productImage} alt={article.id} className="livestock--img" style={{ width: '500px', lineHeight: '38px' }} />
-        { id === 'elkanRice' && <button type="button" title="Now in stock!" className="button action--btn" onClick={() => handleOrder('El-kanis Rice')}>Place Order</button>}
+        { article.id === 'elkanRice' && <button type="button" title="Now in stock!" className="button action--btn" onClick={() => handleOrder('El-kanis Rice')}>Place Order</button>}
       </div>
 
       <div className="cover">

@@ -5,17 +5,17 @@ import researchImg from '../assets/services/research.png';
 
 const FeaturedService = [
   {
-    id: 1,
+    id: 'agric projects',
     featureImg: proImg,
     featureHeadline: 'agricultural project development and management',
   },
   {
-    id: 2,
+    id: 'rice processing',
     featureImg: riceImg,
     featureHeadline: 'rice cultivation and processing',
   },
   {
-    id: 3,
+    id: 'agricultural research',
     featureImg: researchImg,
     featureHeadline: 'agricultural research & development and consultancy',
   },

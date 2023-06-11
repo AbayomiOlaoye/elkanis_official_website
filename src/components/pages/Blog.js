@@ -3,6 +3,9 @@
 /* eslint-disable import/order */
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { motion, useScroll, useSpring } from 'framer-motion';
 import Top from '../sections/jumbotron/top';
 import '../sections/css/sections.css';
 import '../sections/css/about.css';
@@ -18,6 +21,19 @@ const Blog = () => {
     navigate(`/blogs/${blog.id}`);
   };
 
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
+  AOS.init({
+    duration: 2000,
+    easing: 'ease-in-out',
+    once: true,
+  });
+
   return (
     <div className="sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7', lineHeight: '30px' }}>
       <Top
@@ -28,13 +44,15 @@ const Blog = () => {
         style={{ padding: '20% 5%', gridTemplateColumns: '2fr 1fr' }}
       >
         <div className="project--details d-flex column gap-one">
+          <motion.div className="progress-bar" style={{ scaleX }} />
           <div className="project--title--container d-flex gap-one a-i-c">
-            <div className="blog--date d-flex column a-i-c">
+            <div className="blog--date d-flex column a-i-c" data-aos="fade-right">
               <h4 style={{ fontSize: '3vw' }}>{blog.day}</h4>
               <h4 style={{ fontSize: '2vw' }}>{blog.month}</h4>
             </div>
             <h3
               className="project--title"
+              data-aos="fade-left"
               style={{
                 fontSize: '2.5vw', padding: '3% 0', color: '#fff', height: 'max-content',
               }}
@@ -45,7 +63,7 @@ const Blog = () => {
 
           <img src={blog.img} alt={blog.img} className="project--img" />
 
-          <div className="project--text">
+          <div className="project--text" data-aos="fade-up">
             {blog.content.map((paragraph, index) => (
               <p key={index} className="project--description text--just" style={{ margin: '2vw' }}>
                 {paragraph}
@@ -58,7 +76,7 @@ const Blog = () => {
           <h3 className="project--headline">Recent Blogs</h3>
           <ul className="project--action">
             {blogData.map((item, index) => (
-              <li key={item.id} style={{ display: index === selectedPost ? 'none' : 'block', padding: '1rem', borderBottom: '1px solid #3c4044' }}>
+              <li key={item.id} style={{ display: index === selectedPost ? 'none' : 'block', padding: '1rem', borderBottom: '1px solid #3c4044' }} className="blog--link" data-aos="fade-up">
                 <Link
                   to={`/blogs/${item.id}`}
                   onClick={() => handleTitleClick(index)}
