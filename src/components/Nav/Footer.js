@@ -5,6 +5,7 @@ import { TiMail } from 'react-icons/ti';
 import { CiLocationOn } from 'react-icons/ci';
 import { SlCallEnd } from 'react-icons/sl';
 import { Logo } from './Nav';
+import '../sections/css/about.css';
 
 const Footer = () => (
   <footer className="about footer--container grid w--100" id="contact-us">

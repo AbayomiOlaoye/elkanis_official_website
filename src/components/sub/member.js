@@ -85,17 +85,6 @@ const Member = ({ member, counter }) => {
   const full = (
     <div
       className="full relative team--action text--just d-flex column a-i-c"
-      style={
-        {
-          top: '-10vw',
-          backgroundColor: 'var(--primary--04)',
-          color: '#fff',
-          padding: '40px 18px 32px',
-          borderRadius: '12px',
-          border: 'none',
-          overflow: 'hidden',
-        }
-      }
     >
       <h5 className="team--name" style={{ color: 'var(--primary--08)' }} data-aos="ease-in">{member.designation}</h5>
       <h4 className="team--role" style={{ color: 'var(--primary--06)', marginBottom: '1rem' }}>{member.name}</h4>
@@ -134,7 +123,7 @@ const Member = ({ member, counter }) => {
             }
           }
           >
-            <button type="button" style={{ color: '#fff' }}>
+            <button type="button" className="know--more" style={{ color: '#2a310c' }}>
               Know Less
               <MdKeyboardArrowUp />
             </button>
