@@ -24,7 +24,6 @@ const Top = (
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    height: '60vh',
     width: '100%',
     zIndex: '1',
   };
@@ -35,26 +34,16 @@ const Top = (
         src={hero}
         alt="hero"
         className="hero--img relative"
-        style={
-          {
-            top: '30vh',
-            width: '80%',
-            height: '50vh',
-            textAlign: 'center',
-            boxShadow: '0 32px 20px rgba(0, 0, 0, 0.05)',
-          }
-        }
       />
       <div className="image--overlay" />
-      <h1 className="temp--font hero--title absolute" data-aos="zoom-out">
+      <h1 className="temp--font hero--title--about absolute" data-aos="zoom-out">
         {title}
       </h1>
       {
         linkOne && (
           <div
-            data-aos="fade-left"
+            data-aos="fade-up"
             className="top--links absolute d-flex j-c-c g--32 a-i-c"
-            style={{ top: '70vh', borderTop: '1px solid #fff', paddingTop: '1vh' }}
           >
             <a href={`#${linkOne.id}`} className="page--link">{linkOne.link}</a>
             <a href={`#${linkTwo.id}`} className="page--link">{linkTwo.link}</a>

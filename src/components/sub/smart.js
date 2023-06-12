@@ -11,8 +11,8 @@ import AgTech from '../../assets/generic/agritech.png';
 const images = [Corn, Worker, Drone, Rice, Pepper, AgTech];
 const imageList = images.map((image) => (
   <div className="image--container w--100" key={image}>
-    <img src={image} className="gallery--item w--100" data-aos="fade-right" alt="" />
-    <div className="image--overlay--main" data-aos="fade-right" />
+    <img src={image} className="gallery--item w--100" data-aos="fade-down" alt="" />
+    <div className="image--overlay--main" data-aos="fade-up" />
   </div>
 ));
 

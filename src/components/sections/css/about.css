@@ -47,32 +47,51 @@
   display: grid;
 }
 
+.top--container {
+  height: 50vh;
+}
+
+.hero--img {
+  top: 25vh;
+  width: 80%;
+  height: 30vh;
+  object-fit: cover;
+  box-shadow: 0 32px 20px rgba(0, 0, 0, 0.05);
+}
+
 .image--overlay {
   position: absolute;
   top: 35vh;
   left: 10%;
   width: 80%;
-  height: 50vh;
+  height: 30vh;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
   background: rgba(69, 82, 20, 0.6);
 }
 
-.hero--title {
+.hero--title--about {
   top: 90%;
   font-weight: 600;
   color: var(--primary--08);
 }
 
+.top--links {
+  border-top: 1px solid #fff;
+  top: 53vh;
+  padding-top: 0.5rem;
+  width: 70%;
+}
+
 .page--content {
-  padding-top: 30vh;
+  padding-top: 23vh;
   background-color: #f9faf7;
 }
 
 .about--bg {
   background-image: url('../../../assets/backgrounds/globe.png');
   background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: 50% 70%;
+  background-size: 50%;
+  background-position: 50% 40%;
 }
 
 .text--just {
@@ -86,10 +105,14 @@
   border-image-slice: 1;
 }
 
+.boarder:nth-of-type(2) {
+  padding: 1rem 0 0;
+  border-top: 5px solid transparent;
+  border-left: none;
+}
+
 .rice--img {
   width: 100%;
-  box-shadow: 10px 16px 35px rgba(0, 0, 0, 0.2);
-  border-radius: 120px 120px 120px 0;
 }
 
 .dashed {
@@ -120,42 +143,23 @@
 }
 
 .team--div {
-  margin: 3rem 0 45rem 0;
-  gap: 5rem 3rem;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
 }
 
 .team--img {
-  /* max-width: 100%;
+  max-width: 100%;
   width: 30%;
   border-radius: 50%;
   background-color: #bfca90;
   border: none;
-  z-index: 5; */
-  overflow-y: scroll;
-  height: 300px;
-  scroll-behavior: smooth;
-}
-
-.speaker {
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-.speaker:hover {
-  max-height: none;
-  overflow: hidden;
-  transition: max-height 0.5s ease;
-}
-
-.speaker.expand button {
-  display: none;
+  z-index: 5;
 }
 
 .drive-us {
   justify-self: flex-start;
   width: 80%;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .para-one {
@@ -163,49 +167,24 @@
 }
 
 .mini-title {
-  font-size: var(--size--49);
+  font-size: 6vw;
   color: var(--primary--07);
 }
 
 h3.special-title {
-  max-width: 45%;
-}
-
-.push--left::after {
-  content: '';
-  position: absolute;
-  top: 100vh;
-  left: 0;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 6vw;
   width: 100%;
-  height: 60vh;
-  background-image: url('../../../assets/backgrounds/abt_line_bg.svg');
-  background-repeat: no-repeat;
-  background-position: 0 20vh;
-  background-size: 10% 30%;
 }
 
 .vision--container {
-  width: 90%;
+  width: 100%;
   background-color: var(--primary--04);
-  padding: 3rem 5rem;
+  padding: 2rem 3rem 3rem;
   color: #fff;
   margin-top: 2rem;
-  justify-content: flex-start;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.vision--container::after {
-  content: '';
-  position: absolute;
-  top: 25vh;
-  left: 75.5%;
-  width: 30%;
-  height: 60vh;
-  overflow: hidden;
-  background-image: url('../../../assets/backgrounds/miss_line_bg.png');
-  background-repeat: no-repeat;
-  background-position: 100% 20vh;
-  background-size: 65% 45%;
+  grid-template-columns: 1fr;
 }
 
 .gap-one {
@@ -225,18 +204,29 @@ h3.special-title {
 }
 
 .vision--div {
-  padding: 0 2rem 2rem;
-}
-
-.tech--section {
-  grid-template-columns: 1fr 2fr;
+  padding: 0 0 2rem;
 }
 
 .icon {
+  margin-top: 2rem;
   width: 40px;
 }
 
-.team--action--button > button {
+.footer--icon {
+  position: relative;
+  top: -1vh;
+  width: 15%;
+}
+
+.footer--links {
+  gap: 0.15rem;
+}
+
+.team--action {
+  gap: 0.31rem;
+}
+
+.team--action--button button {
   background: transparent;
   padding: 0.5rem 1rem;
   display: flex;
@@ -244,7 +234,13 @@ h3.special-title {
   flex-direction: column;
   align-items: center;
   gap: 0.25rem;
+  border-radius: 10px;
   color: var(--primary--05);
+}
+
+.team--action--button:hover {
+  background: var(--primary--06);
+  color: var(--alt-white);
 }
 
 .team--member {
@@ -263,7 +259,7 @@ h3.special-title {
 
 .team--role {
   font-weight: 700;
-  font-size: 2vw;
+  font-size: 3vw;
   text-align: center;
   color: var(--primary--04);
 }
@@ -271,12 +267,26 @@ h3.special-title {
 .team--name {
   margin-top: 1rem;
   font-weight: 600;
-  font-size: 1vw;
+  font-size: 2vw;
   color: #91aa2b;
 }
 
+.lefty--title.boarder {
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+.meet--up {
+  margin-bottom: 2rem;
+}
+
 .team--text {
-  font-size: 16px;
+  max-width: 80%;
+  font-size: 3vw;
+}
+
+.full .team--text {
+  max-width: 100%;
 }
 
 ul.team--skills--list {
@@ -288,9 +298,45 @@ ul.team--skills--list {
   margin-top: 1.5rem;
 }
 
+/* Actions buttons */
+
+.btn--more {
+  background: var(--primary--08);
+  border: none;
+  color: var(--primary--04);
+  font-weight: 600;
+  font-size: 2.5vw;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 5px;
+  padding: 0.8rem;
+  margin: 0 auto 1.5rem;
+  transition: all 0.6s ease-in-out;
+}
+
+.btn--more:hover {
+  background: var(--primary--06);
+  color: var(--alt-white);
+}
+
+.btn--more:active {
+  background: transparent;
+  color: var(--primary--02);
+  border: 1px solid var(--primary--02);
+}
+
+footer {
+  position: relative;
+  top: 10vh;
+}
+
+.footer__top {
+  flex-direction: row;
+}
+
 /* Product Features */
 .page--link {
-  font-size: 17px;
+  font-size: 3vw;
   font-weight: 600;
   color: white;
 }
@@ -448,4 +494,250 @@ article.drive--us.g--32.d-flex {
 
 .pro--title--div p {
   margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .page--content {
+    padding-top: 30vh;
+  }
+
+  .about--bg {
+    background-size: 70%;
+    background-position: 50% 70%;
+  }
+
+  .rice--img {
+    box-shadow: 10px 16px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 120px 120px 120px 0;
+  }
+
+  .team--div {
+    margin: 3rem 0 45rem 0;
+    gap: 5rem 3rem;
+  }
+
+  .mini-title {
+    font-size: var(--size--49);
+    color: var(--primary--07);
+  }
+
+  h3.special-title {
+    max-width: 45%;
+  }
+
+  /* .push--left::after {
+    content: '';
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-image: url('../../../assets/backgrounds/abt_line_bg.svg');
+    background-repeat: no-repeat;
+    background-position: 0 20vh;
+    background-size: 10% 30%;
+  } */
+
+  .vision--container {
+    width: 90%;
+    background-color: var(--primary--04);
+    padding: 3rem 5rem;
+    color: #fff;
+    margin-top: 2rem;
+    justify-content: flex-start;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vision--container::after {
+    content: '';
+    position: absolute;
+    top: 25vh;
+    left: 75.5%;
+    width: 30%;
+    height: 60vh;
+    overflow: hidden;
+    background-image: url('../../../assets/backgrounds/miss_line_bg.png');
+    background-repeat: no-repeat;
+    background-position: 100% 20vh;
+    background-size: 65% 45%;
+  }
+
+  .vision--div {
+    padding: 0 2rem 2rem;
+  }
+
+  /* .tech--section {
+    grid-template-columns: 1fr 2fr;
+  } */
+
+  .team--role {
+    font-size: 2vw;
+  }
+
+  .team--name {
+    font-size: 3vw;
+    color: #91aa2b;
+  }
+
+  /* Product Features */
+  .page--link {
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .about--product {
+    background: #f2f7de;
+  }
+
+  /* Statistics Config */
+  .stat--div {
+    max-width: 175px;
+    box-shadow: 0 6px 12px rgba(171, 190, 209, 0.3);
+    border-radius: 20.2044px;
+    padding: 2rem;
+    margin-bottom: 90px;
+  }
+
+  .counter-land,
+  .counter-input,
+  .counter-ivr {
+    background-color: var(--primary--08);
+    color: #6f8321;
+  }
+
+  .counter-farmer,
+  .drones-div .counter-land {
+    background-color: var(--primary--06);
+    color: #2a310c;
+  }
+
+  div.counter-yields,
+  .drones-div .counter-farmer {
+    background-color: var(--primary--04);
+    color: #fff;
+  }
+
+  /* Product Details */
+  .product--card--div {
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .product--card--div:nth-of-type(even),
+  .row--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .product--img--div {
+    padding: 1.2rem;
+    min-width: 20%;
+    background: #ecf8c1;
+    border-radius: 20px;
+    height: max-content;
+  }
+
+  .product--nav {
+    width: 70%;
+    margin-bottom: 0.8rem;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary--03);
+    gap: 15%;
+  }
+
+  ul.disc {
+    list-style-type: disc;
+    margin-left: 1rem;
+  }
+
+  .dosage.hide,
+  .lister.hide,
+  .how-it-works {
+    display: none;
+  }
+
+  .lister.show,
+  .dosage.show,
+  .how-it-works {
+    display: block;
+  }
+
+  .product--nav--item {
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: var(--primary--03);
+  }
+
+  .product--nav--item.active {
+    padding-bottom: 0.3rem;
+    border-bottom: 4px solid var(--primary--04);
+    font-weight: 700;
+    color: var(--primary--04);
+  }
+
+  article.drive--us.g--32.d-flex {
+    width: 100%;
+    padding: 3rem 0;
+  }
+
+  .agro--title {
+    line-height: 1;
+    letter-spacing: 1px;
+    height: 35%;
+  }
+
+  .agric--img {
+    width: 30%;
+    background-color: #bbcf79;
+    box-shadow: 10px 16px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 120px 120px 120px 0;
+  }
+
+  .agro--float--img {
+    width: 100%;
+  }
+
+  .agro--float--img:nth-of-type(3) {
+    border-radius: 0 0 50px 0;
+  }
+
+  .agro--img--float {
+    background: #fff;
+    height: auto;
+    width: 75%;
+    gap: 0.6rem;
+    padding: 32px;
+    top: 75vh;
+    left: 45vh;
+    box-shadow: 0 16px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 100px 0;
+  }
+
+  .agro--bottom {
+    top: 85vh;
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 0 0 0 200px;
+    box-shadow: 0 16px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .project--list {
+    margin-top: 35vh;
+    line-height: 160%;
+    color: #3c4044;
+  }
+
+  .rice--processing {
+    padding: 5rem 0;
+  }
+
+  .line--height {
+    line-height: 1.5;
+  }
+
+  .pro--title--div p {
+    margin-top: 1.5rem;
+  }
 }

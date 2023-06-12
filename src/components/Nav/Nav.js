@@ -1,5 +1,7 @@
 import { AiFillCloseCircle } from 'react-icons/ai';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { MdOutlineMenu } from 'react-icons/md';
 /* eslint-disable import/no-extraneous-dependencies */
 import { Link, Outlet } from 'react-router-dom';
@@ -8,6 +10,13 @@ import './css/nav.css';
 import '../../index.css';
 
 const Nav = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 4000,
+      easing: 'ease-in-out',
+    });
+  }, []);
+
   const [toggle, setToggle] = useState(false);
 
   const handleMenuOpen = () => {
@@ -22,7 +31,7 @@ const Nav = () => {
     <>
       <header className="header--container flex">
         <Link to="/" className="logo--link flex block">
-          <img src={Logo} className="logo max--100" alt="elkanis & partners's logo" />
+          <img src={Logo} className="logo max--100" data-aos="fade-down" alt="elkanis & partners's logo" />
         </Link>
         {
             toggle
@@ -32,22 +41,22 @@ const Nav = () => {
         <nav className={`nav--container ${toggle ? '' : 'hide--mob'}`}>
           <ul className="nav--list un-list flex">
             <li className="nav--item--container list">
-              <Link to="/" className="nav--item" onClick={handleMenuClose}>Home</Link>
+              <Link to="/" className="nav--item" data-aos="fade-up" onClick={handleMenuClose}>Home</Link>
             </li>
             <li className="nav--item--container list">
-              <Link to="/about-us" className="nav--item" onClick={handleMenuClose}>About Us</Link>
+              <Link to="/about-us" className="nav--item" data-aos="fade-up" onClick={handleMenuClose}>About Us</Link>
             </li>
             <li className="nav--item--container list">
-              <Link to="/products" className="nav--item" onClick={handleMenuClose}>Products</Link>
+              <Link to="/products" className="nav--item" data-aos="fade-down" onClick={handleMenuClose}>Products</Link>
             </li>
             <li className="nav--item--container list">
-              <Link to="/services" className="nav--item" onClick={handleMenuClose}>Services</Link>
+              <Link to="/services" className="nav--item" data-aos="fade-up" onClick={handleMenuClose}>Services</Link>
             </li>
             <li className="nav--item--container list">
-              <Link to="/projects" className="nav--item" onClick={handleMenuClose}>Projects</Link>
+              <Link to="/projects" className="nav--item" data-aos="fade-up" onClick={handleMenuClose}>Projects</Link>
             </li>
             <li className="nav--item--container list">
-              <Link to="/blogs" className="nav--item" onClick={handleMenuClose}>Blog</Link>
+              <Link to="/blogs" className="nav--item" data-aos="fade-down" onClick={handleMenuClose}>Blog</Link>
             </li>
             <li className="nav--item--container list">
               <Link

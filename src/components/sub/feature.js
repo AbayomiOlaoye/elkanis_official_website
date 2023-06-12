@@ -13,7 +13,7 @@ const FeaturedProduct = (
 ) => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
       easing: 'ease-in-out',
       once: true,
     });
@@ -26,7 +26,7 @@ const FeaturedProduct = (
         state: { scrollToSection: id },
       }}
       className="product--link"
-      data-aos="fade-left"
+      data-aos="fade-up"
     >
       <Card className="feature--pro flex column" style={{ background: 'white' }}>
         <Card.Img variant="top" className="feature--img" src={featureImg} />

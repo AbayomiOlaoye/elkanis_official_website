@@ -89,7 +89,7 @@ const Home = () => {
       <Funnel />
       <Sponsors />
       <footer className="footer--container grid" id="contact-us" ref={sectionRef}>
-        <div className="footer__top flex column a-i-c gap-one">
+        <div className="footer__top flex">
           <img src={Logo} alt="elkanis & partners' logo" className="footer--logo mt-1" />
           <small className="footer__links flex column mt-1">
             <div className="footer__links--top flex">
@@ -134,7 +134,7 @@ const Home = () => {
           </small>
         </div>
         <form className="form flex column" onSubmit={handleSubmit}>
-          <div className="input-div flex w-100">
+          <div className="input-div flex">
             <input
               type="text"
               name="name"
@@ -171,7 +171,7 @@ const Home = () => {
           />
           <button
             type="submit"
-            className="contact__form--btn button"
+            className="contact__form--btn"
           >
             Send Message
           </button>

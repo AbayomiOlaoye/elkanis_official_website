@@ -19,6 +19,7 @@ const Projects = () => {
     AOS.init({
       duration: 2000,
       easing: 'ease-in-out',
+      once: true,
     });
   }, []);
 
@@ -50,11 +51,13 @@ const Projects = () => {
       <Top
         title="Projects"
       />
-      <div className="project--container w--80 grid" ref={containerRef}>
+      <div className="project--container w--80 grid" style={{ overflow: 'hidden' }} ref={containerRef}>
         {PROJECTS.map((project) => (
           <div
             className="project--card relative"
             data-aos='fade-left'
+            data-aos-duration="3000"
+            data-aos-once="false"
             title="Click to check the Project!"
             key={project.id}
             id={project.id}

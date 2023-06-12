@@ -25,11 +25,9 @@ const Hero = () => (
         to="/about-us"
         className="button"
         style={{
-          width: '38px',
-          height: '38px',
-          fontSize: '1.5vw',
+          fontSize: '2.5vw',
           cursor: 'pointer',
-          padding: '2% 3%',
+          padding: '3%',
           color: 'var(--alt-white)',
         }}
       >

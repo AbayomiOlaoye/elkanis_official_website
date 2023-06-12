@@ -74,10 +74,10 @@
 .nav--list {
   flex-direction: column;
   position: fixed;
-  top: 12vh;
+  top: 18vh;
   left: 0;
   width: 95vw;
-  height: 100vh;
+  height: 1000vh;
   align-items: center;
   background-color: var(--nav--bg);
   z-index: 1000000;
@@ -138,7 +138,7 @@
   .nav--list {
     position: static;
     flex-direction: row;
-    gap: var(--size--28);
+    gap: var(--size--32);
     align-items: center;
     height: 100%;
     width: 100%;

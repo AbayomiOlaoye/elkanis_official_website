@@ -26,9 +26,9 @@ const Service = () => {
   ));
   return (
     <>
-      <section className="feature--div services flex column" data-aos="fade-left">
+      <section className="feature--div services flex column" data-aos="fade-up">
         <div className="feature--header flex w--80">
-          <h3 className="sub--theme temp--font light--green" style={{ fontSize: '3vw' }}>Our Featured Services</h3>
+          <h3 className="sub--theme temp--font light--green">Our Featured Services</h3>
           <hr className="hr--theme w--80" />
         </div>
         <div className="feature--container services d-flex">{services}</div>
