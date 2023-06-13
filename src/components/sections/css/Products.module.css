@@ -1,0 +1,355 @@
+@media screen and (min-width: 768px) {
+  .page--content {
+    padding-top: 30vh;
+  }
+
+  .about--bg {
+    background-size: 70%;
+    background-position: 50% 70%;
+  }
+
+  .rice--img {
+    max-width: 100%;
+  }
+
+  .rice--img--div {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  #Rice .rice--img--div {
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .team--div {
+    margin: 3rem 0;
+    gap: 5rem 3rem;
+  }
+
+  .team--container {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mini-title {
+    font-size: var(--size--49);
+    color: var(--primary--07);
+  }
+
+  h3.special-title {
+    max-width: 35%;
+    text-align: left;
+  }
+
+  .vision--container {
+    width: 90%;
+    background-color: var(--primary--04);
+    padding: 3rem 5rem;
+    color: #fff;
+    margin-top: 2rem;
+    justify-content: flex-start;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .boarder:nth-of-type(2) {
+    padding-left: 5%;
+    margin-left: 5%;
+    border-top: none;
+    border-left: 5px solid transparent;
+  }
+
+  .boarder {
+    padding-left: 1rem;
+  }
+
+  .vision--container::after {
+    content: '';
+    position: absolute;
+    top: 25vh;
+    left: 75.5%;
+    width: 30%;
+    height: 60vh;
+    overflow: hidden;
+    background-image: url('../../../assets/backgrounds/miss_line_bg.png');
+    background-repeat: no-repeat;
+    background-position: 100% 20vh;
+    background-size: 65% 45%;
+  }
+
+  .team--role {
+    font-size: 1.25rem;
+  }
+
+  .team--text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .team--name {
+    font-size: 0.8rem;
+    color: #91aa2b;
+  }
+
+  /* Product Features */
+  .page--link {
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .about--product {
+    background: #f2f7de;
+  }
+
+  /* Statistics Config */
+  .stat--div {
+    max-width: 175px;
+    box-shadow: 0 6px 12px rgba(171, 190, 209, 0.3);
+    border-radius: 20.2044px;
+    padding: 2rem;
+    margin-bottom: 90px;
+  }
+
+  /* Product Details */
+  .product--card--div {
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .product--card--div:nth-of-type(even),
+  .row--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .product--img--div {
+    padding: 1.2rem;
+    min-width: 20%;
+    background: #ecf8c1;
+    border-radius: 20px;
+    height: max-content;
+  }
+
+  .product--features {
+    font-size: 18px;
+  }
+
+  .product--nav {
+    width: 70%;
+    margin-bottom: 0.8rem;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary--03);
+    gap: 15%;
+  }
+
+  .green-title {
+    font-size: 36px;
+    margin-bottom: 8px;
+  }
+
+  .product--card--text {
+    font-size: 18px;
+  }
+
+  .drones--section {
+    padding: 0 1.5rem;
+    gap: 3rem;
+  }
+
+  .drone-drive {
+    display: none;
+  }
+
+  ul.disc {
+    list-style-type: disc;
+    margin-left: 1rem;
+  }
+
+  .dosage.hide,
+  .lister.hide,
+  .how-it-works {
+    display: none;
+  }
+
+  .lister.show,
+  .dosage.show,
+  .how-it-works {
+    display: block;
+  }
+
+  .lister--item {
+    font-size: 22px;
+  }
+
+  .product--nav--item {
+    font-size: 22px;
+  }
+
+  .product--nav--item.active {
+    padding-bottom: 0.3rem;
+    border-bottom: 4px solid var(--primary--04);
+    font-weight: 700;
+    color: var(--primary--04);
+  }
+
+  #Rice .action--btn {
+    margin-left: 2rem;
+  }
+
+  .smart--fiems {
+    max-width: 100%;
+  }
+
+  .drive-us {
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  #Livestock.drive-us {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  article.drive--us.g--32.d-flex {
+    width: 100%;
+    padding: 3rem 0;
+  }
+
+  .agro--title {
+    line-height: 1;
+    letter-spacing: 1px;
+    height: 35%;
+  }
+
+  .agric--img {
+    width: 30%;
+    background-color: #bbcf79;
+    box-shadow: 10px 16px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 120px 120px 120px 0;
+  }
+
+  .agro--float--img {
+    width: 100%;
+  }
+
+  .agro--float--img:nth-of-type(3) {
+    border-radius: 0 0 50px 0;
+  }
+
+  .agro--img--float {
+    background: #fff;
+    height: auto;
+    width: 75%;
+    gap: 0.6rem;
+    padding: 32px;
+    top: 75vh;
+    left: 45vh;
+    box-shadow: 0 16px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 100px 0;
+  }
+
+  .agro--bottom {
+    top: 85vh;
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 0 0 0 200px;
+    box-shadow: 0 16px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .project--list {
+    margin-top: 35vh;
+    line-height: 160%;
+    color: #3c4044;
+  }
+
+  .rice--processing {
+    padding: 5rem 0;
+  }
+
+  .line--height {
+    line-height: 1.5;
+  }
+
+  .pro--title--div p {
+    margin-top: 1.5rem;
+  }
+
+  .drones-details {
+    max-width: 100%;
+    align-items: flex-start;
+  }
+
+  /* Footer Sectiion in other pages */
+  .footer--container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__top {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 563px) {
+  .vision--container {
+    width: 90%;
+    padding: 4rem;
+  }
+
+  .product--card--title {
+    text-align: left;
+  }
+
+  .stat--text {
+    font-size: 2vw;
+  }
+
+  .drone-drive {
+    display: flex;
+    width: 25%;
+    top: -12vh;
+    left: 3vh;
+  }
+
+  .IVR {
+    flex-direction: row-reverse;
+  }
+
+  .team--skills--card {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .team--container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .btn--more {
+    display: none;
+  }
+
+  .hero--img {
+    top: 25vh;
+    height: 40vh;
+  }
+
+  .image--overlay {
+    top: 30vh;
+    height: 40vh;
+  }
+
+  .hero--title--about {
+    font-weight: 800;
+  }
+
+  .top--links {
+    border-top: 1px solid #fff;
+    top: 55vh;
+    width: max-content;
+  }
+}

@@ -505,7 +505,7 @@ ul.disc {
 }
 
 .smart--fiems {
-  max-width: 60%;
+  max-width: 40%;
   margin: 2rem 0;
 }
 
@@ -626,11 +626,6 @@ article.drive--us.g--32.d-flex {
     color: var(--primary--07);
   }
 
-  h3.special-title {
-    max-width: 35%;
-    text-align: left;
-  }
-
   .vision--container {
     width: 90%;
     background-color: var(--primary--04);
@@ -691,6 +686,11 @@ article.drive--us.g--32.d-flex {
     background: #f2f7de;
   }
 
+  #Livestock.drive--us {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
   /* Statistics Config */
   .stat--div {
     max-width: 175px;
@@ -700,29 +700,13 @@ article.drive--us.g--32.d-flex {
     margin-bottom: 90px;
   }
 
-  .counter-land,
-  .counter-input,
-  .counter-ivr {
-    background-color: var(--primary--08);
-    color: #6f8321;
-  }
-
-  .counter-farmer,
-  .drones-div .counter-land {
-    background-color: var(--primary--06);
-    color: #2a310c;
-  }
-
-  div.counter-yields,
-  .drones-div .counter-farmer {
-    background-color: var(--primary--04);
-    color: #fff;
-  }
-
   /* Product Details */
   .product--card--div {
-    justify-content: space-between;
-    margin-bottom: 2rem;
+    flex-direction: row;
+  }
+
+  #Livestock img.livestock--img {
+    width: 100%;
   }
 
   .product--card--div:nth-of-type(even),
@@ -779,12 +763,6 @@ article.drive--us.g--32.d-flex {
     display: none;
   }
 
-  .lister.show,
-  .dosage.show,
-  .how-it-works {
-    display: block;
-  }
-
   .lister--item {
     font-size: 22px;
   }
@@ -809,6 +787,13 @@ article.drive--us.g--32.d-flex {
   }
 
   .drive-us {
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  #Livestock.drive-us {
+    display: grid;
     justify-self: center;
     grid-template-columns: 1fr 1fr;
     gap: 0;
