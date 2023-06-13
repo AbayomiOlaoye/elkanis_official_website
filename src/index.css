@@ -170,10 +170,9 @@ body {
 .button {
   background-color: var(--primary--01);
   color: var(--alt-white);
-  padding: 5% 4%;
+  padding: 3%;
   border: none;
   border-radius: 0.5rem;
-  font-size: 1.5vw;
   margin-top: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -194,4 +193,10 @@ body {
 
 .j-s-b {
   justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    font-size: 2vw;
+  }
 }

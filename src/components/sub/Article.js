@@ -30,18 +30,18 @@ const Article = ({ article, id }) => {
     <article
       className="drive--us g--32 d-flex"
       style={
-        { alignSelf: 'flex-start', width: '90%', marginTop: '4rem' }
+        { alignSelf: 'flex-start' }
       }
       id={id}
     >
       <div className="rice--img--div relative w--100 d-flex column a-i-c" id={identity}>
-        <img src={article.productImage} alt={article.id} className="livestock--img" style={{ width: '500px', lineHeight: '38px' }} />
+        <img src={article.productImage} alt={article.id} className="livestock--img" />
         { article.id === 'elkanRice' && <button type="button" title="Now in stock!" className="button action--btn" onClick={() => handleOrder('El-kanis Rice')}>Place Order</button>}
       </div>
 
       <div className="cover">
         <div className="drive-us--text flex gap-one flow column">
-          <h3 id={id} style={{ fontSize: '68px', maxWidth: '637px' }} className="green-title-text boarder special-title temp--font light--green">{article.featureHeadline}</h3>
+          <h3 id={id} className="green-title-text boarder special-title temp--font light--green">{article.featureHeadline}</h3>
           { article.intro.map((para) => <p key={para.length - 1} className="sub--text text--just">{para}</p>) }
         </div>
         <div className="stats--container gap-one d-flex" style={{ marginTop: '2rem' }}>

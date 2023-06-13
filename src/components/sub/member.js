@@ -1,7 +1,7 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import { MdKeyboardArrowUp } from 'react-icons/md';
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { MdKeyboardArrowUp } from 'react-icons/md';
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import AOS from 'aos';
@@ -19,7 +19,7 @@ const animateBook = {
 };
 
 const Member = ({ member, counter }) => {
-  const [isReadMore, setIsReadMore] = useState(false);
+  const [selectedMember, setSelectedMember] = useState(null);
   const teamRef = useRef(null);
 
   useEffect(() => {
@@ -31,21 +31,33 @@ const Member = ({ member, counter }) => {
 
   useEffect(() => {
     const handleClick = (e) => {
-      if (teamRef.current && !teamRef.current.contains(e.target)) {
-        setIsReadMore(false);
+      const clickedElement = e.target;
+      const isInsideCard = teamRef.current && teamRef.current.contains(clickedElement);
+      const isKnowMoreButton = clickedElement.classList.contains('know--more');
+
+      if (!isInsideCard || isKnowMoreButton) {
+        setSelectedMember(null);
       }
     };
     document.addEventListener('click', handleClick, true);
     return () => document.removeEventListener('click', handleClick);
-  }, [isReadMore]);
+  }, []);
 
-  const handleReadMore = () => {
-    setIsReadMore(!isReadMore);
-    if (isReadMore) {
-      document.querySelector('.team--member').scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
-      });
+  const handleReadMore = (memberId) => {
+    setSelectedMember((prevMember) => (prevMember === memberId ? null : memberId));
+
+    if (memberId) {
+      const teamMemberElement = teamRef.current;
+      if (teamMemberElement) {
+        teamMemberElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+        });
+      }
+    }
+
+    if (selectedMember !== null && memberId !== null) {
+      handleReadMore(null);
     }
   };
 
@@ -53,7 +65,9 @@ const Member = ({ member, counter }) => {
     <AnimatePresence>
       <motion.div
         key={counter}
-        className="booklet-card flex"
+        className="team--action d-flex column a-i-c"
+        style={{ overflow: 'hidden' }}
+        ref={teamRef}
         variants={animateBook}
         initial="isHidden"
         animate="isVisible"
@@ -63,21 +77,19 @@ const Member = ({ member, counter }) => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 1.1 }}
       >
-        <div className="team--action d-flex column a-i-c" style={{ overflow: 'hidden' }} ref={teamRef}>
-          <h5 className="team--name" data-aos="fade-up">{member.designation}</h5>
-          <h4 className="team--role" data-aos="fade-up">{member.name}</h4>
-          <p className="team--text text--just" data-aos="fade-up" style={{ textAlign: 'center' }}>{member.headshot}</p>
-          <a
-            className="team--action--button relative"
-            onClick={handleReadMore}
-            style={{ top: '0', alignSelf: 'center' }}
-          >
-            <button type="button" className="know--more" data-aos="fade-right">
-              Know More
-              <IoIosArrowDown />
-            </button>
-          </a>
-        </div>
+        <h5 className="team--name" data-aos="fade-up">{member.designation}</h5>
+        <h4 className="team--role" data-aos="fade-up">{member.name}</h4>
+        <p className="team--text text--just" data-aos="fade-up">{member.headshot}</p>
+        <a
+          className="team--action--button relative"
+          onClick={() => handleReadMore(member.id)}
+          style={{ top: '0', alignSelf: 'center' }}
+        >
+          <button type="button" className="know--more" data-aos="fade-right">
+            Know More
+            <IoIosArrowDown />
+          </button>
+        </a>
       </motion.div>
     </AnimatePresence>
   );
@@ -114,7 +126,7 @@ const Member = ({ member, counter }) => {
           <a
             className="team--action--button a-i-c d-block"
             data-aos="fade-down"
-            onClick={handleReadMore}
+            onClick={() => handleReadMore(null)}
             style={
             {
               marginTop: '3vh',
@@ -138,10 +150,10 @@ const Member = ({ member, counter }) => {
       className="team--member d-flex relative column a-i-c"
       key={member.id}
       ref={teamRef}
-      style={{ zIndex: isReadMore ? '100' : '10' }}
+      style={{ zIndex: selectedMember === member.id ? '100' : '10' }}
     >
       <img src={member.image} alt={member.name} className="team--img" />
-      { isReadMore ? full : partial }
+      { selectedMember === member.id ? full : partial }
     </div>
   );
 };

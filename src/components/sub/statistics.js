@@ -34,13 +34,13 @@ const Statistics = ({ stats }) => {
         if (stat && typeof stat.counter === 'number') {
           const counterClassName = `counter-${key}`;
           return (
-            <div className={`stat--div d-flex column a-i-c ${counterClassName}`} key={key} style={{ maxWidth: '175px' }}>
+            <div className={`stat--div d-flex column a-i-c ${counterClassName}`} key={key}>
               <img src={stat.icon} alt="icon" className="stat--icon" />
-              <p className="stat--text" style={{ fontSize: '32px', fontWeight: '700' }}>
+              <p className="stat--text" style={{ fontWeight: '700' }}>
                 {formatCount(counters[key] || stat.counter)}
                 <span className="plus">+</span>
               </p>
-              <p className="stat--text" style={{ fontSize: '14px', fontWeight: '600', textAlign: 'center' }}>{stat.info}</p>
+              <p className="stat--text" style={{ fontWeight: '600', textAlign: 'center' }}>{stat.info}</p>
             </div>
           );
         }

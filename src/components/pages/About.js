@@ -14,9 +14,46 @@ import Footer from '../Nav/Footer';
 
 const About = () => {
   const [showAll, setShowAll] = useState(false);
+  const [displayedMembers, setDisplayedMembers] = useState([]);
   const toggleShowAll = () => {
     setShowAll(!showAll);
+    if (!showAll) {
+      setDisplayedMembers(Team);
+    } else {
+      const slicedMembers = Team.slice(0, 4);
+      setDisplayedMembers(slicedMembers);
+    }
   };
+
+  useEffect(() => {
+    if (showAll) {
+      setDisplayedMembers(Team);
+    }
+  }, [showAll]);
+
+  useEffect(() => {
+    const updateMembers = () => {
+      const isSmallScreen = window.innerWidth <= 768;
+      const isMediumScreen = window.innerWidth <= 960;
+      let slicedMembers;
+      if (isSmallScreen) {
+        slicedMembers = isSmallScreen ? Team.slice(0, 3) : Team.slice(0, 4);
+      } else if (isMediumScreen) {
+        slicedMembers = isMediumScreen ? Team.slice(0, 4) : Team.slice(0, 5);
+      } else {
+        slicedMembers = Team;
+      }
+      setDisplayedMembers(slicedMembers);
+    };
+
+    updateMembers();
+
+    window.addEventListener('resize', updateMembers);
+
+    return () => {
+      window.removeEventListener('resize', updateMembers);
+    };
+  }, []);
 
   useEffect(() => {
     AOS.init({
@@ -54,7 +91,7 @@ const About = () => {
               minimizing the impact on the environment.
             </p>
           </div>
-          <div className="rice--img--diva w--100 d-flex a-i-c" data-aos="fade-up">
+          <div className="rice--img--div w--100 d-flex" data-aos="fade-up">
             <img src={riceTrans} alt="A man transporting rice" className="rice--img" data-aos="fade-up" />
           </div>
         </article>
@@ -75,7 +112,7 @@ const About = () => {
           </p>
         </div>
         <div className="boarder vision--div d-flex gap-one column a-i-c">
-          <div className="vision--title--div d-flex gap-one d-flex column a-i-c">
+          <div className="vision--title--div d-flex gap-one d-flex column">
             <img src={mission} alt="vision" data-aos="fade-up" className="vision--img icon" />
             <h3 className="mini-title green-title-text temp--font light--green" data-aos="fade-up">Our Mission</h3>
           </div>
@@ -89,7 +126,7 @@ const About = () => {
         </div>
       </article>
       <article className="drive-us tech--section gap-one grid w--80" style={{ marginTop: '5vh' }} data-aos="fade-up">
-        <div className="rice--img--div w--100 d-flex a-i-c">
+        <div className="rice--img--div w--100 d-flex">
           <img src={riceTrans} alt="A man transporting rice" data-aos="fade-up" className="rice--img" />
           <div className="span--overlay w--100" />
         </div>
@@ -109,19 +146,19 @@ const About = () => {
       </article>
       <article className="drive-us d-flex column w--80" data-aos="fade-up">
         <div className="team-top d-flex column a-i-c gap-one">
-          <img src={meet} alt="vision" className="vision--img icon" data-aos="zoom-out" />
+          <img src={meet} alt="vision" className="vision--img icon" data-aos="zoom-out" data-aos-once="false" data-aos-duration="4000" />
           <h3 data-aos="zoom-in" className="meet--up green-title-text temp--font light--green">Meet the Team</h3>
         </div>
         <div className="team--div grid a-i-c">
           {showAll ? (
-            <ul>
-              {Team.map((member, index) => (
+            <ul className="team--container grid a-i-c j-c-c">
+              {displayedMembers.map((member, index) => (
                 <li key={member.id}><Member key={member.id} counter={index} member={member} /></li>
               ))}
             </ul>
           ) : (
-            <ul>
-              {Team.slice(0, 3).map((member, index) => (
+            <ul className="team--container grid">
+              {displayedMembers.map((member, index) => (
                 <li key={member.id}><Member key={member.id} counter={index} member={member} /></li>
               ))}
             </ul>

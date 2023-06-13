@@ -50,7 +50,7 @@ const Products = () => {
         linkThree={{ link: 'FIEMS', id: 'Fiems' }}
       />
 
-      <div className="about--content about--product page--content margin j-c-c a-i-c flex column">
+      <div className="about--content about--product w--100 page--content margin j-c-c a-i-c flex column">
         <p className="about--text w--80 text--just">
           El-kanis and Partners&lsquo; products are of the highest quality, produced with a
           commitment to sustainability and innovation. By utilizing cutting-edge technology and
@@ -80,11 +80,11 @@ const Products = () => {
   }
       >
         <div className="rice--img--div w--100 d-flex a-i-c" id="Projects">
-          <img src={ARTICLES[1].productImage} alt={ARTICLES[1].id} className="livestock--img" style={{ maxWidth: '100%', lineHeight: '38px' }} />
+          <img src={ARTICLES[1].productImage} alt={ARTICLES[1].id} className="livestock--img" style={{ maxWidth: '100%' }} />
         </div>
         <div className="cover">
           <div className="drive-us--text flex gap-one flow column">
-            <h3 id="Fiems" style={{ fontSize: '68px', maxWidth: '100%' }} className="green-title-text boarder special-title temp--font light--green">{ARTICLES[1].featureHeadline}</h3>
+            <h3 id="Fiems" className="green-title-text boarder special-title temp--font light--green">{ARTICLES[1].featureHeadline}</h3>
             <p className="sub--text text--just">{ARTICLES[1].intro[0]}</p>
           </div>
         </div>
@@ -92,13 +92,10 @@ const Products = () => {
 
       <article
         id={id}
-        className="drive--us row--reverse relative a-i-c g--48 d-flex"
-        style={
-          { width: '80%', padding: '0', top: '-12vh' }
-  }
+        className="drive--us row--reverse relative a-i-c w--100 g--48 d-flex"
       >
-        <div className="rice--img--div after--effect w--100 d-flex">
-          <img src={ARTICLES[1].addImg} alt="A man transporting rice" className="rice--img dashed" style={{ width: '100%' }} />
+        <div className="rice--img--div w--100 d-flex">
+          <img src={ARTICLES[1].addImg} alt="A man transporting rice" className="rice--img smart--fiems" />
         </div>
 
         <div className="cover">
@@ -114,21 +111,14 @@ const Products = () => {
       <section className="spacial--Img w--80">
         <img src={Spacial} alt="Geolocation conducted by drones" className="spacial" style={{ width: '100%' }} />
       </section>
-      <section className="drive us w--80 d-flex column" style={{ padding: '6% 0 20% 20%', gap: '48px' }}>
-        <div className="drones-div d-flex relative" style={{ paddingLeft: '20%', gap: '48px' }}>
-          <img src={Drone} alt="Drones at work" className="drone-drive absolute" style={{ maxWidth: '40%', top: '-10vh', left: '-13vh' }} />
+      <section className="drones--section drive us w--100 d-flex column">
+        <div className="drones-div d-flex relative">
+          <img src={Drone} alt="Drones at work" className="drone-drive relative" />
           <div className="drone--info">
-            <h4
-              className="product--card--title temp--font"
-              style={
-                    {
-                      fontSize: '36px', lineHeight: '40px', marginBottom: '8px', color: '#455214',
-                    }
-              }
-            >
+            <h4 className="product--card--title green-title temp--font">
               Agricultural Drone Service
             </h4>
-            <p className="product--card--text text--just" style={{ fontSize: '18px' }}>
+            <p className="product--card--text text--just">
               FIEMS leverage on Ag-drones to collect data and information that help farmers
               manage their enterprise more effectively. With FIEMS drones are deployed to count and
               monitor the growth of rice and assess land use. This data are used to make informed
@@ -136,14 +126,13 @@ const Products = () => {
             </p>
           </div>
         </div>
-        <div className="drones-div row--reverse d-flex g--32">
+        <div className="drones-div IVR d-flex g--32">
           <div className="drone--details d-flex column a-i-c" style={{ width: '100%' }}>
-            <img src={IV} alt="IVR attendant icon" className="drone-drive" style={{ width: '100%', alignSelf: 'flex-start' }} />
+            <img src={IV} alt="IVR attendant icon" className="drone-drive-ivr" />
             <button
               type="button"
               title="Ask an Agent"
               className="button action--btn"
-              style={{ fontSize: '1.15vw', padding: '4% 5%' }}
               onClick={() => handleOrder('IVR Services')}
             >
               Request Service
@@ -151,20 +140,11 @@ const Products = () => {
           </div>
           <div className="drone--info">
             <h4
-              className="product--card--title temp--font"
-              style={
-                    {
-                      fontSize: '36px',
-                      lineHeight: '44px',
-                      marginBottom: '8px',
-                      color: '#455214',
-                      maxWidth: '80%',
-                    }
-              }
+              className="product--card--title green-title temp--font"
             >
               Local Language Interactive Response Platform
             </h4>
-            <p className="product--card--text text--just" style={{ fontSize: '18px' }}>
+            <p className="product--card--text text--just">
               The platform provide rural farmers with easy access to important information and
               resources using local language. The IVR allow rural farmers to interact with
               Extension Agents by navigating through a menu of options on their mobile phones

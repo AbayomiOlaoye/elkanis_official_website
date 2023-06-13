@@ -14,8 +14,8 @@ import cultivation from '../../assets/services/cultivation.png';
 import ricePro from '../../assets/services/rice_pro.png';
 import Statistics from '../sub/statistics';
 import ARTICLES from '../../storage/articles';
-// import Footer from '../Nav/Footer';
-// import research from '../../assets/services/research.png';
+import Footer from '../Nav/Footer';
+import research from '../../assets/services/research.png';
 
 const Services = () => {
   useEffect(() => {
@@ -173,7 +173,7 @@ const Services = () => {
           </div>
           <div className="agro--bg relative d-flex gap-one">
             <img
-              src={cultivation}
+              src={research}
               data-aos="zoom-out"
               alt="agric"
               className="agro--img relative"
@@ -210,7 +210,7 @@ const Services = () => {
         </article>
       </section>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

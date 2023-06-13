@@ -64,23 +64,18 @@ const ProductCard = ({ products }) => {
       {productState.map((product, index) => (
         <div className="product--card--div d-flex g--32" key={product.id} style={{ lineHeight: '25px' }}>
           <div className="product--img--div d-flex column">
-            <img src={product.productImage} alt={product.product} className="product--card--img max--100" />
+            <img src={product.productImage} alt={product.product} className="product--card--img" />
             <Button text="Place Order" action={() => handleOrder(product.product)} />
           </div>
           <div className="product--card--text--div">
             <h3
-              className="product--card--title temp--font"
-              style={
-                {
-                  fontSize: '36px', lineHeight: '40px', marginBottom: '8px', color: '#455214',
-                }
-              }
+              className="product--card--title temp--font green-title"
             >
               {product.product}
             </h3>
-            <p className="product--card--text text--just" style={{ fontSize: '18px' }}>{product.productInfo}</p>
+            <p className="product--card--text text--just">{product.productInfo}</p>
             {product.keyFeatures && (
-              <div className="product--features" style={{ fontSize: '18px' }}>
+              <div className="product--features">
                 <h4 className="product--features--title" style={{ margin: '18px 0 5px' }}>Key Features</h4>
                 <ul className="product--features--list disc">
                   {product.keyFeatures.map((feature) => (
@@ -113,7 +108,7 @@ const ProductCard = ({ products }) => {
                   Dosage
                 </button>
               </div>
-              <div className="product--highlights--div" style={{ fontSize: '18px' }}>
+              <div className="product--highlights--div">
                 <ul className={`lister disc ${product.showBenefit ? 'show' : 'hide'}`}>
                   {product.showBenefit && renderBenefits(product.benefits)}
                 </ul>
