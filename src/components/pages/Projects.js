@@ -9,6 +9,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Top from '../sections/jumbotron/top';
 import PROJECTS from '../../storage/projects';
+import Footer from '../Nav/Footer';
 
 const Projects = () => {
   const containerRef = useRef(null);
@@ -17,8 +18,8 @@ const Projects = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
-      easing: 'ease-in-out',
+      duration: 1000,
+      easing: 'ease',
       once: false,
     });
   }, []);
@@ -55,19 +56,22 @@ const Projects = () => {
         {PROJECTS.map((project) => (
           <div
             className="project--card relative"
-            data-aos='zoom-in'
             title="Click to check the Project!"
+            data-aos="fade-left"
+            data-aos-delay="100"
+            data-aos-duration="2000"
             key={project.id}
             id={project.id}
             onClick={() => handleProjectClick(project.id)}
           >
-            <img src={project.img} alt={project.title} className="project--img trans" />
+            <img data-aos="fade-in" src={project.img} alt={project.title} className="project--img trans" />
             <div className="project--head hover absolute d-flex column a-i-c j-c-c">
-              <h3 className="project--title" style={{ lineHeight: '20px' }}>{project.theme}</h3>
+              <h3 data-aos="zoom-in" className="project--title" style={{ lineHeight: '20px' }}>{project.theme}</h3>
             </div>
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 };

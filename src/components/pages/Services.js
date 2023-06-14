@@ -84,14 +84,14 @@ const Services = () => {
             the long-term success of the project.
           </li>
         </ul>
-        <article className="cultivate rice--processing relative w--100 d-flex column">
+        <article className="cultivate rice--processing relative w--90 d-flex column">
           <div className="pro agro--bg relative d-flex row--reverse gap-one" data-aos="fade-right">
             <img
               src={cultivation}
               alt="agric"
               className="plant agro--img absolute"
             />
-            <div className="pro--title--div w--100 d-flex grow column">
+            <div className="pro--title--div w--80 d-flex grow column">
               <h4 id="Rice_Processing" className="product--card--title boarder temp--font green-title-text">Rice Cultivation and Processing</h4>
               <p className="agro--text line--height">
                 One of the key areas of expertise for El-kanis is rice production.

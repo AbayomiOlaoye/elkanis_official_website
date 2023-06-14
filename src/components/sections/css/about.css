@@ -553,6 +553,7 @@ article.drive--us.g--32.d-flex {
 .services .main--agro--img {
   border-top-left-radius: 100px;
   width: 90%;
+  object-fit: contain;
 }
 
 .agric--img {
@@ -563,22 +564,23 @@ article.drive--us.g--32.d-flex {
 }
 
 .agro--img {
-  min-width: 70%;
+  object-fit: contain;
 }
 
 .plant.agro--img {
-  top: 30%;
-  height: 150px;
+  top: 25%;
+  max-width: 200px;
   object-fit: cover;
 }
 
 .pro--title--div .space--para {
-  margin-top: 32vh;
+  margin-top: 60vh;
 }
 
 .agro--float--img {
   max-width: 100%;
   width: 30%;
+  object-fit: cover;
 }
 
 .grow {
@@ -603,12 +605,12 @@ article.drive--us.g--32.d-flex {
   background: rgb(208, 223, 160);
   height: auto;
   width: 90%;
-  gap: 1.2rem;
+  gap: 0.8rem;
   padding: 1rem;
   top: -15vh;
   left: 1vh;
   box-shadow: 0 16px 25px rgba(0, 0, 0, 0.1);
-  border-radius: 0 0 50px 0;
+  border-radius: 0 0 65px 0;
 }
 
 /* .pro .agro--img {
@@ -665,7 +667,7 @@ article.drive--us.g--32.d-flex {
   }
 
   .stat--text {
-    font-size: 1.35vw;
+    font-size: 12px;
   }
 
   .drone-drive {
@@ -1033,6 +1035,12 @@ article.drive--us.g--32.d-flex {
     align-items: start;
   }
 
+  .pro.agro--bg {
+    width: 100%;
+    justify-items: flex-start;
+    flex-direction: row-reverse;
+  }
+
   .agro--title {
     line-height: 1;
     margin: 0;
@@ -1040,8 +1048,9 @@ article.drive--us.g--32.d-flex {
 
   .services .main--agro--img {
     border-top-left-radius: 300px;
-    width: 130%;
-    object-fit: cover;
+    max-width: 100%;
+    object-fit: contain;
+    height: 325px;
     flex-grow: 1;
   }
 
@@ -1055,6 +1064,11 @@ article.drive--us.g--32.d-flex {
   .agro--float--img {
     max-width: 100%;
     width: 30%;
+  }
+
+  .remove {
+    display: flex;
+    object-fit: cover;
   }
 
   .agro--float--img:nth-of-type(3) {
@@ -1081,9 +1095,7 @@ article.drive--us.g--32.d-flex {
   }
 
   .project--list {
-    margin-top: 35vh;
-    line-height: 160%;
-    color: #3c4044;
+    margin-top: -5vh;
   }
 
   .rice--processing {
@@ -1094,8 +1106,27 @@ article.drive--us.g--32.d-flex {
     line-height: 1.5;
   }
 
+  .plant.agro--img {
+    position: relative;
+    border-top-right-radius: 200px;
+    top: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    align-self: stretch;
+  }
+
+  .pro--title--div {
+    max-width: 50%;
+    align-self: flex-start;
+  }
+
   .pro--title--div p {
     margin-top: 1.5rem;
+  }
+
+  .pro--title--div .space--para {
+    margin-top: 0;
   }
 
   .drones-details {
@@ -1110,6 +1141,27 @@ article.drive--us.g--32.d-flex {
 
   .footer__top {
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 866px) {
+  .services .main--agro--img {
+    border-top-left-radius: 300px;
+    max-width: 100%;
+    object-fit: contain;
+    height: 350px;
+  }
+
+  .project--list {
+    margin-top: -15vh;
+  }
+
+  .agro--img--float {
+    max-width: 65%;
+    top: -19vh;
+    left: 15vh;
+    padding: 1rem 0 1rem 1rem;
+    width: 75%;
   }
 }
 
@@ -1151,15 +1203,24 @@ article.drive--us.g--32.d-flex {
   }
 
   .agro--img--float {
-    gap: 0.6rem;
-    max-width: 65%;
     top: -17vh;
     left: 15vh;
-    padding: 1rem 4rem 1rem 1rem;
-    width: 85%;
+    padding: 1rem 2rem 1rem 1rem;
+  }
+
+  .services .main--agro--img {
+    height: 350px;
   }
 }
 
-@media screen and (min-width: 1076px) {
-  
+@media screen and (min-width: 1067px) {
+  .services .main--agro--img {
+    height: 450px;
+  }
+
+  .agro--img--float {
+    top: -25vh;
+    left: 22vh;
+    padding: 1rem 4rem 1rem 1rem;
+  }
 }
