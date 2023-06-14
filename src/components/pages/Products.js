@@ -2,6 +2,8 @@
 /* eslint-disable import/no-named-as-default-member */
 import React, { useRef, useEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Top from '../sections/jumbotron/top';
 import '../sections/css/about.css';
 import Article from '../sub/Article';
@@ -33,6 +35,14 @@ const Products = () => {
     }
   }, [location.state]);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      easing: 'ease',
+      once: true,
+    });
+  }, []);
+
   // Whatsapp message
   const PHONE_NUMBER = '2348027331036';
 
@@ -42,7 +52,7 @@ const Products = () => {
   };
 
   return (
-    <div className="sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7' }} ref={sectionRef}>
+    <div className="sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7', overflow: 'hidden' }} ref={sectionRef}>
       <Top
         title="Our Products"
         id="Products"
@@ -51,7 +61,7 @@ const Products = () => {
         linkThree={{ link: 'FIEMS', id: 'Fiems' }}
       />
 
-      <div className="about--content about--product w--100 page--content margin j-c-c a-i-c flex column">
+      <div data-aos="zoom-in" className="livestock about--content about--product w--100 page--content margin j-c-c a-i-c flex column">
         <p className="about--text w--80 text--just">
           El-kanis and Partners&lsquo; products are of the highest quality, produced with a
           commitment to sustainability and innovation. By utilizing cutting-edge technology and
@@ -61,16 +71,17 @@ const Products = () => {
         <Article article={ARTICLES[0]} id="Livestock" />
       </div>
 
-      <article className="drive-us g--32 d-flex column w--70" style={{ marginTop: '5vh' }}>
+      <article data-aos="fade-left" className="products g--32 d-flex column w--100">
         <ProductCard products={PRODUCTS} />
       </article>
 
-      <div className="about--product w--100">
+      <div data-aos="fade-in" className="about--product w--100 rice">
         <Article article={ARTICLES[2]} id="Rice" />
       </div>
 
       <article
-        className="drive--us g--32 d-flex"
+        className="drive--us g--32 d-flex fiems"
+        data-aos="fade-right"
         style={
           {
             padding: '0',
@@ -81,7 +92,7 @@ const Products = () => {
   }
       >
         <div className="rice--img--div w--100 d-flex a-i-c" id="Projects">
-          <img src={ARTICLES[1].productImage} alt={ARTICLES[1].id} className="livestock--img" style={{ maxWidth: '100%' }} />
+          <img src={ARTICLES[1].productImage} alt={ARTICLES[1].id} className="livestock--img" />
         </div>
         <div className="cover">
           <div className="drive-us--text flex gap-one flow column">
@@ -93,7 +104,8 @@ const Products = () => {
 
       <article
         id={id}
-        className="drive--us row--reverse relative a-i-c w--100 g--48 d-flex"
+        data-aos="zoom-in"
+        className="drive--us row--reverse addImg relative a-i-c w--100 g--48 d-flex"
       >
         <div className="rice--img--div w--100 d-flex">
           <img src={ARTICLES[1].addImg} alt="A man transporting rice" className="rice--img smart--fiems" />
@@ -101,8 +113,8 @@ const Products = () => {
 
         <div className="cover">
           <div className="drive-us--text flex gap-one flow column">
-            <p className="sub--text text--just">{ARTICLES[1].intro[0]}</p>
-            <ul className="sub--text text--just team--skills--list">
+            <p className="sub--text">{ARTICLES[1].intro[0]}</p>
+            <ul className="sub--text team--skills--list">
               {ARTICLES[1].result.map((para) => <li key={para}>{para}</li>)}
             </ul>
           </div>
@@ -119,7 +131,7 @@ const Products = () => {
             <h4 className="product--card--title green-title temp--font">
               Agricultural Drone Service
             </h4>
-            <p className="product--card--text text--just">
+            <p className="product--card--text">
               FIEMS leverage on Ag-drones to collect data and information that help farmers
               manage their enterprise more effectively. With FIEMS drones are deployed to count and
               monitor the growth of rice and assess land use. This data are used to make informed
@@ -128,7 +140,7 @@ const Products = () => {
           </div>
         </div>
         <div className="drones-div IVR d-flex g--32">
-          <div className="drone--details d-flex column a-i-c" style={{ width: '100%' }}>
+          <div className="drone--details d-flex column a-i-c w--100">
             <img src={IV} alt="IVR attendant icon" className="drone-drive-ivr" />
             <button
               type="button"
@@ -145,7 +157,7 @@ const Products = () => {
             >
               Local Language Interactive Response Platform
             </h4>
-            <p className="product--card--text text--just">
+            <p className="product--card--text">
               The platform provide rural farmers with easy access to important information and
               resources using local language. The IVR allow rural farmers to interact with
               Extension Agents by navigating through a menu of options on their mobile phones

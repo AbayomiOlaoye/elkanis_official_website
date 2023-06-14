@@ -19,7 +19,7 @@ const Projects = () => {
     AOS.init({
       duration: 2000,
       easing: 'ease-in-out',
-      once: true,
+      once: false,
     });
   }, []);
 
@@ -55,9 +55,7 @@ const Projects = () => {
         {PROJECTS.map((project) => (
           <div
             className="project--card relative"
-            data-aos='fade-left'
-            data-aos-duration="3000"
-            data-aos-once="false"
+            data-aos='zoom-in'
             title="Click to check the Project!"
             key={project.id}
             id={project.id}

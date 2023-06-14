@@ -2,10 +2,20 @@
 import React, { useEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import '../sections/css/about.css';
 import Statistics from './statistics';
 
 const Article = ({ article, id }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true,
+      easing: 'ease-in-out',
+    });
+  }, []);
+
   // Whatsapp message
   const PHONE_NUMBER = '2348027331036';
 
@@ -29,12 +39,13 @@ const Article = ({ article, id }) => {
   return (
     <article
       className="drive--us g--32 d-flex"
+      data-aos="fade-up"
       style={
         { alignSelf: 'flex-start' }
       }
       id={id}
     >
-      <div className="rice--img--div relative d-flex column a-i-c" id={identity}>
+      <div className={`rice--img--div relative d-flex column a-i-c ${article.id === 'elkanRice' ? 'rice--bag' : ''}`} id={identity}>
         <img src={article.productImage} alt={article.id} className="livestock--img" />
         { article.id === 'elkanRice' && <button type="button" title="Now in stock!" className="button action--btn" onClick={() => handleOrder('El-kanis Rice')}>Place Order</button>}
       </div>
@@ -42,7 +53,7 @@ const Article = ({ article, id }) => {
       <div className="cover">
         <div className="drive-us--text flex gap-one flow column">
           <h3 id={id} className="green-title-text boarder special-title temp--font light--green">{article.featureHeadline}</h3>
-          { article.intro.map((para) => <p key={para.length - 1} className="sub--text text--just">{para}</p>) }
+          { article.intro.map((para) => <p key={para.length - 1} className="sub--text">{para}</p>) }
         </div>
         <div className="stats--container gap-one d-flex" style={{ marginTop: '2rem' }}>
           <Statistics stats={article.stats} />

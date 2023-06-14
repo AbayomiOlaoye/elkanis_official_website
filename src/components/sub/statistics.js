@@ -1,8 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import PropTypes from 'prop-types';
 
 const Statistics = ({ stats }) => {
   const [counters, setCounters] = useState({});
+
+  useEffect(() => {
+    AOS.init({
+      duration: 3000,
+      easing: 'ease',
+      once: false,
+    });
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -34,9 +44,9 @@ const Statistics = ({ stats }) => {
         if (stat && typeof stat.counter === 'number') {
           const counterClassName = `counter-${key}`;
           return (
-            <div className={`stat--div d-flex column a-i-c ${counterClassName}`} key={key}>
-              <img src={stat.icon} alt="icon" className="stat--icon" />
-              <p className="stat--text" style={{ fontWeight: '700' }}>
+            <div className={`stat--div d-flex column a-i-c ${counterClassName}`} data-aos="zoom-in" key={key}>
+              <img src={stat.icon} alt="icon" data-aos="fade-in" className="stat--icon" />
+              <p data-aos="fade-left" data-aos-duration="4000" className="stat--text" style={{ fontWeight: '700' }}>
                 {formatCount(counters[key] || stat.counter)}
                 <span className="plus">+</span>
               </p>

@@ -36,24 +36,16 @@ const Services = () => {
         linkThree={{ link: 'Research', id: 'Research' }}
       />
 
-      <section className="about--content relative w--90 about--product page--content margin j-c-c a-i-c flex column" style={{ backgroundColor: '#fff' }}>
+      <section className="services about--content relative w--100 about--product page--content margin j-c-c a-i-c flex column" style={{ backgroundColor: '#fff' }}>
         <div className="agro--bg d-flex gap-one" data-aos="fade-down">
           <img
             src={agric}
             alt="agric"
-            className="agro--img"
-            style={
-            {
-              width: '130%',
-              height: '50%',
-              borderRadius: '300px 0 0 0',
-              objectFit: 'cover',
-            }
-          }
+            className="main--agro--img"
           />
           <h4 id="Projects" className="agro--title boarder temp--font green-title-text">Agricultural Project Development and Management</h4>
         </div>
-        <div className="agro--img--float d-flex absolute" data-aos="fade-up">
+        <div className="agro--img--float d-flex relative" data-aos="fade-up">
           <img src={workers} alt="agric" className="agro--float--img" />
           <img src={workersB} alt="agric" className="agro--float--img" />
           <img src={riceStack} alt="agric" className="agro--float--img" />
@@ -92,30 +84,21 @@ const Services = () => {
             the long-term success of the project.
           </li>
         </ul>
-        <article className="rice--processing relative w--80 d-flex">
-          <div className="agro--bg relative d-flex row--reverse gap-one" data-aos="fade-right">
+        <article className="cultivate rice--processing relative w--100 d-flex column">
+          <div className="pro agro--bg relative d-flex row--reverse gap-one" data-aos="fade-right">
             <img
               src={cultivation}
               alt="agric"
-              className="agro--img absolute"
-              style={
-            {
-              right: '-120px',
-              width: '40%',
-              height: '90vh',
-              borderRadius: '0 300px 0 0',
-              objectFit: 'cover',
-            }
-          }
+              className="plant agro--img absolute"
             />
-            <div className="pro--title--div w--100 d-flex column">
-              <h4 id="Rice_Processing" className="w--60 product--card--title boarder temp--font green-title-text">Rice Cultivation and Processing</h4>
-              <p className="w--70 agro--text line--height">
+            <div className="pro--title--div w--100 d-flex grow column">
+              <h4 id="Rice_Processing" className="product--card--title boarder temp--font green-title-text">Rice Cultivation and Processing</h4>
+              <p className="agro--text line--height">
                 One of the key areas of expertise for El-kanis is rice production.
                 Rice is a staple food for millions of people in Nigeria, and ensuring
                 its quality and availability is crucial for national food security.
               </p>
-              <p className="w--70 gro--text line--height">
+              <p className="agro--text space--para line--height">
                 El-kanis and Partners uses state-of-the-art technology, including precision farming
                 techniques and data-driven analytics, to enhance every step of the rice production
                 process.From farmers profiling, farm mapping, seed selection and planting to
@@ -126,11 +109,11 @@ const Services = () => {
             </div>
 
           </div>
-          <div className="agro--bottom d-flex absolute gap-one" data-aos="fade-left">
+          <div className="agro--bottom w--80 d-flex gap-one" data-aos="fade-left">
             <img
               src={ricePro}
               alt="agric"
-              className="agro--float--img"
+              className="remove bottom agro--float--img"
               style={
             {
               borderRadius: '0 0 0 250px',
@@ -160,18 +143,18 @@ const Services = () => {
             </div>
           </div>
         </article>
-        <div className="stats--container gap-one d-flex relative" style={{ top: '95vh' }}>
+        <div className="stats--container gap-half j-c-c d-flex relative">
           <Statistics stats={ARTICLES[2].stats} />
         </div>
-        <article className="rice--processing relative d-flex g--32 column" style={{ top: '75vh' }} data-aos="zoom-in">
-          <div className="cent d-flex column gap-one" style={{ marginLeft: '6rem' }}>
+        <article className="research rice--processing relative d-flex g--32 a-i-c column" data-aos="zoom-in">
+          <div className="cent d-flex a-i-c column gap-one">
             <h4 id="Research" className="w--90 product--card--title boarder temp--font green-title-text">Agricultural Research for Development and Consultancy</h4>
             <p className="w--90 agro--text line--height">
               El-kanis and Partners is committed to improving the agricultural sector in Nigeria
               through its research and development efforts, as well as consultancy services.
             </p>
           </div>
-          <div className="agro--bg relative d-flex gap-one">
+          <div className="pro agro--bg relative d-flex gap-one">
             <img
               src={research}
               data-aos="zoom-out"
@@ -185,8 +168,8 @@ const Services = () => {
             }
           }
             />
-            <div className="pro--title--div w--80 d-flex column">
-              <p className="agro--text line--height" style={{ marginTop: '0' }} data-aos="fade-left">
+            <div className="pro--title--div w--90 d-flex column">
+              <p className="agro--text text--just line--height" style={{ marginTop: '0' }} data-aos="fade-left">
                 Research for Development: El-kanis and Partners invests heavily in research and
                 development to improve the productivity and sustainability of agricultural
                 practices in Nigeria. The company collaborates with universities, research
@@ -195,7 +178,7 @@ const Services = () => {
                 has developed supplements for livestock that are better suited to local brooding
                 conditions, which has helped to increase yields and reduce mortality.
               </p>
-              <p className="agro--text line--height" data-aos="fade-right">
+              <p className="agro--text text--just line--height" data-aos="fade-right">
                 Consultancy Services: El-kanis and Partners provides consultancy services to
                 Governments, Development Agencies and farmers, helping them to improve their
                 agricultural practices and increase their yields. The company&lsquo;s team of experts

@@ -170,7 +170,7 @@ body {
 .button {
   background-color: var(--primary--01);
   color: var(--alt-white);
-  padding: 3%;
+  padding: 1rem 0.5rem;
   border: none;
   border-radius: 0.5rem;
   margin-top: 1rem;
@@ -195,8 +195,16 @@ body {
   justify-content: space-between;
 }
 
+.gap-half {
+  gap: 0.4rem;
+}
+
+.research.rice--processing {
+  padding-top: 0;
+}
+
 @media screen and (min-width: 768px) {
   .button {
-    font-size: 2vw;
+    font-size: 1.35rem;
   }
 }
