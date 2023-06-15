@@ -1,13 +1,210 @@
-body {
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  /* Font & Spacing Properties/Values */
+  --tiempos-fine: 'Tiempos fine';
+  --inter: 'Inter';
+  --size--80: 5.5vw;
+  --size--72: 5vw;
+  --size--60: 4.1vw;
+  --size--49: 3.4vw;
+  --size--40: 2.7vw;
+  --size--36: 2.5vw;
+  --size--32: 2.2vw;
+  --size--28: 1.9vw;
+  --size--24: 1.7vw;
+  --size--22: 1.5vw;
+  --size--20: 1.3vw;
+  --size--18: 1.2vw;
+  --size--16: 1.1vw;
+  --size--14: 1vw;
+  --wgt--700: 700;
+  --wgt--600: 600;
+  --wgt--500: 500;
+  --wgt--400: 400;
+  --wgt--300: 300;
+
+  /* Width */
+  --w--100: 100%;
+  --w--90: 90%;
+  --w--80: 80%;
+  --w--70: 70%;
+  --w--60: 60%;
+  --max--90: 90%;
+  --h--100: 100vh;
+  --min-height: 100vh;
+
+  /* Alignment & Justfication */
+  --center: center;
+  --space-between: space-between;
+  --space-around: space-around;
+  --start: flex-start;
+  --end: flex-end;
+  --right: right;
+  --left: left;
+
+  /* Colors */
+  --white: #fff;
+  --black: #000;
+  --alt-white: #f2f7de;
+  --primary--01: #91aa2b;
+  --primary--02: #2a310c;
+  --primary--03: #455214;
+  --primary--04: #6f8321;
+  --primary--05: #91aa2b;
+  --primary--06: #b7d24b;
+  --primary--07: #cbde7c;
+  --primary--08: #ecf8c1;
+  --primary--09: #f2f7de;
+  --team--bg: #bfca90;
+  --sec--04: #212529;
+  --sec--05: #3c4044;
+  --sec--10: #f3f4f5;
+  --nav--bg: rgba(42, 49, 12, 0.8);
+  --border--image: linear-gradient(90deg, #c3ee00 0%, #91aa2b 100%);
+}
+
+@font-face {
+  font-family: 'Tiempos fine';
+  src: url(../src/assets/font/TiemposFine-Light.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Tiempos fine';
+  src: url(../src/assets/font/TiemposFine-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Tiempos fine';
+  src: url(../src/assets/font/TiemposFine-Medium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Tiempos fine';
+  src: url(../src/assets/font/TiemposFine-Semibold.otf);
+  font-weight: 600;
+}
+
+body {
+  font-family:
+    'Open Sans',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: calc(10px + 1.2vmin);
+  color: var(--sec--04);
+  background-color: #fff;
+  max-width: 100%;
+  font-weight: 400;
+  width: 100vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.w--100 {
+  width: 100%;
+}
+
+.w--60 {
+  width: 60%;
+}
+
+.w--90 {
+  width: 90%;
+}
+
+.max--100 {
+  max-width: 100%;
+}
+
+.block {
+  display: block;
+}
+
+.temp--font {
+  font-family: var(--tiempos-fine), sans-serif;
+}
+
+.ml--120 {
+  margin-left: 8%;
+}
+
+.button {
+  background-color: var(--primary--01);
+  color: var(--alt-white);
+  padding: 1rem 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--primary--05);
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.button:active {
+  background-color: var(--primary--07);
+  color: var(--alt-white);
+  opacity: 0.8;
+}
+
+.j-s-b {
+  justify-content: space-between;
+}
+
+.gap-half {
+  gap: 0.4rem;
+}
+
+.research.rice--processing {
+  padding-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    font-size: 1.35rem;
+  }
 }

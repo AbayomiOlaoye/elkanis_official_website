@@ -1,0 +1,1316 @@
+/* stylelint-disable no-descending-specificity */
+.d-flex {
+  display: flex;
+}
+
+.j-c-c {
+  justify-content: center;
+}
+
+.a-i-c {
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.relative {
+  position: relative;
+}
+
+.w--100 {
+  width: 100%;
+}
+
+.w--70 {
+  width: 70%;
+}
+
+.g--32 {
+  gap: 2rem;
+}
+
+.w--80 {
+  width: 80%;
+}
+
+.w--90 {
+  width: 90%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.grid {
+  display: grid;
+}
+
+.top--container {
+  height: 50vh;
+}
+
+.hero--img {
+  top: 25vh;
+  width: 80%;
+  height: 30vh;
+  object-fit: cover;
+  box-shadow: 0 32px 20px rgba(0, 0, 0, 0.05);
+}
+
+.image--overlay {
+  position: absolute;
+  top: 35vh;
+  left: 10%;
+  width: 80%;
+  height: 30vh;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+  background: rgba(69, 82, 20, 0.6);
+}
+
+.hero--title--about {
+  top: 95%;
+  font-weight: 600;
+  color: var(--primary--08);
+}
+
+.top--links {
+  border-top: 1px solid #fff;
+  top: 53vh;
+  padding-top: 0.5rem;
+  width: 70%;
+}
+
+.page--content {
+  padding-top: 23vh;
+  background-color: #f9faf7;
+}
+
+.about--bg {
+  background-image: url('../../../assets/backgrounds/globe.png');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50% 40%;
+}
+
+.text--just {
+  text-align: justify;
+}
+
+.boarder {
+  padding-left: 1rem;
+  border-left: 5px solid transparent;
+  border-image: linear-gradient(25deg, #c3ee00 0%, #91aa2b 70%);
+  border-image-slice: 1;
+}
+
+.boarder:nth-of-type(2) {
+  padding: 1rem 0 0;
+  border-left: none;
+  border-top: 5px solid transparent;
+  border-image: linear-gradient(25deg, #c3ee00 0%, #91aa2b 70%);
+  border-image-slice: 1;
+}
+
+.rice--img {
+  max-width: 80%;
+}
+
+.rice--img--div {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Rice .rice--img--div {
+  align-items: start;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
+.d-block {
+  display: block;
+}
+
+.team--div {
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.team--img {
+  max-width: 100%;
+  width: 30%;
+  border-radius: 50%;
+  background-color: #bfca90;
+  border: none;
+  z-index: 5;
+}
+
+.drive-us {
+  justify-self: flex-start;
+  width: 80%;
+  grid-template-columns: 1fr;
+}
+
+.para-one {
+  margin: 1rem 0 2rem 0;
+}
+
+.mini-title {
+  font-size: 6vw;
+  color: var(--primary--07);
+}
+
+h3.special-title {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 6vw;
+  width: 100%;
+}
+
+.vision--container {
+  width: 100%;
+  background-color: var(--primary--04);
+  padding: 2rem 3rem 3rem;
+  color: #fff;
+  margin-top: 2rem;
+  grid-template-columns: 1fr;
+}
+
+.gap-one {
+  gap: 1rem;
+}
+
+.one--point {
+  line-height: 28px;
+}
+
+.g--48 {
+  gap: 3rem;
+}
+
+.m-40 {
+  margin-bottom: var(--size--32);
+}
+
+.vision--div {
+  padding: 0 0 4rem;
+}
+
+.icon {
+  margin-top: 2rem;
+  width: 40px;
+}
+
+.footer--icon {
+  position: relative;
+  top: -1vh;
+  width: 15%;
+}
+
+div.footer--links {
+  gap: 0.15rem;
+}
+
+.team--action {
+  gap: 0.31rem;
+}
+
+.know--more {
+  background: transparent;
+  padding: 0.5rem;
+  display: flex;
+  margin-bottom: 2rem;
+  border: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: 10px;
+  color: var(--primary--05);
+  transition: all 0.6s ease-in-out;
+}
+
+.know--more:hover {
+  background: var(--primary--06);
+  color: var(--alt-white);
+  opacity: 0.8;
+}
+
+.know--more:active {
+  background: transparent;
+  color: var(--primary--02);
+  border: 1px solid var(--primary--02);
+}
+
+.team--member {
+  align-self: flex-start;
+}
+
+.footer--link {
+  color: #3c4044;
+}
+
+.footer--link:nth-of-type(1) {
+  padding-right: 2rem;
+  margin-right: 2rem;
+  border-right: 1px solid;
+}
+
+.team--role {
+  font-weight: 700;
+  font-size: 3vw;
+  text-align: center;
+  color: var(--primary--04);
+}
+
+.team--name {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 2vw;
+  color: #91aa2b;
+}
+
+.lefty--title.boarder {
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+.meet--up {
+  margin-bottom: 2rem;
+}
+
+.team--text {
+  max-width: 80%;
+  font-size: 3vw;
+}
+
+.full {
+  top: -10vw;
+  background-color: var(--primary--04);
+  color: #fff;
+  padding: 13% 7%;
+  border-radius: 12px;
+  border: none;
+  overflow: hidden;
+}
+
+.full .team--text {
+  max-width: 100%;
+}
+
+ul.team--skills--list {
+  margin-left: 2rem;
+  list-style-type: disc;
+}
+
+.team--skills--card {
+  margin-top: 1.5rem;
+}
+
+/* Actions buttons */
+
+.btn--more {
+  background: var(--primary--08);
+  border: none;
+  color: var(--primary--04);
+  font-weight: 600;
+  font-size: 2.5vw;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 5px;
+  padding: 0.8rem;
+  margin: 0 auto 1.5rem;
+  transition: all 0.6s ease-in-out;
+}
+
+.btn--more:hover {
+  background: var(--primary--06);
+  color: var(--alt-white);
+}
+
+.btn--more:active {
+  background: transparent;
+  color: var(--primary--02);
+  border: 1px solid var(--primary--02);
+}
+
+footer {
+  position: relative;
+
+  /* top: 10vh; */
+}
+
+/* Product Features */
+.drive--us {
+  flex-direction: column;
+  gap: 0;
+}
+
+img.livestock--img {
+  max-width: 100%;
+  width: 40%;
+  align-self: flex-start;
+}
+
+.cover {
+  padding: 0 1.5rem;
+}
+
+#root > div > article.vision--container.relative.grid > div.boarder.vision--div.d-flex.gap-one.column.a-i-c > div {
+  align-items: center;
+}
+
+#Livestock h3.special-title,
+#Rice h3.special-title,
+#Fiems h3.special-title {
+  text-align: left;
+}
+
+.green-title {
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 10px;
+  color: rgb(69, 82, 20);
+}
+
+.product--card--text {
+  font-size: 1rem;
+}
+
+.drones--section {
+  padding: 2% 10% 5%;
+  gap: 2rem;
+}
+
+.drone-drive {
+  display: none;
+}
+
+.page--link {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.about--product {
+  background: #f2f7de;
+}
+
+/* Statistics Config */
+.stat--div {
+  max-width: 185px;
+  width: 30%;
+  box-shadow: 0 6px 12px rgba(171, 190, 209, 0.3);
+  border-radius: 20.2044px;
+  padding: 1rem 0.5rem;
+  margin-bottom: 90px;
+}
+
+.stat--icon {
+  max-width: 100%;
+  width: 50%;
+  margin-bottom: 0.25rem;
+}
+
+.stat--text {
+  font-size: 12px;
+}
+
+.counter-land,
+.counter-input,
+.counter-ivr {
+  background-color: var(--primary--08);
+  color: #6f8321;
+}
+
+.counter-farmer,
+.drones-div .counter-land {
+  background-color: var(--primary--06);
+  color: #2a310c;
+}
+
+div.counter-yields,
+.drones-div .counter-farmer {
+  background-color: var(--primary--04);
+  color: #fff;
+}
+
+/* Product Details */
+.product--card--div {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.product--img--div {
+  padding: 2rem;
+  max-width: 70%;
+  background: #ecf8c1;
+  border-radius: 20px;
+  height: max-content;
+}
+
+.product--features {
+  font-size: 1rem;
+}
+
+.products {
+  padding: 5rem 5%;
+}
+
+.product--nav {
+  width: 100%;
+  margin-bottom: 0.8rem;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--primary--03);
+  gap: 10%;
+}
+
+.rice div.drive-us--text {
+  width: 100%;
+  margin: 0 auto;
+}
+
+ul.disc {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+.dosage.hide,
+.lister.hide,
+.how-it-works.hide {
+  display: none;
+}
+
+.lister.show,
+.dosage.show,
+.how-it-works.show {
+  display: block;
+}
+
+.lister--item {
+  font-size: 1rem;
+}
+
+.product--nav--item {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: var(--primary--03);
+}
+
+.product--nav--item.active {
+  padding-bottom: 0.3rem;
+  border-bottom: 4px solid var(--primary--04);
+  font-weight: 700;
+  color: var(--primary--04);
+}
+
+#Rice .action--btn {
+  margin-left: 10%;
+}
+
+.smart--fiems {
+  max-width: 40%;
+  margin: 2rem 0;
+}
+
+#livestock > div.cover > div > ul > li {
+  margin-bottom: 1rem;
+}
+
+article.drive--us.g--32.d-flex {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+/* Services section */
+
+.agro--bg {
+  width: 80%;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.pro.agro--bg {
+  flex-direction: column;
+}
+
+.agro--title {
+  line-height: 1.2;
+  letter-spacing: 1px;
+  height: max-content;
+  margin: 1.5rem 0;
+}
+
+.spacial {
+  margin: 2rem 0;
+}
+
+.services .main--agro--img {
+  border-top-left-radius: 100px;
+  width: 90%;
+  object-fit: contain;
+}
+
+.agric--img {
+  width: 30%;
+  background-color: #bbcf79;
+  box-shadow: 10px 16px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 120px 120px 120px 0;
+}
+
+.agro--img {
+  object-fit: contain;
+}
+
+.plant.agro--img {
+  top: 30%;
+  max-width: 200px;
+  object-fit: cover;
+}
+
+.pro--title--div .space--para {
+  margin-top: 60vh;
+}
+
+.agro--float--img {
+  max-width: 100%;
+  width: 30%;
+  object-fit: cover;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.remove {
+  display: none;
+}
+
+.cultivate.rice--processing {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.agro--float--img:nth-of-type(3) {
+  border-radius: 0 0 50px 0;
+}
+
+.agro--img--float {
+  background: rgb(208, 223, 160);
+  height: auto;
+  width: 90%;
+  gap: 0.8rem;
+  padding: 1rem;
+  top: -15vh;
+  left: 1vh;
+  box-shadow: 0 16px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 65px 0;
+}
+
+.agro--bottom {
+  margin-top: 5vh;
+  background-color: #fff;
+  padding: 0 1.5rem 3rem;
+  border-radius: 0 0 0 50px;
+  box-shadow: 0 16px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project--list {
+  margin-top: -10vh;
+  line-height: 160%;
+  color: #3c4044;
+}
+
+.rice--processing {
+  padding: 5rem 0;
+}
+
+.line--height {
+  line-height: 1.5;
+}
+
+.pro--title--div p {
+  margin-top: 1.5rem;
+}
+
+.IVR {
+  flex-direction: column;
+}
+
+.drones-details {
+  max-width: 40%;
+}
+
+.drone-drive-ivr {
+  max-width: 30%;
+}
+
+.shared.footer__top {
+  align-items: center;
+}
+
+@media screen and (min-width: 563px) {
+  .vision--container {
+    width: 90%;
+    padding: 4rem;
+  }
+
+  .product--card--title {
+    text-align: left;
+  }
+
+  .stat--text {
+    font-size: 12px;
+  }
+
+  .drone-drive {
+    display: flex;
+    width: 25%;
+    top: -12vh;
+    left: 3vh;
+  }
+
+  .rice div.drive-us--text {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+
+  #Rice {
+    flex-direction: row;
+    align-items: start;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  #Rice .livestock--img {
+    width: 100%;
+  }
+
+  /* Fiems */
+  .fiems .livestock--img {
+    width: 30%;
+  }
+
+  h3#Fiems {
+    text-align: left;
+  }
+
+  #root > div > article.drive--us.g--32.d-flex.fiems.aos-init.aos-animate > div.cover > div {
+    padding-left: 10%;
+    margin-bottom: 1.25rem;
+    gap: 1rem;
+  }
+
+  #root > div > article.drive--us.row--reverse.addImg.relative.a-i-c.w--100.g--48.d-flex.aos-init.aos-animate {
+    width: 80%;
+    gap: 1rem;
+  }
+
+  /* *********** */
+
+  #Rice .drive--us {
+    width: 100%;
+    min-width: 500px;
+  }
+
+  .drone-drive-ivr {
+    max-width: 100px;
+  }
+
+  #Rice .rice--img--div {
+    min-width: 40%;
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .action--btn {
+    padding: 0.5rem;
+    font-size: 1.7vh;
+  }
+
+  .IVR {
+    flex-direction: row-reverse;
+  }
+
+  .team--skills--card {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page--content {
+    padding-top: 30vh;
+  }
+
+  .about--bg {
+    background-size: 70%;
+    background-position: 50% 70%;
+  }
+
+  .rice--img {
+    max-width: 100%;
+  }
+
+  .rice--img--div {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .team--div {
+    margin: 3rem 0;
+    gap: 5rem 3rem;
+  }
+
+  .team--container {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mini-title {
+    font-size: var(--size--49);
+    color: var(--primary--07);
+  }
+
+  .vision--container {
+    width: 90%;
+    background-color: var(--primary--04);
+    padding: 3rem 5rem;
+    color: #fff;
+    margin-top: 2rem;
+    justify-content: flex-start;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .boarder:nth-of-type(2) {
+    padding-left: 5%;
+    padding-top: 0;
+    margin-left: 5%;
+    border-top: none;
+    border-left: 5px solid transparent;
+  }
+
+  .boarder {
+    padding-left: 1rem;
+  }
+
+  #root > div > div.about--content.page--content.margin.j-c-c.a-i-c.flex.column.aos-init.aos-animate > article {
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  .vision--container::after {
+    content: '';
+    position: absolute;
+    top: 25vh;
+    left: 75.5%;
+    width: 30%;
+    height: 60vh;
+    overflow: hidden;
+    background-image: url('../../../assets/backgrounds/miss_line_bg.png');
+    background-repeat: no-repeat;
+    background-position: 100% 20vh;
+    background-size: 35% 65%;
+  }
+
+  #root > div > article.vision--container.relative.grid > div.boarder.vision--div.d-flex.gap-one.column.a-i-c > div > img,
+  #root > div > article.vision--container.relative.grid > div:nth-child(1) > div > img {
+    margin-top: 0;
+  }
+
+  #root > div > article.vision--container.relative.grid > div.boarder.vision--div.d-flex.gap-one.column.a-i-c > div {
+    align-items: center;
+  }
+
+  .team--role {
+    font-size: 1.25rem;
+  }
+
+  .team--text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .stat--div {
+    width: 25%;
+    box-shadow: 0 6px 12px rgba(171, 190, 209, 0.3);
+    border-radius: 20.2044px;
+    padding: 1rem 2rem;
+    margin-bottom: 90px;
+  }
+
+  .team--name {
+    font-size: 0.8rem;
+    color: #91aa2b;
+  }
+
+  /* Product Features */
+  .page--link {
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .about--product {
+    background: #f2f7de;
+  }
+
+  #Livestock.drive--us {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  #root > div > div.about--content.page--content.margin.j-c-c.a-i-c.flex.column.aos-init.aos-animate > article > div.drive-us--div.flex.flow.column.aos-init.aos-animate > h3 {
+    text-align: left;
+    max-width: 70%;
+    margin-top: 0;
+  }
+
+  /* Product Details */
+  .products {
+    padding: 3rem 10%;
+    width: 100%;
+    background-color: rgba(135, 151, 156, 0.075);
+  }
+
+  .product--card--div {
+    flex-direction: row;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  div.cover {
+    padding: 0;
+  }
+
+  #Livestock img.livestock--img {
+    width: 100%;
+  }
+
+  .rice div.drive-us--text {
+    width: 80%;
+    margin: 0;
+  }
+
+  .product--card--div:nth-of-type(even),
+  .row--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .product--img--div {
+    padding: 1.2rem;
+    min-width: 30%;
+    background: #ecf8c1;
+    border-radius: 20px;
+    height: max-content;
+  }
+
+  .product--features {
+    font-size: 18px;
+  }
+
+  .product--nav {
+    margin-top: 2rem;
+    width: 100%;
+    gap: 15%;
+  }
+
+  .green-title {
+    font-size: 36px;
+    margin-bottom: 8px;
+  }
+
+  .product--card--text {
+    font-size: 18px;
+  }
+
+  .drones--section {
+    padding: 0 1.5rem;
+    gap: 3rem;
+  }
+
+  .drone-drive {
+    position: absolute;
+    top: -4vh;
+    left: -22vh;
+  }
+
+  .fiems img.livestock--img {
+    width: 100%;
+    min-width: 400px;
+    align-self: center;
+    max-width: none;
+  }
+
+  #root > div > article.drive--us.g--32.d-flex.fiems.aos-init.aos-animate > div.cover > div {
+    padding-left: 0;
+    margin-bottom: 1.25rem;
+    gap: 1rem;
+  }
+
+  #root > div > article.drive--us.row--reverse.addImg.relative.a-i-c.w--100.g--48.d-flex.aos-init.aos-animate {
+    width: 80%;
+    gap: 1rem;
+  }
+
+  #root > div > section.drones--section.drive.us.w--100.d-flex.column > div.drones-div.d-flex.relative {
+    width: 70%;
+    margin-left: 20%;
+  }
+
+  #root > div > article.drive--us.g--32.d-flex.fiems.aos-init.aos-animate {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .IVR {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  ul.disc {
+    list-style-type: disc;
+    margin-left: 1rem;
+  }
+
+  .lister--item {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .product--nav--item {
+    font-size: 22px;
+  }
+
+  .product--nav--item.active {
+    padding-bottom: 0.3rem;
+    border-bottom: 4px solid var(--primary--04);
+    font-weight: 700;
+    color: var(--primary--04);
+  }
+
+  #Rice .action--btn {
+    margin-left: 15%;
+    width: 50%;
+    font-size: 1.35rem;
+  }
+
+  .smart--fiems {
+    max-width: 100%;
+  }
+
+  .drive-us {
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  #Livestock.drive-us {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  article.drive--us.g--32.d-flex {
+    width: 100%;
+    padding: 3rem 0;
+  }
+
+  /* Services section */
+
+  .agro--bg {
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .cent {
+    align-items: start;
+  }
+
+  .research .cent {
+    width: 80%;
+  }
+
+  .pro.agro--bg {
+    width: 85%;
+    margin-left: 5%;
+    justify-content: start;
+    flex-direction: row-reverse;
+  }
+
+  .pro.agro--bg:last-of-type {
+    width: 85%;
+    margin-left: 0;
+    justify-content: start;
+    flex-direction: row;
+  }
+
+  .cultivate .pro.agro--bg {
+    height: 500px;
+  }
+
+  .agro--title {
+    line-height: 1;
+    margin: 0;
+  }
+
+  .services .main--agro--img {
+    border-top-left-radius: 300px;
+    max-width: 100%;
+    object-fit: contain;
+    height: 325px;
+    flex-grow: 1;
+  }
+
+  .agric--img {
+    width: 30%;
+    background-color: #bbcf79;
+    box-shadow: 10px 16px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 120px 120px 120px 0;
+  }
+
+  .agro--float--img {
+    max-width: 100%;
+    width: 30%;
+  }
+
+  .remove {
+    display: flex;
+    object-fit: cover;
+  }
+
+  .agro--img--float {
+    background: #fff;
+    height: max-content;
+    max-width: 70%;
+    padding: 1rem 0 1rem 1.5rem;
+    gap: 0.6rem;
+    top: -13vh;
+    left: 15vh;
+    border-radius: 0 0 100px 0;
+  }
+
+  .agro--bottom {
+    position: relative;
+    top: -10vh;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0 0 0 150px;
+    box-shadow: 0 16px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .project--list {
+    margin-top: -5vh;
+  }
+
+  .rice--processing {
+    padding: 5rem 0;
+  }
+
+  .line--height {
+    line-height: 1.5;
+  }
+
+  .plant.agro--img {
+    position: relative;
+    border-top-right-radius: 200px;
+    top: 0;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    align-self: stretch;
+  }
+
+  .research--overlay {
+    width: 70%;
+    background: rgba(69, 82, 20, 0.6);
+    align-self: stretch;
+    height: auto;
+    border-radius: 200px 0 0 0;
+  }
+
+  .research--overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46%;
+    height: 100%;
+    background: rgba(137, 184, 93, 0.7);
+    border-radius: 200px 0 0 0;
+  }
+
+  img.researching.agro--img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 200px 0 0 0;
+    height: 100%;
+    align-self: stretch;
+  }
+
+  .pro.stats--container {
+    top: -17vh;
+  }
+
+  .pro--title--div {
+    width: 80%;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .pro--title--div p {
+    margin-top: 0;
+  }
+
+  .pro--title--div .space--para {
+    margin-top: 0;
+  }
+
+  .cultivate.rice--processing,
+  .research.rice--processing {
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .drones-details {
+    max-width: 100%;
+    align-items: flex-start;
+  }
+
+  /* Footer Sectiion in other pages */
+  .footer--container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__top {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 866px) {
+  .services .main--agro--img {
+    border-top-left-radius: 300px;
+    max-width: 100%;
+    object-fit: contain;
+    height: 350px;
+  }
+
+  .project--list {
+    margin-top: -15vh;
+  }
+
+  .agro--img--float {
+    max-width: 65%;
+    top: -19vh;
+    left: 15vh;
+    padding: 1rem 0 1rem 1rem;
+    width: 75%;
+  }
+
+  .agro--bottom {
+    top: -12vh;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .agro--bottom {
+    top: -20vh;
+  }
+
+  .pro.stats--container {
+    top: -27vh;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .team--container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .btn--more {
+    display: none;
+  }
+
+  .hero--img {
+    top: 25vh;
+    height: 40vh;
+  }
+
+  .product--nav {
+    max-width: 90%;
+  }
+
+  .image--overlay {
+    top: 30vh;
+    height: 40vh;
+  }
+
+  .hero--title--about {
+    font-weight: 800;
+  }
+
+  .top--links {
+    border-top: 1px solid #fff;
+    top: 55vh;
+    width: max-content;
+  }
+
+  .agro--float--img {
+    width: 35%;
+  }
+
+  .agro--img--float {
+    top: -17vh;
+    left: 15vh;
+    padding: 1rem 2rem 1rem 1rem;
+  }
+
+  .services .main--agro--img {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1067px) {
+  .services .main--agro--img {
+    height: 450px;
+  }
+
+  .agro--img--float {
+    top: -25vh;
+    left: 22vh;
+    padding: 1rem 4rem 1rem 1rem;
+  }
+
+  .agro--bottom {
+    top: -20vh;
+  }
+
+  .pro.stats--container {
+    top: -25vh;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .agro--bottom {
+    top: -27vh;
+  }
+
+  .pro.stats--container {
+    top: -30vh;
+  }
+}
