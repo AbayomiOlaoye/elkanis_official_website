@@ -48,7 +48,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7' }}>
+    <div className="pro sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7' }}>
       <Top
         title="Projects"
       />
@@ -58,15 +58,14 @@ const Projects = () => {
             className="project--card relative"
             title="Click to check the Project!"
             data-aos="fade-left"
-            data-aos-delay="100"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             key={project.id}
             id={project.id}
             onClick={() => handleProjectClick(project.id)}
           >
             <img data-aos="fade-in" src={project.img} alt={project.title} className="project--img trans" />
             <div className="project--head hover absolute d-flex column a-i-c j-c-c">
-              <h3 data-aos="zoom-in" className="project--title" style={{ lineHeight: '20px' }}>{project.theme}</h3>
+              <h3 data-aos="zoom-in" className="project--title" style={{ lineHeight: '18px', fontSize: '0.8rem' }}>{project.theme}</h3>
             </div>
           </div>
         ))}

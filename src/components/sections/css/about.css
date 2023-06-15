@@ -107,8 +107,10 @@
 
 .boarder:nth-of-type(2) {
   padding: 1rem 0 0;
-  border-top: 5px solid transparent;
   border-left: none;
+  border-top: 5px solid transparent;
+  border-image: linear-gradient(25deg, #c3ee00 0%, #91aa2b 70%);
+  border-image-slice: 1;
 }
 
 .rice--img {
@@ -336,11 +338,8 @@ ul.team--skills--list {
 
 footer {
   position: relative;
-  top: 10vh;
-}
 
-.footer__top {
-  flex-direction: row;
+  /* top: 10vh; */
 }
 
 /* Product Features */
@@ -402,7 +401,7 @@ img.livestock--img {
 
 /* Statistics Config */
 .stat--div {
-  max-width: 150px;
+  max-width: 185px;
   width: 30%;
   box-shadow: 0 6px 12px rgba(171, 190, 209, 0.3);
   border-radius: 20.2044px;
@@ -522,6 +521,10 @@ ul.disc {
   margin: 2rem 0;
 }
 
+#livestock > div.cover > div > ul > li {
+  margin-bottom: 1rem;
+}
+
 article.drive--us.g--32.d-flex {
   width: 100%;
   padding: 3rem 0;
@@ -568,7 +571,7 @@ article.drive--us.g--32.d-flex {
 }
 
 .plant.agro--img {
-  top: 25%;
+  top: 30%;
   max-width: 200px;
   object-fit: cover;
 }
@@ -613,12 +616,7 @@ article.drive--us.g--32.d-flex {
   border-radius: 0 0 65px 0;
 }
 
-/* .pro .agro--img {
-
-} */
-
 .agro--bottom {
-  /* top: 85vh; */
   margin-top: 5vh;
   background-color: #fff;
   padding: 0 1.5rem 3rem;
@@ -654,6 +652,10 @@ article.drive--us.g--32.d-flex {
 
 .drone-drive-ivr {
   max-width: 30%;
+}
+
+.shared.footer__top {
+  align-items: center;
 }
 
 @media screen and (min-width: 563px) {
@@ -841,7 +843,6 @@ article.drive--us.g--32.d-flex {
   }
 
   .stat--div {
-    max-width: 150px;
     width: 25%;
     box-shadow: 0 6px 12px rgba(171, 190, 209, 0.3);
     border-radius: 20.2044px;
@@ -1035,10 +1036,30 @@ article.drive--us.g--32.d-flex {
     align-items: start;
   }
 
+  .cent {
+    align-items: start;
+  }
+
+  .research .cent {
+    width: 80%;
+  }
+
   .pro.agro--bg {
-    width: 100%;
-    justify-items: flex-start;
+    width: 85%;
+    margin-left: 5%;
+    justify-content: start;
     flex-direction: row-reverse;
+  }
+
+  .pro.agro--bg:last-of-type {
+    width: 85%;
+    margin-left: 0;
+    justify-content: start;
+    flex-direction: row;
+  }
+
+  .cultivate .pro.agro--bg {
+    height: 500px;
   }
 
   .agro--title {
@@ -1071,10 +1092,6 @@ article.drive--us.g--32.d-flex {
     object-fit: cover;
   }
 
-  .agro--float--img:nth-of-type(3) {
-    border-radius: 0 0 100px 0;
-  }
-
   .agro--img--float {
     background: #fff;
     height: max-content;
@@ -1087,10 +1104,11 @@ article.drive--us.g--32.d-flex {
   }
 
   .agro--bottom {
-    top: 85vh;
+    position: relative;
+    top: -10vh;
     background-color: #fff;
-    padding: 2.5rem;
-    border-radius: 0 0 0 200px;
+    padding: 1.5rem;
+    border-radius: 0 0 0 150px;
     box-shadow: 0 16px 25px rgba(0, 0, 0, 0.1);
   }
 
@@ -1110,23 +1128,63 @@ article.drive--us.g--32.d-flex {
     position: relative;
     border-top-right-radius: 200px;
     top: 0;
-    width: 100%;
+    width: 300px;
     height: auto;
     object-fit: cover;
     align-self: stretch;
   }
 
+  .research--overlay {
+    width: 70%;
+    background: rgba(69, 82, 20, 0.6);
+    align-self: stretch;
+    height: auto;
+    border-radius: 200px 0 0 0;
+  }
+
+  .research--overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46%;
+    height: 100%;
+    background: rgba(137, 184, 93, 0.7);
+    border-radius: 200px 0 0 0;
+  }
+
+  img.researching.agro--img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 200px 0 0 0;
+    height: 100%;
+    align-self: stretch;
+  }
+
+  .pro.stats--container {
+    top: -17vh;
+  }
+
   .pro--title--div {
-    max-width: 50%;
-    align-self: flex-start;
+    width: 80%;
+    gap: 1rem;
+    align-items: flex-start;
   }
 
   .pro--title--div p {
-    margin-top: 1.5rem;
+    margin-top: 0;
   }
 
   .pro--title--div .space--para {
     margin-top: 0;
+  }
+
+  .cultivate.rice--processing,
+  .research.rice--processing {
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
   .drones-details {
@@ -1162,6 +1220,20 @@ article.drive--us.g--32.d-flex {
     left: 15vh;
     padding: 1rem 0 1rem 1rem;
     width: 75%;
+  }
+
+  .agro--bottom {
+    top: -12vh;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .agro--bottom {
+    top: -20vh;
+  }
+
+  .pro.stats--container {
+    top: -27vh;
   }
 }
 
@@ -1222,5 +1294,23 @@ article.drive--us.g--32.d-flex {
     top: -25vh;
     left: 22vh;
     padding: 1rem 4rem 1rem 1rem;
+  }
+
+  .agro--bottom {
+    top: -20vh;
+  }
+
+  .pro.stats--container {
+    top: -25vh;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .agro--bottom {
+    top: -27vh;
+  }
+
+  .pro.stats--container {
+    top: -30vh;
   }
 }

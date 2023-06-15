@@ -12,7 +12,7 @@ import '../../index.css';
 const Nav = () => {
   useEffect(() => {
     AOS.init({
-      duration: 4000,
+      duration: 3000,
       easing: 'ease-in-out',
     });
   }, []);
@@ -38,7 +38,7 @@ const Nav = () => {
               ? <AiFillCloseCircle className="exit hamburger hide--desk" onClick={handleMenuClose} />
               : <MdOutlineMenu className="menu hamburger hide--desk" onClick={handleMenuOpen} />
           }
-        <nav className={`nav--container ${toggle ? '' : 'hide--mob'}`}>
+        <nav className={`nav--container relative ${toggle ? '' : 'hide--mob'}`}>
           <ul className="nav--list un-list flex">
             <li className="nav--item--container list">
               <Link to="/" className="nav--item" data-aos="fade-up" onClick={handleMenuClose}>Home</Link>

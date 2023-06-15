@@ -359,8 +359,12 @@ div.react-multi-carousel-list {
 .footer--container {
   position: relative;
   grid-template-columns: 1fr;
-  padding: 6% 5%;
+  padding: 5%;
   background-color: var(--primary--03);
+}
+
+.pro #contact-us {
+  top: 6vh;
 }
 
 .footer__top {
@@ -443,7 +447,8 @@ textarea {
 /* Projects */
 
 .project--container {
-  padding-top: 15rem;
+  padding-top: 10rem;
+  align-items: stretch;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   opacity: 0;
@@ -460,7 +465,7 @@ textarea {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .project--container {
     grid-template-columns: 1fr;
   }
@@ -474,7 +479,7 @@ textarea {
 }
 
 .project--img {
-  max-width: 100%;
+  width: 100%;
   min-height: 100%;
 }
 
@@ -507,13 +512,19 @@ textarea {
   width: 100%;
   text-align: center;
   background-color: rgba(69, 82, 20, 0.9);
-  font-size: 1vw;
+  font-size: 1rem;
   line-height: 40px;
   padding: 0.5rem;
 }
 
+.pro--summary {
+  width: 100%;
+}
+
 .project--details {
   top: 0;
+  margin: 0 auto;
+  align-self: start;
 }
 
 .project--description a {
@@ -547,6 +558,10 @@ div.project--links > ul > li > a:hover {
 
 .blog--slider {
   max-width: 50%;
+}
+
+.blog {
+  width: 80%;
 }
 
 .progress-bar {
@@ -765,14 +780,14 @@ div.project--links > ul > li > a:hover {
   }
 
   /* Footer */
-  .footer--container {
+  .footer--container.main {
     grid-template-columns: 1fr 1fr;
     padding: 5%;
   }
 
   .footer__top {
-    flex-direction: column;
-    gap: 15%;
+    flex-direction: row;
+    gap: 2rem;
   }
 
   .form {
@@ -842,6 +857,11 @@ div.project--links > ul > li > a:hover {
     max-width: 80%;
     width: 40%;
   }
+
+  div.pro--summary {
+    padding: 15% 0 5% 5%;
+    grid-template-columns: 2fr 1fr;
+  }
 }
 
 /* Media Queries */
@@ -890,7 +910,6 @@ div.project--links > ul > li > a:hover {
   .footer--container {
     grid-template-columns: 1fr 1fr;
     padding: 5%;
-    margin-top: 3rem;
   }
 
   .footer__top {

@@ -116,7 +116,7 @@ const Services = () => {
               className="remove bottom agro--float--img"
               style={
             {
-              borderRadius: '0 0 0 250px',
+              borderRadius: '0 0 0 120px',
               objectFit: 'cover',
             }
           }
@@ -143,34 +143,31 @@ const Services = () => {
             </div>
           </div>
         </article>
-        <div className="stats--container gap-half j-c-c d-flex relative">
+        <div className="pro stats--container gap-half j-c-c d-flex relative">
           <Statistics stats={ARTICLES[2].stats} />
         </div>
-        <article className="research rice--processing relative d-flex g--32 a-i-c column" data-aos="zoom-in">
+        <article className="w--80 research rice--processing relative d-flex g--32 a-i-c column" data-aos="zoom-in">
           <div className="cent d-flex a-i-c column gap-one">
             <h4 id="Research" className="w--90 product--card--title boarder temp--font green-title-text">Agricultural Research for Development and Consultancy</h4>
-            <p className="w--90 agro--text line--height">
+            <p className="agro--text line--height">
               El-kanis and Partners is committed to improving the agricultural sector in Nigeria
               through its research and development efforts, as well as consultancy services.
             </p>
           </div>
           <div className="pro agro--bg relative d-flex gap-one">
-            <img
-              src={research}
-              data-aos="zoom-out"
-              alt="agric"
-              className="agro--img relative"
-              style={
-            {
-              maxWidth: '100%',
-              borderRadius: '200px 0 0 0',
-              objectFit: 'cover',
-            }
-          }
-            />
+            <div className="research--overlay">
+              <img
+                src={research}
+                data-aos="zoom-out"
+                alt="agric"
+                className="researching agro--img"
+              />
+            </div>
             <div className="pro--title--div w--90 d-flex column">
-              <p className="agro--text text--just line--height" style={{ marginTop: '0' }} data-aos="fade-left">
-                Research for Development: El-kanis and Partners invests heavily in research and
+              <p className="agro--text line--height" style={{ marginTop: '0' }} data-aos="fade-left">
+                <b>Research for Development:</b>
+                {' '}
+                El-kanis and Partners invests heavily in research and
                 development to improve the productivity and sustainability of agricultural
                 practices in Nigeria. The company collaborates with universities, research
                 institutions, and local farmers to identify and develop innovative solutions
@@ -178,8 +175,10 @@ const Services = () => {
                 has developed supplements for livestock that are better suited to local brooding
                 conditions, which has helped to increase yields and reduce mortality.
               </p>
-              <p className="agro--text text--just line--height" data-aos="fade-right">
-                Consultancy Services: El-kanis and Partners provides consultancy services to
+              <p className="agro--text line--height" data-aos="fade-right">
+                <b>Consultancy Services:</b>
+                {' '}
+                El-kanis and Partners provides consultancy services to
                 Governments, Development Agencies and farmers, helping them to improve their
                 agricultural practices and increase their yields. The company&lsquo;s team of experts
                 provides advice on issues such as soil management, irrigation, and pest control,

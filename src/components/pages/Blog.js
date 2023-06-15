@@ -10,6 +10,7 @@ import Top from '../sections/jumbotron/top';
 import '../sections/css/sections.css';
 import '../sections/css/about.css';
 import blogData from '../../storage/blog';
+import Footer from '../Nav/Footer';
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -40,13 +41,12 @@ const Blog = () => {
         title="Blogs"
       />
       <div
-        className="about--content about--product page--content j-c-c a-i-c grid w--100 g--32"
-        style={{ padding: '20% 5%', gridTemplateColumns: '2fr 1fr' }}
+        className="pro--summary about--content about--product page--content j-c-c a-i-c grid w--100 g--32"
       >
-        <div className="project--details d-flex column gap-one">
+        <div className="blog project--details d-flex column gap-one">
           <motion.div className="progress-bar" style={{ scaleX }} />
           <div className="project--title--container d-flex gap-one a-i-c">
-            <div className="blog--date d-flex column a-i-c" data-aos="fade-right">
+            <div className="blog--date d-flex column a-i-c" data-aos="fade-right" style={{ backgroundColor: '#444', color: '#fff', padding: '1.25rem 1rem' }}>
               <h4 style={{ fontSize: '3vw' }}>{blog.day}</h4>
               <h4 style={{ fontSize: '2vw' }}>{blog.month}</h4>
             </div>
@@ -54,7 +54,7 @@ const Blog = () => {
               className="project--title"
               data-aos="fade-left"
               style={{
-                fontSize: '2.5vw', padding: '3% 0', color: '#fff', height: 'max-content',
+                fontSize: '2.5vw', padding: '3%', color: '#fff', height: 'max-content',
               }}
             >
               {blog.title}
@@ -94,6 +94,8 @@ const Blog = () => {
           </ul>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

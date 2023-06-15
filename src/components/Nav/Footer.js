@@ -9,7 +9,7 @@ import '../sections/css/about.css';
 
 const Footer = () => (
   <footer className="about footer--container grid w--100" id="contact-us">
-    <div className="footer__top flex">
+    <div className="shared footer__top flex">
       <img src={Logo} alt="elkanis & partners' logo" className="footer--logo mt-1" />
       <small className="footer__links flex column mt-1">
         <div className="footer__links--top flex">

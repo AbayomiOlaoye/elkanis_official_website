@@ -9,7 +9,7 @@ import { CiLocationOn } from 'react-icons/ci';
 import { SlCallEnd } from 'react-icons/sl';
 import axios from 'axios';
 import Hero from '../sections/Hero';
-import Motivation from '../sections/Motivation';
+// import Motivation from '../sections/Motivation';
 import Product from '../sections/features/ProductFeat';
 import Service from '../sections/features/ServiceFeat';
 import Funnel from '../sections/Funnel';
@@ -83,12 +83,12 @@ const Home = () => {
   return (
     <div className={`home--container w--100 ${animateContent ? 'slide-in' : ''}`}>
       <Hero />
-      <Motivation />
+      {/* <Motivation /> */}
       <Product />
       <Service />
       <Funnel />
       <Sponsors />
-      <footer className="footer--container grid" id="contact-us" ref={sectionRef}>
+      <footer className="footer--container main grid" id="contact-us" ref={sectionRef}>
         <div className="footer__top flex">
           <img src={Logo} alt="elkanis & partners' logo" className="footer--logo mt-1" />
           <small className="footer__links flex column mt-1">
