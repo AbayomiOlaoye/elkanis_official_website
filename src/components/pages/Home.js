@@ -10,7 +10,7 @@ import React from 'react';
 // import { SlCallEnd } from 'react-icons/sl';
 // import axios from 'axios';
 import Hero from '../sections/Hero';
-// import Motivation from '../sections/Motivation';
+import Motivation from '../sections/Motivation';
 // import Product from '../sections/features/ProductFeat';
 // import Service from '../sections/features/ServiceFeat';
 // import Funnel from '../sections/Funnel';
@@ -86,7 +86,7 @@ const Home = () => {
   return (
     <div className="name">
       <Hero />
-      {/* <Motivation /> */}
+      <Motivation />
       {/* <Product />
       <Service />
       <Funnel />

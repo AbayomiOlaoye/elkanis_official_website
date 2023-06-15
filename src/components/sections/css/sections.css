@@ -1,18 +1,29 @@
 /* What Motivates Us */
 .motivation {
   position: relative;
-  top: -100vh;
+  top: 0;
   left: 0;
   z-index: 6000;
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-image:
-    url('../../../assets/backgrounds/jumbo.svg'),
-    url('../../../assets/generic/dotted_hero.svg');
-  background-size: 100% 100%, 100% 35%;
-  background-position: 0 8vh, 0 35%;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url('../../../assets/generic/dotted_hero.svg');
+  background-size: 350% 40%;
+  background-position: 0 1vh;
+  background-repeat: no-repeat;
+}
+
+.hero--bg--img {
+  position: absolute;
+  top: -15vh;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: 100;
+}
+
+.hero--text.black {
+  color: #000;
 }
 
 .sub--hero {
@@ -29,7 +40,7 @@
 }
 
 .sub--hero--div {
-  top: 35vh;
+  top: 0;
   margin-top: 10%;
   background-image: url('../../../assets/backgrounds/globe.png');
   background-repeat: no-repeat;
