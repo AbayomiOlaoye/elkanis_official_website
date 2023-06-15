@@ -1,93 +1,91 @@
 /* eslint-disable arrow-body-style */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/extensions */
-import React from 'react';
-// import React, { useRef, useEffect, useState } from 'react';
-// import { useLocation } from 'react-router-dom';
-// import { AiOutlineFieldTime } from 'react-icons/ai';
-// import { TiMail } from 'react-icons/ti';
-// import { CiLocationOn } from 'react-icons/ci';
-// import { SlCallEnd } from 'react-icons/sl';
-// import axios from 'axios';
+// import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { AiOutlineFieldTime } from 'react-icons/ai';
+import { TiMail } from 'react-icons/ti';
+import { CiLocationOn } from 'react-icons/ci';
+import { SlCallEnd } from 'react-icons/sl';
+import axios from 'axios';
 import Hero from '../sections/Hero';
 import Motivation from '../sections/Motivation';
-// import Product from '../sections/features/ProductFeat';
-// import Service from '../sections/features/ServiceFeat';
-// import Funnel from '../sections/Funnel';
-// import Sponsors from '../sections/Sponsors';
-// import { Logo } from '../Nav/Nav';
+import Product from '../sections/features/ProductFeat';
+import Service from '../sections/features/ServiceFeat';
+import Funnel from '../sections/Funnel';
+import Sponsors from '../sections/Sponsors';
+import { Logo } from '../Nav/Nav';
 
-// const FORM_ID = 'mrgvwvka';
+const FORM_ID = 'mrgvwvka';
 
 const Home = () => {
-  // const location = useLocation();
-  // const sectionRef = useRef(null);
+  const location = useLocation();
+  const sectionRef = useRef(null);
 
-  // const [animateContent, setAnimateContent] = useState(false);
+  const [animateContent, setAnimateContent] = useState(false);
 
-  // useEffect(() => {
-  //   setAnimateContent(true);
-  // }, []);
+  useEffect(() => {
+    setAnimateContent(true);
+  }, []);
 
-  // useEffect(() => {
-  //   if (location.state && location.state.scrollToSection) {
-  //     const elem = document.getElementById(location.state.scrollToSection);
-  //     if (elem) {
-  //       elem.scrollIntoView({
-  //         behavior: 'smooth',
-  //       });
-  //     }
-  //   }
-  // }, [location.state]);
+  useEffect(() => {
+    if (location.state && location.state.scrollToSection) {
+      const elem = document.getElementById(location.state.scrollToSection);
+      if (elem) {
+        elem.scrollIntoView({
+          behavior: 'smooth',
+        });
+      }
+    }
+  }, [location.state]);
 
-  // const [name, setName] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [message, setMessage] = useState('');
-  // const [status, setStatus] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState('');
 
-  // const feedBack = () => {
-  //   if (status === 'SUCCESS') {
-  //     setTimeout(() => {
-  //       setStatus('');
-  //     }, 3000);
+  const feedBack = () => {
+    if (status === 'SUCCESS') {
+      setTimeout(() => {
+        setStatus('');
+      }, 3000);
 
-  //     return (
-  //       <p className="success relative">* Thank you. We will be in touch!!!</p>
-  //     );
-  //   }
+      return (
+        <p className="success relative">* Thank you. We will be in touch!!!</p>
+      );
+    }
 
-  //   return null;
-  // };
+    return null;
+  };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  //   const data = {
-  //     name,
-  //     email,
-  //     message,
-  //   };
+    const data = {
+      name,
+      email,
+      message,
+    };
 
-  //   try {
-  //     const res = await axios.post(`https://formspree.io/f/${FORM_ID}/`, data);
-  //     if (res.status === 200) {
-  //       setName('');
-  //       setEmail('');
-  //       setMessage('');
-  //       setStatus('SUCCESS');
-  //     }
-  //   } catch (error) {
-  //     setStatus('ERROR');
-  //   }
-  // };
-
-  // `home--container w--100 ${animateContent ? 'slide-in' : ''}`}
+    try {
+      const res = await axios.post(`https://formspree.io/f/${FORM_ID}/`, data);
+      if (res.status === 200) {
+        setName('');
+        setEmail('');
+        setMessage('');
+        setStatus('SUCCESS');
+      }
+    } catch (error) {
+      setStatus('ERROR');
+    }
+  };
 
   return (
-    <div className="name">
+    <div className={`home--container w--100 ${animateContent ? 'slide-in' : ''}`}>
       <Hero />
       <Motivation />
-      {/* <Product />
+      <Product />
       <Service />
       <Funnel />
       <Sponsors />
@@ -180,7 +178,7 @@ const Home = () => {
           </button>
           { feedBack() }
         </form>
-      </footer> */}
+      </footer>
     </div>
   );
 };
