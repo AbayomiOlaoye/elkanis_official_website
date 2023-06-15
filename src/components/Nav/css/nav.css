@@ -9,16 +9,16 @@
   position: fixed;
   justify-content: var(--space-between);
   padding: 1vw 3vw;
-  z-index: 20;
+  z-index: 50000;
   left: 50%;
-  top: 6.5vh;
+  top: 5vh;
   transform: translate(-50%, -50%);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   height: 80px;
   background: var(--nav--bg);
   background-blend-mode: overlay;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
   align-content: center;
 }
 
@@ -60,17 +60,17 @@
   transform: translate(-50%, -50%);
   width: 0;
   height: 0;
-  color: #2a310c;
-  background-color: var(--primary--04); /* Color of spreading effect */
-  border-radius: 10%;
-  opacity: 0;
+  color: var(--primary--04);
+  background-color: rgba(210, 224, 143, 0.5); /* Color of spreading effect */
+  border-radius: 20%;
   transition: width 0.3s ease-out, height 0.3s ease-out, opacity 0.5s ease-out;
   pointer-events: none;
 }
 
 .nav--item:active::after {
-  width: 100%;
-  height: 100%;
+  width: 105%;
+  height: 105%;
+  color: #fff;
   opacity: 1;
 }
 
