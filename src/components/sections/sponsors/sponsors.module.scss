@@ -1,0 +1,29 @@
+.sponsorsSection {
+  top: -10vh;
+}
+
+.sponsorsDiv {
+  flex-direction: column;
+  height: inherit;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem auto 2rem;
+  color: var(--primary--04);
+}
+
+.title {
+  font-family: var(--tiempos-fine);
+  max-width: 306px;
+  width: 65%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #212529;
+}
+
+.hrLine {
+  width: 10%;
+  border: 1px solid var(--primary--07);
+  margin: 0.5rem auto 0;
+}

@@ -105,6 +105,10 @@
   border-image-slice: 1;
 }
 
+#smart {
+  display: none;
+}
+
 .boarder:nth-of-type(2) {
   padding: 1rem 0 0;
   border-left: none;
@@ -338,8 +342,6 @@ ul.team--skills--list {
 
 footer {
   position: relative;
-
-  /* top: 10vh; */
 }
 
 /* Product Features */
@@ -746,9 +748,17 @@ article.drive--us.g--32.d-flex {
   .team--skills--card {
     max-width: 80%;
   }
+
+  .footer--icon {
+    top: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  #smart {
+    display: block;
+  }
+
   .page--content {
     padding-top: 30vh;
   }

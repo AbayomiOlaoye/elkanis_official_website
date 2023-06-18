@@ -1,7 +1,6 @@
 /* eslint-disable arrow-body-style */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/extensions */
-// import React from 'react';
 import React, { useRef, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { AiOutlineFieldTime } from 'react-icons/ai';
@@ -9,12 +8,12 @@ import { TiMail } from 'react-icons/ti';
 import { CiLocationOn } from 'react-icons/ci';
 import { SlCallEnd } from 'react-icons/sl';
 import axios from 'axios';
-import Hero from '../sections/Hero';
-import Motivation from '../sections/Motivation';
+import Hero from '../sections/hero/Hero';
+import Motivation from '../sections/motivation/Motivation';
 import Product from '../sections/features/ProductFeat';
 import Service from '../sections/features/ServiceFeat';
-import Funnel from '../sections/Funnel';
-import Sponsors from '../sections/Sponsors';
+import Funnel from '../sections/funnel/Funnel';
+import Sponsors from '../sections/sponsors/Sponsors';
 import { Logo } from '../Nav/Nav';
 
 const FORM_ID = 'mrgvwvka';
@@ -135,30 +134,29 @@ const Home = () => {
           </small>
         </div>
         <form className="form flex column" onSubmit={handleSubmit}>
-          <div className="input-div flex">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="Name"
-              required
-              className="contact__form--input
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Name"
+            required
+            className="contact__form--input
               text-input"
-            />
+          />
 
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email *"
-              className="contact__form--input text-input"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email *"
+            className="contact__form--input text-input"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+
           <textarea
             name="message"
             id="message"
@@ -170,11 +168,12 @@ const Home = () => {
             onChange={(e) => setMessage(e.target.value)}
             required
           />
+
           <button
             type="submit"
             className="contact__form--btn"
           >
-            Send Message
+            Send
           </button>
           { feedBack() }
         </form>

@@ -12,7 +12,7 @@ import '../../index.css';
 const Nav = () => {
   useEffect(() => {
     AOS.init({
-      duration: 3000,
+      duration: 500,
       easing: 'ease-in-out',
     });
   }, []);

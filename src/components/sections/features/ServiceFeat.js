@@ -2,13 +2,14 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useParams } from 'react-router-dom';
-import FeaturedProduct from '../../sub/feature';
 import FeaturedService from '../../../storage/service';
+import FeatService from '../../sub/featService';
+import styles from './features.module.scss';
 
 const Service = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 500,
       easing: 'ease-in-out',
       once: true,
     });
@@ -16,7 +17,7 @@ const Service = () => {
 
   const { serviceId } = useParams();
   const services = FeaturedService.map((service) => (
-    <FeaturedProduct
+    <FeatService
       key={service.id}
       id={service.id}
       featureImg={service.featureImg}
@@ -26,12 +27,12 @@ const Service = () => {
   ));
   return (
     <>
-      <section className="feature--div services flex column" data-aos="fade-up">
-        <div className="feature--header flex w--80">
-          <h3 className="sub--theme temp--font light--green">Our Featured Services</h3>
-          <hr className="hr--theme w--80" />
+      <section className={styles.serviceContainer} data-aos="fade-up" style={{ overflow: 'hidden' }}>
+        <div className={styles.featureHeader}>
+          <h3 className={styles.aboutTitle}>Featured Services</h3>
+          <hr className={styles.aboutBorderBig} />
         </div>
-        <div className="feature--container services d-flex">{services}</div>
+        <div className={styles.container}>{services}</div>
       </section>
     </>
   );

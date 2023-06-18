@@ -7,10 +7,6 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-image: url('../../../assets/generic/dotted_hero.svg');
-  background-size: 350% 40%;
-  background-position: 0 1vh;
-  background-repeat: no-repeat;
 }
 
 .hero--bg--img {
@@ -169,7 +165,7 @@
   padding-top: 0;
 }
 
-.feature--container {
+/* .feature--container {
   flex-direction: column;
   margin: 0 auto;
   gap: 1rem;
@@ -178,7 +174,7 @@
   justify-content: center;
   height: auto;
   padding-top: 2rem;
-}
+} */
 
 .feature--img {
   max-width: 100%;
@@ -196,7 +192,6 @@ div.feature--container.product.d-flex img.feature--img {
 }
 
 .product--link {
-  width: 325px;
   height: 100%;
   gap: 2rem;
   color: var(--alt-white);
@@ -252,17 +247,6 @@ div.feature--container.product.d-flex img.feature--img {
   text-align: left;
 }
 
-.feature--header {
-  flex-direction: column;
-  padding-top: 4rem;
-  height: inherit;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  color: var(--primary--04);
-}
-
 section:nth-child(4) {
   top: -30vh;
 }
@@ -283,7 +267,7 @@ hr.hr--theme {
 .funnel--page--container {
   position: absolute;
   width: var(--w--70);
-  top: 50%;
+  top: 40%;
   font-family: 'Inter', sans-serif, 'Open Sans', 'Helvetica Neue';
   background: var(--white);
   gap: 0.5rem;
@@ -368,10 +352,11 @@ div.react-multi-carousel-list {
 
 /* Footer Page */
 .footer--container {
+  width: 100%;
   position: relative;
   grid-template-columns: 1fr;
   padding: 5%;
-  background-color: var(--primary--03);
+  background-color: var(--primary--02);
 }
 
 .pro #contact-us {
@@ -381,23 +366,18 @@ div.react-multi-carousel-list {
 .footer__top {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
 }
 
 .form {
-  margin: 4% auto 0;
-  width: 80%;
+  margin: 4% 0 2%;
+  width: 100%;
   border: 1px solid #91aa2b;
   border-radius: 10px;
-  padding: 1rem;
-  height: max-content;
-}
-
-.input-div {
-  width: 100%;
+  padding: 0.5rem;
   gap: 0.5rem;
-  align-items: center;
+  height: max-content;
 }
 
 .text-input {
@@ -405,19 +385,20 @@ div.react-multi-carousel-list {
 }
 
 .contact__form--input {
-  background: #ecf8c1;
   border: 1px solid #455214;
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.05);
-  border-radius: 8px;
+  border-radius: 4px;
   width: 100%;
-  padding: 4%;
+  height: 3rem;
+  padding: 1.2rem;
 }
 
 .contact__form--input::placeholder {
   color: #455214;
+  font-size: 1rem;
 }
 
-textarea {
+textarea.contact__form--input {
   height: 70px;
   overflow: auto;
   margin: 0.5rem 0;
@@ -425,7 +406,7 @@ textarea {
 
 .contact__form--btn {
   width: max-content;
-  padding: 2%;
+  padding: 3% 6%;
   border: none;
   background: #91aa2b;
   border-radius: 5px;
@@ -438,7 +419,7 @@ textarea {
   gap: 0.5rem;
   max-width: 300px;
   color: #fff;
-  font-size: 2vw;
+  font-size: 14px;
 }
 
 .footer__links--top {
@@ -451,8 +432,9 @@ textarea {
 }
 
 .footer--logo {
-  max-width: 80%;
-  width: 50%;
+  margin: 3rem 0 1rem;
+  max-width: 300px;
+  width: 80%;
 }
 
 /* Projects */
@@ -585,6 +567,10 @@ div.project--links > ul > li > a:hover {
   transform-origin: 0%;
 }
 
+.desktop {
+  display: none;
+}
+
 @media screen and (min-width: 465px) {
   .motivation {
     background-position: 0 0, 0 15%;
@@ -672,10 +658,21 @@ div.project--links > ul > li > a:hover {
     top: -20vh;
   }
 
+  .form {
+    width: 80%;
+    margin: 4% auto 2%;
+    align-items: center;
+  }
+
   .footer__top {
     display: flex;
-    flex-direction: row;
     gap: 5%;
+    align-items: center;
+  }
+
+  .footer--icon {
+    position: relative;
+    top: 19px;
   }
 }
 
@@ -683,6 +680,10 @@ div.project--links > ul > li > a:hover {
   /* Motivation & Hero */
   .motivation {
     top: -80vh;
+  }
+
+  .mobile {
+    display: none;
   }
 
   .sub--hero--div {

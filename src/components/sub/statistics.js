@@ -8,7 +8,7 @@ const Statistics = ({ stats }) => {
 
   useEffect(() => {
     AOS.init({
-      duration: 3000,
+      duration: 1000,
       easing: 'ease',
       once: false,
     });
@@ -22,7 +22,7 @@ const Statistics = ({ stats }) => {
           if (typeof stats[key].counter === 'number') {
             updatedCounters[key] = updatedCounters[key] || 400;
             if (updatedCounters[key] < stats[key].counter) {
-              updatedCounters[key] += 1;
+              updatedCounters[key] += 599;
             }
           }
         });
@@ -46,7 +46,7 @@ const Statistics = ({ stats }) => {
           return (
             <div className={`stat--div d-flex column a-i-c ${counterClassName}`} data-aos="zoom-in" key={key}>
               <img src={stat.icon} alt="icon" data-aos="fade-in" className="stat--icon" />
-              <p data-aos="fade-left" data-aos-duration="4000" className="stat--text" style={{ fontWeight: '700' }}>
+              <p data-aos="fade-left" className="stat--text" style={{ fontWeight: '700' }}>
                 {formatCount(counters[key] || stat.counter)}
                 <span className="plus">+</span>
               </p>

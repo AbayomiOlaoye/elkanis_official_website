@@ -57,7 +57,7 @@ const About = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
       easing: 'ease-in',
       once: false,
     });
@@ -146,7 +146,7 @@ const About = () => {
       </article>
       <article className="drive-us d-flex column w--80" data-aos="fade-up">
         <div className="team-top d-flex column a-i-c gap-one">
-          <img src={meet} alt="vision" className="vision--img icon" data-aos="zoom-out" data-aos-once="false" data-aos-duration="4000" />
+          <img src={meet} alt="vision" className="vision--img icon" data-aos="zoom-out" data-aos-once="false" data-aos-duration="1000" />
           <h3 data-aos="zoom-in" className="meet--up green-title-text temp--font light--green">Meet the Team</h3>
         </div>
         <div className="team--div grid a-i-c">
@@ -163,7 +163,7 @@ const About = () => {
               ))}
             </ul>
           )}
-          <button type="button" data-aos="fade-in" data-aos-once="false" data-aos-duration="4000" className="btn--more" onClick={toggleShowAll}>{!showAll ? 'Show more' : 'Show less'}</button>
+          <button type="button" data-aos="fade-in" data-aos-once="false" data-aos-duration="1000" className="btn--more" onClick={toggleShowAll}>{!showAll ? 'Show more' : 'Show less'}</button>
         </div>
       </article>
 
