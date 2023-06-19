@@ -193,6 +193,10 @@
     border-radius: 20px;
   }
 
+  /* .slide {
+    display: block;
+  } */
+
   .nav--container {
     position: static;
     width: 100%;
