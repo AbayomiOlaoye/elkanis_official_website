@@ -185,7 +185,7 @@
 /* -------- <768px------ */
 @media only screen and (min-width: 768px) {
   .header--container {
-    width: 95%;
+    width: 97%;
     position: fixed;
     justify-content: center;
     padding: 0 1rem;

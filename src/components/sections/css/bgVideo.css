@@ -101,7 +101,8 @@
   div.video--overlay {
     justify-content: start;
     align-items: flex-start;
-    top: 5vh;
+    top: 0;
+    margin-top: 16vh;
     width: 85%;
     z-index: 1000;
   }
@@ -126,7 +127,7 @@
 
   .hero .hero--text {
     line-height: 1.6;
-    margin: 3rem 0 4rem;
+    margin: 4rem 0 5rem;
     background: none;
     padding: 0;
     border-radius: 0;
@@ -139,9 +140,9 @@
 
   .droner {
     position: absolute;
-    width: 35%;
-    left: 73%;
-    top: 0;
+    width: 50%;
+    left: 60%;
+    top: 30vh;
   }
 
   .learn--more {
