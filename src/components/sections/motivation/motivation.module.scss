@@ -23,7 +23,8 @@
   align-items: center;
 
   @media screen and (min-width: 768px) {
-    margin-top: 1rem;
+    align-self: flex-end;
+    margin-top: 2vh;
   }
 }
 
@@ -34,6 +35,7 @@
   @media screen and (min-width: 768px) {
     flex-direction: row !important;
     justify-content: space-between;
+    width: 93%;
   }
 }
 
@@ -42,10 +44,9 @@
   flex-direction: column;
   align-items: center;
 
-  // @media screen and (min-width: 768px) {
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  // }
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+  }
 }
 
 .aboutTitle {
@@ -55,6 +56,30 @@
   text-align: center;
   font-size: 2rem;
   color: #212529;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 1rem;
+    border-left: 5px solid transparent;
+    border-image: linear-gradient(25deg, #c3ee00 0%, #91aa2b 70%);
+    border-image-slice: 1;
+    text-align: left;
+    margin: 5rem 0 1rem;
+    color: var(--primary--03);
+    font-size: 3rem;
+  }
+}
+
+.climateTitle {
+  @extend .aboutTitle;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 0;
+    padding-bottom: 1rem;
+    border-left: none;
+    text-align: center;
+    margin-top: 3rem;
+    max-width: 70%;
+  }
 }
 
 .aboutBorder {
@@ -80,10 +105,21 @@
 .paraText {
   line-height: 1.4;
   max-width: 95%;
+  text-align: justify;
+
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+    font-size: 20px;
+  }
 }
 
 .smartDiv {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 105%;
+  }
 }
 
 .climateArt {
@@ -92,11 +128,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    background-color: #fff;
+    width: var(--w--80);
+    position: absolute;
+    top: 86%;
+    padding: 0 2rem 2rem;
+    z-index: 1;
+    font-size: 20px;
+    // align-items: center;
+    // justify-content: center;
+  }
+
+  p {
+    font-weight: 300;
+  }
 }
 
 .climateImg {
   width: 90%;
   margin: 1.5rem 0;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mobAboutImg {
@@ -107,6 +163,8 @@
     max-width: 50%;
     opacity: 0.9;
     margin: 1.5rem auto;
+    position: relative;
+    top: -5vh;
   }
 }
 

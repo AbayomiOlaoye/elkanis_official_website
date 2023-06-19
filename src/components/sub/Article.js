@@ -16,6 +16,11 @@ const Article = ({ article, id }) => {
     });
   }, []);
 
+  // Prevent right click event on images
+  const handleContextMenu = (event) => {
+    event.preventDefault();
+  };
+
   // Whatsapp message
   const PHONE_NUMBER = '2348027331036';
 
@@ -46,7 +51,12 @@ const Article = ({ article, id }) => {
       id={id}
     >
       <div className={`rice--img--div relative d-flex column a-i-c ${article.id === 'elkanRice' ? 'rice--bag' : ''}`} id={identity}>
-        <img src={article.productImage} alt={article.id} className="livestock--img" />
+        <img
+          src={article.productImage}
+          alt={article.id}
+          className="livestock--img"
+          onContextMenu={handleContextMenu}
+        />
         { article.id === 'elkanRice' && <button type="button" title="Now in stock!" className="button action--btn" onClick={() => handleOrder('El-kanis Rice')}>Place Order</button>}
       </div>
 

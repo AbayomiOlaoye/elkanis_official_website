@@ -19,13 +19,23 @@ const Motivation = () => {
     });
   }, []);
 
+  const handleContextMenu = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <section className={styles.section}>
       <div className={styles.subSection}>
         <div className={styles.sectionSub}>
           <h2 className={styles.aboutTitle} data-aos="fade-up">What Motivates Us</h2>
           <hr className={styles.aboutBorder} data-aos="fade-up" />
-          <img src={talkMb} data-aos="fade-in" alt="Farmers discussing farming operations" className={styles.aboutImg} />
+          <img
+            src={talkMb}
+            data-aos="fade-in"
+            alt="Farmers discussing farming operations"
+            className={styles.aboutImg}
+            onContextMenu={handleContextMenu}
+          />
           <p className={styles.paraText} data-aos="fade-up">
             With a mission to provide sustainable and nutritious food options to consumers,
             El-kanis and Partners has established itself as a pioneer in the agricultural
@@ -42,7 +52,7 @@ const Motivation = () => {
       </div>
 
       <article className={styles.climateArt} data-aos="zoom-out">
-        <h2 className={styles.aboutTitle}>Climate Smart Technology</h2>
+        <h2 className={styles.climateTitle}>Climate Smart Technology</h2>
         <hr className={styles.aboutBorder} data-aos="fade-up" />
         <img src={climate} alt="Climate smart technology" className={styles.climateImg} />
         <p className="about--text green">

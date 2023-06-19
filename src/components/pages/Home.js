@@ -81,7 +81,7 @@ const Home = () => {
   };
 
   return (
-    <div className={`home--container w--100 ${animateContent ? 'slide-in' : ''}`}>
+    <div className={`home--container w--100 ${animateContent ? 'slide-in' : ''}`} style={{ overflow: 'hidden' }}>
       <Hero />
       <Motivation />
       <Product />

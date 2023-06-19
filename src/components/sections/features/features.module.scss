@@ -3,12 +3,32 @@
   top: -10vh;
   width: 100%;
   background-color: #fff;
+
+  @media screen and (min-width: 768px) {
+    background-color: var(--primary--08);
+    padding-top: 38vh;
+    top: -20vh;
+  }
 }
 
 .serviceContainer {
   @extend .featureContainer;
   top: -2vh;
   margin-top: 10rem;
+
+  @media screen and (min-width: 768px) {
+    background-color: #fff;
+    padding-top: 0;
+  }
+
+  .aboutTitle {
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      max-width: max-content;
+      color: var(--primary--04);
+      font-weight: 400;
+    }
+  }
 }
 
 .aboutTitle {
@@ -17,8 +37,15 @@
   width: 65%;
   text-align: center;
   margin: 0 auto;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #212529;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    max-width: max-content;
+    color: var(--primary--04);
+    font-weight: 400;
+  }
 }
 
 .container {
@@ -30,6 +57,13 @@
   margin: 2rem auto;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    background-color: var(--primary--08);
+    flex-direction: row;
+    padding: 0 10%;
+    margin-bottom: 4rem;
+  }
 }
 
 // Styles for the product section
@@ -41,6 +75,12 @@
 
   @media (min-width: 538px) {
     max-width: 400px;
+    border-radius: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    box-shadow: 0px 16px 25px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
   }
 }
 
@@ -55,23 +95,41 @@
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    padding: 1rem 0 0;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 260px;
+  }
 }
 
 .featuresDivVar {
   @extend .featuresDiv;
   padding: 0 0 1rem;
   background-color: #fff;
+
+  @media screen and (min-width: 768px) {
+    padding: 1rem 0 0;
+    height: 260px;
+    gap: 0;
+  }
 }
 
 .featureImg {
   max-width: 80%;
   width: 50%;
+
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+    width: 65%;
+  }
 }
 
 .featureImgVar {
   border-radius: 10px 10px 0 0;
-  width: 100%;
-  height: 200px;
+  max-width: 200px;
   object-fit: cover;
 }
 
@@ -83,6 +141,26 @@
   align-items: center;
   margin: 0 auto;
   color: var(--primary--04);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 0.5rem;
+    margin: 0 auto;
+  }
+}
+
+.featBody {
+  @media screen and (min-width: 768px) {
+    background-color: var(--primary--04);
+    width: 100%;
+    height: 150px;
+    background-color: var(--primary--05);
+    color: #fff;
+    border-radius: 0 0 30px 30px;
+    padding: 1rem;
+  }
 }
 
 .featureTitle {
@@ -90,16 +168,35 @@
   text-transform: capitalize;
   font-weight: var(--wgt--400);
   color: #181b1e;
-  font-size: 1rem;
+  // font-size: 0.6rem;
+
+  @media screen and (min-width: 768px) {
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: var(--wgt--700);
+    font-size: 1.2v;
+    max-width: 80%;
+  }
 }
 
 .aboutBorder {
   width: 10%;
   border: 1px solid var(--primary--07);
   margin: 0.5rem auto 0;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .aboutBorderBig {
   @extend .aboutBorder;
   width: 40%;
+
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+  }
 }

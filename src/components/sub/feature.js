@@ -20,6 +20,23 @@ const FeaturedProduct = (
     });
   }, []);
 
+  const checkId = (id) => {
+    let tag;
+    if (id === 'fiems') {
+      tag = 'checkFiems';
+    }
+    if (id === 'livestock') {
+      tag = 'checkLivestock';
+    } if (id === 'elkanRice') {
+      tag = 'checkElkanRice';
+    }
+    return tag;
+  };
+
+  const handleContextMenu = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <Link
       to={{
@@ -30,8 +47,13 @@ const FeaturedProduct = (
       data-aos="fade-up"
     >
       <Card className={styles.featuresDiv}>
-        <Card.Img variant="top" className={styles.featureImg} src={featureImg} />
-        <Card.Body className={styles.featBody}>
+        <Card.Img
+          variant="top"
+          className={styles.featureImg}
+          src={featureImg}
+          onContextMenu={handleContextMenu}
+        />
+        <Card.Body className={`${styles.featBody} ${checkId()}`}>
           <Card.Title className={styles.featureTitle}>{headline}</Card.Title>
           <hr className={styles.aboutBorder} />
         </Card.Body>
