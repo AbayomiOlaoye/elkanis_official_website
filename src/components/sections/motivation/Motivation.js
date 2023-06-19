@@ -21,7 +21,7 @@ const Motivation = () => {
 
   return (
     <section className={styles.section}>
-      <div className="sub--hero--div flex relative">
+      <div className={styles.subSection}>
         <div className={styles.sectionSub}>
           <h2 className={styles.aboutTitle} data-aos="fade-up">What Motivates Us</h2>
           <hr className={styles.aboutBorder} data-aos="fade-up" />
@@ -34,7 +34,7 @@ const Motivation = () => {
             to optimize food production while minimizing environmental impact.
           </p>
         </div>
-        <img src={talk} alt="Farmers discussing farming operations" className="desktop sub--hero--img" />
+        <img src={talk} alt="Farmers discussing farming operations" className={styles.mobAboutImg} />
       </div>
 
       <div className={styles.smartDiv}>
