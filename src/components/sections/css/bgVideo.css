@@ -1,6 +1,6 @@
 .video--container {
   position: relative;
-  background-image: url('../../../assets/backgrounds/vid_placeholder.png');
+  background: url('../../../assets/backgrounds/vid_placeholder.png'), rgba(14, 16, 4, 0.1);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -102,14 +102,14 @@
     justify-content: start;
     align-items: flex-start;
     top: 5vh;
-    width: 75%;
+    width: 85%;
     z-index: 1000;
   }
 
   .video--container::after {
     content: "";
     position: absolute;
-    background: rgba(14, 16, 4, 0.6);
+    background: rgba(14, 16, 4, 0.8);
     top: 0;
     left: 0;
     height: 1000px;
@@ -125,12 +125,12 @@
   }
 
   .hero .hero--text {
-    line-height: 1.9;
-    margin: 3rem 0 3rem;
+    line-height: 1.6;
+    margin: 3rem 0 4rem;
     background: none;
     padding: 0;
     border-radius: 0;
-    max-width: 85%;
+    max-width: 60%;
   }
 
   .text--left {
@@ -139,15 +139,14 @@
 
   .droner {
     position: absolute;
-    width: 45%;
-    left: 56%;
-    top: 23%;
+    width: 35%;
+    left: 73%;
+    top: 0;
   }
 
   .learn--more {
-    background: #959e76;
-    color: #f2f7de;
     font-size: 1.5rem;
+    padding: 2rem 1.5rem;
   }
 
   .learn--more:hover {
@@ -156,7 +155,15 @@
   }
 
   .learn--more:active {
-    opacity: 0.3;
+    opacity: 0.8;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .droner {
+    width: 45%;
+    left: 63%;
+    top: 20%;
   }
 }
 
