@@ -103,7 +103,7 @@
     align-items: flex-start;
     top: 0;
     margin-top: 16vh;
-    width: 85%;
+    width: 75%;
     z-index: 1000;
   }
 
@@ -142,7 +142,7 @@
     position: absolute;
     width: 50%;
     left: 60%;
-    top: 30vh;
+    top: 40vh;
   }
 
   .learn--more {
@@ -164,7 +164,36 @@
   .droner {
     width: 45%;
     left: 63%;
-    top: 20%;
+    top: 35%;
+  }
+
+  .hero .hero--text {
+    margin: 5rem 0 6rem;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .droner {
+    width: 50%;
+    left: 60%;
+    top: 30vh;
+  }
+}
+
+@media screen and (min-width: 956px) {
+  div.video--overlay {
+    top: 15vh;
+  }
+
+  .hero .hero--text {
+    margin: 4rem 0;
+    max-width: 600px;
+  }
+
+  .droner {
+    width: 45%;
+    left: 63%;
+    top: 15%;
   }
 }
 
@@ -173,5 +202,11 @@
     background-position: 96% 50%;
     background-size: 38%;
     height: 1200px;
+
+    /* .droner {
+      width: 50%;
+      left: 60%;
+      top: -50vh;
+    } */
   }
 }

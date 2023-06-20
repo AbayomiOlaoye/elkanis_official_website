@@ -55,12 +55,12 @@ const Motivation = () => {
         <h2 className={styles.climateTitle}>Climate Smart Technology</h2>
         <hr className={styles.aboutBorder} data-aos="fade-up" />
         <img src={climate} alt="Climate smart technology" className={styles.climateImg} />
-        <p className="about--text green">
+        <p className={styles.climateText}>
           Through the use of remote sensing, satellite imagery and improved seeds, the company
           is able to monitor and manage 64,000 hectares of rice fields in real-time, optimizing
           resource utilization and minimizing environmental impact.
         </p>
-        <p className="about--text deep--green" style={{ marginTop: '1rem' }}>
+        <p className={styles.climateText} style={{ marginTop: '1rem' }}>
           This approach not only ensures the production of healthy and safe rice, but also helps
           to conserve precious natural resources, making it a win-win for both consumers and
           the environment.

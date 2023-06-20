@@ -749,7 +749,7 @@ div.project--links > ul > li > a:hover {
   .funnel--page--container {
     width: 80%;
     padding: 5%;
-    top: 25vh;
+    top: 20vh;
   }
 
   .funnel--input {
@@ -795,6 +795,7 @@ div.project--links > ul > li > a:hover {
   .footer--container.main {
     grid-template-columns: 1fr 1fr;
     padding: 5%;
+    background-color: #455214;
   }
 
   .footer__top {
@@ -845,7 +846,7 @@ div.project--links > ul > li > a:hover {
     border-radius: 10px;
     color: #f2f7de;
     font-weight: 600;
-    font-size: 3vh;
+    font-size: 1.5vh;
     height: 48px;
   }
 
@@ -916,7 +917,7 @@ div.project--links > ul > li > a:hover {
   }
 
   .funnel--page--container {
-    top: 43vh;
+    top: 35vh;
   }
 
   .footer--container {

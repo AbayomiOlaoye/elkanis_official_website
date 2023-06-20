@@ -32,7 +32,7 @@ const Service = () => {
           <h3 className={styles.aboutTitle}>Featured Services</h3>
           <hr className={styles.aboutBorderBig} />
         </div>
-        <div className={styles.container}>{services}</div>
+        <div className={styles.containerB}>{services}</div>
       </section>
     </>
   );

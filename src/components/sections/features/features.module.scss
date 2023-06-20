@@ -6,9 +6,17 @@
 
   @media screen and (min-width: 768px) {
     background-color: var(--primary--08);
-    padding-top: 38vh;
-    top: -20vh;
+    top: -80vh;
+    padding-top: 40vh;
   }
+
+  @media screen and (min-width: 800px) {
+    padding-top: 35vh;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 55vh;
+  } 
 }
 
 .serviceContainer {
@@ -19,6 +27,13 @@
   @media screen and (min-width: 768px) {
     background-color: #fff;
     padding-top: 0;
+    margin-top: -40vh;
+    top: -10vh;
+  }
+
+  @media screen and (min-width: 800px) {
+    padding-top: 3vh;
+    top: 0;
   }
 
   .aboutTitle {
@@ -61,8 +76,17 @@
   @media screen and (min-width: 768px) {
     background-color: var(--primary--08);
     flex-direction: row;
-    padding: 0 10%;
+    padding: 0 15% 3%;
     margin-bottom: 4rem;
+  } 
+}
+
+.containerB {
+  @extend .container;
+  background-color: #fff;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 3rem;
   }
 }
 
@@ -98,7 +122,7 @@
 
   @media screen and (min-width: 768px) {
     width: 100%;
-    padding: 1rem 0 0;
+    padding: 4rem 0 0;
     background-color: #fff;
     border-radius: 30px;
     height: 260px;
@@ -114,6 +138,13 @@
     padding: 1rem 0 0;
     height: 260px;
     gap: 0;
+
+    .featBody {
+      background-color: var(--primary--05);
+      color: #fff;
+      border-radius: 0 0 30px 30px;
+      padding: 1rem;
+    }
   }
 }
 
@@ -129,8 +160,15 @@
 
 .featureImgVar {
   border-radius: 10px 10px 0 0;
-  max-width: 200px;
+  max-width: 100%;
+  width: 100%;
+  height: 200px;
   object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 30px 30px 0 0;
+
+  }
 }
 
 .featureHeader {
@@ -145,7 +183,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 70%;
     gap: 0.5rem;
     margin: 0 auto;
   }
@@ -175,8 +213,9 @@
     text-align: left;
     text-transform: uppercase;
     font-weight: var(--wgt--700);
-    font-size: 1.2v;
+    font-size: 60%;
     max-width: 80%;
+    min-height: 76px;
   }
 }
 

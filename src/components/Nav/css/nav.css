@@ -258,3 +258,10 @@
     content: none;
   }
 }
+
+@media screen and (min-width: 956px) {
+  .header--container {
+    top: 8vh;
+    width: 85%;
+  }
+}
