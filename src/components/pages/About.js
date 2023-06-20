@@ -11,6 +11,7 @@ import vision from '../../assets/icons/vision.svg';
 import mission from '../../assets/icons/mission.svg';
 import meet from '../../assets/icons/people_icon.svg';
 import Footer from '../Nav/Footer';
+import about from '../../assets/backgrounds/about_us.jpg';
 
 const About = () => {
   const [showAll, setShowAll] = useState(false);
@@ -57,22 +58,23 @@ const About = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 400,
       easing: 'ease-in',
       once: false,
     });
   }, []);
 
   return (
-    <div className="sub--container about--bg flex column j-c-c a-i-c">
-      <Top title="About Us" id="AboutUs" />
+    <div className="sub--container about--bg flex column j-c-c a-i-c" style={{ overflow: 'hidden' }}>
+      <Top title="About Us" id="AboutUs" img={about} />
       <div className="about--content page--content margin j-c-c a-i-c flex column" data-aos="fade-left" style={{ overflow: 'hidden' }}>
-        <p className="about--text boarder w--80 text--just">
+        <p className="about--text first w--80">
           El-kanis and Partners is a leading food production company that
           is changing the game in the agriculture sector in Nigeria by
           leveraging cutting-edge technology to produce high-quality
           rice and livestock supplements.
         </p>
+        <hr className="line--para />"
         <article className="drive-us push--left g--32 grid a-i-c w--80" data-aos="fade-right" style={{ overflow: 'hidden' }}>
           <div className="drive-us--div flex flow column" data-aos="fade-up">
             <h3 className="green-title-text special-title temp--font light--green">What Drives Us</h3>
