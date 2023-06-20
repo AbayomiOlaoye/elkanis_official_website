@@ -2,26 +2,29 @@
   width: 100%;
   position: relative;
   text-align: center;
-  // background-image: url('../../../assets/backgrounds/vid_placeholder.png');
-  // background-size: cover;
-  // background-repeat: no-repeat;
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../../../assets/backgrounds/vid_placeholder.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .topImage {
   position: relative;
-  top: 70px;
-  max-width: 100%;
-  object-fit: contain;
-  height: 296px;
+  top: 40px;
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
 }
 
 .overlay {
   position: absolute;
-  top: 70px;
+  top: 40px;
   left: 0;
   width: 100%;
-  height: 296px;
+  height: 300px;
   background: rgba(42, 49, 12, 0.8)
 }
 

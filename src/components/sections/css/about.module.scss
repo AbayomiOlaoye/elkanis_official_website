@@ -1,0 +1,58 @@
+.abtPara {
+  margin-top: -18vh;
+  text-align: center;
+  max-width: 70%;
+}
+
+.paraLine {
+  border: 2px solid transparent;
+  border-image: linear-gradient(25deg, #c3ee00 0%, #91aa2b 70%);
+  border-image-slice: 1;
+  width: 20%;
+  margin-top: 2rem;
+}
+
+.flipDiv {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.revealImg {
+  display: flex;
+  width: 100%;
+}
+
+.riceImg {
+  margin: 3rem 0 1rem;
+  display: block;
+  min-width: 100%;
+  height: 290px;
+  object-fit: cover;
+  filter: brightness(2.5);
+}
+
+.riceImgB {
+  @extend .riceImg;
+  margin-top: -10vh;
+  height: 230px;
+  filter: unset;
+  opacity: 0.6;
+}
+
+.driveTitle {
+  position: absolute;
+  top: -35vh;
+  z-index: 1;
+  color: #fff;
+  max-width: 30%;
+  font-size: 2rem;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  line-height: 1.4;
+  padding: 0.3rem;
+  background: rgba(25, 31, 1, 0.5);
+  border: 2px solid #91aa2b;
+}

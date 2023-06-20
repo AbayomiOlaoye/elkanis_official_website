@@ -2,16 +2,20 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 'animate.css';
 import Top from '../sections/jumbotron/top';
 import riceTrans from '../../assets/generic/rice_transport.svg';
 import Team from '../../storage/team';
 import Member from '../sub/member';
 import '../sections/css/about.css';
+import styles from '../sections/css/about.module.scss';
 import vision from '../../assets/icons/vision.svg';
 import mission from '../../assets/icons/mission.svg';
 import meet from '../../assets/icons/people_icon.svg';
 import Footer from '../Nav/Footer';
 import about from '../../assets/backgrounds/about_us.jpg';
+import bg from '../../assets/backgrounds/form_bg.png';
+import techBg from '../../assets/backgrounds/vid_placeholder.png';
 
 const About = () => {
   const [showAll, setShowAll] = useState(false);
@@ -58,26 +62,26 @@ const About = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 400,
-      easing: 'ease-in',
-      once: false,
+      duration: 1000,
+      easing: 'linear',
+      once: true,
     });
   }, []);
 
   return (
     <div className="sub--container about--bg flex column j-c-c a-i-c" style={{ overflow: 'hidden' }}>
       <Top title="About Us" id="AboutUs" img={about} />
-      <div className="about--content page--content margin j-c-c a-i-c flex column" data-aos="fade-left" style={{ overflow: 'hidden' }}>
-        <p className="about--text first w--80">
+      <div id="about--page" className="about--content page--content margin j-c-c a-i-c flex column" data-aos="fade-left" style={{ overflow: 'hidden' }}>
+        <p className={`about--text w--80 ${styles.abtPara}`}>
           El-kanis and Partners is a leading food production company that
           is changing the game in the agriculture sector in Nigeria by
           leveraging cutting-edge technology to produce high-quality
           rice and livestock supplements.
         </p>
-        <hr className="line--para />"
-        <article className="drive-us push--left g--32 grid a-i-c w--80" data-aos="fade-right" style={{ overflow: 'hidden' }}>
-          <div className="drive-us--div flex flow column" data-aos="fade-up">
-            <h3 className="green-title-text special-title temp--font light--green">What Drives Us</h3>
+        <hr className={styles.paraLine} />
+        <article className={`drive-us push--left g--32 grid a-i-c w--80 ${styles.flipDiv}`} data-aos="fade-right" style={{ overflow: 'hidden' }}>
+          <div className="drive-us--div relative flex flow column">
+            <h3 className={`green-title-text special-title temp--font light--green ${styles.driveTitle}`} data-aos="fade-down">What Drives Us</h3>
             <p className="sub--text para-one text--just">
               With a mission to provide sustainable and nutritious food options
               to consumers, El-kanis and Partners has established itself as a pioneer
@@ -93,18 +97,19 @@ const About = () => {
               minimizing the impact on the environment.
             </p>
           </div>
-          <div className="rice--img--div w--100 d-flex" data-aos="fade-up">
-            <img src={riceTrans} alt="A man transporting rice" className="rice--img" data-aos="fade-up" />
+          <div className={`rice--img--div w--100 d-flex ${styles.revealImg}`} data-aos="fade-up">
+            <img src={bg} alt="A man transporting rice" data-aos="fade-right" className={`rice--img ${styles.riceImg}`} />
+            <div className="span--overlay w--100" />
           </div>
         </article>
       </div>
-      <article className="vision--container relative grid">
+      <article className="vision--container relative g--32 grid">
         <div className="vision--div d-flex gap-one column a-i-c">
           <div className="vision--title--div gap-one d-flex column a-i-c" data-aos="fade-up">
             <img src={vision} alt="vision" className="vision--img icon d-block" data-aos="fade-up" />
             <h3 className="mini-title green-title-text temp--font light--green" data-aos="fade-up">Our Vision</h3>
           </div>
-          <p className="sub--text text--just" data-aos="fade-up">
+          <p className="sub--text light text--just" data-aos="fade-up">
             To provide high quality rice and livestock supplement products that are nutritious,
             safe, and sustainably produced, meeting the evolving needs of consumers and
             contributing to the well-being of our planet.
@@ -118,7 +123,7 @@ const About = () => {
             <img src={mission} alt="vision" data-aos="fade-up" className="vision--img icon" />
             <h3 className="mini-title green-title-text temp--font light--green" data-aos="fade-up">Our Mission</h3>
           </div>
-          <p className="sub--text text--just" data-aos="fade-up">
+          <p className="sub--text light text--just" data-aos="fade-up">
             To revolutionize food production through the use of technology, while prioritizing
             sustainability and promoting healthy and nutritious food options.
             We strive to provide high-quality rice and livestock supplements to consumers in
@@ -129,7 +134,8 @@ const About = () => {
       </article>
       <article className="drive-us tech--section gap-one grid w--80" style={{ marginTop: '5vh' }} data-aos="fade-up">
         <div className="rice--img--div w--100 d-flex">
-          <img src={riceTrans} alt="A man transporting rice" data-aos="fade-up" className="rice--img" />
+          <img src={riceTrans} alt="A man transporting rice" className="desktop rice--img" />
+          <img src={techBg} alt="A man transporting rice" className={`rice--img ${styles.riceImgB}`} />
           <div className="span--overlay w--100" />
         </div>
         <div className="drive-us--text flex j-c-c flow column" data-aos="fade-down">
@@ -148,7 +154,7 @@ const About = () => {
       </article>
       <article className="drive-us d-flex column w--80" data-aos="fade-up">
         <div className="team-top d-flex column a-i-c gap-one">
-          <img src={meet} alt="vision" className="vision--img icon" data-aos="zoom-out" data-aos-once="false" data-aos-duration="1000" />
+          <img src={meet} alt="vision" className="vision--img icon" data-aos="zoom-out" data-aos-duration="300" />
           <h3 data-aos="zoom-in" className="meet--up green-title-text temp--font light--green">Meet the Team</h3>
         </div>
         <div className="team--div grid a-i-c">
