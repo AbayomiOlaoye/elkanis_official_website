@@ -19,6 +19,11 @@
   padding: 0 1rem;
 }
 
+.flipDivB {
+  @extend .flipDiv;
+  flex-direction: column;
+}
+
 .revealImg {
   display: flex;
   width: 100%;
@@ -30,21 +35,20 @@
   min-width: 100%;
   height: 290px;
   object-fit: cover;
-  filter: brightness(2.5);
+  filter: brightness(0.4);
 }
 
 .riceImgB {
   @extend .riceImg;
   margin-top: -10vh;
-  height: 230px;
+  height: 260px;
   filter: unset;
-  opacity: 0.6;
 }
 
 .driveTitle {
   position: absolute;
-  top: -35vh;
-  z-index: 1;
+  top: -37vh;
+  z-index: 5;
   color: #fff;
   max-width: 30%;
   font-size: 2rem;
@@ -52,7 +56,21 @@
   align-self: center;
   text-align: center;
   line-height: 1.4;
-  padding: 0.3rem;
+  padding: 1.2rem;
   background: rgba(25, 31, 1, 0.5);
   border: 2px solid #91aa2b;
+}
+
+.driveTitleB {
+  @extend .driveTitle;
+  top: -30vh;
+  max-width: 50%;
+  text-align: center;
+}
+
+.teamTop {
+  @extend .driveTitleB;
+  top: 11vh;
+  border: none;
+  max-width: 100%;
 }

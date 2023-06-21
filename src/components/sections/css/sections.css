@@ -267,7 +267,7 @@ hr.hr--theme {
 .funnel--page--container {
   position: absolute;
   width: var(--w--70);
-  top: 40%;
+  top: 60%;
   font-family: 'Inter', sans-serif, 'Open Sans', 'Helvetica Neue';
   background: var(--white);
   gap: 0.5rem;
@@ -571,9 +571,19 @@ div.project--links > ul > li > a:hover {
   display: none;
 }
 
+@media screen and (min-width: 462px) {
+  .funnel--page--container {
+    top: 27vh;
+  }
+}
+
 @media screen and (min-width: 465px) {
   .motivation {
     background-position: 0 0, 0 15%;
+  }
+
+  .funnel--page--container {
+    top: 30vh;
   }
 
   .exit {
@@ -606,12 +616,14 @@ div.project--links > ul > li > a:hover {
     margin-bottom: 1.5rem;
   }
 
-  .funnel--page--container {
-    top: 20vh;
-  }
-
   .sponsors--page {
     top: -20vh;
+  }
+}
+
+@media screen and (min-width: 477px) {
+  .funnel--page--container {
+    top: 27vh;
   }
 }
 
@@ -651,7 +663,7 @@ div.project--links > ul > li > a:hover {
 
 @media screen and (min-width: 650px) {
   .funnel--page--container {
-    top: 33vh;
+    top: 28vh;
   }
 
   .sponsors--page {
@@ -929,6 +941,10 @@ div.project--links > ul > li > a:hover {
     flex-direction: row;
     align-items: start;
     justify-content: space-between;
+
+    .footer--container.main {
+      margin-top: 4rem;
+    }
   }
 }
 

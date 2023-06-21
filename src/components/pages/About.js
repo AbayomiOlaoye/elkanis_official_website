@@ -14,8 +14,8 @@ import mission from '../../assets/icons/mission.svg';
 import meet from '../../assets/icons/people_icon.svg';
 import Footer from '../Nav/Footer';
 import about from '../../assets/backgrounds/about_us.jpg';
-import bg from '../../assets/backgrounds/form_bg.png';
-import techBg from '../../assets/backgrounds/vid_placeholder.png';
+import bg from '../../assets/backgrounds/supplies.jpg';
+import techBg from '../../assets/backgrounds/techie.png';
 
 const About = () => {
   const [showAll, setShowAll] = useState(false);
@@ -62,7 +62,7 @@ const About = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 400,
       easing: 'linear',
       once: true,
     });
@@ -81,7 +81,7 @@ const About = () => {
         <hr className={styles.paraLine} />
         <article className={`drive-us push--left g--32 grid a-i-c w--80 ${styles.flipDiv}`} data-aos="fade-right" style={{ overflow: 'hidden' }}>
           <div className="drive-us--div relative flex flow column">
-            <h3 className={`green-title-text special-title temp--font light--green ${styles.driveTitle}`} data-aos="fade-down">What Drives Us</h3>
+            <h3 className={`green-title-text special-title temp--font light--green ${styles.driveTitle}`} data-aos="fade-left">What Drives Us</h3>
             <p className="sub--text para-one text--just">
               With a mission to provide sustainable and nutritious food options
               to consumers, El-kanis and Partners has established itself as a pioneer
@@ -104,12 +104,12 @@ const About = () => {
         </article>
       </div>
       <article className="vision--container relative g--32 grid">
-        <div className="vision--div d-flex gap-one column a-i-c">
-          <div className="vision--title--div gap-one d-flex column a-i-c" data-aos="fade-up">
-            <img src={vision} alt="vision" className="vision--img icon d-block" data-aos="fade-up" />
-            <h3 className="mini-title green-title-text temp--font light--green" data-aos="fade-up">Our Vision</h3>
+        <div className="vision--div d-flex gap-one column a-i-c" data-aos="fade-up">
+          <div className="vision--title--div gap-one d-flex column a-i-c">
+            <img src={vision} alt="vision" className="vision--img icon d-block" />
+            <h3 className="mini-title green-title-text temp--font light--green">Our Vision</h3>
           </div>
-          <p className="sub--text light text--just" data-aos="fade-up">
+          <p className="sub--text light text--just">
             To provide high quality rice and livestock supplement products that are nutritious,
             safe, and sustainably produced, meeting the evolving needs of consumers and
             contributing to the well-being of our planet.
@@ -118,12 +118,12 @@ const About = () => {
             healthy, and prosperous future for generations to come.
           </p>
         </div>
-        <div className="boarder vision--div d-flex gap-one column a-i-c">
+        <div className="boarder vision--div d-flex gap-one column a-i-c" data-aos="fade-up">
           <div className="vision--title--div d-flex gap-one d-flex column">
-            <img src={mission} alt="vision" data-aos="fade-up" className="vision--img icon" />
-            <h3 className="mini-title green-title-text temp--font light--green" data-aos="fade-up">Our Mission</h3>
+            <img src={mission} alt="vision" className="vision--img icon" />
+            <h3 className="mini-title green-title-text temp--font light--green">Our Mission</h3>
           </div>
-          <p className="sub--text light text--just" data-aos="fade-up">
+          <p className="sub--text light text--just">
             To revolutionize food production through the use of technology, while prioritizing
             sustainability and promoting healthy and nutritious food options.
             We strive to provide high-quality rice and livestock supplements to consumers in
@@ -132,14 +132,14 @@ const About = () => {
           </p>
         </div>
       </article>
-      <article className="drive-us tech--section gap-one grid w--80" style={{ marginTop: '5vh' }} data-aos="fade-up">
+      <article className={`drive-us tech--section gap-one grid w--100 ${styles.flipDivB}`} style={{ marginTop: '5vh' }} data-aos="fade-up">
         <div className="rice--img--div w--100 d-flex">
           <img src={riceTrans} alt="A man transporting rice" className="desktop rice--img" />
           <img src={techBg} alt="A man transporting rice" className={`rice--img ${styles.riceImgB}`} />
           <div className="span--overlay w--100" />
         </div>
-        <div className="drive-us--text flex j-c-c flow column" data-aos="fade-down">
-          <h3 className="lefty--title boarder green-title-text special-title temp--font light--green">Technology Integration</h3>
+        <div className="drive-us--text relative flex j-c-c flow column" data-aos="fade-dup">
+          <h3 className={` boarder green-title-text special-title temp--font light--green ${styles.driveTitleB}`}>Technology Integration</h3>
           <p className="sub--text para-one text--just">
             El-kanis and Partners&lsquo; use of technology extends beyond production processes.
             The company also employs advanced logistics and supply chain management systems to
@@ -152,10 +152,11 @@ const About = () => {
           </p>
         </div>
       </article>
-      <article className="drive-us d-flex column w--80" data-aos="fade-up">
-        <div className="team-top d-flex column a-i-c gap-one">
+      <article className="drive-us relative d-flex column w--100" data-aos="fade-up" style={{ width: '100%' }}>
+        <img src={about} alt="Team meeting" className="mobile teamImg" />
+        <div className={`${styles.teamTop} d-flex column a-i-c gap-one`}>
           <img src={meet} alt="vision" className="vision--img icon" data-aos="zoom-out" data-aos-duration="300" />
-          <h3 data-aos="zoom-in" className="meet--up green-title-text temp--font light--green">Meet the Team</h3>
+          <h3 data-aos="zoom-in" className="styleHeader meet--up green-title-text temp--font light--green">Meet the Team</h3>
         </div>
         <div className="team--div grid a-i-c">
           {showAll ? (
@@ -171,7 +172,7 @@ const About = () => {
               ))}
             </ul>
           )}
-          <button type="button" data-aos="fade-in" data-aos-once="false" data-aos-duration="1000" className="btn--more" onClick={toggleShowAll}>{!showAll ? 'Show more' : 'Show less'}</button>
+          <button type="button" data-aos="fade-in" data-aos-once="false" data-aos-duration="100" className="btn--more" onClick={toggleShowAll}>{!showAll ? 'Show more' : 'Show less'}</button>
         </div>
       </article>
 

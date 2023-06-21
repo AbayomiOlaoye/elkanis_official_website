@@ -218,7 +218,7 @@ h3.special-title {
 
 .icon {
   margin-top: 2rem;
-  width: 40px;
+  width: 48px;
 }
 
 .footer--icon {
@@ -233,6 +233,34 @@ div.footer--links {
 
 .team--action {
   gap: 0.31rem;
+}
+
+/* Addition form Module */
+
+.teamImg {
+  margin: 3rem 0 2.5rem;
+  display: block;
+  min-width: 100%;
+  height: 250px;
+  padding: 0 1rem;
+  object-fit: cover;
+  filter: brightness(0.3);
+}
+
+.styleHeader {
+  color: #fff;
+  font-size: 2rem;
+  width: 100%;
+  padding: 0;
+}
+
+/* End */
+
+.funnel--bg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  opacity: 0.7;
 }
 
 .know--more {
@@ -277,16 +305,16 @@ div.footer--links {
 
 .team--role {
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 3.5vw;
   text-align: center;
-  color: var(--primary--04);
+  color: #212529;
 }
 
 .team--name {
   margin-top: 1rem;
   font-weight: 600;
-  font-size: 2vw;
-  color: #91aa2b;
+  font-size: 2.5vw;
+  color: #64676a;
 }
 
 .lefty--title.boarder {
@@ -300,17 +328,20 @@ div.footer--links {
 
 .team--text {
   max-width: 80%;
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 
 .full {
   top: -10vw;
   background-color: var(--primary--04);
   color: #fff;
-  padding: 13% 7%;
-  border-radius: 12px;
+  padding: 10% 3% 3%;
+  border-radius: 14px;
   border: none;
   overflow: hidden;
+  font-size: 16px;
+  width: 90%;
+  line-height: 1.5;
 }
 
 .full .team--text {
@@ -770,6 +801,10 @@ article.drive--us.g--32.d-flex {
 @media screen and (min-width: 768px) {
   #smart {
     display: block;
+  }
+
+  .funnel--bg {
+    height: 300px;
   }
 
   .page--content {
