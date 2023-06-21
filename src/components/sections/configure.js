@@ -4,12 +4,12 @@ import 'react-multi-carousel/lib/styles.css';
 const configure = ([desktop, tablet, mobile]) => ({
   extraLarge: {
     breakpoint: { max: 4000, min: 3000 },
-    items: 5,
+    items: 4,
   },
 
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: desktop || 5,
+    items: desktop || 4,
   },
 
   tablet: {

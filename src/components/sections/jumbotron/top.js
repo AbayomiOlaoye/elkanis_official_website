@@ -2,41 +2,31 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import PropTypes from 'prop-types';
-import heroBg from '../../../assets/backgrounds/vid_placeholder.png';
-import hero from '../../../assets/generic/feature_hd.png';
 import '../css/about.css';
+import styles from './top.module.scss';
 
 const Top = (
   {
-    title, id, linkOne, linkTwo, linkThree,
+    title, id, linkOne, linkTwo, linkThree, img,
   },
 ) => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 400,
       easing: 'ease-in-out',
       once: true,
     });
   }, []);
 
-  const heroStyle = {
-    backgroundImage: `url(${heroBg})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    width: '100%',
-    zIndex: '1',
-  };
-
   return (
-    <div id={id} className="top--container relative d-flex column j-c-c a-i-c" style={heroStyle}>
+    <div id={id} className={styles.topSection} style={{ overflow: 'hidden' }}>
       <img
-        src={hero}
-        alt="hero"
-        className="hero--img relative"
+        src={img}
+        alt={img}
+        className={styles.topImage}
       />
-      <div className="image--overlay" />
-      <h1 className="temp--font hero--title--about absolute" data-aos="zoom-out">
+      <div className={styles.overlay} />
+      <h1 className={styles.topHeader} data-aos="zoom-out">
         {title}
       </h1>
       {
@@ -45,9 +35,9 @@ const Top = (
             data-aos="fade-up"
             className="top--links absolute d-flex j-c-c g--32 a-i-c"
           >
-            <a href={`#${linkOne.id}`} className="page--link">{linkOne.link}</a>
-            <a href={`#${linkTwo.id}`} className="page--link">{linkTwo.link}</a>
-            <a href={`#${linkThree.id}`} className="page--link">{linkThree.link}</a>
+            <a href={`#${linkOne.id}`} className={styles.topLink}>{linkOne.link}</a>
+            <a href={`#${linkTwo.id}`} className={styles.topLink}>{linkTwo.link}</a>
+            <a href={`#${linkThree.id}`} className={styles.topLink}>{linkThree.link}</a>
           </div>
         )
 }
@@ -61,6 +51,7 @@ Top.propTypes = {
   linkOne: PropTypes.objectOf(PropTypes.string),
   linkTwo: PropTypes.objectOf(PropTypes.string),
   linkThree: PropTypes.objectOf(PropTypes.string),
+  img: PropTypes.string.isRequired,
 };
 
 Top.defaultProps = {

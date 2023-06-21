@@ -1,0 +1,65 @@
+.topSection {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../../../assets/backgrounds/vid_placeholder.png');
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    top: 0;
+    margin-top: 0;
+    height: 600px;
+  }
+}
+
+.topImage {
+  position: relative;
+  top: 10px;
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+
+  @media screen and (min-width: 768px) {
+    height: 350px;
+    top: 30vh;
+    width: 80%;
+
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: rgba(42, 49, 12, 0.8);
+
+  @media screen and (min-width: 768px) {
+    width: 80%;
+    left: 50%;
+    top: 58vh;
+    height: 350px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.topHeader {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  font-size: 58px;
+  color: var(--white);
+  font-family: var(--tiempos-fine);
+  transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 768px) {
+    font-size: 72px;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

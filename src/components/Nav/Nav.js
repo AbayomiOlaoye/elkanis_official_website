@@ -1,5 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { AiFillCloseCircle } from 'react-icons/ai';
 import React, { useState, useEffect } from 'react';
+import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { MdOutlineMenu } from 'react-icons/md';
@@ -12,7 +14,7 @@ import '../../index.css';
 const Nav = () => {
   useEffect(() => {
     AOS.init({
-      duration: 3000,
+      duration: 500,
       easing: 'ease-in-out',
     });
   }, []);
@@ -36,10 +38,11 @@ const Nav = () => {
         {
             toggle
               ? <AiFillCloseCircle className="exit hamburger hide--desk" onClick={handleMenuClose} />
-              : <MdOutlineMenu className="menu hamburger hide--desk" onClick={handleMenuOpen} />
+              : <MdOutlineMenu className="menu hamburger hide--desk animate__lightSpeedOutRight" onClick={handleMenuOpen} />
           }
-        <nav className={`nav--container relative ${toggle ? '' : 'hide--mob'}`}>
-          <ul className="nav--list un-list flex">
+
+        <nav className={`nav--container ${toggle ? '' : 'hide--mob'}`}>
+          <ul className="nav--list un-list flex animate__slideInRight">
             <li className="nav--item--container list">
               <Link to="/" className="nav--item" data-aos="fade-up" onClick={handleMenuClose}>Home</Link>
             </li>
@@ -70,6 +73,7 @@ const Nav = () => {
             </li>
           </ul>
         </nav>
+
       </header>
 
       <Outlet />

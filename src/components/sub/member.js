@@ -4,8 +4,7 @@
 import { MdKeyboardArrowUp } from 'react-icons/md';
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import 'animate.css';
 import PropTypes from 'prop-types';
 import { IoIosArrowDown } from 'react-icons/io';
 
@@ -21,13 +20,6 @@ const animateBook = {
 const Member = ({ member, counter }) => {
   const [selectedMember, setSelectedMember] = useState(null);
   const teamRef = useRef(null);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-      easing: 'ease-in',
-    });
-  }, []);
 
   useEffect(() => {
     const handleClick = (e) => {
@@ -77,15 +69,15 @@ const Member = ({ member, counter }) => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 1.1 }}
       >
-        <h5 className="team--name" data-aos="fade-up">{member.designation}</h5>
-        <h4 className="team--role" data-aos="fade-up">{member.name}</h4>
-        <p className="team--text text--just" data-aos="fade-up">{member.headshot}</p>
+        <h5 className="team--name">{member.designation}</h5>
+        <h4 className="team--role">{member.name}</h4>
+        <p className="team--text text--just">{member.headshot}</p>
         <a
           className="team--action--button relative"
           onClick={() => handleReadMore(member.id)}
           style={{ top: '0', alignSelf: 'center' }}
         >
-          <button type="button" className="know--more" data-aos="fade-right">
+          <button type="button" className="know--more">
             Know More
             <IoIosArrowDown />
           </button>
@@ -96,18 +88,18 @@ const Member = ({ member, counter }) => {
 
   const full = (
     <div
-      className="full relative team--action text--just d-flex column a-i-c"
+      className="full relative team--action text--just d-flex column a-i-c animate__fadeIn"
     >
-      <h5 className="team--name" style={{ color: 'var(--primary--08)' }} data-aos="ease-in">{member.designation}</h5>
+      <h5 className="team--name" style={{ color: 'var(--primary--08)' }}>{member.designation}</h5>
       <h4 className="team--role" style={{ color: 'var(--primary--06)', marginBottom: '1rem' }}>{member.name}</h4>
-      <p className="team--text" data-aos="zoom-in">{member.Intro}</p>
+      <p className="team--text">{member.Intro}</p>
       <div className="team--skills relative flex column w--100">
 
         <div className="team--skills--card flex column">
-          <h5 className="team--skills--title" data-aos="fade-right">Expertise</h5>
+          <h5 className="team--skills--title">Expertise</h5>
           <ul className="team--skills--list">
             {member.expertise.map((skill) => (
-              <li className="team--skills--item team--text" data-aos="fade-down" key={skill}>
+              <li className="team--skills--item team--text" key={skill}>
                 {skill}
               </li>
             ))}
@@ -115,17 +107,16 @@ const Member = ({ member, counter }) => {
         </div>
 
         <div className="team--skills--card flex column">
-          <h5 className="team--skills--title" data-aos="fade-left">Skills</h5>
+          <h5 className="team--skills--title">Skills</h5>
           <ul className="team--skills--list">
             {member.skills.map((skill) => (
-              <li className="team--skills--item team--text" data-aos="fade-down" key={skill}>
+              <li className="team--skills--item team--text" key={skill}>
                 {skill}
               </li>
             ))}
           </ul>
           <a
-            className="team--action--button a-i-c d-block"
-            data-aos="fade-down"
+            className="team--action--button a-i-c d-block animate__backInUp"
             onClick={() => handleReadMore(null)}
             style={
             {
@@ -136,7 +127,7 @@ const Member = ({ member, counter }) => {
           }
           >
             <button type="button" className="know--more" style={{ color: '#2a310c' }}>
-              Know Less
+              Less
               <MdKeyboardArrowUp />
             </button>
           </a>

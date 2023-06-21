@@ -3,11 +3,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import FeaturedProduct from '../../sub/feature';
 import ARTICLES from '../../../storage/articles';
+import styles from './features.module.scss';
 
 const Product = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 400,
       easing: 'ease-in-out',
       once: true,
     });
@@ -23,12 +24,12 @@ const Product = () => {
   ));
   return (
     <>
-      <section className="feature--div product flex column" data-aos="fade-up">
-        <div className="feature--header flex w--80">
-          <h3 className="sub--theme temp--font light--green">Our Featured Products</h3>
-          <hr className="hr--theme w--80" />
+      <section className={styles.featureContainer} data-aos="fade-up" style={{ overflow: 'hidden' }}>
+        <div className={styles.featureHeader}>
+          <h3 className={styles.aboutTitle}>Featured Products</h3>
+          <hr className={styles.aboutBorderBig} />
         </div>
-        <div className="feature--container product d-flex">{product}</div>
+        <div className={styles.container}>{product}</div>
       </section>
     </>
   );

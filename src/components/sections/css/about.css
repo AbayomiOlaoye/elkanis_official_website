@@ -83,6 +83,7 @@
 }
 
 .page--content {
+  margin-top: 0;
   padding-top: 23vh;
   background-color: #f9faf7;
 }
@@ -105,10 +106,14 @@
   border-image-slice: 1;
 }
 
+#smart {
+  display: none;
+}
+
 .boarder:nth-of-type(2) {
   padding: 1rem 0 0;
   border-left: none;
-  border-top: 5px solid transparent;
+  border-top: none;
   border-image: linear-gradient(25deg, #c3ee00 0%, #91aa2b 70%);
   border-image-slice: 1;
 }
@@ -159,8 +164,13 @@
 }
 
 .mini-title {
-  font-size: 6vw;
-  color: var(--primary--07);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary--04);
+}
+
+.light {
+  color: #3c4044;
 }
 
 h3.special-title {
@@ -172,10 +182,9 @@ h3.special-title {
 
 .vision--container {
   width: 100%;
-  background-color: var(--primary--04);
-  padding: 2rem 3rem 3rem;
+  padding: 2rem 0 3rem;
   color: #fff;
-  margin-top: 2rem;
+  margin: 4rem 0;
   grid-template-columns: 1fr;
 }
 
@@ -191,17 +200,26 @@ h3.special-title {
   gap: 3rem;
 }
 
+.desktop {
+  display: none;
+}
+
 .m-40 {
   margin-bottom: var(--size--32);
 }
 
-.vision--div {
-  padding: 0 0 4rem;
+.vision--div,
+.boarder.vision--div {
+  /* padding: 0 0 4rem; */
+  margin: 0 1rem;
+  background-color: var(--primary--08);
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
 }
 
 .icon {
   margin-top: 2rem;
-  width: 40px;
+  width: 48px;
 }
 
 .footer--icon {
@@ -218,12 +236,41 @@ div.footer--links {
   gap: 0.31rem;
 }
 
+/* Addition form Module */
+
+.teamImg {
+  margin: 3rem 0 2.5rem;
+  display: block;
+  min-width: 100%;
+  height: 250px;
+  padding: 0 1rem;
+  object-fit: cover;
+  filter: brightness(0.3);
+}
+
+.styleHeader {
+  color: #fff;
+  font-size: 2rem;
+  width: 100%;
+  padding: 0;
+}
+
+/* End */
+
+.funnel--bg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
 .know--more {
   background: transparent;
   padding: 0.5rem;
   display: flex;
   margin-bottom: 2rem;
   border: none;
+  font-size: 14px;
   flex-direction: column;
   align-items: center;
   gap: 0.25rem;
@@ -260,16 +307,16 @@ div.footer--links {
 
 .team--role {
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 3.5vw;
   text-align: center;
-  color: var(--primary--04);
+  color: #212529;
 }
 
 .team--name {
   margin-top: 1rem;
   font-weight: 600;
-  font-size: 2vw;
-  color: #91aa2b;
+  font-size: 2.5vw;
+  color: #64676a;
 }
 
 .lefty--title.boarder {
@@ -283,17 +330,20 @@ div.footer--links {
 
 .team--text {
   max-width: 80%;
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 
 .full {
   top: -10vw;
   background-color: var(--primary--04);
   color: #fff;
-  padding: 13% 7%;
-  border-radius: 12px;
+  padding: 10% 3% 3%;
+  border-radius: 14px;
   border: none;
   overflow: hidden;
+  font-size: 16px;
+  width: 90%;
+  line-height: 1.5;
 }
 
 .full .team--text {
@@ -338,8 +388,6 @@ ul.team--skills--list {
 
 footer {
   position: relative;
-
-  /* top: 10vh; */
 }
 
 /* Product Features */
@@ -664,6 +712,14 @@ article.drive--us.g--32.d-flex {
     padding: 4rem;
   }
 
+  .vision--div,
+  .boarder.vision--div {
+    margin: 0;
+    background-color: unset;
+    border-radius: unset;
+    padding: 0;
+  }
+
   .product--card--title {
     text-align: left;
   }
@@ -746,16 +802,31 @@ article.drive--us.g--32.d-flex {
   .team--skills--card {
     max-width: 80%;
   }
+
+  .footer--icon {
+    top: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  #smart {
+    display: block;
+  }
+
+  .funnel--bg {
+    height: 300px;
+  }
+
   .page--content {
+    /* margin-top: 10vh; */
     padding-top: 30vh;
   }
 
   .about--bg {
-    background-size: 70%;
-    background-position: 50% 70%;
+    background-image: url('../../../assets/backgrounds/abt_line_bg.svg');
+    background-repeat: no-repeat;
+    background-size: 15% 50%;
+    background-position: left -50vh;
   }
 
   .rice--img {
@@ -789,8 +860,13 @@ article.drive--us.g--32.d-flex {
     padding: 3rem 5rem;
     color: #fff;
     margin-top: 2rem;
+    gap: 0;
     justify-content: flex-start;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .light {
+    color: #fff;
   }
 
   .boarder:nth-of-type(2) {
@@ -803,6 +879,10 @@ article.drive--us.g--32.d-flex {
 
   .boarder {
     padding-left: 1rem;
+  }
+
+  h3.special-title {
+    text-align: left;
   }
 
   #root > div > div.about--content.page--content.margin.j-c-c.a-i-c.flex.column.aos-init.aos-animate > article {

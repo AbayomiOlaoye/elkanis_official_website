@@ -1,0 +1,187 @@
+.section {
+  width: var(--w--100);
+  background: url('../../../assets/backgrounds/jumbo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  top: -20vh;
+  padding: 5vh 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    top: -30vh;
+    padding: 5vh 0;
+  }
+
+  @media screen and (min-width: 1024px) {
+    top: -15vh;
+  }
+}
+
+.sectionSub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    align-self: flex-end;
+    margin-top: 2vh;
+    margin-left: 5%;
+  }
+}
+
+.subSection {
+  @extend .sectionSub;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row !important;
+    justify-content: space-between;
+    width: 93%;
+  }
+}
+
+.sectionSub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+    // padding-top: 5vh;
+  }
+}
+
+.aboutTitle {
+  max-width: 306px;
+  font-family: var(--tiempos-fine);
+  margin: 5rem auto 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #212529;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 1rem;
+    border-left: 5px solid transparent;
+    border-image: linear-gradient(25deg, #c3ee00 0%, #91aa2b 70%);
+    border-image-slice: 1;
+    text-align: left;
+    margin: 5rem 0 1rem;
+    color: var(--primary--03);
+    font-size: 3rem;
+  }
+}
+
+.climateTitle {
+  @extend .aboutTitle;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 0;
+    border-left: none;
+    text-align: center;
+    margin-top: 3rem;
+    max-width: 65%;
+  }
+}
+
+// .climateText {
+//   text-align: center;
+// }
+
+.aboutBorder {
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid var(--primary--07);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.aboutImg {
+  max-width: 100%;
+  opacity: 0.8;
+  margin: 1.5rem auto;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.paraText {
+  line-height: 1.4;
+  max-width: 95%;
+  text-align: justify;
+
+  @media screen and (min-width: 768px) {
+    // max-width: 80%;
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+.smartDiv {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 105%;
+  }
+}
+
+.climateArt {
+  width: var(--w--100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    background-color: #fff;
+    width: var(--w--80);
+    position: relative;
+    top: -10vh;
+    padding: 5%;
+    z-index: 1;
+    width: 75%;
+    font-size: 20px;
+  }
+  
+  @media screen and (min-width: 1280px) {
+    padding: 5% 10%;
+  }
+
+  p {
+    font-weight: 300;
+  }
+}
+
+.climateImg {
+  width: 90%;
+  margin: 1.5rem 0;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobAboutImg {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    max-width: 50%;
+    opacity: 0.9;
+    margin: 1.5rem auto;
+    position: relative;
+    top: -5vh;
+  }
+
+  @media screen and (min-width: 956px) {
+    width: 80%;
+  }
+}
+
