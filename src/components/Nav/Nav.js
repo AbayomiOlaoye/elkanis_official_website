@@ -38,7 +38,7 @@ const Nav = () => {
         {
             toggle
               ? <AiFillCloseCircle className="exit hamburger hide--desk" onClick={handleMenuClose} />
-              : <MdOutlineMenu className="menu hamburger hide--desk" onClick={handleMenuOpen} />
+              : <MdOutlineMenu className="menu hamburger hide--desk animate__lightSpeedOutRight" onClick={handleMenuOpen} />
           }
 
         <nav className={`nav--container ${toggle ? '' : 'hide--mob'}`}>

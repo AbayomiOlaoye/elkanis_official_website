@@ -4,7 +4,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'animate.css';
 import Top from '../sections/jumbotron/top';
-import riceTrans from '../../assets/generic/rice_transport.svg';
 import Team from '../../storage/team';
 import Member from '../sub/member';
 import '../sections/css/about.css';
@@ -71,7 +70,7 @@ const About = () => {
   return (
     <div className="sub--container about--bg flex column j-c-c a-i-c" style={{ overflow: 'hidden' }}>
       <Top title="About Us" id="AboutUs" img={about} />
-      <div id="about--page" className="about--content page--content margin j-c-c a-i-c flex column" data-aos="fade-left" style={{ overflow: 'hidden' }}>
+      <div id="about--page" className={`about--content page--content margin j-c-c a-i-c flex column ${styles.abtDiv}`} data-aos="fade-left" style={{ overflow: 'hidden' }}>
         <p className={`about--text w--80 ${styles.abtPara}`}>
           El-kanis and Partners is a leading food production company that
           is changing the game in the agriculture sector in Nigeria by
@@ -99,7 +98,6 @@ const About = () => {
           </div>
           <div className={`rice--img--div w--100 d-flex ${styles.revealImg}`} data-aos="fade-up">
             <img src={bg} alt="A man transporting rice" data-aos="fade-right" className={`rice--img ${styles.riceImg}`} />
-            <div className="span--overlay w--100" />
           </div>
         </article>
       </div>
@@ -133,8 +131,7 @@ const About = () => {
         </div>
       </article>
       <article className={`drive-us tech--section gap-one grid w--100 ${styles.flipDivB}`} style={{ marginTop: '5vh' }} data-aos="fade-up">
-        <div className="rice--img--div w--100 d-flex">
-          <img src={riceTrans} alt="A man transporting rice" className="desktop rice--img" />
+        <div className={`rice--img--div w--100 d-flex ${styles.revealImg}`}>
           <img src={techBg} alt="A man transporting rice" className={`rice--img ${styles.riceImgB}`} />
           <div className="span--overlay w--100" />
         </div>

@@ -83,6 +83,7 @@
 }
 
 .page--content {
+  margin-top: 0;
   padding-top: 23vh;
   background-color: #f9faf7;
 }
@@ -711,6 +712,14 @@ article.drive--us.g--32.d-flex {
     padding: 4rem;
   }
 
+  .vision--div,
+  .boarder.vision--div {
+    margin: 0;
+    background-color: unset;
+    border-radius: unset;
+    padding: 0;
+  }
+
   .product--card--title {
     text-align: left;
   }
@@ -809,12 +818,15 @@ article.drive--us.g--32.d-flex {
   }
 
   .page--content {
+    /* margin-top: 10vh; */
     padding-top: 30vh;
   }
 
   .about--bg {
-    background-size: 70%;
-    background-position: 50% 70%;
+    background-image: url('../../../assets/backgrounds/abt_line_bg.svg');
+    background-repeat: no-repeat;
+    background-size: 15% 50%;
+    background-position: left -50vh;
   }
 
   .rice--img {
@@ -848,8 +860,13 @@ article.drive--us.g--32.d-flex {
     padding: 3rem 5rem;
     color: #fff;
     margin-top: 2rem;
+    gap: 0;
     justify-content: flex-start;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .light {
+    color: #fff;
   }
 
   .boarder:nth-of-type(2) {
@@ -862,6 +879,10 @@ article.drive--us.g--32.d-flex {
 
   .boarder {
     padding-left: 1rem;
+  }
+
+  h3.special-title {
+    text-align: left;
   }
 
   #root > div > div.about--content.page--content.margin.j-c-c.a-i-c.flex.column.aos-init.aos-animate > article {
