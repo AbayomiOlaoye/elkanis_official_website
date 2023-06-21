@@ -118,8 +118,9 @@
   }
 
   .hero .hero--title {
-    font-size: 300%;
-    max-width: 720px;
+    font-size: 250%;
+    max-width: 800px;
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: var(--wgt--400);
     letter-spacing: 1.8px;
@@ -131,7 +132,7 @@
     background: none;
     padding: 0;
     border-radius: 0;
-    max-width: 60%;
+    max-width: 70%;
   }
 
   .text--left {

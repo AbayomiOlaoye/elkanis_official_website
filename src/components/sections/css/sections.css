@@ -866,7 +866,7 @@ div.project--links > ul > li > a:hover {
     max-width: 300px;
     color: #fff;
     font-size: 14px;
-    gap: 1rem;
+    gap: 0;
   }
 
   .footer__links--top {

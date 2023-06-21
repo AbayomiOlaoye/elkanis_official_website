@@ -269,6 +269,7 @@ div.footer--links {
   display: flex;
   margin-bottom: 2rem;
   border: none;
+  font-size: 14px;
   flex-direction: column;
   align-items: center;
   gap: 0.25rem;
