@@ -14,7 +14,7 @@ import meet from '../../assets/icons/people_icon.svg';
 import Footer from '../Nav/Footer';
 import about from '../../assets/backgrounds/about_us.jpg';
 import bg from '../../assets/backgrounds/supplies.jpg';
-import techBg from '../../assets/backgrounds/techie.png';
+import techBg from '../../assets/projects/precision.jpg';
 
 const About = () => {
   const [showAll, setShowAll] = useState(false);
@@ -152,7 +152,7 @@ const About = () => {
       <article className={`drive-us about--bg relative d-flex column w--100 ${styles.bgContainer}`} data-aos="fade-up" style={{ width: '100%' }}>
         <img src={about} alt="Team meeting" className="mobile teamImg" />
         <div className={`${styles.teamTop} d-flex column a-i-c gap-one`}>
-          <img src={meet} alt="vision" className={`vision--img icon ${styles.meetImg}`} data-aos="zoom-out" data-aos-duration="300" />
+          <img src={meet} alt="vision" className={`vision--img relative icon ${styles.meetImg}`} data-aos="zoom-out" data-aos-duration="300" />
           <h3 data-aos="zoom-in" className="styleHeader meet--up green-title-text temp--font light--green">Meet the Team</h3>
         </div>
         <div className="team--div grid a-i-c">

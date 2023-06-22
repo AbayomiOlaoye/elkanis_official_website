@@ -16,11 +16,12 @@ import IV from '../../assets/products/ivr.svg';
 import Drone from '../../assets/generic/drones.svg';
 import IVR from '../../storage/ivr';
 import Statistics from '../sub/statistics';
-import agro from '../../assets/backgrounds/product_bg.png';
+import agro from '../../assets/backgrounds/product_bg.svg';
 import supplements from '../../assets/products/supplements.jpg';
 import Footer from '../Nav/Footer';
 import styles from '../sections/css/products.module.scss';
 import elkanisAgro from '../../assets/backgrounds/elkanis_agro.jpg';
+import parboiled from '../../assets/generic/parboiled.png';
 
 const Products = () => {
   const { id } = useParams();
@@ -77,12 +78,12 @@ const Products = () => {
       </div>
 
       <article data-aos="fade-left" className={`products g--32 d-flex column w--100 ${styles.sectionTwo}`}>
-        <img src={elkanisAgro} alt={ARTICLES[0].id} className={styles.agroImg} />
+        <img src={elkanisAgro} alt="El-kanis Agro logo" className={styles.agroImg} />
         <ProductCard products={PRODUCTS} />
       </article>
 
-      <div data-aos="fade-in" className="about--product w--100 rice">
-        <Article article={ARTICLES[2]} id="Rice" />
+      <div data-aos="fade-in" className={`about--product w--100 rice ${styles.sectionThree}`}>
+        <Article article={ARTICLES[2]} id="Rice" img={parboiled} />
       </div>
 
       <article

@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 import '../sections/css/about.css';
 import Statistics from './statistics';
 import styles from '../sections/css/products.module.scss';
+import rice from '../../assets/products/rice_hd.png';
 
 const Article = ({ article, id, img }) => {
   useEffect(() => {
@@ -44,29 +45,39 @@ const Article = ({ article, id, img }) => {
 
   return (
     <article
-      className="drive--us g--32 d-flex"
+      className={`drive--us g--32 d-flex ${styles.flipDiv}`}
       data-aos="fade-up"
       style={
         { alignSelf: 'flex-start' }
       }
       id={id}
     >
-      <div className={`rice--img--div relative d-flex column a-i-c ${article.id === 'elkanRice' ? 'rice--bag' : ''}`} id={identity}>
+      <div className={`rice--img--div relative d-flex column a-i-c ${article.id === 'elkanRice' ? 'rice--bag' : ''} ${styles.imageDiv}`} id={identity}>
         <img
           src={article.productImage}
           alt={article.id}
           className={`livestock--img ${styles.productImg}`}
           onContextMenu={handleContextMenu}
         />
+        {/* <img src={rice} alt="cover" className={styles.productImgB} /> */}
         { article.id === 'elkanRice' && <button type="button" title="Now in stock!" className="button action--btn" onClick={() => handleOrder('El-kanis Rice')}>Place Order</button>}
       </div>
 
       <div className="cover">
         <img src={img} alt="cover" className={styles.mobImg} />
         <div className={`drive-us--text flex gap-one flow column ${styles.divCont}`}>
-          <h3 id={id} className={`green-title-text boarder special-title temp--font light--green ${styles.title}`}>{article.featureHeadline}</h3>
-          { article.intro.map((para) => <p key={para.length - 1} className="sub--text">{para}</p>) }
+          <h3 id={id} className={`green-title-text boarder special-title temp--font light--green ${styles.title}`}>
+            {article.featureHeadline}
+          </h3>
+          {article.intro.map((para, index) => (
+            <React.Fragment key={para}>
+              <p className="sub--text">{para}</p>
+              {((index === 1) && article.id === 'elkanRice') && <img src={rice} alt="Portrait of packaged rice" />}
+              {' '}
+            </React.Fragment>
+          ))}
         </div>
+
         <div className={`stats--container gap-one d-flex ${styles.statsDiv}`} style={{ marginTop: '2rem' }}>
           <Statistics stats={article.stats} />
         </div>

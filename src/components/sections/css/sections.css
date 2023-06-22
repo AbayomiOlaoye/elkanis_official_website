@@ -806,7 +806,7 @@ div.project--links > ul > li > a:hover {
   /* Footer */
   .footer--container.main {
     grid-template-columns: 1fr 1fr;
-    padding: 5%;
+    padding: 3%;
     background-color: #455214;
   }
 
@@ -858,7 +858,7 @@ div.project--links > ul > li > a:hover {
     border-radius: 10px;
     color: #f2f7de;
     font-weight: 600;
-    font-size: 1.5vh;
+    font-size: 2.5vh;
     height: 48px;
   }
 
@@ -950,7 +950,11 @@ div.project--links > ul > li > a:hover {
 
 @media screen and (min-width: 1320px) {
   .funnel--page--container {
-    top: 55vh;
+    top: 17vh;
+  }
+
+  .funnel--title {
+    max-width: 300px;
   }
 
   .funnel--btn {
