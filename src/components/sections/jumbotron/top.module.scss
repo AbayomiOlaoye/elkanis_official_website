@@ -19,14 +19,13 @@
   position: relative;
   top: 10px;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   height: 300px;
 
   @media screen and (min-width: 768px) {
     height: 350px;
-    top: 30vh;
-    width: 80%;
-
+    top: 20vh;
+    width: 80%; 
   }
 }
 
@@ -41,7 +40,15 @@
   @media screen and (min-width: 768px) {
     width: 80%;
     left: 50%;
-    top: 58vh;
+    top: 38.7vh;
+    height: 350px;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 80%;
+    left: 50%;
+    top: 43vh;
     height: 350px;
     transform: translate(-50%, -50%);
   }

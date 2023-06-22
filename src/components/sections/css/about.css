@@ -360,7 +360,6 @@ ul.team--skills--list {
 }
 
 /* Actions buttons */
-
 .btn--more {
   background: var(--primary--08);
   border: none;
@@ -813,6 +812,10 @@ article.drive--us.g--32.d-flex {
     display: block;
   }
 
+  .mobile {
+    display: none;
+  }
+
   .funnel--bg {
     height: 300px;
   }
@@ -837,6 +840,13 @@ article.drive--us.g--32.d-flex {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  div.drive-us.about--img {
+    background-image: url('../../../assets/backgrounds/globe.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 40%;
   }
 
   .team--div {
@@ -914,7 +924,13 @@ article.drive--us.g--32.d-flex {
   }
 
   .team--role {
+    color: var(--primary--05);
     font-size: 1.25rem;
+  }
+
+  .team--name {
+    color: var(--primary--04);
+    font-size: 0.8rem;
   }
 
   .team--text {
@@ -928,11 +944,6 @@ article.drive--us.g--32.d-flex {
     border-radius: 20.2044px;
     padding: 1rem 2rem;
     margin-bottom: 90px;
-  }
-
-  .team--name {
-    font-size: 0.8rem;
-    color: #91aa2b;
   }
 
   /* Product Features */

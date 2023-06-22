@@ -6,11 +6,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../sections/css/about.css';
 import Statistics from './statistics';
+import styles from '../sections/css/products.module.scss';
 
-const Article = ({ article, id }) => {
+const Article = ({ article, id, img }) => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 400,
       once: true,
       easing: 'ease-in-out',
     });
@@ -54,23 +55,28 @@ const Article = ({ article, id }) => {
         <img
           src={article.productImage}
           alt={article.id}
-          className="livestock--img"
+          className={`livestock--img ${styles.productImg}`}
           onContextMenu={handleContextMenu}
         />
         { article.id === 'elkanRice' && <button type="button" title="Now in stock!" className="button action--btn" onClick={() => handleOrder('El-kanis Rice')}>Place Order</button>}
       </div>
 
       <div className="cover">
-        <div className="drive-us--text flex gap-one flow column">
-          <h3 id={id} className="green-title-text boarder special-title temp--font light--green">{article.featureHeadline}</h3>
+        <img src={img} alt="cover" className={styles.mobImg} />
+        <div className={`drive-us--text flex gap-one flow column ${styles.divCont}`}>
+          <h3 id={id} className={`green-title-text boarder special-title temp--font light--green ${styles.title}`}>{article.featureHeadline}</h3>
           { article.intro.map((para) => <p key={para.length - 1} className="sub--text">{para}</p>) }
         </div>
-        <div className="stats--container gap-one d-flex" style={{ marginTop: '2rem' }}>
+        <div className={`stats--container gap-one d-flex ${styles.statsDiv}`} style={{ marginTop: '2rem' }}>
           <Statistics stats={article.stats} />
         </div>
       </div>
     </article>
   );
+};
+
+Article.defaultProps = {
+  img: '',
 };
 
 Article.propTypes = {
@@ -100,6 +106,7 @@ Article.propTypes = {
       land: PropTypes.object,
     }).isRequired,
   }).isRequired,
+  img: PropTypes.string,
 };
 
 export default Article;

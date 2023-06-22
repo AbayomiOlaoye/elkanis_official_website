@@ -1,0 +1,88 @@
+@media screen and (max-width: 767px) {
+  .sectionOne {
+    position: relative;
+    background-color: #fff;
+
+    .paraText {
+      margin-top: -18vh;
+      text-align: center;
+      max-width: 70%;
+    }
+
+    .paraLine {
+      border: 2px solid transparent;
+      border-image: linear-gradient(25deg, #c3ee00 0%, #91aa2b 70%);
+      border-image-slice: 1;
+      width: 20%;
+      margin-top: 2rem;
+    }
+
+    .productImg {
+      display: none;
+    }
+
+    .mobImg {
+      margin: 3rem 0 1rem;
+      display: block;
+      min-width: 100%;
+      height: 290px;
+      object-fit: cover;
+      filter: brightness(0.4);
+    }
+
+    .divCont {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title {
+      position: absolute;
+      top: 55vh;
+      z-index: 5;
+      color: #fff;
+      max-width: 70%;
+      font-size: 2rem;
+      justify-self: center;
+      align-self: center;
+      text-align: center !important;
+      line-height: 1.4;
+      padding: 1.2rem;
+      background: rgba(25, 31, 1, 0.5);
+      border: none;
+      // border: 2px solid #91aa2b;
+    }
+
+    .statsDiv {
+      flex-direction: column;
+    }
+
+    .statsCard {
+      flex-direction: row;
+      margin-bottom: 0;
+      max-width: 100%;
+      width: 100%;
+      gap: 0.8rem;
+      background: var(--primary--06);
+
+      .statsIcon {
+        width: 70px;
+      }
+
+      &:nth-child(2) {
+        width: 80%;
+        background: var(--primary--09);
+      }
+
+      .textDiv {
+        align-items: flex-start;
+        color: var(--primary--04);
+
+        .statsText {
+          font-size: 1.8rem;
+          font-weight: 600;
+          color: var(--primary--03);
+        }
+      }
+    }
+  }
+}
