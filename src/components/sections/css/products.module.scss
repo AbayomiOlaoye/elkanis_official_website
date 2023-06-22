@@ -37,10 +37,10 @@
 
     .title {
       position: absolute;
-      top: 55vh;
+      top: 59vh;
       z-index: 5;
       color: #fff;
-      max-width: 70%;
+      max-width: 260px;
       font-size: 2rem;
       justify-self: center;
       align-self: center;
@@ -64,6 +64,12 @@
       gap: 0.8rem;
       background: var(--primary--06);
 
+      .statsText {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--primary--03);
+      }
+
       .statsIcon {
         width: 70px;
       }
@@ -71,17 +77,15 @@
       &:nth-child(2) {
         width: 80%;
         background: var(--primary--09);
+
+        .statsText {
+          color: var(--primary--04);
+        }
       }
 
       .textDiv {
         align-items: flex-start;
         color: var(--primary--04);
-
-        .statsText {
-          font-size: 0.8rem;
-          font-weight: 600;
-          color: var(--primary--03);
-        }
       }
     }
   }
@@ -124,6 +128,7 @@
       background-color: #fff;
       padding: 0.5rem;
       border-radius: 0 20px 20px 0;
+      min-height: 100%;
 
       p {
         font-size: 14px;
@@ -207,7 +212,7 @@
         top: -33vh;
         z-index: 5;
         color: #fff;
-        max-width: 70%;
+        max-width: 225px;
         font-size: 2rem;
         justify-self: center;
         align-self: center;
@@ -239,7 +244,6 @@
       .statsText {
         font-size: 0.8rem;
         font-weight: 600;
-        text-align: left;
       }
 
       .statsIcon {

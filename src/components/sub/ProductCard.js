@@ -12,7 +12,7 @@ const ProductCard = ({ products }) => {
   const [smallScreen, setSmallScreen] = useState(false);
   useEffect(() => {
     const updateMembers = () => {
-      const isSmallScreen = window.innerWidth <= 768;
+      const isSmallScreen = window.innerWidth < 768;
       if (isSmallScreen) {
         setSmallScreen(true);
       } else {
