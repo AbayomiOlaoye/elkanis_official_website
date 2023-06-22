@@ -85,4 +85,84 @@
       }
     }
   }
+
+  .sectionTwo {
+    padding-top: 0;
+    position: relative;
+
+    .agroImg {
+      min-width: 100%;
+      filter: brightness(0.8);
+      margin: 0 -1rem;
+    }
+
+    .introDiv {
+      display: flex;
+      align-items: center;
+      background-color: var(--primary--08);
+      border-radius: 20px 0px 0px 20px;
+      box-shadow: 0px 16px 35px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    .imgDiv {
+      // background-color: var(--primary--08);
+      min-width: 35%;
+      min-height: 100%;
+      text-align: center;
+    }
+
+    .proImg {
+      width: 90%;
+    }
+
+    .introText {
+      background-color: #fff;
+      padding: 0.5rem;
+
+      p {
+        font-size: 14px;
+        line-height: 1.4;
+        color: #3c4044;
+      }
+
+      .actionDiv {
+        display: flex;
+        gap: 1.8rem;
+        margin: 1rem 0;
+
+        .detailBtn {
+          border: 1px solid var(--primary--05);
+          color: var(--primary--05);
+          padding: 0.7rem 1rem;
+          border-radius: 4px;
+        }
+
+        .orderBtn {
+          @extend .detailBtn;
+          background-color: var(--primary--05);
+          color: #fff;
+        }
+      }
+    }
+
+    .ignoreDesk,
+    .deskDiv {
+      display: none;
+    }
+
+    .productTitle {
+      text-align: left;
+      font-family: var(--open);
+      color: #212529;
+      font-size: 1.33rem;
+      line-height: 1.4;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobImg,
+  .agroImg {
+    display: none !important;
+  }
 }

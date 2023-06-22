@@ -20,6 +20,7 @@ import agro from '../../assets/backgrounds/product_bg.png';
 import supplements from '../../assets/products/supplements.jpg';
 import Footer from '../Nav/Footer';
 import styles from '../sections/css/products.module.scss';
+import elkanisAgro from '../../assets/backgrounds/elkanis_agro.jpg';
 
 const Products = () => {
   const { id } = useParams();
@@ -75,7 +76,8 @@ const Products = () => {
         <Article article={ARTICLES[0]} img={supplements} id="Livestock" />
       </div>
 
-      <article data-aos="fade-left" className="products g--32 d-flex column w--100">
+      <article data-aos="fade-left" className={`products g--32 d-flex column w--100 ${styles.sectionTwo}`}>
+        <img src={elkanisAgro} alt={ARTICLES[0].id} className={styles.agroImg} />
         <ProductCard products={PRODUCTS} />
       </article>
 
