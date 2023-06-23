@@ -144,6 +144,20 @@
   max-width: 100%;
 
   @media screen and (min-width: 768px) {
-    display: none;
+    position: static;
+    margin: 3rem auto 0;
+
+    h3 {
+      color: var(--primary--03);
+    }
+  }
+}
+
+.bgContainer {
+  @media screen and (min-width: 768px) {
+    background-image: url('../../../assets/backgrounds/globe.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 20%;
   }
 }

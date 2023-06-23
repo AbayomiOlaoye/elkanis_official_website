@@ -16,8 +16,11 @@ import IV from '../../assets/products/ivr.svg';
 import Drone from '../../assets/generic/drones.svg';
 import IVR from '../../storage/ivr';
 import Statistics from '../sub/statistics';
+import agro from '../../assets/backgrounds/product_bg.png';
+import supplements from '../../assets/products/supplements.jpg';
 import Footer from '../Nav/Footer';
-// import styles from '../sections/css/Products.module.css';
+import styles from '../sections/css/products.module.scss';
+import elkanisAgro from '../../assets/backgrounds/elkanis_agro.jpg';
 
 const Products = () => {
   const { id } = useParams();
@@ -37,7 +40,7 @@ const Products = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 400,
       easing: 'ease',
       once: true,
     });
@@ -54,24 +57,27 @@ const Products = () => {
   return (
     <div className="sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7', overflow: 'hidden' }} ref={sectionRef}>
       <Top
-        title="Our Products"
+        title="Products"
         id="Products"
+        img={agro}
         linkOne={{ link: 'Livestock Supplement', id: 'Livestock' }}
         linkTwo={{ link: 'Rice', id: 'Rice' }}
         linkThree={{ link: 'FIEMS', id: 'Fiems' }}
       />
 
-      <div data-aos="zoom-in" className="livestock about--content about--product w--100 page--content margin j-c-c a-i-c flex column">
-        <p className="about--text w--80 text--just">
+      <div data-aos="zoom-in" className={`livestock about--content about--product w--100 page--content margin j-c-c a-i-c flex column ${styles.sectionOne}`}>
+        <p className={`about--text w--80 text--just ${styles.paraText}`}>
           El-kanis and Partners&lsquo; products are of the highest quality, produced with a
           commitment to sustainability and innovation. By utilizing cutting-edge technology and
           sustainable practices, the company is able to produce food products that are both
           nutritious and environmentally friendly.
         </p>
-        <Article article={ARTICLES[0]} id="Livestock" />
+        <hr className={styles.paraLine} />
+        <Article article={ARTICLES[0]} img={supplements} id="Livestock" />
       </div>
 
-      <article data-aos="fade-left" className="products g--32 d-flex column w--100">
+      <article data-aos="fade-left" className={`products g--32 d-flex column w--100 ${styles.sectionTwo}`}>
+        <img src={elkanisAgro} alt={ARTICLES[0].id} className={styles.agroImg} />
         <ProductCard products={PRODUCTS} />
       </article>
 

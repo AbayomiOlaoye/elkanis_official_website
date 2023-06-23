@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import PropTypes from 'prop-types';
+import styles from '../sections/css/products.module.scss';
 
 const Statistics = ({ stats }) => {
   const [counters, setCounters] = useState({});
@@ -44,13 +45,15 @@ const Statistics = ({ stats }) => {
         if (stat && typeof stat.counter === 'number') {
           const counterClassName = `counter-${key}`;
           return (
-            <div className={`stat--div d-flex column a-i-c ${counterClassName}`} data-aos="zoom-in" key={key}>
-              <img src={stat.icon} alt="icon" data-aos="fade-in" className="stat--icon" />
-              <p data-aos="fade-left" className="stat--text" style={{ fontWeight: '700' }}>
-                {formatCount(counters[key] || stat.counter)}
-                <span className="plus">+</span>
-              </p>
-              <p className="stat--text" style={{ fontWeight: '600', textAlign: 'center' }}>{stat.info}</p>
+            <div className={`stat--div d-flex column a-i-c ${styles.statsCard} ${counterClassName}`} data-aos-once="false" data-aos-duration="1000" data-aos="fade-right" key={key}>
+              <img src={stat.icon} alt="icon" data-aos="fade-in" className={`stat--icon ${styles.statsIcon}`} />
+              <div className={`stats--text--div d-flex column a-i-c ${styles.textDiv}`}>
+                <p data-aos="zoom-in" data-aos-delay="800" className={`stat--text ${styles.statsText}`} style={{ fontWeight: '700' }}>
+                  {formatCount(counters[key] || stat.counter)}
+                  <span className="plus">+</span>
+                </p>
+                <p className="stat--text" style={{ fontWeight: '600', textAlign: 'center' }}>{stat.info}</p>
+              </div>
             </div>
           );
         }
