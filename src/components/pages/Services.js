@@ -8,7 +8,7 @@ import '../sections/css/about.css';
 import '../../index.css';
 import agric from '../../assets/services/agric_bg.png';
 import workers from '../../assets/services/workers-a.png';
-import workersB from '../../assets/services/workers-b.png';
+import workersB from '../../assets/backgrounds/blog_bg.png';
 import riceStack from '../../assets/services/rice_stack.png';
 import cultivation from '../../assets/services/cultivation.png';
 import ricePro from '../../assets/services/rice_pro.png';
@@ -16,74 +16,79 @@ import Statistics from '../sub/statistics';
 import ARTICLES from '../../storage/articles';
 import Footer from '../Nav/Footer';
 import research from '../../assets/services/research.png';
+import precision from '../../assets/projects/ditra.png';
+import styles from '../sections/css/services.module.scss';
 
 const Services = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 400,
       easing: 'ease-in-out',
       once: true,
     });
   }, []);
 
   return (
-    <div className="sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#fff' }}>
+    <div className="sub--container flex column j-c-c a-i-c" style={{ overflow: 'hidden', backgroundColor: '#fff' }}>
       <Top
         title="Our Services"
+        img={precision}
         id="Services"
         linkOne={{ link: 'Project Development', id: 'Projects' }}
         linkTwo={{ link: 'Rice Processing', id: 'Rice_Processing' }}
         linkThree={{ link: 'Research', id: 'Research' }}
       />
 
-      <section className="services about--content relative w--100 about--product page--content margin j-c-c a-i-c flex column" style={{ backgroundColor: '#fff' }}>
+      <section className={`services about--content relative w--100 about--product page--content margin j-c-c a-i-c flex column ${styles.servicesSection}`} style={{ backgroundColor: '#fff' }}>
         <div className="agro--bg d-flex gap-one" data-aos="fade-down">
           <img
             src={agric}
             alt="agric"
-            className="main--agro--img"
+            className={`main--agro--img ${styles.agroImg}`}
           />
-          <h4 id="Projects" className="agro--title boarder temp--font green-title-text">Agricultural Project Development and Management</h4>
+          <h4 id="Projects" className={`agro--title boarder temp--font green-title-text ${styles.title}`}>Agricultural Project Development and Management</h4>
         </div>
-        <div className="agro--img--float d-flex relative" data-aos="fade-up">
-          <img src={workers} alt="agric" className="agro--float--img" />
-          <img src={workersB} alt="agric" className="agro--float--img" />
-          <img src={riceStack} alt="agric" className="agro--float--img" />
+        <div className={styles.reverseDiv}>
+          <div className={`agro--img--float a-i-c j-c-c d-flex relative ${styles.imgDiv}`} data-aos="fade-up">
+            <img src={workers} alt="agric" className={`agro--float--img ${styles.imgA}`} />
+            <img src={workersB} alt="agric" className={`agro--float--img ${styles.imgB}`} />
+            <img src={riceStack} alt="agric" className={`agro--float--img ${styles.imgC}`} />
+          </div>
+          <ul className={`project--list d-flex column disc ${styles.listDiv}`}>
+            <li data-aos="fade-up">
+              El-kanis and Partners conduct feasibility studies to assess the viability
+              of the agricultural project and identify potential risks and challenges.
+            </li>
+            <li data-aos="fade-up">
+              Developing project proposals, business plans, and project designs that
+              outline the project objectives, budget, timeline, and expected outcomes.
+            </li>
+            <li>
+              Development and implementation of agricultural management plans that include climate-smart
+              crop and livestock production, post-harvest handling, marketing, and financial management.
+            </li>
+            <li data-aos="fade-up">
+              Providing technical support and training to farmers and other stakeholders in areas such
+              as crop production, livestock management, and financial management.
+            </li>
+            <li data-aos="fade-up">
+              Establishing market linkages and value chain development to ensure the
+              sustainability of the agricultural project beyond the project period.
+            </li>
+            <li data-aos="fade-up">
+              Monitoring and evaluation of the project to track progress, identify challenges
+              and make necessary adjustments.
+            </li>
+            <li data-aos="fade-up">
+              Reporting and documentation of the project&lsquo;s progress,
+              financial statements, and other documentation.
+            </li>
+            <li data-aos="fade-up">
+              Developing and implementing sustainability strategies to ensure
+              the long-term success of the project.
+            </li>
+          </ul>
         </div>
-        <ul className="project--list disc w--80">
-          <li data-aos="fade-up">
-            El-kanis and Partners conduct feasibility studies to assess the viability
-            of the agricultural project and identify potential risks and challenges.
-          </li>
-          <li data-aos="fade-up">
-            Developing project proposals, business plans, and project designs that
-            outline the project objectives, budget, timeline, and expected outcomes.
-          </li>
-          <li>
-            Development and implementation of agricultural management plans that include climate-smart
-            crop and livestock production, post-harvest handling, marketing, and financial management.
-          </li>
-          <li data-aos="fade-up">
-            Providing technical support and training to farmers and other stakeholders in areas such
-            as crop production, livestock management, and financial management.
-          </li>
-          <li data-aos="fade-up">
-            Establishing market linkages and value chain development to ensure the
-            sustainability of the agricultural project beyond the project period.
-          </li>
-          <li data-aos="fade-up">
-            Monitoring and evaluation of the project to track progress, identify challenges
-            and make necessary adjustments.
-          </li>
-          <li data-aos="fade-up">
-            Reporting and documentation of the project&lsquo;s progress,
-            financial statements, and other documentation.
-          </li>
-          <li data-aos="fade-up">
-            Developing and implementing sustainability strategies to ensure
-            the long-term success of the project.
-          </li>
-        </ul>
         <article className="cultivate rice--processing relative w--90 d-flex column">
           <div className="pro agro--bg relative d-flex row--reverse gap-one" data-aos="fade-right">
             <img

@@ -1,0 +1,68 @@
+@media screen and (max-width: 767px) {
+  .servicesSection {
+    width: 100%;
+    position: relative;
+    padding: 0 1rem;
+  
+    li,
+    p {
+      text-align: justify;
+      width: 95%;
+      color: #3c4044;
+      // align-self: stretch;
+    }
+
+    .title {
+      position: static;
+      text-align: center;
+      border: none;
+      padding: 0;
+      font-weight: 600;
+      color: #212529;
+      font-size: 2rem;
+    }
+
+    .agroImg {
+      display: none;
+    }
+  
+    .reverseDiv {
+      display: flex;
+      width: 100%;
+
+      flex-direction: column-reverse;
+
+      .listDiv {
+        margin: 0;
+        width: 100%;
+      }
+
+      .imgDiv {
+        position: static;
+        width: 100%;
+        padding: 0;
+        gap: 0.2rem;
+        margin: 2rem 0 3rem;
+        background-color: transparent;
+        box-shadow: none;
+
+        .imgA {
+          border-top-left-radius: 60px;
+        }
+
+        .imgA {
+          object-fit: cover;
+          height: 185px;
+        }
+
+        img {
+          display: block;
+          max-width: 100%;
+          width: 35%;
+          height: 185px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

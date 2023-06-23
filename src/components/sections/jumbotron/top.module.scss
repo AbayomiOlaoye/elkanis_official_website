@@ -1,74 +1,75 @@
-// .topSection {
-//   width: 100%;
-//   position: relative;
-//   text-align: center;
+.topSection {
+  width: 100%;
+  position: relative;
+  text-align: center;
 
-//   @media screen and (min-width: 768px) {
-//     background-image: url('../../../assets/backgrounds/vid_placeholder.png');
-//     background-size: 100% 60%;
-//     background-repeat: no-repeat;
-//     top: 0;
-//     margin-top: 0;
-//     height: 600px;
-//   }
-// }
+  @media screen and (min-width: 768px) {
+    background-image: url('../../../assets/backgrounds/vid_placeholder.png');
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    top: 0;
+    margin-top: 0;
+    height: 600px;
+  }
+}
 
-// .topImage {
-//   position: relative;
-//   top: 10px;
-//   width: 100%;
-//   text-align: center;
-//   object-fit: contain;
-//   height: 300px;
+.topImage {
+  position: relative;
+  top: 10px;
+  width: 120%;
+  // height: 300px;
+  text-align: center;
+  object-fit: contain;
+  height: 300px;
 
-//   @media screen and (min-width: 768px) {
-//     height: 50vh;
-//     top: 30vh;
-//     width: 80%;
-//     background-color: #fff;
-//     object-fit: cover;
-//   }
-// }
+  @media screen and (min-width: 768px) {
+    height: 50vh;
+    top: 30vh;
+    width: 80%;
+    background-color: #fff;
+    object-fit: cover;
+  }
+}
 
-// .overlay {
-//   position: absolute;
-//   top: 10px;
-//   left: 0;
-//   width: 100%;
-//   height: 300px;
-//   background: rgba(42, 49, 12, 0.8);
+.overlay {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: rgba(42, 49, 12, 0.8);
 
-//   @media screen and (min-width: 768px) {
-//     width: 80%;
-//     left: 50%;
-//     top: 55vh;
-//     height: 50vh;
-//     transform: translate(-50%, -50%);
-//   }
+  @media screen and (min-width: 768px) {
+    width: 80%;
+    left: 50%;
+    top: 55vh;
+    height: 50vh;
+    transform: translate(-50%, -50%);
+  }
 
-//   // @media screen and (min-width: 1024px) {
-//   //   left: 50%;
-//   //   top: 43vh;
-//   //   transform: translate(-50%, -50%);
-//   // }
-// }
+  // @media screen and (min-width: 1024px) {
+  //   left: 50%;
+  //   top: 43vh;
+  //   transform: translate(-50%, -50%);
+  // }
+}
 
-// .topHeader {
-//   position: absolute;
-//   top: 45vw;
-//   left: 15vh;
-//   font-size: 58px;
-//   z-index: 3;
-//   color: var(--white);
-//   font-family: var(--tiempos-fine);
-//   transform: translate(-50%, -50%);
+.topHeader {
+  position: absolute;
+  top: 45vw;
+  left: 15vh;
+  font-size: 58px;
+  z-index: 3;
+  color: var(--white);
+  font-family: var(--tiempos-fine);
+  transform: translate(-50%, -50%);
 
-//   @media screen and (min-width: 768px) {
-//     font-size: 72px;
-//     left: 35vh;
-//     right: 10%;
-//     padding: 1rem;
-//     background-color: var(--primary--03);
-//     transform: translate(-50%, -50%);
-//   }
-// }
+  @media screen and (min-width: 768px) {
+    font-size: 72px;
+    left: 35vh;
+    right: 10%;
+    padding: 1rem;
+    background-color: var(--primary--03);
+    transform: translate(-50%, -50%);
+  }
+}
