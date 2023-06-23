@@ -76,10 +76,7 @@
 }
 
 .top--links {
-  border-top: 1px solid #fff;
-  top: 53vh;
-  padding-top: 0.5rem;
-  width: 70%;
+  display: none;
 }
 
 .page--content {
@@ -1364,6 +1361,7 @@ article.drive--us.g--32.d-flex {
     border-top: 1px solid #fff;
     top: 55vh;
     width: max-content;
+    padding-top: 0.5rem;
   }
 
   .agro--float--img {
