@@ -464,7 +464,7 @@ img.livestock--img {
 
 .stat--text {
   font-size: 12px;
-  text-align: center;
+  text-align: left;
 }
 
 .counter-land,
@@ -472,8 +472,10 @@ img.livestock--img {
 .counter-ivr {
   background-color: var(--primary--08);
   color: #6f8321;
-  text-align: center;
+  text-align: left;
 }
+
+/* Create corresponding media values */
 
 .counter-farmer,
 .drones-div .counter-land {
@@ -701,6 +703,7 @@ article.drive--us.g--32.d-flex {
 
 .drone-drive-ivr {
   max-width: 30%;
+  margin-top: 2rem;
 }
 
 .shared.footer__top {

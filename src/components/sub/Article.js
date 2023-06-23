@@ -1,5 +1,5 @@
 /* eslint-disable react/forbid-prop-types */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import AOS from 'aos';
@@ -16,6 +16,25 @@ const Article = ({ article, id, img }) => {
       once: true,
       easing: 'ease-in-out',
     });
+  }, []);
+
+  const [smallScreen, setSmallScreen] = useState(false);
+  useEffect(() => {
+    const updateMembers = () => {
+      const isSmallScreen = window.innerWidth < 768;
+      if (isSmallScreen) {
+        setSmallScreen(true);
+      } else {
+        setSmallScreen(false);
+      }
+    };
+    updateMembers();
+
+    window.addEventListener('resize', updateMembers);
+
+    return () => {
+      window.removeEventListener('resize', updateMembers);
+    };
   }, []);
 
   // Prevent right click event on images
@@ -72,7 +91,7 @@ const Article = ({ article, id, img }) => {
           {article.intro.map((para, index) => (
             <React.Fragment key={para}>
               <p className="sub--text">{para}</p>
-              {((index === 1) && article.id === 'elkanRice') && <img src={rice} alt="Portrait of packaged rice" />}
+              {(((index === 1) && article.id === 'elkanRice') && smallScreen) && <img src={rice} alt="Portrait of packaged rice" />}
               {' '}
             </React.Fragment>
           ))}
