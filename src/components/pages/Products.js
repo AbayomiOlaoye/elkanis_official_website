@@ -11,16 +11,19 @@ import ARTICLES from '../../storage/articles';
 import PRODUCTS from '../../storage/product';
 import '../../App.css';
 import ProductCard from '../sub/ProductCard';
-import Spacial from '../../assets/generic/spatial_img.svg';
+import Spacial from '../../assets/backgrounds/spatial.png';
 import IV from '../../assets/products/ivr.svg';
 import Drone from '../../assets/generic/drones.svg';
 import IVR from '../../storage/ivr';
 import Statistics from '../sub/statistics';
-import agro from '../../assets/backgrounds/product_bg.png';
+import agro from '../../assets/backgrounds/product_bg.svg';
 import supplements from '../../assets/products/supplements.jpg';
 import Footer from '../Nav/Footer';
 import styles from '../sections/css/products.module.scss';
 import elkanisAgro from '../../assets/backgrounds/elkanis_agro.jpg';
+import parboiled from '../../assets/generic/parboiled.png';
+import silicon from '../../assets/blogs/silicon.png';
+import fiems from '../../assets/products/fiems_hd.svg';
 
 const Products = () => {
   const { id } = useParams();
@@ -77,32 +80,33 @@ const Products = () => {
       </div>
 
       <article data-aos="fade-left" className={`products g--32 d-flex column w--100 ${styles.sectionTwo}`}>
-        <img src={elkanisAgro} alt={ARTICLES[0].id} className={styles.agroImg} />
+        <img src={elkanisAgro} alt="El-kanis Agro logo" className={styles.agroImg} />
         <ProductCard products={PRODUCTS} />
       </article>
 
-      <div data-aos="fade-in" className="about--product w--100 rice">
-        <Article article={ARTICLES[2]} id="Rice" />
+      <div data-aos="fade-in" className={`about--product w--100 rice ${styles.sectionThree}`}>
+        <Article article={ARTICLES[2]} id="Rice" img={parboiled} />
       </div>
 
       <article
-        className="drive--us g--32 d-flex fiems"
+        className={`drive--us g--32 d-flex fiems ${styles.sectionFour}`}
         data-aos="fade-right"
-        style={
-          {
-            padding: '0',
-            alignSelf: 'flex-start',
-            width: '90%',
-            marginTop: '2rem',
-          }
-  }
+        // style={
+        //   {
+        //     padding: '0',
+        //     alignSelf: 'flex-start',
+        //     width: '90%',
+        //     marginTop: '2rem',
+        //   }
+  // }
       >
         <div className="rice--img--div w--100 d-flex a-i-c" id="Projects">
-          <img src={ARTICLES[1].productImage} alt={ARTICLES[1].id} className="livestock--img" />
+          <img src={silicon} alt={ARTICLES[1].id} className={styles.mobImg} />
+          <img src={ARTICLES[1].productImage} alt={ARTICLES[1].id} className={`livestock--img ${styles.deskImg}`} />
         </div>
         <div className="cover">
           <div className="drive-us--text flex gap-one flow column">
-            <h3 id="Fiems" className="green-title-text boarder special-title temp--font light--green">{ARTICLES[1].featureHeadline}</h3>
+            <h3 id="Fiems" className={`green-title-text boarder special-title temp--font light--green ${styles.title}`}>{ARTICLES[1].featureHeadline}</h3>
             <p className="sub--text text--just">{ARTICLES[1].intro[0]}</p>
           </div>
         </div>
@@ -111,15 +115,17 @@ const Products = () => {
       <article
         id={id}
         data-aos="zoom-in"
-        className="drive--us row--reverse addImg relative a-i-c w--100 g--48 d-flex"
+        className={`drive--us row--reverse addImg relative a-i-c w--100 g--48 d-flex ${styles.sectionFive}`}
       >
-        <div className="rice--img--div w--100 d-flex">
-          <img src={ARTICLES[1].addImg} alt="A man transporting rice" className="rice--img smart--fiems" />
+        <div className={`rice--img--div w--100 d-flex ${styles.styleDiv}`}>
+          <img src={fiems} alt="AKFIMS logo" className={styles.mobImgB} />
+          <p className={`${styles.mobText} sub--text`}>{ARTICLES[1].intro[0]}</p>
+          <img src={ARTICLES[1].addImg} alt="A man transporting rice" className={`rice--img smart--fiems ${styles.deskImg}`} />
         </div>
 
         <div className="cover">
           <div className="drive-us--text flex gap-one flow column">
-            <p className="sub--text">{ARTICLES[1].intro[0]}</p>
+            <p className={`${styles.deskText} sub--text`}>{ARTICLES[1].intro[0]}</p>
             <ul className="sub--text team--skills--list">
               {ARTICLES[1].result.map((para) => <li key={para}>{para}</li>)}
             </ul>
@@ -127,12 +133,12 @@ const Products = () => {
         </div>
       </article>
 
-      <section className="spacial--Img w--80">
-        <img src={Spacial} alt="Geolocation conducted by drones" className="spacial" style={{ width: '100%' }} />
+      <section className="spacial--Img w--100">
+        <img src={Spacial} alt="Geolocation conducted by drones" className={`spacial ${styles.spatialImg}`} />
       </section>
-      <section className="drones--section drive us w--100 d-flex column">
-        <div className="drones-div d-flex relative">
-          <img src={Drone} alt="Drones at work" className="drone-drive relative" />
+      <section className={`drones--section drive us w--100 d-flex column ${styles.droneSection}`}>
+        <div className={`drones-div d-flex relative ${styles.droneDiv}`}>
+          <img src={Drone} alt="Drones at work" className={`drone-drive relative ${styles.drone}`} />
           <div className="drone--info">
             <h4 className="product--card--title green-title temp--font">
               Agricultural Drone Service
@@ -145,13 +151,13 @@ const Products = () => {
             </p>
           </div>
         </div>
-        <div className="drones-div IVR d-flex g--32">
+        <div className="drones-div IVR d-flex gap-one">
           <div className="drone--details d-flex column a-i-c w--100">
             <img src={IV} alt="IVR attendant icon" className="drone-drive-ivr" />
             <button
               type="button"
               title="Ask an Agent"
-              className="button action--btn"
+              className={`button action--btn ${styles.droneBtn}`}
               onClick={() => handleOrder('IVR Services')}
             >
               Request Service
@@ -171,8 +177,16 @@ const Products = () => {
               farmers with information and services in a way that is accessible, convenient,
               and user-friendly.
             </p>
-            <div className="stats--container gap-one d-flex" style={{ marginTop: '2rem' }}>
+            <div className={`stats--container gap-one d-flex ${styles.statsContainer}`} style={{ marginTop: '2rem' }}>
               { IVR.map((ivr) => <Statistics stats={ivr.stats} key={ivr.id} />) }
+              <button
+                type="button"
+                title="Ask an Agent"
+                className={`button action--btn ${styles.ivrRBtn}`}
+                onClick={() => handleOrder('IVR Services')}
+              >
+                Request Service
+              </button>
             </div>
           </div>
         </div>

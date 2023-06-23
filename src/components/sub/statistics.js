@@ -23,7 +23,7 @@ const Statistics = ({ stats }) => {
           if (typeof stats[key].counter === 'number') {
             updatedCounters[key] = updatedCounters[key] || 400;
             if (updatedCounters[key] < stats[key].counter) {
-              updatedCounters[key] += 599;
+              updatedCounters[key] += 9;
             }
           }
         });
@@ -52,7 +52,7 @@ const Statistics = ({ stats }) => {
                   {formatCount(counters[key] || stat.counter)}
                   <span className="plus">+</span>
                 </p>
-                <p className="stat--text" style={{ fontWeight: '600', textAlign: 'center' }}>{stat.info}</p>
+                <p className={`stat--text ${styles.statsText}`} style={{ fontWeight: '600' }}>{stat.info}</p>
               </div>
             </div>
           );

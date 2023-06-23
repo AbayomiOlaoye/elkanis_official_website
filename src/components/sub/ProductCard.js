@@ -12,7 +12,7 @@ const ProductCard = ({ products }) => {
   const [smallScreen, setSmallScreen] = useState(false);
   useEffect(() => {
     const updateMembers = () => {
-      const isSmallScreen = window.innerWidth <= 768;
+      const isSmallScreen = window.innerWidth < 768;
       if (isSmallScreen) {
         setSmallScreen(true);
       } else {
@@ -101,7 +101,7 @@ const ProductCard = ({ products }) => {
   return (
     <>
       {productState.map((product, index) => (
-        <div className="product--card--div d-flex g--32" key={product.id} style={{ lineHeight: '25px' }}>
+        <div data-aos="fade-up" className={`product--card--div d-flex g--32 ${styles.container}`} key={product.id} style={{ lineHeight: '25px' }}>
           <div className={`product--img--div d-flex column ${styles.deskDiv}`}>
             <img src={product.productImage} alt={product.product} className="product--card--img" />
             <Button text="Place Order" action={() => handleOrder(product.id)} />
