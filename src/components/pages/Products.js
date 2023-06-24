@@ -24,6 +24,8 @@ import elkanisAgro from '../../assets/backgrounds/elkanis_agro.jpg';
 import parboiled from '../../assets/generic/parboiled.png';
 import silicon from '../../assets/blogs/silicon.png';
 import fiems from '../../assets/products/fiems_hd.svg';
+// import Button from '../sub/button';
+import handleOrder from '../sub/buy';
 
 const Products = () => {
   const { id } = useParams();
@@ -48,14 +50,6 @@ const Products = () => {
       once: true,
     });
   }, []);
-
-  // Whatsapp message
-  const PHONE_NUMBER = '2348027331036';
-
-  const handleOrder = (name) => {
-    const message = `Hello, I would like to place an order for ${name}`;
-    window.open(`https://wa.me/${PHONE_NUMBER}?text=${message}`, '_blank');
-  };
 
   return (
     <div className={`sub--container flex column j-c-c a-i-c ${styles.background}`} style={{ backgroundColor: '#f9faf7', overflow: 'hidden' }} ref={sectionRef}>
@@ -119,13 +113,13 @@ const Products = () => {
       >
         <div className={`rice--img--div w--100 d-flex ${styles.styleDiv}`}>
           <img src={fiems} alt="AKFIMS logo" className={styles.mobImgB} />
-          <p className={`${styles.mobText} sub--text`}>{ARTICLES[1].intro[0]}</p>
+          <p className={`${styles.mobText} sub--text`}>{ARTICLES[1].intro[1]}</p>
           <img src={ARTICLES[1].addImg} alt="A man transporting rice" className={`rice--img smart--fiems ${styles.deskImg}`} />
         </div>
 
         <div className="cover">
           <div className="drive-us--text flex gap-one flow column">
-            <p className={`${styles.deskText} sub--text`}>{ARTICLES[1].intro[0]}</p>
+            <p className={`${styles.deskText} sub--text`}>{ARTICLES[1].intro[1]}</p>
             <ul className="sub--text team--skills--list">
               {ARTICLES[1].result.map((para) => <li key={para}>{para}</li>)}
             </ul>
@@ -139,7 +133,7 @@ const Products = () => {
       <section className={`drones--section drive us w--100 d-flex column ${styles.droneSection}`}>
         <div className={`drones-div d-flex relative ${styles.droneDiv}`}>
           <img src={Drone} alt="Drones at work" className={`drone-drive relative ${styles.drone}`} />
-          <div className="drone--info">
+          <div className={`drone--info ${styles.droneInfo}`}>
             <h4 className="product--card--title green-title temp--font">
               Agricultural Drone Service
             </h4>
@@ -149,6 +143,15 @@ const Products = () => {
               monitor the growth of rice and assess land use. This data are used to make informed
               decisions about resource allocation and overall rice farm management.
             </p>
+            {/* <Button text="Request Service" action={() => handleOrder('Drone Services')} /> */}
+            <button
+              type="button"
+              title="Ask an Agent"
+              className={`button w--100 action--btn ${styles.ivrRBtn}`}
+              onClick={() => handleOrder('IVR Services')}
+            >
+              Request Service
+            </button>
           </div>
         </div>
         <div className="drones-div IVR d-flex gap-one">

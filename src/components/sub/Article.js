@@ -8,6 +8,7 @@ import '../sections/css/about.css';
 import Statistics from './statistics';
 import styles from '../sections/css/products.module.scss';
 import rice from '../../assets/products/rice_hd.png';
+import Button from './button';
 
 const Article = ({ article, id, img }) => {
   useEffect(() => {
@@ -78,7 +79,6 @@ const Article = ({ article, id, img }) => {
           className={`livestock--img ${styles.productImg}`}
           onContextMenu={handleContextMenu}
         />
-        {/* <img src={rice} alt="cover" className={styles.productImgB} /> */}
         { article.id === 'elkanRice' && <button type="button" title="Now in stock!" className="button action--btn" onClick={() => handleOrder('El-kanis Rice')}>Place Order</button>}
       </div>
 
@@ -91,7 +91,12 @@ const Article = ({ article, id, img }) => {
           {article.intro.map((para, index) => (
             <React.Fragment key={para}>
               <p className="sub--text">{para}</p>
-              {(((index === 1) && article.id === 'elkanRice') && smallScreen) && <img src={rice} alt="Portrait of packaged rice" />}
+              {(((index === 1) && article.id === 'elkanRice') && smallScreen) && (
+                <div className={`d-flex column ${styles.btnDiv}`} data-aos="zoom-in">
+                  <img src={rice} alt="Portrait of packaged rice" />
+                  <Button text="Place Order" action={() => handleOrder('El-kanis Rice')} />
+                </div>
+              )}
               {' '}
             </React.Fragment>
           ))}

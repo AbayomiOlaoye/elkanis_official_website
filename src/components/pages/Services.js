@@ -18,6 +18,8 @@ import Footer from '../Nav/Footer';
 import research from '../../assets/services/research.png';
 import precision from '../../assets/projects/ditra.png';
 import styles from '../sections/css/services.module.scss';
+import Button from '../sub/button';
+import handleOrder from '../sub/buy';
 
 const Services = () => {
   useEffect(() => {
@@ -48,13 +50,14 @@ const Services = () => {
           />
           <h4 id="Projects" className={`agro--title boarder temp--font green-title-text ${styles.title}`}>Agricultural Project Development and Management</h4>
         </div>
-        <div className={styles.reverseDiv}>
+        <div className={`w--100 ${styles.reverseDiv}`}>
+          <Button text="Request Service" action={() => handleOrder('El-kanis Rice')} />
           <div className={`agro--img--float a-i-c j-c-c d-flex relative ${styles.imgDiv}`} data-aos="fade-up">
             <img src={workers} alt="agric" className={`agro--float--img ${styles.imgA}`} />
             <img src={workersB} alt="agric" className={`agro--float--img ${styles.imgB}`} />
             <img src={riceStack} alt="agric" className={`agro--float--img ${styles.imgC}`} />
           </div>
-          <ul className={`project--list d-flex column disc ${styles.listDiv}`}>
+          <ul className={`project--list d-flex j-c-c a-i-c w--70 column disc ${styles.listDiv}`}>
             <li data-aos="fade-up">
               El-kanis and Partners conduct feasibility studies to assess the viability
               of the agricultural project and identify potential risks and challenges.
@@ -124,7 +127,7 @@ const Services = () => {
                 quality.
               </p>
             </div>
-
+            <Button text="Request Service" action={() => handleOrder('El-kanis Rice')} />
           </div>
           <div className={`pro stats--container gap-half j-c-c d-flex relative ${styles.statsContainer}`}>
             <Statistics stats={ARTICLES[2].stats} />
@@ -232,6 +235,7 @@ const Services = () => {
             </div>
 
           </div>
+          <Button text="Request Service" action={() => handleOrder('El-kanis Rice')} />
         </article>
       </section>
 

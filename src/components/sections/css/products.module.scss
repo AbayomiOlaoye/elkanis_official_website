@@ -234,6 +234,10 @@
         background: rgba(25, 31, 1, 0.8);
         border: none;
       }
+
+      .btnDiv {
+        margin: 1rem 0;
+      }
     }
 
     .statsDiv {
@@ -351,8 +355,17 @@
   }
 
   .droneSection {
+    padding: 0 1.5rem 3rem;
+
     .droneDiv {
       flex-direction: column;
+      border-bottom: 1px solid rgba(145, 170, 43, 0.6);
+      padding-bottom: 3rem;
+      width: 100%;
+
+      .droneInfo {
+        width: 100%;
+      }
 
       .drone {
         display: flex;
@@ -362,7 +375,9 @@
         margin-bottom: 1rem;
       }
 
-     
+     button {
+      font-size: 1rem;
+     }
     }
 
     p {
@@ -435,6 +450,7 @@
 
 @media screen and (min-width: 768px) {
   .mobImg,
+  .mobImgB,
   .ivrRBtn,
   .agroImg,
   .imgDiv,
