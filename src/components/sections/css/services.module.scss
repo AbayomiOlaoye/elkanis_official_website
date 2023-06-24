@@ -1,0 +1,204 @@
+@media screen and (max-width: 767px) {
+  .servicesSection {
+    width: 100%;
+    position: relative;
+    padding: 0 1rem;
+
+    .deskImg {
+      display: none;
+    }
+  
+    li,
+    p {
+      text-align: justify;
+      width: 95%;
+      color: #3c4044;
+      // align-self: stretch;
+    }
+
+    .title {
+      position: static;
+      text-align: center;
+      border: none;
+      padding: 0;
+      font-weight: 600;
+      color: #212529;
+      font-size: 2rem;
+    }
+
+    .agroImg {
+      display: none;
+    }
+  
+    .reverseDiv {
+      display: flex;
+      width: 100%;
+
+      flex-direction: column-reverse;
+
+      .listDiv {
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;  
+      }
+
+      .imgDiv {
+        position: static;
+        width: 100%;
+        padding: 0;
+        gap: 0.2rem;
+        margin: 2rem 0 3rem;
+        background-color: transparent;
+        box-shadow: none;
+
+        .imgA {
+          border-top-left-radius: 60px;
+        }
+
+        .imgA {
+          object-fit: cover;
+          height: 185px;
+        }
+
+        img {
+          display: block;
+          max-width: 100%;
+          width: 35%;
+          height: 185px;
+          object-fit: cover;
+        }
+      }
+    }
+
+      .sectionCultivation {
+        width: 100%;
+
+        .contDiv {
+          width: 100%;
+
+          .flexDiv {
+            width: 100%;
+  
+            .groupImg {
+              @extend .imgDiv;
+              display: flex;
+              margin: 1.5rem 0 0.8rem;
+              gap: 0.4rem;
+              width: 100%;
+  
+              img {
+                max-width: 50%;
+  
+                &:nth-of-type(1) {
+                  border-bottom-left-radius: 80px;
+                }
+  
+                &:nth-of-type(2) {
+                  border-top-right-radius: 120px;
+                }
+              }
+            }
+          }
+
+          p {
+            width: 100%;
+
+            &:nth-of-type(2) {
+              margin-top: 1rem;
+            }
+          }
+        }
+
+        .statsContainer {
+          flex-direction: column;
+          padding-top: 3rem;
+          width: 100%;
+          
+          .statsCard {
+            flex-direction: row;
+            margin-bottom: 0;
+            max-width: 100%;
+            width: 100%;
+            gap: 0.8rem;
+            color: var(--white);
+      
+            .statsText {
+              font-size: 0.8rem;
+              font-weight: 600;
+      
+              &:first-child {
+                font-size: 1.6rem;
+              }
+            }
+      
+            .statsIcon {
+              width: 50px;
+              color: #fff;
+            }
+      
+            &:nth-of-type(1) {
+              width: 75%;
+              
+              .statsText {
+                color: var(--white);
+                text-align: left;
+              }
+            }
+      
+            &:nth-of-type(2) {
+              width: 85%;
+      
+              .statsText {
+                color: var(--primary--03);
+              }
+            }
+      
+            &:nth-of-type(3) {
+              width: 100%;
+      
+              .statsText {
+                color: var(--primary--04);
+              }
+            }
+      
+            .textDiv {
+              align-items: flex-start;
+            }
+          }
+        }
+
+        .operationDiv {
+          width: 100%;
+          box-shadow: none;
+          padding: 0 0 3rem;
+        }
+      }
+    }
+
+    .researchDiv {
+      width: 100%;
+
+      .researchImg {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 60px;
+        margin: 20px 0 10px;
+      }
+
+      p {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+  
+  }
+
+@media screen and (min-width: 768px) {
+  .groupImg,
+  .statsContainer,
+  .intro {
+    display: none;
+  }
+}

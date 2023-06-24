@@ -16,7 +16,7 @@ import IV from '../../assets/products/ivr.svg';
 import Drone from '../../assets/generic/drones.svg';
 import IVR from '../../storage/ivr';
 import Statistics from '../sub/statistics';
-import agro from '../../assets/backgrounds/product_bg.svg';
+import agro from '../../assets/backgrounds/product_bg.png';
 import supplements from '../../assets/products/supplements.jpg';
 import Footer from '../Nav/Footer';
 import styles from '../sections/css/products.module.scss';
@@ -58,7 +58,7 @@ const Products = () => {
   };
 
   return (
-    <div className="sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7', overflow: 'hidden' }} ref={sectionRef}>
+    <div className={`sub--container flex column j-c-c a-i-c ${styles.background}`} style={{ backgroundColor: '#f9faf7', overflow: 'hidden' }} ref={sectionRef}>
       <Top
         title="Products"
         id="Products"
@@ -67,7 +67,6 @@ const Products = () => {
         linkTwo={{ link: 'Rice', id: 'Rice' }}
         linkThree={{ link: 'FIEMS', id: 'Fiems' }}
       />
-
       <div data-aos="zoom-in" className={`livestock about--content about--product w--100 page--content margin j-c-c a-i-c flex column ${styles.sectionOne}`}>
         <p className={`about--text w--80 text--just ${styles.paraText}`}>
           El-kanis and Partners&lsquo; products are of the highest quality, produced with a
@@ -76,6 +75,7 @@ const Products = () => {
           nutritious and environmentally friendly.
         </p>
         <hr className={styles.paraLine} />
+        <div className={styles.bgLoader} />
         <Article article={ARTICLES[0]} img={supplements} id="Livestock" />
       </div>
 
