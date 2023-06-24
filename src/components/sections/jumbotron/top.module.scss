@@ -1,15 +1,15 @@
 .topSection {
   width: 100%;
-  position: relative;
+  // position: relative;
   text-align: center;
 
   @media screen and (min-width: 768px) {
     background-image: url('../../../assets/backgrounds/vid_placeholder.png');
-    background-size: 100% 60%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     top: 0;
     margin-top: 0;
-    height: 600px;
+    height: 55vh;
   }
 }
 
@@ -17,17 +17,20 @@
   position: relative;
   top: 10px;
   width: 120%;
-  // height: 300px;
   text-align: center;
-  object-fit: contain;
+  object-fit: cover;
   height: 300px;
 
   @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 50vh;
-    top: 30vh;
+    top: 55vh;
     width: 80%;
     background-color: #fff;
     object-fit: cover;
+    z-index: 1;
   }
 }
 
@@ -38,6 +41,11 @@
   width: 100%;
   height: 300px;
   background: rgba(42, 49, 12, 0.8);
+  z-index: 2;
+
+  .topLinks {
+    display: none;
+  }
 
   @media screen and (min-width: 768px) {
     width: 80%;
@@ -45,19 +53,17 @@
     top: 55vh;
     height: 50vh;
     transform: translate(-50%, -50%);
-  }
 
-  // @media screen and (min-width: 1024px) {
-  //   left: 50%;
-  //   top: 43vh;
-  //   transform: translate(-50%, -50%);
-  // }
+    .topLinks {
+      display: flex;
+    }  
+  }
 }
 
 .topHeader {
   position: absolute;
-  top: 45vw;
-  left: 15vh;
+  top: 40vw;
+  left: 10vh;
   font-size: 58px;
   z-index: 3;
   color: var(--white);
@@ -66,10 +72,10 @@
 
   @media screen and (min-width: 768px) {
     font-size: 72px;
-    left: 35vh;
+    left: 25vh;
     right: 10%;
+    top: 45vh;
     padding: 1rem;
-    background-color: var(--primary--03);
     transform: translate(-50%, -50%);
   }
 }

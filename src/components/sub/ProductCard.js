@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 import Button from './button';
 import '../../index.css';
 import styles from '../sections/css/products.module.scss';
+import handleOrder from './buy';
 
 const ProductCard = ({ products }) => {
   const [smallScreen, setSmallScreen] = useState(false);
@@ -80,14 +81,6 @@ const ProductCard = ({ products }) => {
   const renderHow = (product) => product.map((benefit) => <li key={benefit} className="lister--item">{benefit}</li>);
 
   const renderDosage = (product) => product.map((benefit) => <li key={benefit} className="lister--item">{benefit}</li>);
-
-  // Whatsapp message
-  const PHONE_NUMBER = '2348027331036';
-
-  const handleOrder = (name) => {
-    const message = `Hello, I would like to ask about your ${name}`;
-    window.open(`https://wa.me/${PHONE_NUMBER}?text=${message}`, '_blank');
-  };
 
   const [isShowDetails, setIsShowDetails] = useState({});
 

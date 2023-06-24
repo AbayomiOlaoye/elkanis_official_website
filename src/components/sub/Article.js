@@ -9,6 +9,7 @@ import Statistics from './statistics';
 import styles from '../sections/css/products.module.scss';
 import rice from '../../assets/products/rice_hd.png';
 import Button from './button';
+import handleOrder from './buy';
 
 const Article = ({ article, id, img }) => {
   useEffect(() => {
@@ -41,14 +42,6 @@ const Article = ({ article, id, img }) => {
   // Prevent right click event on images
   const handleContextMenu = (event) => {
     event.preventDefault();
-  };
-
-  // Whatsapp message
-  const PHONE_NUMBER = '2348027331036';
-
-  const handleOrder = (name) => {
-    const message = `Hello, I would like to place an order for ${name}`;
-    window.open(`https://wa.me/${PHONE_NUMBER}?text=${message}`, '_blank');
   };
 
   const { identity } = useParams();

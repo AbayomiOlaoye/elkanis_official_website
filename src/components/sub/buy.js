@@ -1,5 +1,5 @@
 // Whatsapp message
-const PHONE_NUMBER = '2348027331036';
+const PHONE_NUMBER = '2348035881095';
 
 const handleOrder = (name) => {
   const message = `Hello, I would like to place an order for ${name}`;

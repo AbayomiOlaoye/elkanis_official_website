@@ -33,7 +33,7 @@ const Top = (
         linkOne && (
           <div
             data-aos="fade-up"
-            className="top--links absolute d-flex j-c-c g--32 a-i-c"
+            className={`top--links absolute d-flex j-c-c g--32 a-i-c ${styles.topLinks}`}
           >
             <a href={`#${linkOne.id}`} className={styles.topLink}>{linkOne.link}</a>
             <a href={`#${linkTwo.id}`} className={styles.topLink}>{linkTwo.link}</a>

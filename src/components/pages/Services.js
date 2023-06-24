@@ -33,7 +33,7 @@ const Services = () => {
   return (
     <div className="sub--container flex column j-c-c a-i-c" style={{ overflow: 'hidden', backgroundColor: '#fff' }}>
       <Top
-        title="Our Services"
+        title="Services"
         img={precision}
         id="Services"
         linkOne={{ link: 'Project Development', id: 'Projects' }}
