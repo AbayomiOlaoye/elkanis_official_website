@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 import Top from '../sections/jumbotron/top';
 import PROJECTS from '../../storage/projects';
 import Footer from '../Nav/Footer';
+import project from '../../assets/projects/project.png';
 
 const Projects = () => {
   const containerRef = useRef(null);
@@ -18,7 +19,7 @@ const Projects = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 400,
       easing: 'ease',
       once: false,
     });
@@ -51,6 +52,7 @@ const Projects = () => {
     <div className="pro sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7' }}>
       <Top
         title="Projects"
+        img={project}
       />
       <div className="project--container w--80 grid" style={{ overflow: 'hidden' }} ref={containerRef}>
         {PROJECTS.map((project) => (
@@ -58,7 +60,7 @@ const Projects = () => {
             className="project--card relative"
             title="Click to check the Project!"
             data-aos="fade-left"
-            data-aos-duration="1000"
+            data-aos-duration="800"
             key={project.id}
             id={project.id}
             onClick={() => handleProjectClick(project.id)}

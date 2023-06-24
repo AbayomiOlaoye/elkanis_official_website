@@ -34,6 +34,11 @@
       display: flex;
       width: 100%;
 
+      button {
+        margin-top: -1rem;
+        font-size: 1rem;
+      }
+
       flex-direction: column-reverse;
 
       .listDiv {
@@ -190,6 +195,10 @@
       p {
         width: 100%;
         margin-bottom: 1rem;
+      }
+
+      .listDiv {
+        margin: 0 auto !important;
       }
     }
   
