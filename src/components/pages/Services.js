@@ -172,44 +172,17 @@ const Services = () => {
         <article className={`w--80 research rice--processing relative d-flex g--32 a-i-c column ${styles.researchDiv}`} data-aos="zoom-in">
           <div className="cent d-flex a-i-c column gap-one">
             <h4 id="Research" className={`w--90 product--card--title boarder temp--font green-title-text ${styles.title}`}>Agricultural Research for Development and Consultancy</h4>
-            <p className={`agro--text line--height ${styles.deskImg}`} data-aos="fade-up">
-              El-kanis and Partners is committed to improving the agricultural sector in Nigeria
-              through its research and development efforts, as well as consultancy services.
-            </p>
-            <div className={styles.intro}>
-              <img
-                src={research}
-                data-aos="zoom-out"
-                alt="agric"
-                className={styles.researchImg}
-              />
-              <div className={styles.intoT}>
-                <p data-aos="fade-up">
-                  One of the key areas of expertise for El-kanis is rice production. Rice is a
-                  staple food for millions of people in Nigeria, and ensuring its quality and
-                  availability is crucial for national food security.
-                </p>
-                <p data-aos="fade-up">
-                  El-kanis and Partners uses state-of-the-art technology, including precision
-                  farming techniques and data-driven analytics, to enhance every step of the
-                  rice production process. From farmers profiling, farm mapping, seed selection
-                  and planting to irrigation and pest control, the company employs a range of
-                  innovative approaches such as drones monitoring and FIEMS to maximize yields
-                  and produce rice of the highest quality.
-                </p>
-              </div>
-            </div>
           </div>
-          <div className={`pro agro--bg relative d-flex gap-one ${styles.deskImg}`}>
-            <div className="research--overlay">
+          <div className={`pro agro--bg relative d-flex gap-one ${styles.adjServices}`}>
+            <div className={`research--overlay ${styles.intro}`}>
               <img
                 src={research}
                 data-aos="zoom-out"
                 alt="agric"
-                className="researching agro--img"
+                className={`researching agro--img ${styles.researchImg}`}
               />
             </div>
-            <div className="pro--title--div w--90 d-flex column">
+            <div className={`pro--title--div w--90 d-flex column ${styles.intoT}`}>
               <p data-aos="fade-up" className="agro--text line--height" style={{ marginTop: '0' }}>
                 <b>Research for Development:</b>
                 {' '}
