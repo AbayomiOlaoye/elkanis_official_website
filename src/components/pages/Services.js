@@ -31,7 +31,7 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="sub--container flex column j-c-c a-i-c" style={{ overflow: 'hidden', backgroundColor: '#fff' }}>
+    <div id="service-section" className="sub--container flex column j-c-c a-i-c" style={{ overflow: 'hidden', backgroundColor: '#fff' }}>
       <Top
         title="Services"
         img={precision}
@@ -50,7 +50,7 @@ const Services = () => {
           />
           <h4 id="Projects" className={`agro--title boarder temp--font green-title-text ${styles.title}`}>Agricultural Project Development and Management</h4>
         </div>
-        <div className={`w--100 ${styles.reverseDiv}`}>
+        <div className={`w--100 relative ${styles.reverseDiv}`}>
           <Button text="Request Service" action={() => handleOrder('El-kanis Rice')} />
           <div className={`agro--img--float a-i-c j-c-c d-flex relative ${styles.imgDiv}`} data-aos="fade-up">
             <img src={workers} alt="agric" className={`agro--float--img ${styles.imgA}`} />
@@ -93,7 +93,7 @@ const Services = () => {
           </ul>
         </div>
         <article className={`cultivate rice--processing relative w--90 d-flex column ${styles.sectionCultivation}`}>
-          <div className={`pro agro--bg relative d-flex row--reverse gap-one ${styles.contDiv}`} data-aos="fade-right">
+          <div className={`pro agro--bg max relative d-flex row--reverse gap-one ${styles.contDiv}`} data-aos="fade-right">
             <img
               src={cultivation}
               alt="agric"

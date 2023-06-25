@@ -52,7 +52,7 @@ const Products = () => {
   }, []);
 
   return (
-    <div className={`sub--container flex column j-c-c a-i-c ${styles.background}`} style={{ backgroundColor: '#f9faf7', overflow: 'hidden' }} ref={sectionRef}>
+    <div id="product-section" className={`sub--container flex column j-c-c a-i-c ${styles.background}`} style={{ backgroundColor: '#f9faf7', overflow: 'hidden' }} ref={sectionRef}>
       <Top
         title="Products"
         id="Products"

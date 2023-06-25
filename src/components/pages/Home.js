@@ -34,6 +34,7 @@ const Home = () => {
       if (elem) {
         elem.scrollIntoView({
           behavior: 'smooth',
+          block: 'start',
         });
       }
     }
