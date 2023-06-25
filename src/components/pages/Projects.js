@@ -49,7 +49,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="pro sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7' }}>
+    <div id="project-section" className="pro sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7' }}>
       <Top
         title="Projects"
         img={project}

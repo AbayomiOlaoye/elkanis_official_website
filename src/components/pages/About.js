@@ -68,7 +68,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="sub--container about--bg flex column j-c-c a-i-c" style={{ overflow: 'hidden' }}>
+    <div id="about-us" className="sub--container about--bg flex column j-c-c a-i-c" style={{ overflow: 'hidden' }}>
       <Top title="About Us" id="AboutUs" img={about} />
       <div id="about--page" className={`about--content page--content margin j-c-c a-i-c flex column ${styles.abtDiv}`} data-aos="fade-left" style={{ overflow: 'hidden' }}>
         <p className={`about--text w--80 ${styles.abtPara}`}>

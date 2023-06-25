@@ -599,6 +599,7 @@ article.drive--us.g--32.d-flex {
 
 .spacial {
   margin: 2rem 0;
+  width: 100%;
 }
 
 .services .main--agro--img {
@@ -889,6 +890,16 @@ article.drive--us.g--32.d-flex {
     border-left: 5px solid transparent;
   }
 
+  .spacial--Img {
+    width: 90%;
+    margin: 2rem auto 0;
+  }
+
+  .spacial {
+    height: 500px;
+    object-fit: cover;
+  }
+
   .boarder {
     padding-left: 1rem;
   }
@@ -1041,10 +1052,9 @@ article.drive--us.g--32.d-flex {
   }
 
   .fiems img.livestock--img {
-    width: 100%;
-    min-width: 400px;
+    max-width: 100%;
+    min-width: 300px;
     align-self: center;
-    max-width: none;
   }
 
   #root > div > article.drive--us.g--32.d-flex.fiems.aos-init.aos-animate > div.cover > div {
@@ -1118,7 +1128,8 @@ article.drive--us.g--32.d-flex {
   }
 
   article.drive--us.g--32.d-flex {
-    width: 100%;
+    align-self: flex-start;
+    width: 90%;
     padding: 3rem 0;
   }
 
@@ -1144,6 +1155,10 @@ article.drive--us.g--32.d-flex {
     flex-direction: row-reverse;
   }
 
+  .pro.agro--bg.max {
+    margin-left: 0;
+  }
+
   .pro.agro--bg:last-of-type {
     width: 85%;
     margin-left: 0;
@@ -1158,6 +1173,7 @@ article.drive--us.g--32.d-flex {
   .agro--title {
     line-height: 1;
     margin: 0;
+    max-width: 350px;
   }
 
   .services .main--agro--img {
@@ -1198,7 +1214,7 @@ article.drive--us.g--32.d-flex {
 
   .agro--bottom {
     position: relative;
-    top: -10vh;
+    top: 20vh;
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 0 0 0 150px;
@@ -1222,7 +1238,7 @@ article.drive--us.g--32.d-flex {
     border-top-right-radius: 200px;
     top: 0;
     width: 300px;
-    height: auto;
+    min-height: 800px;
     object-fit: cover;
     align-self: stretch;
   }
@@ -1255,7 +1271,7 @@ article.drive--us.g--32.d-flex {
   }
 
   .pro.stats--container {
-    top: -17vh;
+    top: 15vh;
   }
 
   .pro--title--div {
@@ -1274,7 +1290,7 @@ article.drive--us.g--32.d-flex {
 
   .cultivate.rice--processing,
   .research.rice--processing {
-    margin: 0;
+    margin: 4rem 0 0;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -1316,17 +1332,21 @@ article.drive--us.g--32.d-flex {
   }
 
   .agro--bottom {
-    top: -12vh;
+    top: 10vh;
+  }
+
+  .pro.stats--container {
+    top: 11vh;
   }
 }
 
 @media screen and (min-width: 900px) {
-  .agro--bottom {
-    top: -20vh;
-  }
+  /* .agro--bottom {
+    top: 20vh;
+  } */
 
   .pro.stats--container {
-    top: -27vh;
+    top: 11vh;
   }
 }
 
@@ -1406,5 +1426,11 @@ article.drive--us.g--32.d-flex {
 
   .pro.stats--container {
     top: -30vh;
+  }
+
+  .drone-drive {
+    position: absolute;
+    top: -8vh;
+    left: -28vh;
   }
 }

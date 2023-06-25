@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { AiFillCloseCircle } from 'react-icons/ai';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -20,9 +20,11 @@ const Nav = () => {
   }, []);
 
   const [toggle, setToggle] = useState(false);
+  const navRef = useRef(null);
 
   const handleMenuOpen = () => {
     setToggle(!toggle);
+    navRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   const handleMenuClose = () => {
@@ -41,7 +43,7 @@ const Nav = () => {
               : <MdOutlineMenu className="menu hamburger hide--desk animate__lightSpeedOutRight" onClick={handleMenuOpen} />
           }
 
-        <nav className={`nav--container ${toggle ? '' : 'hide--mob'}`}>
+        <nav className={`nav--container ${toggle ? '' : 'hide--mob'}`} ref={navRef}>
           <ul className="nav--list un-list flex animate__slideInRight">
             <li className="nav--item--container list">
               <Link to="/" className="nav--item" data-aos="fade-up" onClick={handleMenuClose}>Home</Link>

@@ -2,6 +2,10 @@
   width: 100%;
   // position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;                                                                                  
 
   @media screen and (min-width: 768px) {
     background-image: url('../../../assets/backgrounds/vid_placeholder.png');
@@ -62,8 +66,10 @@
 
 .topHeader {
   position: absolute;
-  top: 40vw;
-  left: 10vh;
+  // top: 40vw;
+  // left: 10vh;
+  line-height: 1.1;
+  margin-top: 3rem;
   font-size: 58px;
   z-index: 3;
   color: var(--white);
@@ -72,8 +78,9 @@
 
   @media screen and (min-width: 768px) {
     font-size: 72px;
-    left: 25vh;
-    right: 10%;
+    // left: 25vh;
+    // right: 10%;
+    margin-top: 0;
     top: 45vh;
     padding: 1rem;
     transform: translate(-50%, -50%);
