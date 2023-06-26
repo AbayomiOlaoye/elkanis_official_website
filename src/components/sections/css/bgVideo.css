@@ -122,7 +122,7 @@
 
   .hero .hero--title {
     font-size: 250%;
-    max-width: 800px;
+    max-width: 550px;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: var(--wgt--400);
