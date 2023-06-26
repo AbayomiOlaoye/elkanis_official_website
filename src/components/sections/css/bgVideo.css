@@ -5,7 +5,7 @@
   background-position: center;
   background-repeat: repeat;
   width: 100%;
-  height: 100%;
+  height: 1000px;
 }
 
 .droner {
@@ -22,7 +22,7 @@
 }
 
 .learn--more {
-  top: -16vh;
+  top: -15vh;
   background: #91aa2b;
   color: #f2f7de;
   font-weight: var(--wgt--600);
@@ -89,22 +89,25 @@
     background: none;
   }
 
-  .media {
+  .media,
+  .player,
+  #player,
+  .vp {
     position: absolute;
     object-fit: cover;
     top: 0;
     left: 0;
     width: 100%;
-    height: 1000px;
+    height: 1500px;
   }
 
   div.video--overlay {
     justify-content: start;
     align-items: flex-start;
     top: 0;
-    margin-top: 16vh;
+    margin-top: 10vh;
     width: 75%;
-    z-index: 1000;
+    z-index: 1500;
   }
 
   .video--container::after {
@@ -113,7 +116,7 @@
     background: rgba(14, 16, 4, 0.8);
     top: 0;
     left: 0;
-    height: 1000px;
+    height: 1500px;
     width: 100%;
   }
 
@@ -142,8 +145,8 @@
   .droner {
     position: absolute;
     width: 50%;
-    left: 60%;
-    top: 40vh;
+    left: 65%;
+    top: 25vh;
   }
 
   .learn--more {

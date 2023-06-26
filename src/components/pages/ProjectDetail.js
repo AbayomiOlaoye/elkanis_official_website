@@ -15,7 +15,7 @@ const ProjectDetail = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 400,
       easing: 'ease-in-out',
       once: true,
     });
@@ -64,6 +64,7 @@ const ProjectDetail = () => {
     <div className="sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7', overflow: 'hidden', lineHeight: '30px' }}>
       <Top
         title="Project Summary"
+        img={project.img}
       />
       <div
         className="pro--summary about--content about--product page--content j-c-c a-i-c grid w--100 g--32"

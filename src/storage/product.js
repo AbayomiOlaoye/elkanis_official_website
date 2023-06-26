@@ -8,7 +8,7 @@ const PRODUCTS = [
     product: 'El-kanis Heavy Weight™',
     productImage: heavyWeight,
     keyFeatures: '',
-    productInfo: 'This is a fat-powered vitamin for improved animal production, weight gain, good water intake, rapid growth, strong bone and good carcasses quality. It helps to control wet litter, mortality control and balances calcium phosphorus.',
+    productInfo: 'This is an organic fat-powered vitamin extract for improved animal production, weight gain, good water intake, rapid growth, strong bone and good carcasses quality. It helps to control wet litter, mortality control and balances calcium phosphorus.',
     benefits: [
       'Increases egg production',
       'Increases immunity to stress',
@@ -31,7 +31,7 @@ const PRODUCTS = [
     id: 'stopper',
     product: 'El-kanis Stopper Solution™',
     productImage: stopper,
-    productInfo: 'This is a natural solution for protecting broilers, broiler-breeders and non-caged layers against Eimeria infection, Fowl typhoid, Coccidiosis, Diarrhea and Chronic Respiratory Disease (CRD).',
+    productInfo: 'This is an organic plant-based natural solution for protecting broilers, broiler-breeders and non-caged layers against Eimeria infection, Fowl typhoid, Coccidiosis, Diarrhea and Chronic Respiratory Disease (CRD).',
     keyFeatures: '',
     benefits: [
       'El-Kanis Stopper Solution™ is the safest and most effective coccidiostat used in poultry farming. It effectively eliminates all strains of coccidian protozoa.',
@@ -53,7 +53,7 @@ const PRODUCTS = [
     id: 'booster',
     product: 'El-kanis Optimum Booster Solution™',
     productImage: booster,
-    productInfo: 'This product provides vitamins for optimal animal performance. It is very effective in supporting animal immunity and health. It is fortified with amino acids and vitamins and causes rapid weight gain and double breast development.',
+    productInfo: "This organic plant-based product provides vitamins for animals' performance. It is very effective in supporting animal immunity and health. It is fortified with amino acids and vitamins and causes rapid weight gain and double breast development.",
     keyFeatures: [
       'Unique blend of all essential nutrients - amino 1 acids, vitamins, electrolytes & minerals',
       'Powdered formula - superior mixability for feed application',

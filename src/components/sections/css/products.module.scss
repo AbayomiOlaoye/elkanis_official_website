@@ -1,3 +1,17 @@
+.statsText {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+
+  &:first-child {
+    font-size: 1.6rem;
+  }
+}
+
+// .sectionFour {
+//   width: 90%;
+// }
+
 @media screen and (max-width: 767px) {
   .sectionOne {
     position: relative;
@@ -330,8 +344,6 @@
 
   .sectionFive {
     display: grid;
-    // grid-template-columns: repeat(2, 1fr);
-    // grid-gap: 1rem;
 
     .styleDiv {
       flex-direction: row;
@@ -351,7 +363,6 @@
 
   .spatialImg {
     padding-left: 0.4rem;
-    // padding: 0 0.5rem;
   }
 
   .droneSection {

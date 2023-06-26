@@ -36,7 +36,7 @@ const Blog = () => {
   });
 
   return (
-    <div className="sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7', lineHeight: '30px', overflow: 'hidden' }}>
+    <div id="blog-section" className="sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7', lineHeight: '30px', overflow: 'hidden' }}>
       <Top
         title="Blogs"
         img={blog.img}
@@ -47,15 +47,15 @@ const Blog = () => {
         <div className="blog project--details d-flex column gap-one">
           <motion.div className="progress-bar" style={{ scaleX }} />
           <div className="project--title--container d-flex gap-one a-i-c">
-            <div className="blog--date d-flex column a-i-c" data-aos="fade-right" style={{ backgroundColor: '#444', color: '#fff', padding: '1.25rem 1rem' }}>
-              <h4 style={{ fontSize: '3vw' }}>{blog.day}</h4>
-              <h4 style={{ fontSize: '2vw' }}>{blog.month}</h4>
+            <div className="blog--date d-flex column a-i-c" data-aos="fade-right" style={{ backgroundColor: '#444', color: '#fff', padding: '0.5rem 1rem' }}>
+              <h4 style={{ fontSize: '2.5vw' }}>{blog.day}</h4>
+              <h4 style={{ fontSize: '2.5vw' }}>{blog.month}</h4>
             </div>
             <h3
               className="project--title"
               data-aos="fade-left"
               style={{
-                fontSize: '2.5vw', padding: '3%', color: '#fff', height: 'max-content',
+                fontSize: '2.5vw', padding: '3%', lineHeight: '1.9', color: '#fff', height: 'max-content',
               }}
             >
               {blog.title}

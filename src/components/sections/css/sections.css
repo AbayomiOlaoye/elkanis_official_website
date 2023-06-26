@@ -440,9 +440,10 @@ textarea.contact__form--input {
 /* Projects */
 
 .project--container {
-  padding-top: 10rem;
+  padding-top: 3rem;
+  width: 90% !important;
   align-items: stretch;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
   opacity: 0;
   transition: opacity 1s ease;
@@ -452,15 +453,16 @@ textarea.contact__form--input {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .project--container {
+    padding-top: 25vw;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (min-width: 800px) {
   .project--container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -549,12 +551,17 @@ div.project--links > ul > li > a:hover {
   color: var(--primary--01);
 }
 
+#blog-section .about--content {
+  width: 100%;
+  padding-top: 5vh;
+}
+
 .blog--slider {
   max-width: 50%;
 }
 
 .blog {
-  width: 80%;
+  width: 90%;
 }
 
 .progress-bar {
@@ -886,6 +893,10 @@ div.project--links > ul > li > a:hover {
   div.pro--summary {
     padding: 15% 0 5% 5%;
     grid-template-columns: 2fr 1fr;
+  }
+
+  #blog-section .about--content {
+    padding-top: 29vh;
   }
 }
 
