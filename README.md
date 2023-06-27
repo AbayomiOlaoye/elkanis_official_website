@@ -1,3 +1,85 @@
+<a name="readme-top"></a>
+<div align="center">
+    <img src="./src/assets/logos/main_logo.svg">
+</div>
+
+<div align="center">
+
+  <h1><b>El-kanis & Partners</b></h2>
+
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 El-kanis \& Partners ](#-el-kanis--partners-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+- [Getting Started with Create React App](#getting-started-with-create-react-app)
+  - [Available Scripts](#available-scripts)
+    - [`npm start`](#npm-start)
+    - [`npm test`](#npm-test)
+    - [`npm run build`](#npm-run-build)
+    - [`npm run eject`](#npm-run-eject)
+  - [Learn More](#learn-more)
+    - [Code Splitting](#code-splitting)
+    - [Analyzing the Bundle Size](#analyzing-the-bundle-size)
+    - [Making a Progressive Web App](#making-a-progressive-web-app)
+    - [Advanced Configuration](#advanced-configuration)
+    - [Deployment](#deployment)
+    - [`npm run build` fails to minify](#npm-run-build-fails-to-minify)
+  - [👥 Author ](#-author-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 El-kanis & Partners <a name="about-project"></a>
+
+An official website of El-Kanis & Partners, an agric tech company scaling the food-chain waves in Nigeria and Africa at large. The website was previously built with a CMS tool which really does not allow for more customization to suit the companies evolving new models and products. Hence the need for a well-optimized, performant, scalable, and suitable solution.
+
+Working on this project was a great muscle-flexing endeavor, and it's especially thrilling remembering my engagement with this amazing organization as an Accountant. You should check it out!
+
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li>React</li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- The client serves it's own data.
+- Use of React hooks.
+- Swiftly performant and smartly responsive website.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo">
+</a>
+
+- [See live version here](https://elkanis-official-website.vercel.app/)
+- [Check if page has been redirected to the official domain name](https://www.elkanisgroup.com/)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +150,56 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## 👥 Author <a name="author"></a>
+
+👤 **Oluwatoyin Olaoye**
+- GitHub: [Olaoye Oluwatoyin](https://github.com/abayomiolaoye)
+- Twitter: [Oluwatoyin](https://twitter.com/oloayeelijah)
+- LinkedIn: [Oluwatoyin (Abayomi) Olaoye](https://www.linkedin.com/in/oluwatoyinolaoye)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- **I should implement an API to ease updates**
+- **Enhance Design**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project kindly offer a star.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+A big thanks to the Managing Director of El-kanis & Partners for this level of trust and support throughout my career transition and post full-stack development training.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
