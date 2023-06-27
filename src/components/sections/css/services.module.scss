@@ -224,9 +224,9 @@
     display: none;
   }
 
-  button {
-    display: none
-  }
+  // button {
+  //   display: block;
+  // }
 
   .reverseDiv {
     display: flex;
@@ -241,7 +241,7 @@
 
     .imgDiv {
       position: absolute;
-      top: -26vh;
+      top: -22vh;
       left: 13vh;
       width: 100%;
       padding: 1rem;
@@ -274,11 +274,11 @@
 @media screen and (min-width: 800px) {
   .reverseDiv {
     .imgDiv {
-      top: -22vh;
+      top: -20vh;
     }
 
     .listDiv {
-      margin: 30vh auto 0; 
+      margin: 28vh auto 0; 
     }
   }
 }
@@ -286,7 +286,7 @@
 @media screen and (min-width: 990px) {
   .reverseDiv {
     .imgDiv {
-      top: -12vh;
+      top: -17vh;
     }
 
     .listDiv {
@@ -303,6 +303,14 @@
 
     .listDiv {
       margin: 25vh auto 0; 
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reverseDiv {
+    .imgDiv {
+      top: -21vh;
     }
   }
 }

@@ -101,8 +101,9 @@
 /* End */
 
 .exit {
-  position: relative;
+  position: absolute;
   z-index: 20;
+  left: 90vw;
 }
 
 .hamburger {

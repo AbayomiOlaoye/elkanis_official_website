@@ -891,7 +891,7 @@ div.project--links > ul > li > a:hover {
   }
 
   div.pro--summary {
-    padding: 15% 0 5% 5%;
+    padding: 30vh 0 5% 5%;
     grid-template-columns: 2fr 1fr;
   }
 

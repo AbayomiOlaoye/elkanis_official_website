@@ -1019,6 +1019,11 @@ article.drive--us.g--32.d-flex {
     background: #ecf8c1;
     border-radius: 20px;
     height: max-content;
+    align-items: center;
+  }
+
+  .product--card--img {
+    max-width: 70%;
   }
 
   .product--features {
