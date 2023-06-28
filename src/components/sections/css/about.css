@@ -1230,7 +1230,7 @@ article.drive--us.g--32.d-flex {
 
   .agro--bottom {
     position: relative;
-    top: 30vh;
+    top: 35vh;
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 0 0 0 150px;
@@ -1287,7 +1287,7 @@ article.drive--us.g--32.d-flex {
   }
 
   .pro.stats--container {
-    top: 22vh;
+    top: 30vh;
   }
 
   .pro--title--div {
@@ -1324,5 +1324,45 @@ article.drive--us.g--32.d-flex {
 
   .footer__top {
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .agro--bottom {
+    top: 25vh;
+  }
+
+  /* .pro.stats--container {
+    top: 50vh;
+  } */
+}
+
+@media screen and (min-width: 867px) {
+  .agro--bottom {
+    top: 5vh;
+  }
+
+  .pro.stats--container {
+    top: 10vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .agro--bottom {
+    top: 0;
+  }
+
+  .pro.stats--container {
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 1115px) {
+  .agro--bottom {
+    top: -5vh;
+  }
+
+  .pro.stats--container {
+    top: -5vh;
   }
 }

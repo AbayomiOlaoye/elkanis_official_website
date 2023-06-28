@@ -137,7 +137,7 @@ const ProductCard = ({ products }) => {
             <>
               {product.keyFeatures && (
               <div className="product--features">
-                <h4 className="product--features--title" style={{ margin: '18px 0 5px' }}>Key Features</h4>
+                <h3 className="product--features--title" style={{ margin: '18px 0 5px' }}>Key Features</h3>
                 <ul className="product--features--list disc">
                   {product.keyFeatures.map((feature) => (
                     <li key={feature} className="product--list--item">{feature}</li>
@@ -186,7 +186,7 @@ const ProductCard = ({ products }) => {
             <div className={styles.ignoreDesk}>
               {product.keyFeatures && (
               <div className="product--features">
-                <h4 className="product--features--title" style={{ margin: '18px 0 5px' }}>Key Features</h4>
+                <h3 className="product--features--title" style={{ margin: '18px 0 5px' }}>Key Features</h3>
                 <ul className="product--features--list disc">
                   {product.keyFeatures.map((feature) => (
                     <li key={feature} className="product--list--item">{feature}</li>

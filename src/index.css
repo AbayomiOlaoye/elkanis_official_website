@@ -206,12 +206,24 @@ body {
   padding-top: 0;
 }
 
-@media een and (min-width: 768px) {
-  .button {
-    font-size: 1.35rem;
-  }
-
+@media screen and (min-width: 768px) {
   body {
     font-size: calc(12px + 1vmin);
+  }
+
+  .research.rice--processing {
+    padding-top: 15vh;
+  }
+}
+
+@media screen and (min-width: 867px) {
+  .research.rice--processing {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .research.rice--processing {
+    padding-top: -20vh;
   }
 }
