@@ -121,7 +121,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: calc(12px + 1vmin);
+  font-size: calc(12px + 1.5vmin);
   color: var(--sec--04);
   background-color: #fff;
   line-height: 1.4;
@@ -209,5 +209,9 @@ body {
 @media een and (min-width: 768px) {
   .button {
     font-size: 1.35rem;
+  }
+
+  body {
+    font-size: calc(12px + 1vmin);
   }
 }

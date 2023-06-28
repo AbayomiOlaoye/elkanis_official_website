@@ -817,6 +817,15 @@ article.drive--us.g--32.d-flex {
     display: block;
   }
 
+  .top--links {
+    display: flex;
+    border-top: 1px solid #fff;
+    top: 60vh;
+    width: max-content;
+    padding-top: 0.5rem;
+    z-index: 1000000000000000;
+  }
+
   .mobile {
     display: none;
   }
@@ -1315,129 +1324,5 @@ article.drive--us.g--32.d-flex {
 
   .footer__top {
     justify-content: center;
-  }
-}
-
-@media screen and (min-width: 866px) {
-  .services .main--agro--img {
-    border-top-left-radius: 300px;
-    max-width: 50%;
-    object-fit: cover;
-    height: 350px;
-  }
-
-  .project--list {
-    margin-top: -15vh;
-  }
-
-  .agro--img--float {
-    max-width: 65%;
-    top: -19vh;
-    left: 15vh;
-    padding: 1rem 0 1rem 1rem;
-    width: 75%;
-  }
-
-  .agro--bottom {
-    top: 5vh;
-  }
-
-  .pro.stats--container {
-    top: 5vh;
-  }
-}
-
-@media screen and (min-width: 968px) {
-  .team--container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .btn--more {
-    display: none;
-  }
-
-  .hero--img {
-    top: 25vh;
-    height: 40vh;
-  }
-
-  .product--nav {
-    max-width: 90%;
-  }
-
-  .image--overlay {
-    top: 30vh;
-    height: 40vh;
-  }
-
-  .hero--title--about {
-    font-weight: 800;
-  }
-
-  .top--links {
-    border-top: 1px solid #fff;
-    top: 55vh;
-    width: max-content;
-    padding-top: 0.5rem;
-  }
-
-  .agro--float--img {
-    width: 35%;
-  }
-
-  .agro--img--float {
-    top: -17vh;
-    left: 15vh;
-    padding: 1rem 2rem 1rem 1rem;
-  }
-
-  .services .main--agro--img {
-    height: 450px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .agro--bottom {
-    top: 0;
-  }
-
-  .pro.stats--container {
-    top: 0;
-  }
-}
-
-@media screen and (min-width: 1067px) {
-  .services .main--agro--img {
-    height: 450px;
-  }
-
-  .agro--img--float {
-    top: -25vh;
-    left: 22vh;
-    padding: 1rem 4rem 1rem 1rem;
-  }
-
-  .agro--bottom {
-    top: -5vh;
-  }
-
-  .pro.stats--container {
-    top: -5vh;
-  }
-}
-
-@media screen and (min-width: 1120px) {
-  .agro--bottom {
-    top: -7vh;
-  }
-
-  /* .pro.stats--container {
-    top: -30vh;
-  } */
-
-  .drone-drive {
-    position: absolute;
-    top: -8vh;
-    left: -28vh;
   }
 }
