@@ -121,8 +121,9 @@
   }
 
   .hero .hero--title {
-    font-size: 250%;
-    max-width: 800px;
+    font-size: 5vw;
+    max-width: 800px !important;
+    margin-top: 4rem;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: var(--wgt--400);
@@ -197,7 +198,7 @@
   .droner {
     width: 45%;
     left: 63%;
-    top: 15%;
+    top: 32vh;
   }
 }
 
@@ -212,5 +213,17 @@
       left: 60%;
       top: -50vh;
     } */
+  }
+
+  @media screen and (min-width: 1200px) {
+    .hero .hero--title {
+      max-width: 85% !important;
+    }
+
+    .droner {
+      width: 45%;
+      left: 67%;
+      top: 30vh;
+    }
   }
 }

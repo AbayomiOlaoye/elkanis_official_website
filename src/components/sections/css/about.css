@@ -170,11 +170,13 @@
   color: #3c4044;
 }
 
-h3.special-title {
+h3.special-title,
+h4 {
   text-align: center;
   margin-top: 2rem;
-  font-size: 6vw;
-  width: 100%;
+  font-size: 5vw;
+  line-height: 1.1;
+  width: 80%;
 }
 
 .vision--container {
@@ -815,6 +817,15 @@ article.drive--us.g--32.d-flex {
     display: block;
   }
 
+  .top--links {
+    display: flex;
+    border-top: 1px solid #fff;
+    top: 60vh;
+    width: max-content;
+    padding-top: 0.5rem;
+    z-index: 1000000000000000;
+  }
+
   .mobile {
     display: none;
   }
@@ -1004,7 +1015,7 @@ article.drive--us.g--32.d-flex {
   }
 
   .rice div.drive-us--text {
-    width: 80%;
+    width: 100%;
     margin: 0;
   }
 
@@ -1219,7 +1230,7 @@ article.drive--us.g--32.d-flex {
 
   .agro--bottom {
     position: relative;
-    top: 20vh;
+    top: 35vh;
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 0 0 0 150px;
@@ -1276,7 +1287,7 @@ article.drive--us.g--32.d-flex {
   }
 
   .pro.stats--container {
-    top: 10vh;
+    top: 30vh;
   }
 
   .pro--title--div {
@@ -1308,7 +1319,7 @@ article.drive--us.g--32.d-flex {
 
   /* Footer Sectiion in other pages */
   .footer--container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer__top {
@@ -1316,81 +1327,23 @@ article.drive--us.g--32.d-flex {
   }
 }
 
-@media screen and (min-width: 866px) {
-  .services .main--agro--img {
-    border-top-left-radius: 300px;
-    max-width: 100%;
-    object-fit: cover;
-    height: 350px;
+@media screen and (min-width: 800px) {
+  .agro--bottom {
+    top: 25vh;
   }
 
-  .project--list {
-    margin-top: -15vh;
-  }
+  /* .pro.stats--container {
+    top: 50vh;
+  } */
+}
 
-  .agro--img--float {
-    max-width: 65%;
-    top: -19vh;
-    left: 15vh;
-    padding: 1rem 0 1rem 1rem;
-    width: 75%;
-  }
-
+@media screen and (min-width: 867px) {
   .agro--bottom {
     top: 5vh;
   }
 
   .pro.stats--container {
-    top: 5vh;
-  }
-}
-
-@media screen and (min-width: 968px) {
-  .team--container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .btn--more {
-    display: none;
-  }
-
-  .hero--img {
-    top: 25vh;
-    height: 40vh;
-  }
-
-  .product--nav {
-    max-width: 90%;
-  }
-
-  .image--overlay {
-    top: 30vh;
-    height: 40vh;
-  }
-
-  .hero--title--about {
-    font-weight: 800;
-  }
-
-  .top--links {
-    border-top: 1px solid #fff;
-    top: 55vh;
-    width: max-content;
-    padding-top: 0.5rem;
-  }
-
-  .agro--float--img {
-    width: 35%;
-  }
-
-  .agro--img--float {
-    top: -17vh;
-    left: 15vh;
-    padding: 1rem 2rem 1rem 1rem;
-  }
-
-  .services .main--agro--img {
-    height: 350px;
+    top: 10vh;
   }
 }
 
@@ -1404,38 +1357,12 @@ article.drive--us.g--32.d-flex {
   }
 }
 
-@media screen and (min-width: 1067px) {
-  .services .main--agro--img {
-    height: 450px;
-  }
-
-  .agro--img--float {
-    top: -25vh;
-    left: 22vh;
-    padding: 1rem 4rem 1rem 1rem;
-  }
-
+@media screen and (min-width: 1115px) {
   .agro--bottom {
     top: -5vh;
   }
 
   .pro.stats--container {
     top: -5vh;
-  }
-}
-
-@media screen and (min-width: 1120px) {
-  .agro--bottom {
-    top: -7vh;
-  }
-
-  /* .pro.stats--container {
-    top: -30vh;
-  } */
-
-  .drone-drive {
-    position: absolute;
-    top: -8vh;
-    left: -28vh;
   }
 }
