@@ -216,12 +216,70 @@
       }
     }
   
+}
+
+@media screen and (min-width: 1270px) {
+  .servicesSection {
+    .reverseDiv {
+      .imgDiv {
+        top: -20vh !important;
+        // display: none;
+      }
+    }
+
+    .listDiv {
+      margin: 30vh auto 0 !important;; 
+    }
   }
+}
+
+@media screen and (min-width: 1064px) {
+  .reverseDiv {
+    .imgDiv {
+      top: -32vh;
+    }
+
+    .listDiv {
+      margin: 25vh auto 0; 
+    }
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .reverseDiv {
+    .imgDiv {
+      top: -35vh;
+    }
+
+    .listDiv {
+      margin: 20vh auto 0; 
+    }
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  .reverseDiv {
+    .imgDiv {
+      top: -22vh;
+    }
+
+    .listDiv {
+      margin: 28vh auto 0; 
+    }
+  }
+}
 
 @media screen and (min-width: 768px) {
   .groupImg,
   .statsContainer {
     display: none;
+  }
+
+  .reverseDiv {
+    button {
+      display: none;
+    }
   }
 
   // button {
@@ -241,10 +299,11 @@
 
     .imgDiv {
       position: absolute;
-      top: -22vh;
-      left: 13vh;
-      width: 100%;
-      padding: 1rem;
+      top: -25vh;
+      left: 35vh;
+      width: 70%;
+      max-width: max-content;
+      padding: 1rem 2rem;
       gap: 0.2rem;
       margin: 2rem 0 3rem;
       background-color: #fff;
@@ -261,56 +320,14 @@
       
       img {
         display: block;
-        max-width: 100%;
-        width: 40%;
-        height: inherit;
+        width: 35%;
         object-fit: cover;
         height: 220px;
       }
     }
   }
-}
 
-@media screen and (min-width: 800px) {
-  .reverseDiv {
-    .imgDiv {
-      top: -20vh;
-    }
-
-    .listDiv {
-      margin: 28vh auto 0; 
-    }
-  }
-}
-
-@media screen and (min-width: 990px) {
-  .reverseDiv {
-    .imgDiv {
-      top: -17vh;
-    }
-
-    .listDiv {
-      margin: 24vh auto 0; 
-    }
-  }
-}
-
-@media screen and (min-width: 1064px) {
-  .reverseDiv {
-    .imgDiv {
-      top: -13vh;
-    }
-
-    .listDiv {
-      margin: 25vh auto 0; 
-    }
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .reverseDiv {
-    .imgDiv {
-      top: -21vh;
-    }
+  h4 {
+    text-align: left;
   }
 }

@@ -170,11 +170,13 @@
   color: #3c4044;
 }
 
-h3.special-title {
+h3.special-title,
+h4 {
   text-align: center;
   margin-top: 2rem;
-  font-size: 6vw;
-  width: 100%;
+  font-size: 5vw;
+  line-height: 1.1;
+  width: 80%;
 }
 
 .vision--container {
@@ -1004,7 +1006,7 @@ article.drive--us.g--32.d-flex {
   }
 
   .rice div.drive-us--text {
-    width: 80%;
+    width: 100%;
     margin: 0;
   }
 
@@ -1219,7 +1221,7 @@ article.drive--us.g--32.d-flex {
 
   .agro--bottom {
     position: relative;
-    top: 20vh;
+    top: 30vh;
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 0 0 0 150px;
@@ -1276,7 +1278,7 @@ article.drive--us.g--32.d-flex {
   }
 
   .pro.stats--container {
-    top: 10vh;
+    top: 22vh;
   }
 
   .pro--title--div {
@@ -1308,7 +1310,7 @@ article.drive--us.g--32.d-flex {
 
   /* Footer Sectiion in other pages */
   .footer--container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer__top {
@@ -1319,7 +1321,7 @@ article.drive--us.g--32.d-flex {
 @media screen and (min-width: 866px) {
   .services .main--agro--img {
     border-top-left-radius: 300px;
-    max-width: 100%;
+    max-width: 50%;
     object-fit: cover;
     height: 350px;
   }
@@ -1390,7 +1392,7 @@ article.drive--us.g--32.d-flex {
   }
 
   .services .main--agro--img {
-    height: 350px;
+    height: 450px;
   }
 }
 

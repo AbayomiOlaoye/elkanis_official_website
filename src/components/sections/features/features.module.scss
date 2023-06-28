@@ -16,7 +16,11 @@
 
   @media screen and (min-width: 1024px) {
     padding-top: 45vh;
-  } 
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: -100vh;
+  }
 }
 
 .serviceContainer {
@@ -34,6 +38,15 @@
   @media screen and (min-width: 800px) {
     padding-top: 3vh;
     top: 0;
+  }
+
+  // @media screen and (min-width: 1024px) {
+  //   padding-top: 5vh;
+  //   top: 0;
+  // }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: -60vh;
   }
 
   .aboutTitle {
