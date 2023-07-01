@@ -330,12 +330,14 @@
       position: absolute;
       top: 16vh;
       z-index: 5;
+      // margin-top: 0;
       color: #fff;
       font-size: 2rem;
       justify-self: center;
       align-self: center;
       text-align: center !important;
       line-height: 1.4;
+      width: 100%;
       padding: 1.2rem;
       background: rgba(25, 31, 1, 0.8);
       border: none;
@@ -367,6 +369,10 @@
 
   .droneSection {
     padding: 0 1.5rem 3rem;
+
+    h4 {
+      width: 100%;
+    }
 
     .droneDiv {
       flex-direction: column;
