@@ -24,6 +24,7 @@ const ProjectDetail = () => {
   useEffect(() => {
     const selectedProject = PROJECTS.find((project) => project.id === id);
     setProject(selectedProject);
+    window.scrollTo(0, 0);
   }, [id]);
 
   if (!project) {
@@ -114,7 +115,7 @@ const ProjectDetail = () => {
           <h3 className="project--headline" style={{ margin: '2rem 0 1rem', textAlign: 'center' }}>Other Recent Projects</h3>
           <ul className="project--action">
             {PROJECTS.map((item) => (
-              <li key={item.id} data-aos="fade-up" data-aos-duration="1000" style={{ padding: '1rem', borderBottom: '1px solid #3c4044' }}>
+              <li key={item.id} data-aos="fade-up" data-aos-duration="500" style={{ padding: '1rem', borderBottom: '1px solid #3c4044' }}>
                 <Link
                   to={`/projects/${item.id}`}
                   style={

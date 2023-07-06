@@ -25,6 +25,10 @@ const Projects = () => {
     });
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleScroll = () => {
     const container = containerRef.current;
     const containerTop = container.getBoundingClientRect().top;

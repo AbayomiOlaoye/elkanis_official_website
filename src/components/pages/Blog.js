@@ -20,6 +20,7 @@ const Blog = () => {
   const handleTitleClick = (index) => {
     setSelectedPost(index);
     navigate(`/blogs/${blog.id}`);
+    window.scrollTo(0, 0);
   };
 
   const { scrollYProgress } = useScroll();

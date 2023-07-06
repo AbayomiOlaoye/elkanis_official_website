@@ -32,14 +32,23 @@ const Products = () => {
   const location = useLocation();
   const sectionRef = useRef(null);
 
+  const scrollToSection = (sectionElement) => {
+    const scrollOffset = sectionElement.offsetTop - 50;
+    window.scrollTo({
+      top: scrollOffset,
+      behavior: 'smooth',
+    });
+  };
+
   useEffect(() => {
     if (location.state && location.state.scrollToSection) {
-      const elem = document.getElementById(location.state.scrollToSection);
-      if (elem) {
-        elem.scrollIntoView({
-          behavior: 'smooth',
-        });
+      const sectionId = location.state.scrollToSection;
+      const sectionElement = document.getElementById(sectionId);
+      if (sectionElement) {
+        scrollToSection(sectionElement);
       }
+    } else {
+      window.scrollTo(0, 0);
     }
   }, [location.state]);
 

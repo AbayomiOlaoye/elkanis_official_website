@@ -484,8 +484,7 @@ textarea.contact__form--input {
   }
 
   .privacy {
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: flex-start !important;
     margin-top: 2rem;
     font-size: 0.9rem;
   }
@@ -858,6 +857,7 @@ div.project--links > ul > li > a:hover {
     border-radius: 10px;
     padding: 1rem;
     height: max-content;
+    width: 100%;
   }
 
   .input-div {
