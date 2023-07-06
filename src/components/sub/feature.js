@@ -20,15 +20,15 @@ const FeaturedProduct = (
     });
   }, []);
 
-  const checkId = (any) => {
-    let tag = [];
-    if (any === 'fiems') {
-      tag = ['Fiems', 'checkFiems'];
+  const checkId = (id) => {
+    let tag;
+    if (id === 'fiems') {
+      tag = 'checkFiems';
     }
-    if (any === 'livestock') {
-      tag = ['Livestock', 'checkLivestock'];
-    } if (any === 'elkanRice') {
-      tag = ['Rice', 'checkElkanRice'];
+    if (id === 'livestock') {
+      tag = 'checkLivestock';
+    } if (id === 'elkanRice') {
+      tag = 'checkElkanRice';
     }
     return tag;
   };
@@ -40,7 +40,7 @@ const FeaturedProduct = (
   return (
     <Link
       to={{
-        pathname: `/products/${checkId(id)[0]}`,
+        pathname: `/products/${id}`,
         state: { scrollToSection: id },
       }}
       className={styles.productWrapper}
@@ -53,7 +53,7 @@ const FeaturedProduct = (
           src={featureImg}
           onContextMenu={handleContextMenu}
         />
-        <Card.Body className={`${styles.featBody} ${checkId(id)[1]}`}>
+        <Card.Body className={`${styles.featBody} ${checkId()}`}>
           <Card.Title className={styles.featureTitle}>{headline}</Card.Title>
           <hr className={styles.aboutBorder} />
         </Card.Body>
