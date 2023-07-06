@@ -355,8 +355,32 @@ div.react-multi-carousel-list {
   width: 100%;
   position: relative;
   grid-template-columns: 1fr;
-  padding: 5%;
+  padding: 3%;
   background-color: var(--primary--02);
+}
+
+.privacy {
+  gap: 0.8rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.privacy--text {
+  color: #91aa2b;
+}
+
+.privacy--divider {
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.privacy--link {
+  color: #fff;
+}
+
+.privacy--link:first-of-type {
+  border-right: 2px solid #91aa2b;
+  padding-right: 1rem;
 }
 
 .pro #contact-us {
@@ -457,6 +481,13 @@ textarea.contact__form--input {
   .project--container {
     padding-top: 25vw;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .privacy {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -873,7 +904,8 @@ div.project--links > ul > li > a:hover {
     max-width: 300px;
     color: #fff;
     font-size: 14px;
-    gap: 0;
+    line-height: 20px;
+    gap: 0.5rem;
   }
 
   .footer__links--top {
@@ -945,7 +977,6 @@ div.project--links > ul > li > a:hover {
 
   .footer--container {
     grid-template-columns: 1fr 1fr;
-    padding: 5%;
   }
 
   .footer__top {

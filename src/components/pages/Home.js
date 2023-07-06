@@ -2,7 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/extensions */
 import React, { useRef, useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { AiOutlineFieldTime } from 'react-icons/ai';
 import { TiMail } from 'react-icons/ti';
 import { CiLocationOn } from 'react-icons/ci';
@@ -178,6 +178,19 @@ const Home = () => {
           </button>
           { feedBack() }
         </form>
+        <div className="privacy flex column a-i-c">
+          <p className="privacy--text">
+            &copy; 2023 Elkanis & Partners. All rights reserved.
+          </p>
+          <div className="privacy--divider flex">
+            <Link to="/privacy-policy" className="privacy--link">
+              Privacy Policy
+            </Link>
+            <Link to="/terms-of-use" className="privacy--link">
+              Terms & Conditions
+            </Link>
+          </div>
+        </div>
       </footer>
     </div>
   );

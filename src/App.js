@@ -11,6 +11,8 @@ import Blog from './components/pages/Blog';
 import Project from './components/pages/Projects';
 import Error from './components/pages/Error';
 import ProjectDetail from './components/pages/ProjectDetail';
+import Terms from './components/pages/Terms';
+import Privacy from './components/pages/Privacy';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Route path="projects/:id" element={<ProjectDetail />} />
           <Route path="blogs" element={<Blog />} />
           <Route path="blogs/:id" element={<Blog />} />
+          <Route path="terms-of-use" element={<Terms />} />
+          <Route path="privacy-policy" element={<Privacy />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

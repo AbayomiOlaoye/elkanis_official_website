@@ -2,14 +2,15 @@ import React from 'react';
 import Top from '../sections/jumbotron/top';
 import style from '../sections/css/terms.module.scss';
 import img from '../../assets/backgrounds/product_bg.svg';
+import Footer from '../Nav/Footer';
 
 const Privacy = () => (
-  <div className={style.fullContainer}>
+  <div className={`${style.fullContainer} flex column a-i-c`}>
     <Top
       title="Privacy Policy"
       img={img}
     />
-    <div className={style.container}>
+    <div className={`${style.container} w--80 flex column a-i-c j-c-c`}>
       <div className={style.content}>
         <p>
           <b>Effective Date:</b>
@@ -39,7 +40,7 @@ const Privacy = () => (
 
         <h3>How We Use Your Information</h3>
         <p>We use your personal information for the following purposes:</p>
-        <ul>
+        <ul className={style.disc}>
           <li>
             To provide and maintain the Site and our services;
           </li>
@@ -65,22 +66,26 @@ const Privacy = () => (
         <p>
           We process your personal information based on one or more of the following legal grounds:
         </p>
-        <ul>
+        <ul className={style.circle}>
           <li>
-            Performance of a contract: Processing is necessary to fulfill our
+            <b>Performance of a contract: </b>
+            Processing is necessary to fulfill our
             contractual obligations with you.
           </li>
           <li>
-            Consent: You have given us your explicit consent to process your personal information
+            <b>Consent: </b>
+            You have given us your explicit consent to process your personal information
             for specific purposes.
           </li>
           <li>
-            Legitimate interests: Processing is necessary for our legitimate interests or the
+            <b>Legitimate interests: </b>
+            Processing is necessary for our legitimate interests or the
             legitimate interests of third parties, provided that your fundamental rights and
             freedoms do not override those interests.
           </li>
           <li>
-            Legal obligations: Processing is necessary to comply with applicable
+            <b>Legal obligations: </b>
+            Processing is necessary to comply with applicable
             laws and regulations.
           </li>
         </ul>
@@ -104,40 +109,46 @@ const Privacy = () => (
         </p>
 
         <h3>Your Data Protection Rights</h3>
-        <ul>
+        <p>
+          If you are a resident of the European Economic Area (EEA), you have certain
+          data protection rights, including:
+        </p>
+        <ul className={style.roman}>
           <li>
-            If you are a resident of the European Economic Area (EEA), you have certain
-            data protection rights, including:
-          </li>
-          <li>
-            Right of access: You have the right to request a copy of the personal
+            <b>Right of access: </b>
+            You have the right to request a copy of the personal
             information we hold about you.
           </li>
           <li>
-            Right of rectification: You can request that we correct any inaccurate or
+            <b>Right of rectification: </b>
+            You can request that we correct any inaccurate or
             incomplete personal information.
           </li>
           <li>
-            Right to object: You have the right to object to the processing of your
+            <b>Right to object: </b>
+            You have the right to object to the processing of your
             personal information for certain purposes.
           </li>
           <li>
-            Right of restriction: You can request the restriction of processing under
+            <b>Right of restriction: </b>
+            You can request the restriction of processing under
             certain conditions.
           </li>
           <li>
-            Right to data portability: You can request a copy of your personal information
+            <b>Right to data portability: </b>
+            You can request a copy of your personal information
             in a structured, commonly used, and machine-readable format.
           </li>
           <li>
-            Right to withdraw consent: If we rely on your consent to process your personal
+            <b>Right to withdraw consent: </b>
+            If we rely on your consent to process your personal
             information, you have the right to withdraw that consent at any time.
           </li>
-          <li>
-            To exercise your data protection rights or request any other information,
-            please contact us using the details provided at the end of this Privacy Policy.
-          </li>
         </ul>
+        <p>
+          To exercise your data protection rights or request any other information,
+          please contact us using the details provided at the end of this Privacy Policy.
+        </p>
 
         <h3>Third-Party Links and Privacy Policies</h3>
         <p>
@@ -147,7 +158,7 @@ const Privacy = () => (
           practices before providing any personal information or using their services.
         </p>
 
-        <h3>Children&apo;s Information</h3>
+        <h3>Children&apos;s Information</h3>
         <p>
           The Site is not intended for children under the age of 13. We do not knowingly
           collect personal identifiable information from children. If you believe that
@@ -168,11 +179,18 @@ const Privacy = () => (
         <p>
           If you have any questions, concerns, or requests regarding this Privacy
           Policy, please contact us at:
-          <address>
-            <p>El-kanis and Partners</p>
-            <p>Address: 1 Enen Afaha Street, Uyo Akwa Ibom State</p>
-            <a href="mailto:info@elkanisgroup.com">Email: info@elkanisgroup.com</a>
-          </address>
+          <p>
+            {/* <address>El-kanis and Partners</address> */}
+            <address>
+              1 Enen Afaha Street,
+              <br />
+              Uyo, Akwa Ibom State,
+              <br />
+              Nigeria.
+            </address>
+            Email:
+            <a href="mailto:info@elkanisgroup.com">info@elkanisgroup.com</a>
+          </p>
         </p>
         <p>
           By using the El-kanis website, you acknowledge that you have read, understood,
@@ -185,6 +203,7 @@ const Privacy = () => (
         </small>
       </div>
     </div>
+    <Footer />
   </div>
 );
 
