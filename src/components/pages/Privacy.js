@@ -1,14 +1,12 @@
 import React from 'react';
 import Top from '../sections/jumbotron/top';
 import style from '../sections/css/terms.module.scss';
-import img from '../../assets/backgrounds/product_bg.svg';
 import Footer from '../Nav/Footer';
 
 const Privacy = () => (
   <div className={`${style.fullContainer} flex column a-i-c`}>
     <Top
       title="Privacy Policy"
-      img={img}
     />
     <div className={`${style.container} w--80 flex column a-i-c j-c-c`}>
       <div className={style.content}>
@@ -180,8 +178,9 @@ const Privacy = () => (
           If you have any questions, concerns, or requests regarding this Privacy
           Policy, please contact us at:
           <p>
-            {/* <address>El-kanis and Partners</address> */}
             <address>
+              El-kanis and Partners
+              <br />
               1 Enen Afaha Street,
               <br />
               Uyo, Akwa Ibom State,
