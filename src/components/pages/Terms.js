@@ -12,7 +12,6 @@ const Terms = () => (
     />
     <div className={style.container}>
       <div className={style.content}>
-        <h2>Terms and Conditions</h2>
         <p>
           <b>Effective Date:</b>
           4th July, 2023
@@ -140,6 +139,47 @@ const Terms = () => (
             and disclosure of your information as set forth in our Privacy Policy.
           </li>
         </ul>
+
+        <h3>Governing Law and Jurisdiction</h3>
+        <ul className={style.subListFive}>
+          <li>
+            Governing Law: These Terms shall be governed by and construed in accordance
+            with the laws of the Federal Republic of Nigeria, without regards to its conflict
+            of law provisions.
+          </li>
+          <li>
+            Dispute Resolution: Any dispute arising out of or relating to these Terms or your
+            use of the Site shall be resolved through good faith negotiations. If a resolution
+            cannot be reached, the dispute shall be submitted to binding arbitration in
+            accordance with the rules of Federal Republic of Nigeria. However, disputes related
+            to intellectual property rights may be brought before a court of competent
+            jurisdiction.
+          </li>
+        </ul>
+
+        <h3>Miscellaneous</h3>
+        <ul className={style.subListSix}>
+          <li>
+            Severability: If any provision of these Terms is held to be invalid or
+            unenforceable, such provision shall be struck, and the remaining provisions shall
+            continue to be valid and enforceable to the fullest extent under the law.
+          </li>
+          <li>
+            Entire Agreement: These Terms constitute the entire agreement between you and El-kanis
+            regarding your use of the Site and supersede any prior agreements or understandings.
+          </li>
+          <li>
+            Contact Information: If you have any questions or concerns about these Terms,
+            please contact us at info@elkanisgroup.com
+          </li>
+        </ul>
+
+        <p>
+          By using the El-kanis and Partners website, you acknowledge that you have read,
+          understood, and agree to be bound by the above Terms & Conditions. It is recommended
+          to read the complete Terms & Conditions on the El-kanis website for a comprehensive
+          understanding.
+        </p>
       </div>
     </div>
   </div>
