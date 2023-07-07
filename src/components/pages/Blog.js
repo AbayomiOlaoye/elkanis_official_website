@@ -19,11 +19,11 @@ const Blog = () => {
 
   const handleTitleClick = (index) => {
     setSelectedPost(index);
-    navigate(`/blogs/${blog.id}`);
+    navigate(`/blogs/${blogData[index].id}`);
     window.scrollTo(0, 0);
   };
 
-  const formatText = blog.content.map((paragraph) => {
+  const formatText = blogData[selectedPost].content.map((paragraph) => {
     if (paragraph.startsWith('<b>') && paragraph.endsWith('</b>')) {
       const bold = paragraph.substring(3, paragraph.length - 4);
       return <b key={bold} style={{ marginTop: '2rem' }}>{bold}</b>;
@@ -32,7 +32,7 @@ const Blog = () => {
       return <h3 key={heading} style={{ margin: '2rem 0' }}>{heading}</h3>;
     }
     return (
-      <p key={blog.id} className="project--description text--just" style={{ margin: '2vw 0' }}>
+      <p key={paragraph.id} className="project--description text--just" style={{ margin: '2vw 0' }}>
         {paragraph}
       </p>
     );
@@ -52,7 +52,7 @@ const Blog = () => {
   });
 
   return (
-    <div id="blog-section" className="sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7', lineHeight: '30px', overflow: 'hidden' }}>
+    <div id="blog-section" className="sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7', lineHeight: '24px', overflow: 'hidden' }}>
       <Top
         title="Blogs"
         img={blog.img}
