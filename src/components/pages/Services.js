@@ -51,7 +51,7 @@ const Services = () => {
           <h4 id="Projects" className={`agro--title boarder temp--font green-title-text ${styles.title}`}>Agricultural Project Development and Management</h4>
         </div>
         <div className={`w--100 relative ${styles.reverseDiv}`}>
-          <Button text="Request Service" action={() => handleOrder('El-kanis Rice')} />
+          <Button text="Request Service" action={() => handleOrder('Agricultural Project and Development Services')} />
           <div className={`agro--img--float a-i-c j-c-c d-flex relative ${styles.imgDiv}`} data-aos="fade-up">
             <img src={workers} alt="agric" className={`agro--float--img ${styles.imgA}`} />
             <img src={workersB} alt="agric" className={`agro--float--img ${styles.imgB}`} />
@@ -127,7 +127,7 @@ const Services = () => {
                 quality.
               </p>
             </div>
-            <Button text="Request Service" action={() => handleOrder('El-kanis Rice')} />
+            <Button text="Request Service" action={() => handleOrder('Rice Cultivation')} />
           </div>
           <div className={`pro stats--container gap-half j-c-c d-flex relative ${styles.statsContainer}`}>
             <Statistics stats={ARTICLES[2].stats} />
@@ -208,7 +208,7 @@ const Services = () => {
             </div>
 
           </div>
-          <Button text="Request Service" action={() => handleOrder('El-kanis Rice')} />
+          <Button text="Request Service" action={() => handleOrder('Research & Consulting services')} />
         </article>
       </section>
 

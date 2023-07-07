@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Video from '../../../assets/backgrounds/drone_view.mp4';
+import Video from '../../../assets/backgrounds/drone_view.webm';
 import '../css/bgVideo.css';
 import drone from '../../../assets/generic/drones.svg';
 import styles from './hero.module.scss';

@@ -19,6 +19,7 @@ import techBg from '../../assets/projects/precision.jpg';
 const About = () => {
   const [showAll, setShowAll] = useState(false);
   const [displayedMembers, setDisplayedMembers] = useState([]);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
   const toggleShowAll = () => {
     setShowAll(!showAll);
     if (!showAll) {
@@ -39,6 +40,8 @@ const About = () => {
     const updateMembers = () => {
       const isSmallScreen = window.innerWidth <= 768;
       const isMediumScreen = window.innerWidth <= 960;
+      const isLargeScreen = window.innerWidth > 960;
+      setIsLargeScreen(isLargeScreen);
       let slicedMembers;
       if (isSmallScreen) {
         slicedMembers = isSmallScreen ? Team.slice(0, 3) : Team.slice(0, 4);
@@ -169,7 +172,7 @@ const About = () => {
               ))}
             </ul>
           )}
-          <button type="button" data-aos="fade-in" data-aos-once="false" data-aos-duration="100" className="btn--more" onClick={toggleShowAll}>{!showAll ? 'Show more' : 'Show less'}</button>
+          {!isLargeScreen && <button type="button" data-aos="fade-in" data-aos-once="false" data-aos-duration="100" className="btn--more" onClick={toggleShowAll}>{!showAll ? 'Show more' : 'Show less'}</button>}
         </div>
       </article>
 

@@ -1,0 +1,68 @@
+.fullContainer {
+
+  h2,
+  h3 {
+    text-align: center;
+    margin: 1rem  0 0.6rem;
+  }
+  .container {
+    margin: 3.5rem 0;
+    width: 90%;
+
+    p {
+      padding: 1rem 0;
+      text-align: justify;
+    }
+
+    .subList {
+      list-style-type: lower-alpha;
+      padding: 0.5rem 0 0.5rem 1.5rem;
+    }
+
+    .disc {
+      list-style-type: disc;
+      margin-left: 1rem;
+    }
+
+    .circle {
+      list-style-type: circle;
+      margin-left: 1rem;
+
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+
+    .roman {
+      list-style-type: lower-roman;
+      margin-left: 1rem;
+
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+
+    a {
+      margin-left: 0.5rem;
+      color: #222;
+    }
+  }
+
+  li {
+    margin: 0.3rem 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    h2,
+    h3 {
+      text-align: left;
+      text-transform: uppercase;
+      margin: 1rem  0 0.6rem;
+    }
+
+    .container {
+      width: 80%;
+      margin-top: 7rem;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { AiOutlineFieldTime } from 'react-icons/ai';
 import { TiMail } from 'react-icons/ti';
 import { CiLocationOn } from 'react-icons/ci';
@@ -30,6 +31,10 @@ const Footer = () => {
     return null;
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -54,49 +59,64 @@ const Footer = () => {
 
   return (
     <footer className="about footer--container grid w--100" id="contact-us">
-      <div className="shared footer__top flex">
-        <img src={Logo} alt="elkanis & partners' logo" className="footer--logo mt-1" />
-        <small className="footer__links flex column mt-1">
-          <div className="footer__links--top flex">
-            <CiLocationOn className="footer--icon" />
-            <p className="footer--text">
-              1 Enen Afaha Street,
-              <br />
-              Opposite LG Showroom,
-              <br />
-              Ikot Ekpene Road, Uyo,
-              <br />
-              Akwa Ibom State - Nigeria
-              <br />
-              <br />
-              66 Kwame Nkrumah Street,
-              <br />
-              Asokoro, Abuja - Nigeria
-            </p>
+      <div>
+        <div className="shared footer__top flex">
+          <img src={Logo} alt="elkanis & partners' logo" className="footer--logo mt-1" />
+          <small className="footer__links flex column mt-1">
+            <div className="footer__links--top flex">
+              <CiLocationOn className="footer--icon" />
+              <p className="footer--text">
+                1 Enen Afaha Street,
+                <br />
+                Opposite LG Showroom,
+                <br />
+                Ikot Ekpene Road, Uyo,
+                <br />
+                Akwa Ibom State - Nigeria
+                <br />
+                <br />
+                66 Kwame Nkrumah Street,
+                <br />
+                Asokoro, Abuja - Nigeria
+              </p>
+            </div>
+            <div className="footer__links--top flex">
+              <SlCallEnd className="footer--icon" />
+              <a href="tel:+2348027331036" className="footer--text" style={{ color: '#fff' }}>
+                +234 802 733 1036
+              </a>
+            </div>
+            <div className="footer__links--top flex">
+              <TiMail className="footer--icon" />
+              <a
+                href="mailto:info@elkanisgroup.com"
+                className="footer--text"
+                style={{ color: '#fff' }}
+              >
+                info@elkanisgroup.com
+              </a>
+            </div>
+            <div className="footer__links--top flex">
+              <AiOutlineFieldTime className="footer--icon" />
+              <p className="footer--text">
+                Mon - Fri: 8:00am - 5:00pm
+              </p>
+            </div>
+          </small>
+        </div>
+        <div className="privacy flex column a-i-c desktop">
+          <p className="privacy--text">
+            &copy; 2023 Elkanis & Partners. All rights reserved.
+          </p>
+          <div className="privacy--divider flex">
+            <Link to="/privacy-policy" className="privacy--link">
+              Privacy Policy
+            </Link>
+            <Link to="/terms-of-use" className="privacy--link">
+              Terms & Conditions
+            </Link>
           </div>
-          <div className="footer__links--top flex">
-            <SlCallEnd className="footer--icon" />
-            <a href="tel:+2348027331036" className="footer--text" style={{ color: '#fff' }}>
-              +234 802 733 1036
-            </a>
-          </div>
-          <div className="footer__links--top flex">
-            <TiMail className="footer--icon" />
-            <a
-              href="mailto:info@elkanisgroup.com"
-              className="footer--text"
-              style={{ color: '#fff' }}
-            >
-              info@elkanisgroup.com
-            </a>
-          </div>
-          <div className="footer__links--top flex">
-            <AiOutlineFieldTime className="footer--icon" />
-            <p className="footer--text">
-              Mon - Fri: 8:00am - 5:00pm
-            </p>
-          </div>
-        </small>
+        </div>
       </div>
       <form className="form flex column" onSubmit={handleSubmit}>
         <input
@@ -142,6 +162,19 @@ const Footer = () => {
         </button>
         { feedBack() }
       </form>
+      <div className="privacy flex column a-i-c mobile">
+        <p className="privacy--text">
+          &copy; 2023 Elkanis & Partners. All rights reserved.
+        </p>
+        <div className="privacy--divider flex">
+          <Link to="/privacy-policy" className="privacy--link">
+            Privacy Policy
+          </Link>
+          <Link to="/terms-of-use" className="privacy--link">
+            Terms & Conditions
+          </Link>
+        </div>
+      </div>
     </footer>
   );
 };

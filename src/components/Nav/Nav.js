@@ -19,6 +19,10 @@ const Nav = () => {
     });
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [toggle, setToggle] = useState(false);
   const navRef = useRef(null);
 
@@ -66,7 +70,7 @@ const Nav = () => {
             <li className="nav--item--container list">
               <Link
                 to="/"
-                state={{ scrollToSection: 'name' }}
+                state={{ scrollToSection: 'email' }}
                 className="nav--item"
                 onClick={handleMenuClose}
               >

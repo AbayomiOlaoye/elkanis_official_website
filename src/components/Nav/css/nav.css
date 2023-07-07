@@ -194,6 +194,10 @@
     border-radius: 20px;
   }
 
+  .logo {
+    max-width: 100%;
+  }
+
   .nav--container {
     position: static;
     width: 100%;
