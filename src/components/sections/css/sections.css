@@ -732,6 +732,10 @@ div.project--links > ul > li > a:hover {
     top: -80vh;
   }
 
+  .blog {
+    width: 100%;
+  }
+
   .mobile {
     display: none;
   }

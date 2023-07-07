@@ -12,6 +12,26 @@ import silicon from '../assets/blogs/silicon.png';
 const blogData = [
   {
     id: 1,
+    day: '04',
+    month: 'Jul',
+    year: '2023',
+    title: 'UNLOCKING OPPORTUNITIES: EL-KANIS EMPOWERS SMALLHOLDER FARMERS IN RICE AND LIVESTOCK TO THRIVE IN THE MARKET',
+    img: rose,
+    content: [
+      "El-kanis is dedicated to empowering smallholder farmers involved in rice and livestock production by connecting them to markets. The company's commitment to these agricultural sectors is evident in the targeted support it provides to smallholders in these value chains.",
+      "Mrs Rose Archibong relies on her rice and livestock production for her family's livelihood. However, she faces challenges in connecting her products to the market and obtaining fair prices for her hard work. This is where El-kanis steps in to empower farmers like Mrs Rose and transform their lives.",
+      'Mrs Rose joins a local cooperative that partners with El-kanis. Through this collaboration, Mrs Rose gains access to a wide network of buyers, processors, and retailers in the riceand livestock sectors. El-kanis serves as the bridge, connecting Mrs Rose and other smallholder farmers to these market actors who are eager to purchase their products.',
+      "To ensure Mrs Rose's success, El-kanis provides her with specialized guidance. Mrs Rose learns about the latest farming techniques, including best practices for growing rice and improving livestock management. She receives training on post-harvest handling to minimize losses and maintain the quality of her produce. Armed with this knowledge, Mrs Rose maximizes the value-added potential of her crops and livestock, making her products more attractive to buyers.",
+      'Furthermore, El-kanis supports Mrs Rose in obtaining certifications and complying with quality standards necessary for market access. Mrs Rose learns about food safety regulations and good agricultural practices, ensuring her products meet the requirements of discerning buyers. With the guidance of El-kanis, Mrs Rose gains access to premium markets that value certified and high-quality agricultural produce.',
+      '<h3>How Market Information Support Famers’ Success</h3>',
+      'El-kanis recognizes the power of collective action and strengthens farmer organizations like the cooperative Mrs Rose is part of. Through training programs, Mrs Rose and her fellow farmers learn market-oriented strategies, negotiation skills, and collective marketing techniques. As a united group, they have greater bargaining power and can secure better prices and favorable market conditions for their rice and livestock.',
+      "As a result of El-kanis' support, Mrs Rose experiences a transformation in her farming business. She now has a direct link to buyers who appreciate her hard work and pay fair prices for her products. With the increased income from her sales, Mrs Rose can invest in her farm, provide better education for her children, and improve the overall well-being of her family.",
+      'El-kanis continues to empower smallholder farmers like Mrs Rose, making a lasting impact on the agricultural sector in Nigeria. By facilitating market access, providing practical guidance, sharing real-time market information, supporting certification, and strengthening farmer organizations, El-kanis enables smallholders to thrive in rice and livestock production.',
+      'Together, they built a more sustainable and prosperous future for smallholder farmers and their communities.',
+    ],
+  },
+  {
+    id: 2,
     day: '03',
     month: 'Mar',
     year: '2023',
@@ -26,7 +46,7 @@ const blogData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     day: '13',
     month: 'Feb',
     year: '2023',
@@ -46,7 +66,7 @@ const blogData = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     day: '18',
     month: 'Dec',
     year: '2022',
@@ -64,7 +84,7 @@ const blogData = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     day: '16',
     month: 'Nov',
     year: '2022',
@@ -83,7 +103,7 @@ const blogData = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     day: '24',
     month: 'May',
     year: '2022',
@@ -112,7 +132,7 @@ const blogData = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     day: '03',
     month: 'May',
     year: '2022',
@@ -145,7 +165,7 @@ const blogData = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     day: '12',
     month: 'Apr',
     year: '2022',
@@ -174,7 +194,7 @@ const blogData = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     day: '03',
     month: 'Apr',
     year: '2022',
@@ -194,7 +214,7 @@ const blogData = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     day: '11',
     month: 'Mar',
     year: '2022',
@@ -226,26 +246,6 @@ const blogData = [
       '3. Fintech for farmers (financing, credit services, crowd funding)',
       '4. Farm supply chain management (farm management, transport, warehousing)',
       '5. New technologies (Internet of things, artificial intelligence, etc.)',
-    ],
-  },
-  {
-    id: 10,
-    day: '04',
-    month: 'Jul',
-    year: '2023',
-    title: 'UNLOCKING OPPORTUNITIES: EL-KANIS EMPOWERS SMALLHOLDER FARMERS IN RICE AND LIVESTOCK TO THRIVE IN THE MARKET',
-    img: rose,
-    content: [
-      "El-kanis is dedicated to empowering smallholder farmers involved in rice and livestock production by connecting them to markets. The company's commitment to these agricultural sectors is evident in the targeted support it provides to smallholders in these value chains.",
-      "Mrs Rose Archibong relies on her rice and livestock production for her family's livelihood. However, she faces challenges in connecting her products to the market and obtaining fair prices for her hard work. This is where El-kanis steps in to empower farmers like Mrs Rose and transform their lives.",
-      'Mrs Rose joins a local cooperative that partners with El-kanis. Through this collaboration, Mrs Rose gains access to a wide network of buyers, processors, and retailers in the riceand livestock sectors. El-kanis serves as the bridge, connecting Mrs Rose and other smallholder farmers to these market actors who are eager to purchase their products.',
-      "To ensure Mrs Rose's success, El-kanis provides her with specialized guidance. Mrs Rose learns about the latest farming techniques, including best practices for growing rice and improving livestock management. She receives training on post-harvest handling to minimize losses and maintain the quality of her produce. Armed with this knowledge, Mrs Rose maximizes the value-added potential of her crops and livestock, making her products more attractive to buyers.",
-      'Furthermore, El-kanis supports Mrs Rose in obtaining certifications and complying with quality standards necessary for market access. Mrs Rose learns about food safety regulations and good agricultural practices, ensuring her products meet the requirements of discerning buyers. With the guidance of El-kanis, Mrs Rose gains access to premium markets that value certified and high-quality agricultural produce.',
-      '<h3>How Market Information Support Famers’ Success</h3>',
-      'El-kanis recognizes the power of collective action and strengthens farmer organizations like the cooperative Mrs Rose is part of. Through training programs, Mrs Rose and her fellow farmers learn market-oriented strategies, negotiation skills, and collective marketing techniques. As a united group, they have greater bargaining power and can secure better prices and favorable market conditions for their rice and livestock.',
-      "As a result of El-kanis' support, Mrs Rose experiences a transformation in her farming business. She now has a direct link to buyers who appreciate her hard work and pay fair prices for her products. With the increased income from her sales, Mrs Rose can invest in her farm, provide better education for her children, and improve the overall well-being of her family.",
-      'El-kanis continues to empower smallholder farmers like Mrs Rose, making a lasting impact on the agricultural sector in Nigeria. By facilitating market access, providing practical guidance, sharing real-time market information, supporting certification, and strengthening farmer organizations, El-kanis enables smallholders to thrive in rice and livestock production.',
-      'Together, they built a more sustainable and prosperous future for smallholder farmers and their communities.',
     ],
   },
 ];
