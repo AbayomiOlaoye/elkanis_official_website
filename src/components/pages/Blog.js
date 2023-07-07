@@ -67,7 +67,7 @@ const Blog = () => {
               <h4 style={{ fontSize: '2.5vw' }}>{blog.day}</h4>
               <h4 style={{ fontSize: '2.5vw' }}>{blog.month}</h4>
             </div>
-            <h3
+            <h5
               className="project--title"
               data-aos="fade-left"
               style={{
@@ -75,7 +75,7 @@ const Blog = () => {
               }}
             >
               {blog.title}
-            </h3>
+            </h5>
           </div>
 
           <img src={blog.img} alt={blog.img} className="project--img" />
