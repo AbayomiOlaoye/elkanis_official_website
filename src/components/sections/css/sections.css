@@ -736,6 +736,10 @@ div.project--links > ul > li > a:hover {
     display: none;
   }
 
+  .privacy.desktop {
+    display: flex;
+  }
+
   .sub--hero--div {
     background-size: 80%, 35%;
     background-position: 10vh 10vh, right 0;
@@ -885,7 +889,7 @@ div.project--links > ul > li > a:hover {
   }
 
   textarea {
-    height: 100px;
+    height: 100% !important;
     margin: 0.5rem 0;
   }
 
