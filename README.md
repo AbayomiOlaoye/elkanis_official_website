@@ -73,8 +73,7 @@ Working on this project was a great muscle-flexing endeavor, and it's especially
 ## 🚀 Live Demo <a name="live-demo">
 </a>
 
-- [See live version here](https://elkanis-official-website.vercel.app/)
-- [Check if page has been redirected to the official domain name](https://www.elkanisgroup.com/)
+- [Live Version](https://www.elkanisgroup.com/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
