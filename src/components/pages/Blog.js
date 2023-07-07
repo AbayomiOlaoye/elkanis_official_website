@@ -64,8 +64,8 @@ const Blog = () => {
           <motion.div className="progress-bar" style={{ scaleX }} />
           <div className="project--title--container d-flex gap-one a-i-c">
             <div className="blog--date d-flex column a-i-c" data-aos="fade-right" style={{ backgroundColor: '#444', color: '#fff', padding: '0.5rem 1rem' }}>
-              <h4 style={{ fontSize: '2.5vw' }}>{blog.day}</h4>
-              <h4 style={{ fontSize: '2.5vw' }}>{blog.month}</h4>
+              <h5 style={{ fontSize: '2.5vw' }}>{blog.day}</h5>
+              <h5 style={{ fontSize: '2.5vw' }}>{blog.month}</h5>
             </div>
             <h5
               className="project--title"
