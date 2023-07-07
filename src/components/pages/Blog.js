@@ -23,6 +23,21 @@ const Blog = () => {
     window.scrollTo(0, 0);
   };
 
+  const formatText = blog.content.map((paragraph) => {
+    if (paragraph.startsWith('<b>') && paragraph.endsWith('</b>')) {
+      const bold = paragraph.substring(3, paragraph.length - 4);
+      return <b key={bold} style={{ marginTop: '2rem' }}>{bold}</b>;
+    } if (paragraph.startsWith('<h3>') && paragraph.endsWith('</h3>')) {
+      const heading = paragraph.substring(4, paragraph.length - 5);
+      return <h3 key={heading} style={{ margin: '2rem 0' }}>{heading}</h3>;
+    }
+    return (
+      <p key={blog.id} className="project--description text--just" style={{ margin: '2vw 0' }}>
+        {paragraph}
+      </p>
+    );
+  });
+
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -66,11 +81,7 @@ const Blog = () => {
           <img src={blog.img} alt={blog.img} className="project--img" />
 
           <div className="project--text" data-aos="fade-up">
-            {blog.content.map((paragraph, index) => (
-              <p key={index} className="project--description text--just" style={{ margin: '2vw' }}>
-                {paragraph}
-              </p>
-            ))}
+            {formatText}
           </div>
         </div>
 

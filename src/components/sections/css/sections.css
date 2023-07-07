@@ -505,7 +505,8 @@ textarea.contact__form--input {
 
 .project--img {
   width: 100%;
-  min-height: 100%;
+  object-fit: cover;
+  height: 450px;
 }
 
 .project--img.trans:hover {
@@ -929,6 +930,10 @@ div.project--links > ul > li > a:hover {
 
   #blog-section .about--content {
     padding-top: 29vh;
+  }
+
+  .project--img {
+    height: 600px;
   }
 }
 
