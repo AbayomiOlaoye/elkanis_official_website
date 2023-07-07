@@ -19,11 +19,11 @@ const Blog = () => {
 
   const handleTitleClick = (index) => {
     setSelectedPost(index);
-    navigate(`/blogs/${blogData[index].id}`);
+    navigate(`/blogs/${blog.id}`);
     window.scrollTo(0, 0);
   };
 
-  const formatText = blogData[selectedPost].content.map((paragraph) => {
+  const formatText = blog.content.map((paragraph) => {
     if (paragraph.startsWith('<b>') && paragraph.endsWith('</b>')) {
       const bold = paragraph.substring(3, paragraph.length - 4);
       return <b key={bold} style={{ marginTop: '2rem' }}>{bold}</b>;
