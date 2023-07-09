@@ -6,7 +6,7 @@
 
   @media screen and (min-width: 768px) {
     background-color: var(--primary--08);
-    top: -115vh;
+    top: -100vh;
     padding-top: 40vh;
   }
 
@@ -15,6 +15,7 @@
   }
 
   @media screen and (min-width: 1024px) {
+    top: -115vh;
     padding-top: 45vh;
   }
 
@@ -31,7 +32,7 @@
   @media screen and (min-width: 768px) {
     background-color: #fff;
     padding-top: 0;
-    margin-top: -80vh;
+    margin-top: -65vh;
     top: -10vh;
   }
 
@@ -40,10 +41,9 @@
     top: 0;
   }
 
-  // @media screen and (min-width: 1024px) {
-  //   padding-top: 5vh;
-  //   top: 0;
-  // }
+  @media screen and (min-width: 1024px) {
+    margin-top: -80vh;
+  }
 
   @media screen and (min-width: 1280px) {
     margin-top: -60vh;

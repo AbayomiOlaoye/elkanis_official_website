@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Video from '../../../assets/backgrounds/drone_view.webm';
+// import Video from '../../../assets/backgrounds/drone_view.webm';
 import '../css/bgVideo.css';
 import drone from '../../../assets/generic/drones.svg';
 import styles from './hero.module.scss';
@@ -18,9 +18,9 @@ const Hero = () => {
 
   return (
     <div className={`${styles.section} hero video--container d-flex column relative`} style={{ overflow: 'hidden' }}>
-      <video autoPlay muted loop className="media none--mobile">
+      {/* <video autoPlay muted loop className="media none--mobile">
         <source src={Video} type="video/mp4" />
-      </video>
+      </video> */}
       <div className="video--overlay d-flex column a-i-c j-c-c">
         <h1 className="hero--title text--left temp--font" data-aos="zoom-out">
           Revolutionizing
@@ -28,7 +28,7 @@ const Hero = () => {
           with
           <span className="hero--bold"> technology</span>
         </h1>
-        <img src={drone} alt="Flying Drone" className="droner" data-aos-delay="2000" data-aos-duration="1000" data-aos="zoom-in" />
+        <img src={drone} alt="Flying Drone" className="droner" data-aos-delay="1000" data-aos-duration="1000" data-aos="zoom-in" />
         <p data-aos-duration="1000" data-aos="fade-left" className="hero--text text--left white relative">
           El-kanis and Partners is a leading food production company that is changing the game in
           the agriculture sector in Nigeria by leveraging cutting-edge technology to produce
