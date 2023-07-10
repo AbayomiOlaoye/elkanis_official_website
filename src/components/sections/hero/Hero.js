@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// import Video from '../../../assets/backgrounds/drone_view.webm';
+import Video from '../../../assets/backgrounds/drone_view.webm';
 import '../css/bgVideo.css';
 import drone from '../../../assets/generic/drones.svg';
 import styles from './hero.module.scss';
@@ -18,9 +18,9 @@ const Hero = () => {
 
   return (
     <div className={`${styles.section} hero video--container d-flex column relative`} style={{ overflow: 'hidden' }}>
-      {/* <video autoPlay muted loop className="media none--mobile">
+      <video autoPlay muted loop className="media none--mobile">
         <source src={Video} type="video/mp4" />
-      </video> */}
+      </video>
       <div className="video--overlay d-flex column a-i-c j-c-c">
         <h1 className="hero--title text--left temp--font" data-aos="zoom-out">
           Revolutionizing

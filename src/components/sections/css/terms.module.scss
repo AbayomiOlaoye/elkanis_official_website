@@ -2,6 +2,7 @@
 
   h2,
   h3 {
+    color: var(--primary--03);
     text-align: center;
     margin: 1rem  0 0.6rem;
   }
@@ -55,6 +56,7 @@
   @media screen and (min-width: 768px) {
     h2,
     h3 {
+      color: #bfca90;
       text-align: left;
       text-transform: uppercase;
       margin: 1rem  0 0.6rem;

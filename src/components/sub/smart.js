@@ -2,7 +2,7 @@ import React from 'react';
 import Corn from '../../assets/generic/corn.png';
 import Worker from '../../assets/generic/workman.png';
 import Drone from '../../assets/generic/wk_drone.png';
-import Rice from '../../assets/projects/precision.jpg';
+import Rice from '../../assets/projects/precision.webp';
 import Pepper from '../../assets/generic/pepper.png';
 import AgTech from '../../assets/generic/agritech.png';
 

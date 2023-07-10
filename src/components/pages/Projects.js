@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 import Top from '../sections/jumbotron/top';
 import PROJECTS from '../../storage/projects';
 import Footer from '../Nav/Footer';
-import project from '../../assets/projects/project.png';
+import project from '../../assets/projects/project.webp';
 
 const Projects = () => {
   const containerRef = useRef(null);
