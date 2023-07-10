@@ -13,8 +13,8 @@ import mission from '../../assets/icons/mission.svg';
 import meet from '../../assets/icons/people_icon.svg';
 import Footer from '../Nav/Footer';
 import about from '../../assets/backgrounds/about_us.jpg';
-import bg from '../../assets/backgrounds/supplies.jpg';
-import techBg from '../../assets/projects/precision.jpg';
+import bg from '../../assets/backgrounds/supplies.webp';
+import techBg from '../../assets/projects/precision.webp';
 
 const About = () => {
   const [showAll, setShowAll] = useState(false);

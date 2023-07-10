@@ -1,14 +1,14 @@
-import precision from '../assets/projects/precision.jpg';
-import rufin from '../assets/projects/rufin.png';
-import raamp from '../assets/projects/raamp.png';
-import maize from '../assets/projects/maize.png';
-import ditra from '../assets/projects/ditra.png';
-import aedp from '../assets/projects/aedp.png';
-import coconut from '../assets/projects/coconut.png';
-import vivr from '../assets/projects/vivr.png';
-import rice from '../assets/projects/rice.png';
-import akfims from '../assets/projects/akfims.png';
-import vam from '../assets/projects/vam.png';
+import precision from '../assets/projects/precision.webp';
+import rufin from '../assets/projects/rufin.webp';
+import raamp from '../assets/projects/raamp.webp';
+import maize from '../assets/projects/maize.webp';
+import ditra from '../assets/projects/ditra.webp';
+import aedp from '../assets/projects/aedp.webp';
+import coconut from '../assets/projects/coconut.webp';
+import vivr from '../assets/projects/vivr.webp';
+import rice from '../assets/projects/rice.webp';
+import akfims from '../assets/projects/akfims.webp';
+import vam from '../assets/projects/vam.webp';
 
 const PROJECTS = [
   {

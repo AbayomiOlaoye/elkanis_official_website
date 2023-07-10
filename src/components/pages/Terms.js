@@ -1,15 +1,12 @@
 import React from 'react';
-// import { Nav } from '../Nav/Nav';
 import Top from '../sections/jumbotron/top';
 import style from '../sections/css/terms.module.scss';
-// import img from '../../assets/backgrounds/product_bg.svg';
 import Footer from '../Nav/Footer';
 
 const Terms = () => (
   <div className={`${style.fullContainer} flex column a-i-c`}>
     <Top
       title="Terms & Conditions"
-      // img={img}
     />
     <div className={`${style.container} w--80 flex column a-i-c j-c-c`}>
       <div className={style.content}>

@@ -21,10 +21,9 @@ import supplements from '../../assets/products/supplements.jpg';
 import Footer from '../Nav/Footer';
 import styles from '../sections/css/products.module.scss';
 import elkanisAgro from '../../assets/backgrounds/elkanis_agro.jpg';
-import parboiled from '../../assets/generic/parboiled.png';
-import silicon from '../../assets/blogs/silicon.png';
+import parboiled from '../../assets/generic/parboiled.webp';
+import silicon from '../../assets/blogs/silicon.webp';
 import fiems from '../../assets/products/fiems_hd.svg';
-// import Button from '../sub/button';
 import handleOrder from '../sub/buy';
 
 const Products = () => {

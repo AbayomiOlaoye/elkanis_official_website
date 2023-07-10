@@ -5,8 +5,8 @@ import 'aos/dist/aos.css';
 import Smart from '../../sub/smart';
 import '../css/sections.css';
 import talk from '../../../assets/backgrounds/motivate_bg.png';
-import talkMb from '../../../assets/services/workers-b.png';
-import climate from '../../../assets/generic/climate.png';
+import talkMb from '../../../assets/services/workers-b.webp';
+import climate from '../../../assets/generic/climate.webp';
 import styles from './motivation.module.scss';
 
 const Motivation = () => {
@@ -54,7 +54,7 @@ const Motivation = () => {
       <article className={styles.climateArt} data-aos="zoom-out">
         <h2 className={styles.climateTitle}>Climate Smart Technology</h2>
         <hr className={styles.aboutBorder} data-aos="fade-up" />
-        <img src={climate} alt="Climate smart technology" className={styles.climateImg} />
+        <img src={climate} alt="Climate smart technology" loading="lazy" className={styles.climateImg} />
         <p className={styles.climateText}>
           Through the use of remote sensing, satellite imagery and improved seeds, the company
           is able to monitor and manage 64,000 hectares of rice fields in real-time, optimizing

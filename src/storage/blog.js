@@ -1,13 +1,13 @@
 import supp from '../assets/blogs/supp1.jpg';
-import fiems from '../assets/blogs/fiems.jpg';
+import fiems from '../assets/blogs/fiems.webp';
 import vcp from '../assets/blogs/vcp.jpg';
 import saprul from '../assets/blogs/saprul.jpeg';
 import malnutrition from '../assets/blogs/malnutrition.jpg';
 import crisis from '../assets/blogs/crisis.jpg';
 import vac from '../assets/blogs/vac.jpg';
 import veg from '../assets/blogs/veg.jpg';
-import rose from '../assets/blogs/elkanis-4.JPG';
-import silicon from '../assets/blogs/silicon.png';
+import rose from '../assets/blogs/elkanis-4.webp';
+import silicon from '../assets/blogs/silicon.webp';
 
 const blogData = [
   {

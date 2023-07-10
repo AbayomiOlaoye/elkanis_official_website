@@ -1,7 +1,7 @@
 // Images for featured services
-import proImg from '../assets/services/agric_project_card.png';
-import riceImg from '../assets/services/rice_pro.png';
-import researchImg from '../assets/services/research.png';
+import proImg from '../assets/services/agric_project_card.webp';
+import riceImg from '../assets/services/rice_pro.webp';
+import researchImg from '../assets/services/research.webp';
 
 const FeaturedService = [
   {

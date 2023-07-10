@@ -332,16 +332,21 @@ hr.hr--theme {
 /* ************* */
 
 /* Sponsors */
+#root > div > section.sponsors_sponsorsSection__HnQk\+ > div.react-multi-carousel-list.sc-bdvumH.cGTpVE.undefined.d-flex.a-i-c > ul > li {
+  align-self: center;
+  height: 125px;
+}
+
 div.react-multi-carousel-list {
   width: 80%;
   margin: 3rem auto 0;
-  gap: 5rem;
+  gap: 2rem;
   height: max-content;
 }
 
-.sponsor--logo {
-  max-width: 100%;
-  height: 70%;
+img.sponsor--logo {
+  width: 50%;
+  align-self: center !important;
 }
 
 .sponsors--page {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import axios from 'axios';
-import FormBg from '../../../assets/backgrounds/supplies.jpg';
+import FormBg from '../../../assets/backgrounds/supplies.webp';
 
 const Funnel = () => {
   const [email, setEmail] = useState('');
@@ -58,7 +58,7 @@ const Funnel = () => {
       }
     }
     >
-      <img src={FormBg} alt="form background" data-aos="fade-up" className="funnel--bg" />
+      <img src={FormBg} alt="form background" loading="lazy" data-aos="fade-up" className="funnel--bg" />
       <div className="funnel--overlay image--overlay--main" style={{ height: '100%', minWidth: '100%' }} />
       <div className="funnel--page--container flex column" data-aos="fade-down" style={{ height: 'max-content' }}>
         <h2 className="funnel--title">Get the latest news in Agritech</h2>

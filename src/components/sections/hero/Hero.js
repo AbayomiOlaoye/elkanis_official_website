@@ -28,7 +28,7 @@ const Hero = () => {
           with
           <span className="hero--bold"> technology</span>
         </h1>
-        <img src={drone} alt="Flying Drone" className="droner" data-aos-delay="2000" data-aos-duration="1000" data-aos="zoom-in" />
+        <img src={drone} alt="Flying Drone" className="droner" data-aos-delay="1000" data-aos-duration="1000" data-aos="zoom-in" />
         <p data-aos-duration="1000" data-aos="fade-left" className="hero--text text--left white relative">
           El-kanis and Partners is a leading food production company that is changing the game in
           the agriculture sector in Nigeria by leveraging cutting-edge technology to produce
