@@ -86,7 +86,7 @@
 }
 
 .about--bg {
-  background-image: url('../../../assets/backgrounds/globe.png');
+  background-image: url('../../../assets/backgrounds/globe.webp');
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: 50% 40%;
@@ -840,7 +840,7 @@ article.drive--us.g--32.d-flex {
   }
 
   .about--bg {
-    background-image: url('../../../assets/backgrounds/abt_line_bg.svg');
+    background-image: url('../../../assets/backgrounds/abt_line_bg.webp');
     background-repeat: no-repeat;
     background-size: 15% 50%;
     background-position: left -50vh;
@@ -857,7 +857,7 @@ article.drive--us.g--32.d-flex {
   }
 
   div.drive-us.about--img {
-    background-image: url('../../../assets/backgrounds/globe.png');
+    background-image: url('../../../assets/backgrounds/globe.webp');
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: 50% 40%;
@@ -932,7 +932,7 @@ article.drive--us.g--32.d-flex {
     width: 30%;
     height: 60vh;
     overflow: hidden;
-    background-image: url('../../../assets/backgrounds/miss_line_bg.png');
+    background-image: url('../../../assets/backgrounds/miss_line_bg.webp');
     background-repeat: no-repeat;
     background-position: 100% 20vh;
     background-size: 35% 65%;

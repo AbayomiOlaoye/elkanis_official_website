@@ -1,6 +1,6 @@
-import heavyWeight from '../assets/products/heavy_weight.png';
-import stopper from '../assets/products/stopper.svg';
-import booster from '../assets/products/booster.png';
+import heavyWeight from '../assets/products/heavy_weight.webp';
+import stopper from '../assets/products/stopper.webp';
+import booster from '../assets/products/booster.webp';
 
 const PRODUCTS = [
   {

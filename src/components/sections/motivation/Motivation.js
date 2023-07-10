@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Smart from '../../sub/smart';
 import '../css/sections.css';
-import talk from '../../../assets/backgrounds/motivate_bg.png';
+import talk from '../../../assets/backgrounds/motivate_bg.webp';
 import talkMb from '../../../assets/services/workers-b.webp';
 import climate from '../../../assets/generic/climate.webp';
 import styles from './motivation.module.scss';
