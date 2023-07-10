@@ -51,6 +51,7 @@ const FeaturedProduct = (
           variant="top"
           className={styles.featureImg}
           src={featureImg}
+          alt={headline}
           onContextMenu={handleContextMenu}
         />
         <Card.Body className={`${styles.featBody} ${checkId()}`}>
