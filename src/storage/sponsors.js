@@ -14,11 +14,11 @@ import ukaid from '../assets/sponsors/ukaid.webp';
 
 const SPONSORS = [
   usaid,
-  aks,
   gainLogo,
   breweries,
   nestle,
   harvest,
+  aks,
   gates,
   intlFoods,
   unilever,

@@ -1,6 +1,16 @@
 .sponsorsSection {
   top: -10vh;
 
+  li {
+    display: flex;
+    height: 150px;
+  }
+
+  #root > div > section.sponsors_sponsorsSection__HnQk\+ > div.react-multi-carousel-track.sc-bdvumH.gwApMQ.undefined.d-flex.a-i-c > ul {
+    gap: 3rem;
+    justify-content: center;
+  }
+
   @media screen and (min-width: 768px) {
     top: -5vh;
   } 
