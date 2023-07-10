@@ -30,7 +30,7 @@ const FeatService = (
       data-aos="fade-up"
     >
       <Card className={styles.featuresDivVar}>
-        <Card.Img variant="top" className={styles.featureImgVar} src={featureImg} />
+        <Card.Img variant="top" className={styles.featureImgVar} alt={headline} src={featureImg} />
         <Card.Body className={styles.featBody}>
           <Card.Title className={styles.featureTitle}>{headline}</Card.Title>
           <hr className={styles.aboutBorder} />
