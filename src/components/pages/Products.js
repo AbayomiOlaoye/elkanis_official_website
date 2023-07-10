@@ -11,19 +11,19 @@ import ARTICLES from '../../storage/articles';
 import PRODUCTS from '../../storage/product';
 import '../../App.css';
 import ProductCard from '../sub/ProductCard';
-import Spacial from '../../assets/backgrounds/spatial.png';
-import IV from '../../assets/products/ivr.svg';
+import Spacial from '../../assets/backgrounds/spatial.webp';
+import IV from '../../assets/products/ivr.webp';
 import Drone from '../../assets/generic/drones.svg';
 import IVR from '../../storage/ivr';
 import Statistics from '../sub/statistics';
-import agro from '../../assets/backgrounds/product_bg.png';
-import supplements from '../../assets/products/supplements.jpg';
+import agro from '../../assets/backgrounds/product_bg.webp';
+import supplements from '../../assets/products/supplements.webp';
 import Footer from '../Nav/Footer';
 import styles from '../sections/css/products.module.scss';
-import elkanisAgro from '../../assets/backgrounds/elkanis_agro.jpg';
+import elkanisAgro from '../../assets/backgrounds/elkanis_agro.webp';
 import parboiled from '../../assets/generic/parboiled.webp';
 import silicon from '../../assets/blogs/silicon.webp';
-import fiems from '../../assets/products/fiems_hd.svg';
+import fiems from '../../assets/products/fiems_hd.webp';
 import handleOrder from '../sub/buy';
 
 const Products = () => {

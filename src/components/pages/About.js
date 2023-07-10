@@ -12,7 +12,7 @@ import vision from '../../assets/icons/vision.svg';
 import mission from '../../assets/icons/mission.svg';
 import meet from '../../assets/icons/people_icon.svg';
 import Footer from '../Nav/Footer';
-import about from '../../assets/backgrounds/about_us.jpg';
+import about from '../../assets/backgrounds/about_us.webp';
 import bg from '../../assets/backgrounds/supplies.webp';
 import techBg from '../../assets/projects/precision.webp';
 

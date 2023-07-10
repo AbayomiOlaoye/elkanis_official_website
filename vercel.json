@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/assets/(.*)",
-      "destination": "/index.html"
+      "source": "/static/media/(.*)",
+      "destination": "/static/media/$1"
     }
   ]
 }

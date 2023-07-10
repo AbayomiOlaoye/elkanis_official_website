@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 import '../sections/css/about.css';
 import Statistics from './statistics';
 import styles from '../sections/css/products.module.scss';
-import rice from '../../assets/products/rice_hd.png';
+import rice from '../../assets/products/rice_hd.webp';
 import Button from './button';
 import handleOrder from './buy';
 

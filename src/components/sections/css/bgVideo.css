@@ -1,6 +1,6 @@
 .video--container {
   position: relative;
-  background: url('../../../assets/backgrounds/vid_placeholder.png'), rgba(14, 16, 4, 0.1);
+  background: url('../../../assets/backgrounds/vid_placeholder.webp'), rgba(14, 16, 4, 0.1);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
