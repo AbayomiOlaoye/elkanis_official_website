@@ -8,10 +8,33 @@ import vac from '../assets/blogs/vac.webp';
 import veg from '../assets/blogs/veg.webp';
 import rose from '../assets/blogs/elkanis-4.webp';
 import silicon from '../assets/blogs/silicon.webp';
+import maize from '../assets/blogs/loading_maize.webp';
 
 const blogData = [
   {
     id: 1,
+    day: '24',
+    month: 'Jul',
+    year: '2023',
+    title: 'El-kanis: Building Capacity and Knowledge for 10,000 Rice and Maize Farmers in Cross River State and Ebonyi State through SAPRUL Project',
+    img: maize,
+    content: [
+      'El-kanis, as a key stakeholder in sustainable food and agriculture systems, has taken significant strides in empowering 10,000 smallholder farmers in Cross River State and Ebonyi State, Nigeria. Through the SAPRUL (Sustainable Agricultural Program for Rural Livelihoods) project, El-kanis has been at the forefront of knowledge sharing and capacity development initiatives. El-kanis recognized the importance of including all stakeholders, including youth, rural women, men, and their cooperatives, as full partners in problem identification, research, and advisory services. This participatory approach fostered a sense of ownership and empowerment among the farmers and rural dwellers.',
+      "One of the key components of the project was the establishment of pluralistic extension systems involving multiple actors, such as the public sector, private agents, civil society organizations, and non-governmental organizations. El-kanis collaborated with these entities, ensuring that knowledge was delivered to the farmers based on each organization's expertise. This collaborative effort enriched the training programs, covering a wide range of topics essential for sustainable farming practices.",
+      '<h3>Farmer-Centric Training Programs</h3>',
+      'El-kanis, in collaboration with local partners and farmer organizations, designed comprehensive training programs for rice and maize farmers. These farmer-centric programs focus on enhancing technical knowledge, promoting sustainable practices, and improving farm management skills. Smallholder rice and maize farmers benefited from practical farm management skills, including crop planning, soil health management, water efficiency, pest and disease control, post-harvest handling, financial management, market access, and climate-smart practices. Equipping farmers with these skills enhances productivity, reduces losses, and improves their overall livelihoods. Knowledge of farm mechanization, entrepreneurship, and value addition allows farmers to explore new opportunities and ensure sustainable growth in the agricultural sector.',
+      "Take the case of Chief Damian Egbata, a rice farmer from Ekureku, Cross River State. Through El-kanis' farmer field schools, he learned about innovative practices such as System of Rice Intensification (SRI) and improved water management. System of Rice Intensification (SRI) is a sustainable rice cultivation method that emphasizes transplanting young seedlings, wider spacing, reduced water usage, and organic matter incorporation. SRI offers benefits such as higher yields, water efficiency, reduced input costs, climate resilience, and lower greenhouse gas emissions. This innovative approach promotes sustainable agricultural practices and contributes to food security and environmental protection. Armed with this knowledge, Chief Damian increased his rice yield significantly, witnessing a 30% rise in productivity compared to previous years.",
+      '<h3>Market-Oriented Approach</h3>',
+      'El-kanis recognizes the importance of connecting farmers to modern value chains. The training programs emphasize business-oriented approaches, imparting skills not only in production but also in post-harvest handling, storage, and marketing. By understanding market demands and quality standards, smallholder farmers are better equipped to produce rice and maize that meet market requirements.',
+      "Mrs Grace Uche, a maize farmer from Ebonyi State, underwent training on value chain management. El-kanis helped her establish links with Spertant Processing Mill Nigeria Limited, a livestock feed producer who required high-quality maize. As a result, Grace's maize yield improved, and she now supplies her produce to Spertant processing mills, contributing to the company's value chain while securing a stable market for her produce.",
+      '<h3>Social Inclusiveness and Gender Sensitivity</h3>',
+      'El-kanis places great emphasis on engaging women and youth in the training programs. The company ensures that women farmers actively participate in decision-making and capacity-building initiatives. Moreover, youth are provided with opportunities to explore sustainable socio-economic entrepreneurship in agriculture and related industries.',
+      "Miss Mary Okon, a young farmer from Cross River State, benefited from El-kanis' training on sustainable entrepreneurship. With the company's support, she started a small agribusiness, processing maize into various products. Not only did this create new employment opportunities for other youth in the community, but it also generated a steady supply of raw materials for El-kanis' processing mills.",
+      "El-kanis' commitment to building the capacity and knowledge of 10,000 rice and maize farmers in Cross River State and Ebonyi State through the SAPRUL project has yielded remarkable results. The shift towards farmer-driven, market-oriented approaches has empowered smallholders to thrive in the agricultural sector. Through training programs, farmers have increased their yields, enhanced product quality, and successfully integrated into modern value chains. Furthermore, El-kanis' focus on social inclusiveness has paved the way for women and youth to actively participate in sustainable agricultural practices and entrepreneurship. El-kanis' initiatives have not only transformed the livelihoods of smallholder farmers but have also contributed to the development of greener and more resilient food systems in the region.",
+    ],
+  },
+  {
+    id: 2,
     day: '04',
     month: 'Jul',
     year: '2023',
@@ -31,7 +54,7 @@ const blogData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     day: '03',
     month: 'Mar',
     year: '2023',
@@ -46,7 +69,7 @@ const blogData = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     day: '13',
     month: 'Feb',
     year: '2023',
@@ -66,7 +89,7 @@ const blogData = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     day: '18',
     month: 'Dec',
     year: '2022',
@@ -84,7 +107,7 @@ const blogData = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     day: '16',
     month: 'Nov',
     year: '2022',
@@ -103,7 +126,7 @@ const blogData = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     day: '24',
     month: 'May',
     year: '2022',
@@ -132,7 +155,7 @@ const blogData = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     day: '03',
     month: 'May',
     year: '2022',
@@ -165,7 +188,7 @@ const blogData = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     day: '12',
     month: 'Apr',
     year: '2022',
@@ -194,7 +217,7 @@ const blogData = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     day: '03',
     month: 'Apr',
     year: '2022',
@@ -214,7 +237,7 @@ const blogData = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     day: '11',
     month: 'Mar',
     year: '2022',
