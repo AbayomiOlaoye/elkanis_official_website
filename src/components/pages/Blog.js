@@ -11,7 +11,7 @@ import '../sections/css/sections.css';
 import '../sections/css/about.css';
 import blogData from '../../storage/blog';
 import Footer from '../Nav/Footer';
-// import ReactHtmlParser from 'react-html-parser';
+
 const parse = require('html-react-parser');
 
 const Blog = () => {

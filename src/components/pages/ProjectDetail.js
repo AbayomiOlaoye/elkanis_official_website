@@ -10,7 +10,7 @@ import '../sections/css/sections.css';
 import '../sections/css/about.css';
 
 const ProjectDetail = () => {
-  const { id } = useParams();
+  const { theme } = useParams();
   const [project, setProject] = useState(null);
 
   useEffect(() => {
@@ -22,10 +22,10 @@ const ProjectDetail = () => {
   }, []);
 
   useEffect(() => {
-    const selectedProject = PROJECTS.find((project) => project.id === id);
+    const selectedProject = PROJECTS.find((project) => project.theme === theme);
     setProject(selectedProject);
     window.scrollTo(0, 0);
-  }, [id]);
+  }, [theme]);
 
   if (!project) {
     return <div>Loading...</div>;
@@ -72,7 +72,7 @@ const ProjectDetail = () => {
       >
         <div className="project--details w--80 d-flex column gap-one">
           <h3 className="project--title" data-aos="fade-up" style={{ color: '#fff' }}>{project.theme}</h3>
-          <img src={project.img} data-aos="fade-right" alt={project.title} className="project--img" />
+          <img src={project.img} data-aos="fade-right" alt={project.theme} className="project--img" />
           <div className="project--text" data-aos="fade-up">
             <h2 className="project--headline" style={{ margin: '2rem 0 1rem', textAlign: 'center', color: '#2a310c' }}>Project Overview</h2>
             <p key={project.id} className="project--description text--just">{renderHyperlinks(project.overview)}</p>
