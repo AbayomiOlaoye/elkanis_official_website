@@ -9,10 +9,25 @@ import veg from '../assets/blogs/veg.webp';
 import rose from '../assets/blogs/elkanis-4.webp';
 import silicon from '../assets/blogs/silicon.webp';
 import maize from '../assets/blogs/loading_maize.webp';
+import chairman from '../assets/blogs/prof_ajah.jpeg';
 
 const blogData = [
   {
     id: 1,
+    day: '09',
+    month: 'Aug',
+    year: '2023',
+    title: 'Chairman of <a href="https://ng.linkedin.com/company/elkanis-and-partners">El-kanis & Partners</a> Attains Professorship at the University of Uyo: Celebrating a Milestone Achievement!',
+    img: chairman,
+    content: [
+      'On behalf of El-kanis and Partners, we are absolutely delighted to extend our heartfelt congratulations to our esteemed Chairman, <a href="https://ng.linkedin.com/in/richard-oko-ajah-phd-11085122">Richard Oko Ajah, PhD</a> on his recent elevation to the distinguished position of Professor at the prestigious University of Uyo! Professor Ajah\'s extraordinary dedication, visionary leadership, and exceptional contributions to academia and the field of human development have earned him this well-deserved honor.',
+      'His passion for knowledge and commitment to excellence have not only shaped the success of El-kanis and Partners but have also inspired countless individuals along the way. As our Chairman, Professor Ajah has been the guiding light, leading our team with brilliance and wisdom. His unwavering support and mentorship have been instrumental in our growth and achievements as a firm. Under his visionary leadership, EL-kanis and Partners has reached new heights and continues to make a significant impact in the industry.',
+      'This elevation to the esteemed position of Professor reflects not only his academic prowess but also his commitment to nurturing talent and fostering a culture of innovation within our organization. His accomplishments serve as an inspiration to all of us, motivating us to strive for excellence in everything we do. We are immensely proud to have Professor Richard Ajah as our Chairman and leader. His passion for education, research, and community development continues to drive positive change both within the academic realm and beyond.',
+      "Join us in congratulating Professor Ajah on this momentous achievement and wishing him continued success on his academic journey. Together, let's celebrate this milestone and look forward to even greater accomplishments in the future!",
+    ],
+  },
+  {
+    id: 2,
     day: '24',
     month: 'Jul',
     year: '2023',
@@ -34,7 +49,7 @@ const blogData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     day: '04',
     month: 'Jul',
     year: '2023',
@@ -54,7 +69,7 @@ const blogData = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     day: '03',
     month: 'Mar',
     year: '2023',
@@ -69,7 +84,7 @@ const blogData = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     day: '13',
     month: 'Feb',
     year: '2023',
@@ -89,7 +104,7 @@ const blogData = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     day: '18',
     month: 'Dec',
     year: '2022',
@@ -107,7 +122,7 @@ const blogData = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     day: '16',
     month: 'Nov',
     year: '2022',
@@ -126,7 +141,7 @@ const blogData = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     day: '24',
     month: 'May',
     year: '2022',
@@ -155,7 +170,7 @@ const blogData = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     day: '03',
     month: 'May',
     year: '2022',
@@ -188,7 +203,7 @@ const blogData = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     day: '12',
     month: 'Apr',
     year: '2022',
@@ -217,7 +232,7 @@ const blogData = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     day: '03',
     month: 'Apr',
     year: '2022',
@@ -237,7 +252,7 @@ const blogData = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     day: '11',
     month: 'Mar',
     year: '2022',
