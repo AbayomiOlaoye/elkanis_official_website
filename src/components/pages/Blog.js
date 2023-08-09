@@ -11,7 +11,7 @@ import '../sections/css/sections.css';
 import '../sections/css/about.css';
 import blogData from '../../storage/blog';
 import Footer from '../Nav/Footer';
-// import ReactHtmlParser from 'react-html-parser';
+
 const parse = require('html-react-parser');
 
 const Blog = () => {
@@ -27,6 +27,7 @@ const Blog = () => {
     setSelectedPost(index);
     const encodedTitle = encodeURIComponent(blog.title);
     navigate(`/blogs/${encodedTitle}`);
+    window.scrollTo(0, 0);
   };
 
   const formatText = blog.content.map((paragraph) => {

@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 import precision from '../assets/projects/precision.webp';
 import rufin from '../assets/projects/rufin.webp';
 import raamp from '../assets/projects/raamp.webp';
@@ -12,9 +13,9 @@ import vam from '../assets/projects/vam.webp';
 
 const PROJECTS = [
   {
-    id: 'precision',
+    id: uuidv4(),
     img: precision,
-    theme: "IMPACT OF PRECISION/DIGITAL AGRICULTURE AND TRADITIONAL AGRICULTURE ON AFRICA'S FOOD SYSTEMS",
+    theme: "IMPACT OF PRECISION AGRICULTURE AND TRADITIONAL AGRICULTURE ON AFRICA'S FOOD SYSTEMS",
     overview: [
       'The social circumstances and technological environment indicate that several phases of the supply chains will be more receptive to Precision/Digital Agriculture adoption and deployment than others, leading to the interest of the project. El-kanis and Partners and Faculty of Agriculture, University of Uyo intend to explore the subject to research on the costs benefit analysis of Precision/Digital Agriculture and traditional agriculture, a development that will contribute to the benefit of creating an Africa that is properly fed.',
       'The partnership will be contributing to the project for more efficient, climate resilient and sustainable agricultural production and efficient food systems to enhance food security, incomes, and nutrition that benefit small-scale farmers (particularly women and the youth).  There are a number of reasons for creating Precision/Digital Agriculture research network in the context of Africa food security. These include:',
@@ -44,7 +45,7 @@ const PROJECTS = [
     more: '',
   },
   {
-    id: 'rufin',
+    id: uuidv4(),
     img: rufin,
     theme: 'RURAL FINANCE INSTITUTIONS-BUILDING PROGRAMME (RUFIN)',
     overview: [
@@ -62,7 +63,7 @@ const PROJECTS = [
     more: '<a href="https://dailytrust.com/7yrs-of-rufin-project-fg-ifad-review-impact-on-rural-farmers/" target="_blank">RUFIN Project</a>',
   },
   {
-    id: 'raamp',
+    id: uuidv4(),
     img: raamp,
     theme: 'AKWA IBOM STATE RURAL ACCESS AND AGRICULTURAL MARKETING PROJECT (RAAMP)',
     overview: [
@@ -79,7 +80,7 @@ const PROJECTS = [
     more: '<a href="https://www.akwaibomraamp.org/" target="_blank">Akwa Ibom State RAAMP</a>',
   },
   {
-    id: 'outgrower',
+    id: uuidv4(),
     img: maize,
     theme: 'ODUKPANI MAIZE OUTGROWER PROJECT',
     overview: [
@@ -96,7 +97,7 @@ const PROJECTS = [
     more: '',
   },
   {
-    id: 'ditra',
+    id: uuidv4(),
     img: ditra,
     theme: 'DIGITAL INTERVENTION FOR TRANSFORMATION OF RURAL AGRICULTURE (DITRA)',
     overview: [
@@ -115,7 +116,7 @@ const PROJECTS = [
     more: '',
   },
   {
-    id: 'aedp',
+    id: uuidv4(),
     img: aedp,
     theme: 'AKWA IBOM AGRICULTURAL DEVELOPMENT PROGRAMME -AGRIBUSINESS ENTERPRISE DEVELOPMENT PROGRAM (AEDP)',
     overview: [
@@ -132,7 +133,7 @@ const PROJECTS = [
     more: '<a href="https://factsreporter.com.ng/2020/11/03/aedp-raises-the-bar-in-agricultural-drive-food-sufficiency/" target="_blank">AEDP Project</a>',
   },
   {
-    id: 'coconut',
+    id: uuidv4(),
     img: coconut,
     theme: 'OKOBO COCONUT FARM ESTATE PROJECT DEVELOPMENT',
     overview: [
@@ -152,7 +153,7 @@ const PROJECTS = [
     more: '<a href="https://businessday.ng/news/article/udom-launches-coconut-planting-campaign/" target="_blank">Governor Udom launches coconut farming</a>',
   },
   {
-    id: 'vivr',
+    id: uuidv4(),
     img: vivr,
     theme: 'EL-KANIS VERNACULAR INTERACTIVE VOICE RESPONSE PLATFORM (EIVR)',
     overview: [
@@ -170,7 +171,7 @@ const PROJECTS = [
     more: '<a href="https://enews.com.ng/el-kanis-launches-e-platform-to-disseminate-information-to-farmers-in-aibom" target="_blank">El-kanis launches e-platform to disseminate information to farmers in A’Ibom</a>',
   },
   {
-    id: 'rice_outgrower',
+    id: uuidv4(),
     img: rice,
     theme: 'INI RICE OUTGROWER PROJECT',
     overview: [
@@ -188,7 +189,7 @@ const PROJECTS = [
     more: '',
   },
   {
-    id: 'akfims',
+    id: uuidv4(),
     img: akfims,
     theme: 'AKWA IBOM FARMERS INFORMATION MANAGEMENT SYSTEM (AKFIMS)',
     overview: [
@@ -204,7 +205,7 @@ const PROJECTS = [
     more: '<a href="https://independent.ng/post-covid-economy-akwa-ibom-digitalizes-farming-for-agribusiness/" target="_blank">Post-COVID Economy: Akwa Ibom Digitalizes Farming For Agribusiness</a>',
   },
   {
-    id: 'vam',
+    id: uuidv4(),
     img: vam,
     theme: 'REGULATORY REVIEW NIGERIA, FOOD LABELING AND MARKETING PROVISIONS FOR NUTRIENT ENRICHED CROPS, VITAMIN A MAIZE (VAM) AND VITAMIN A CASSAVA (VAC)',
     overview: [

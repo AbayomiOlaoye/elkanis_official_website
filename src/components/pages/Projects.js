@@ -47,9 +47,9 @@ const Projects = () => {
     };
   });
 
-  const handleProjectClick = (id) => {
-    setActiveProject(id === activeProject ? null : id);
-    navigate(`/projects/${id}`);
+  const handleProjectClick = (theme) => {
+    setActiveProject(theme === activeProject ? null : theme);
+    navigate(`/projects/${theme}`);
   };
 
   return (
@@ -67,7 +67,7 @@ const Projects = () => {
             data-aos-duration="800"
             key={project.id}
             id={project.id}
-            onClick={() => handleProjectClick(project.id)}
+            onClick={() => handleProjectClick(project.theme)}
           >
             <img data-aos="fade-in" src={project.img} alt={project.title} className="project--img trans" />
             <div className="project--head hover absolute d-flex column a-i-c j-c-c">
