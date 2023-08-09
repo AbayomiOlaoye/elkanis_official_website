@@ -11,7 +11,8 @@ import '../sections/css/sections.css';
 import '../sections/css/about.css';
 import blogData from '../../storage/blog';
 import Footer from '../Nav/Footer';
-import ReactHtmlParser from 'react-html-parser';
+// import ReactHtmlParser from 'react-html-parser';
+const parse = require('html-react-parser');
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ const Blog = () => {
     }
     return (
       <p key={paragraph.id} className="project--description text--just" style={{ margin: '2vw 0' }}>
-        {ReactHtmlParser(paragraph)}
+        {parse(paragraph)}
       </p>
     );
   });

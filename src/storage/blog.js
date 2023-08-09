@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 import supp from '../assets/blogs/supp1.webp';
 import fiems from '../assets/blogs/fiems.webp';
 import vcp from '../assets/blogs/vcp.webp';
@@ -13,7 +14,7 @@ import chairman from '../assets/blogs/prof_ajah.png';
 
 const blogData = [
   {
-    id: 1,
+    id: uuidv4(),
     day: '09',
     month: 'Aug',
     year: '2023',
@@ -27,7 +28,7 @@ const blogData = [
     ],
   },
   {
-    id: 2,
+    id: uuidv4(),
     day: '24',
     month: 'Jul',
     year: '2023',
@@ -49,7 +50,7 @@ const blogData = [
     ],
   },
   {
-    id: 3,
+    id: uuidv4(),
     day: '04',
     month: 'Jul',
     year: '2023',
@@ -69,7 +70,7 @@ const blogData = [
     ],
   },
   {
-    id: 4,
+    id: uuidv4(),
     day: '03',
     month: 'Mar',
     year: '2023',
@@ -84,7 +85,7 @@ const blogData = [
     ],
   },
   {
-    id: 5,
+    id: uuidv4(),
     day: '13',
     month: 'Feb',
     year: '2023',
@@ -104,7 +105,7 @@ const blogData = [
     ],
   },
   {
-    id: 6,
+    id: uuidv4(),
     day: '18',
     month: 'Dec',
     year: '2022',
@@ -122,7 +123,7 @@ const blogData = [
     ],
   },
   {
-    id: 7,
+    id: uuidv4(),
     day: '16',
     month: 'Nov',
     year: '2022',
@@ -141,7 +142,7 @@ const blogData = [
     ],
   },
   {
-    id: 8,
+    id: uuidv4(),
     day: '24',
     month: 'May',
     year: '2022',
@@ -170,7 +171,7 @@ const blogData = [
     ],
   },
   {
-    id: 9,
+    id: uuidv4(),
     day: '03',
     month: 'May',
     year: '2022',
@@ -203,7 +204,7 @@ const blogData = [
     ],
   },
   {
-    id: 10,
+    id: uuidv4(),
     day: '12',
     month: 'Apr',
     year: '2022',
@@ -232,7 +233,7 @@ const blogData = [
     ],
   },
   {
-    id: 11,
+    id: uuidv4(),
     day: '03',
     month: 'Apr',
     year: '2022',
@@ -252,7 +253,7 @@ const blogData = [
     ],
   },
   {
-    id: 12,
+    id: uuidv4(),
     day: '11',
     month: 'Mar',
     year: '2022',

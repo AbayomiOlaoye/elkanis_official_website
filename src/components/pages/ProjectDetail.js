@@ -117,7 +117,7 @@ const ProjectDetail = () => {
             {PROJECTS.map((item) => (
               <li key={item.id} data-aos="fade-up" data-aos-duration="500" style={{ padding: '1rem', borderBottom: '1px solid #3c4044' }}>
                 <Link
-                  to={`/projects/${item.id}`}
+                  to={`/projects/${item.theme}`}
                   style={
                     {
                       marginTop: '1rem', fontSize: '0.9rem',
