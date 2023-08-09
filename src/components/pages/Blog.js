@@ -27,6 +27,7 @@ const Blog = () => {
     setSelectedPost(index);
     const encodedTitle = encodeURIComponent(blog.title);
     navigate(`/blogs/${encodedTitle}`);
+    window.scrollTo(0, 0);
   };
 
   const formatText = blog.content.map((paragraph) => {
