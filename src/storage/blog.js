@@ -9,7 +9,7 @@ import veg from '../assets/blogs/veg.webp';
 import rose from '../assets/blogs/elkanis-4.webp';
 import silicon from '../assets/blogs/silicon.webp';
 import maize from '../assets/blogs/loading_maize.webp';
-import chairman from '../assets/blogs/prof_ajah.jpeg';
+import chairman from '../assets/blogs/prof_ajah.png';
 
 const blogData = [
   {
