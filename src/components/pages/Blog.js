@@ -2,7 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/order */
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion, useScroll, useSpring } from 'framer-motion';
@@ -11,16 +11,22 @@ import '../sections/css/sections.css';
 import '../sections/css/about.css';
 import blogData from '../../storage/blog';
 import Footer from '../Nav/Footer';
+// import ReactHtmlParser from 'react-html-parser';
+const parse = require('html-react-parser');
 
 const Blog = () => {
   const navigate = useNavigate();
   const [selectedPost, setSelectedPost] = useState(0);
-  const blog = blogData[selectedPost];
+  const location = useLocation();
+  const decodedTitle = decodeURIComponent(location.pathname.split('/blogs/')[1]);
+
+  const blog = blogData.find((item) => item.title === decodedTitle) || blogData[0];
+  // const blog = blogData[selectedPost];
 
   const handleTitleClick = (index) => {
     setSelectedPost(index);
-    navigate(`/blogs/${blog.id}`);
-    window.scrollTo(0, 0);
+    const encodedTitle = encodeURIComponent(blog.title);
+    navigate(`/blogs/${encodedTitle}`);
   };
 
   const formatText = blog.content.map((paragraph) => {
@@ -33,7 +39,7 @@ const Blog = () => {
     }
     return (
       <p key={paragraph.id} className="project--description text--just" style={{ margin: '2vw 0' }}>
-        {paragraph}
+        {parse(paragraph)}
       </p>
     );
   });
@@ -91,7 +97,7 @@ const Blog = () => {
             {blogData.map((item, index) => (
               <li key={item.id} style={{ display: index === selectedPost ? 'none' : 'block', padding: '1rem', borderBottom: '1px solid #3c4044' }} className="blog--link" data-aos="fade-up">
                 <Link
-                  to={`/blogs/${item.id}`}
+                  to={`/blogs/${item.title}`}
                   onClick={() => handleTitleClick(index)}
                   style={
                   {
