@@ -11,8 +11,29 @@ import rose from '../assets/blogs/elkanis-4.webp';
 import silicon from '../assets/blogs/silicon.webp';
 import maize from '../assets/blogs/loading_maize.webp';
 import chairman from '../assets/blogs/prof_ajah.png';
+import radio from '../assets/blogs/radio.webp';
 
 const blogData = [
+  {
+    id: uuidv4(),
+    day: '31',
+    month: 'Aug',
+    year: '2023',
+    title: 'El-kanis Empowers Over 500,000 Farmers via Local Radio Training and Toll-Free Support',
+    img: radio,
+    content: [
+      'In a remarkable effort to boost rural farming practices, <a href="https://ng.linkedin.com/company/elkanis-and-partners" target=”_blank”>El-kanis</a> is revolutionizing the agricultural landscape by training more than 500,000 farmers through a unique approach. Leveraging the power of local dialect on the airwaves, the program airs on Tang Sio 102.7FM, Uyo, Akwa Ibom State, Nigeria every Wednesday from 6:00pm to 6:30pm, reaching communities that may have been overlooked.',
+      '<h3>The Heart of the Initiative</h3>',
+      'Using the familiar voice of Tang Sio 102.7FM, the program provides agricultural training in local dialects, effectively connecting with farmers on a personal and relatable level. This exceptional initiative is augmented by a toll-free hotline, facilitating agricultural extension services for farmers seeking advice and guidance. With over 2,000 calls daily, the impact is undeniable.',
+      '<h3>Transforming Farming Practices</h3>',
+      'The El-kanis program is ushering in a new era of good agronomic practices. By providing tailored guidance to farmers on topics such as crop management, pest control, and sustainable techniques, the program is empowering rural communities to enhance their yields and livelihoods. The local dialect ensures that the information is easily understood, effectively bridging the gap between knowledge and application.',
+      '<h3>Cultivating Prosperity and Networks</h3>',
+      'A testament to its success, farmers engaged with the El-kanis program are proudly adopting the title of "El-kanis Farmers Network." This close-knit community of agricultural enthusiasts is cultivating a range of produce, knowing that El-kanis is ready to off-take for further processing. This seamless integration between farming and processing ensures that the gap between producers and market access is minimized.',
+      '<h3>Advancing Agriculture, One Broadcast at a Time</h3>',
+      "El-kanis' innovative approach is not only transforming rural farming practices but also contributing to the larger goal of sustainable agricultural development. By harnessing the power of radio and local dialects, the program is creating a ripple effect of positive change, improving lives, and strengthening communities.",
+      'In a world where technology and tradition intertwine, El-kanis is a beacon of progress, guiding farmers toward prosperity and sustainable practices. Join us every Wednesday between 6:00 and 6:30 pm on Tang Sio 102.7FM, and witness the extraordinary journey of rural empowerment and growth.',
+    ],
+  },
   {
     id: uuidv4(),
     day: '09',
