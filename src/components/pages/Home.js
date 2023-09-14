@@ -114,7 +114,7 @@ const Home = () => {
               <div className="footer__links--top flex">
                 <SlCallEnd className="footer--icon" />
                 <a href="tel:+23480000445566" className="footer--text" style={{ color: '#fff' }}>
-                  +234 800 0044 5566
+                  +234 800 0044 5566 (Toll-Free line)
                 </a>
               </div>
               <div className="footer__links--top flex">
