@@ -113,8 +113,8 @@ const Home = () => {
               </div>
               <div className="footer__links--top flex">
                 <SlCallEnd className="footer--icon" />
-                <a href="tel:+2348027331036" className="footer--text" style={{ color: '#fff' }}>
-                  +234 802 733 1036
+                <a href="tel:+23480000445566" className="footer--text" style={{ color: '#fff' }}>
+                  +234 800 0044 5566
                 </a>
               </div>
               <div className="footer__links--top flex">
