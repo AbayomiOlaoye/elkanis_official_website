@@ -12,7 +12,7 @@ import silicon from '../assets/blogs/silicon.webp';
 import maize from '../assets/blogs/loading_maize.webp';
 import chairman from '../assets/blogs/prof_ajah.png';
 import radio from '../assets/blogs/radio.webp';
-import radio_disc from '../assets/blogs/radio_disc.webp';
+import radioDisc from '../assets/blogs/radio_disc.webp';
 
 const blogData = [
   {
@@ -21,7 +21,7 @@ const blogData = [
     month: 'Sept',
     year: '2023',
     title: 'Navigating Poultry Industry Challenges: Insights from our Radio Dialogue',
-    img: radio_disc,
+    img: radioDisc,
     content: [
       'This week, we had the privilege of participating in a lively discussion on a local radio program dedicated to enlightening farmers about the challenges facing the poultry industry. It was an eye-opening experience, and we were thrilled to share insights into how El-Kanis Livestock Supplement is making a significant impact in supporting farmers to stay profitable and overcome these challenges.',
       'The poultry industry plays a pivotal role in our economy, providing a vital source of nutrition and livelihood for countless individuals. However, it faces its fair share of challenges, including disease outbreaks, fluctuating feed prices, and changing consumer preferences. During the radio program, we delved deep into these issues and explored potential solutions.',
@@ -35,7 +35,7 @@ const blogData = [
       "It's truly heartening to witness the positive impact this product has had on poultry farming communities. Farmers have shared their success stories of healthier flocks, increased egg production, and improved income levels, all thanks to El-Kanis.",
       "As we move forward, it's clear that innovation and collaboration are key to addressing the challenges facing the poultry industry. I want to express my gratitude to the radio program for providing a platform for these crucial discussions and to El-Kanis Livestock Supplement for their commitment to supporting our farmers.",
       "If you're a poultry farmer or involved in the industry, I encourage you to explore the benefits of El-Kanis Livestock Supplement. It's not just a product; it's a testament to the power of innovation in agriculture and the potential to transform challenges into opportunities.",
-      "Let's continue working together to ensure a thriving and sustainable poultry industry for generations to come!"
+      "Let's continue working together to ensure a thriving and sustainable poultry industry for generations to come!",
     ],
   },
   {
