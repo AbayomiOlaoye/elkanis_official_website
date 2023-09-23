@@ -12,8 +12,32 @@ import silicon from '../assets/blogs/silicon.webp';
 import maize from '../assets/blogs/loading_maize.webp';
 import chairman from '../assets/blogs/prof_ajah.png';
 import radio from '../assets/blogs/radio.webp';
+import radio_disc from '../assets/blogs/radio_disc.webp';
 
 const blogData = [
+  {
+    id: uuidv4(),
+    day: '22',
+    month: 'Sept',
+    year: '2023',
+    title: 'Navigating Poultry Industry Challenges: Insights from our Radio Dialogue',
+    img: radio_disc,
+    content: [
+      'This week, we had the privilege of participating in a lively discussion on a local radio program dedicated to enlightening farmers about the challenges facing the poultry industry. It was an eye-opening experience, and we were thrilled to share insights into how El-Kanis Livestock Supplement is making a significant impact in supporting farmers to stay profitable and overcome these challenges.',
+      'The poultry industry plays a pivotal role in our economy, providing a vital source of nutrition and livelihood for countless individuals. However, it faces its fair share of challenges, including disease outbreaks, fluctuating feed prices, and changing consumer preferences. During the radio program, we delved deep into these issues and explored potential solutions.',
+      "One shining beacon of hope that emerged from our discussion was the El-Kanis Livestock Supplement. This innovative supplement has been a game-changer for poultry farmers, helping them tackle some of the industry's most pressing problems:",
+      '<h3>Disease Management:</h3>',
+      'El-Kanis Livestock Supplement is formulated to boost the immunity of poultry birds, reducing the risk of diseases and minimizing the need for antibiotics.',
+      '<h3>Nutrition Optimization</h3>',
+      'The supplement is designed to enhance the nutritional content of poultry feed, ensuring that birds receive the essential nutrients they need for healthy growth and egg production.',
+      '<h3>AProfitability:</h3>',
+      "By improving bird health and productivity, El-Kanis Livestock Supplement has been instrumental in increasing farmers' profitability, even in the face of market volatility.",
+      "It's truly heartening to witness the positive impact this product has had on poultry farming communities. Farmers have shared their success stories of healthier flocks, increased egg production, and improved income levels, all thanks to El-Kanis.",
+      "As we move forward, it's clear that innovation and collaboration are key to addressing the challenges facing the poultry industry. I want to express my gratitude to the radio program for providing a platform for these crucial discussions and to El-Kanis Livestock Supplement for their commitment to supporting our farmers.",
+      "If you're a poultry farmer or involved in the industry, I encourage you to explore the benefits of El-Kanis Livestock Supplement. It's not just a product; it's a testament to the power of innovation in agriculture and the potential to transform challenges into opportunities.",
+      "Let's continue working together to ensure a thriving and sustainable poultry industry for generations to come!"
+    ],
+  },
   {
     id: uuidv4(),
     day: '31',
