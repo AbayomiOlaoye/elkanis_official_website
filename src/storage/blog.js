@@ -14,8 +14,29 @@ import chairman from '../assets/blogs/prof_ajah.png';
 import radio from '../assets/blogs/radio.webp';
 import radioDisc from '../assets/blogs/radio_disc.webp';
 import image from '../assets/blogs/image.png';
+import chairman from '../assets/blogs/chairman.jpeg';
 
 const blogData = [
+  {
+    id: uuidv4(),
+    day: '27',
+    month: 'Oct',
+    year: '2023',
+    title: 'Growing Together: Collaborating for Agricultural Advancement in Akwa Ibom State',
+    img: chairman,
+    content: [
+      "The Managing Director of EL-kanis, Mr Ekanikpong Ben had the privilege of meeting with the dynamic Chairman, House Committee on Agriculture and Rural development, Akwa ibom State House of Assembly, Honorable Ubong Attah, to discuss the future of our state's agricultural landscape. Our discussion revolved around strategies to foster growth in the agriculture sector, and it was an inspiring conversation indeed!",
+      '<h2>Key Takeaways:</h2>',
+      '<h3>Empowering Rural Farmers:</h3>',
+      'We explored various initiatives aimed at enhancing the lives of our rural farmers. From comprehensive training programs to continuous monitoring and facilitating better market access, our commitment to improving their livelihood is unwavering.',
+      '<h3>Tackling Challenges Head-On:</h3>',
+      'We delved into the significant challenges crippling the agricultural industry, including the state of our roads, the issue of illegal checkpoints, and post-harvest losses. Recognizing these problems is the first step towards solving them!',
+      '<h3>Collaboration is Key:</h3>',
+      "To translate these discussions into action, we are eager to join forces with development agencies and other stakeholders within the state. Together, we can drive meaningful change and revolutionize Akwa Ibom's agriculture sector.<br>",
+      "Honorable Ubong Attah's commitment to this vision is incredibly encouraging. He assured us of the State House of Assembly's unwavering support for agricultural entrepreneurs. They have already approved a substantial agricultural budget for the state, reflecting a clear commitment to boosting food production.",
+      "The future of agriculture in Akwa Ibom State is brimming with potential, and we are enthusiastic about the journey ahead. Let's work together to turn these aspirations into reality, making our state a shining example of agricultural excellence!",
+    ],
+  },
   {
     id: uuidv4(),
     day: '17',
