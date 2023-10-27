@@ -13,8 +13,27 @@ import maize from '../assets/blogs/loading_maize.webp';
 import chairman from '../assets/blogs/prof_ajah.png';
 import radio from '../assets/blogs/radio.webp';
 import radioDisc from '../assets/blogs/radio_disc.webp';
+import farmer from '../assets/blogs/Farmers.png';
 
 const blogData = [
+  {
+    id: uuidv4(),
+    day: '17',
+    month: 'Oct',
+    year: '2023',
+    title: "El-Kanis Radio Program Report: Unveiling South-South's Agri-Crisis - Tackling Soaked Stubble with Dry Innovation",
+    img: farmer,
+    content: [
+      'The El-Kanis Radio Program, a vanguard of information dissemination, brought to light a dire predicament facing our agricultural community in the South-South region of Nigeria. In our latest series, we plumbed the depths of a pressing issue: the deluge of rain and its ruinous impact on our farming and food processing activities.',
+      "We had the privilege of participating in the El-Kanis Radio Program recently, where the discussion revolved around the significant challenges faced by farmers and food processors in the South-South region due to heavy rainfall. This vital conversation illuminated the pressing issue of drying in agriculture and its cascading effects on the region's food production.",
+      "Heavy Rainfall Dilemma: The South-South region is blessed with abundant rainfall, which is crucial for farming. However, excessive rain can also pose a challenge. Prolonged and heavy downpours often lead to difficulties in drying agricultural products such as grains, fruits, and vegetables, making it a pressing concern for local farmers and processors.",
+      '<h3>Mechanical Drying System Costliness:</h3>',
+      "The discussion highlighted that many farmers and food processors have resorted to using mechanical drying systems, but these come with a hefty price tag. The cost of acquiring and maintaining such equipment can significantly impact the overall cost of food production in the region. This not only affects farmers' profitability but also the affordability of food for consumers.",
+      '<h3>Seeking Solutions Together:</h3>',
+      "It's evident that the challenges of drying in the South-South region are multifaceted and require a collaborative effort to find sustainable solutions. These challenges can drive innovation and investment in more efficient and cost-effective drying methods, helping farmers and processors thrive.",
+      "As we navigate these challenges, it's crucial that the government, industry stakeholders, and the private sector come together to support initiatives that provide practical solutions for the South-South region's agricultural community. This way, we can not only enhance food production but also ensure its affordability, ultimately benefiting the entire region.",
+    ],
+  },
   {
     id: uuidv4(),
     day: '22',
