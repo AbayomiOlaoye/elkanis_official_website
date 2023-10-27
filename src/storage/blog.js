@@ -14,7 +14,7 @@ import chairman from '../assets/blogs/prof_ajah.png';
 import radio from '../assets/blogs/radio.webp';
 import radioDisc from '../assets/blogs/radio_disc.webp';
 import image from '../assets/blogs/image.png';
-import chairman from '../assets/blogs/chairman.jpeg';
+import chair_agro from '../assets/blogs/chairman.jpeg';
 
 const blogData = [
   {
@@ -23,7 +23,7 @@ const blogData = [
     month: 'Oct',
     year: '2023',
     title: 'Growing Together: Collaborating for Agricultural Advancement in Akwa Ibom State',
-    img: chairman,
+    img: chair_agro,
     content: [
       "The Managing Director of EL-kanis, Mr Ekanikpong Ben had the privilege of meeting with the dynamic Chairman, House Committee on Agriculture and Rural development, Akwa ibom State House of Assembly, Honorable Ubong Attah, to discuss the future of our state's agricultural landscape. Our discussion revolved around strategies to foster growth in the agriculture sector, and it was an inspiring conversation indeed!",
       '<h2>Key Takeaways:</h2>',
