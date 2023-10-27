@@ -13,7 +13,7 @@ import maize from '../assets/blogs/loading_maize.webp';
 import chairman from '../assets/blogs/prof_ajah.png';
 import radio from '../assets/blogs/radio.webp';
 import radioDisc from '../assets/blogs/radio_disc.webp';
-import farmer from '../assets/blogs/Farmers.png';
+import farmer from '../assets/blogs/image.png';
 
 const blogData = [
   {
@@ -22,7 +22,7 @@ const blogData = [
     month: 'Oct',
     year: '2023',
     title: "El-Kanis Radio Program Report: Unveiling South-South's Agri-Crisis - Tackling Soaked Stubble with Dry Innovation",
-    img: farmer,
+    img: image,
     content: [
       'The El-Kanis Radio Program, a vanguard of information dissemination, brought to light a dire predicament facing our agricultural community in the South-South region of Nigeria. In our latest series, we plumbed the depths of a pressing issue: the deluge of rain and its ruinous impact on our farming and food processing activities.',
       "We had the privilege of participating in the El-Kanis Radio Program recently, where the discussion revolved around the significant challenges faced by farmers and food processors in the South-South region due to heavy rainfall. This vital conversation illuminated the pressing issue of drying in agriculture and its cascading effects on the region's food production.",
