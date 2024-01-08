@@ -72,7 +72,7 @@ const PRODUCTS = [
       'EL-KANIS - HEAVY WEIGHT™ Organic chicken growth boosters are made with natural ingredients, so they are a more sustainable choice than chemical additives.',
     ],
     dosage: [
-      'From day old - 2weeks 550g (1sachet) to 100kg (4bags) of feed',
+      'From 1-3 weeks of age; 150g (1sachet) to 25kg (1 bag) of feed',
       'From 3weeks - Table size (Maturity) 550g (1sachet) to 50kg (2bags) of feed.',
       'N/B: No withdrawal Period.',
     ],
