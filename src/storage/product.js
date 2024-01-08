@@ -73,7 +73,7 @@ const PRODUCTS = [
     ],
     dosage: [
       'From 1-3 weeks of age; 150g (1sachet) to 25kg (1 bag) of feed',
-      'From 3weeks - Table size (Maturity) 550g (1sachet) to 50kg (2bags) of feed.',
+      'From 3 weeks - Table size (Maturity) 150g (1sachet) to 50kg (2bags) of feed.',
       'N/B: No withdrawal Period.',
     ],
   },
