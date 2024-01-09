@@ -73,7 +73,7 @@ Working on this project was a great muscle-flexing endeavor, and it's especially
 ## 🚀 Live Demo <a name="live-demo">
 </a>
 
-- [Live Version](https://www.elkanisgroup.com/)
+- [Live Version](https://www.elkanisgroup.com)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
