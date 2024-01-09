@@ -43,7 +43,7 @@
 
 # 📖 El-kanis & Partners <a name="about-project"></a>
 
-An official website of El-Kanis & Partners, an agric tech company scaling the food-chain waves in Nigeria and Africa at large. The website was previously built with a CMS tool which really does not allow for more customization to suit the companies evolving new models and products. Hence the need for a well-optimized, performant, scalable, and suitable solution.
+An official website of El-Kanis & Partners, an agric tech company scaling the food-chain waves in Nigeria and Africa at large. The website was previously built with a CMS tool which really does not allow for more customization to suit the company's evolving new models and products. Hence the a need for a well-optimized, performant, scalable, and suitable solution.
 
 Working on this project was a great muscle-flexing endeavor, and it's especially thrilling remembering my engagement with this amazing organization as an Accountant. You should check it out!
 
@@ -63,7 +63,7 @@ Working on this project was a great muscle-flexing endeavor, and it's especially
 
 ### Key Features <a name="key-features"></a>
 
-- The client serves it's own data.
+- The client serves its own data.
 - Use of React hooks.
 - Swiftly performant and smartly responsive website.
 
@@ -114,11 +114,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single-build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point, you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However, we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
@@ -156,7 +156,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 👤 **Oluwatoyin Olaoye**
 - GitHub: [Olaoye Oluwatoyin](https://github.com/abayomiolaoye)
 - Twitter: [Oluwatoyin](https://twitter.com/oloayeelijah)
-- LinkedIn: [Oluwatoyin (Abayomi) Olaoye](https://www.linkedin.com/in/oluwatoyinolaoye)
+- LinkedIn [Oluwatoyin (Abayomi) Olaoye](https://www.linkedin.com/in/oluwatoyinolaoye)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
