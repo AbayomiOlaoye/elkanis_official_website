@@ -67,6 +67,9 @@ Working on this project was a great muscle-flexing endeavor, and it's especially
 - Use of React hooks.
 - Swiftly performant and smartly responsive website.
 
+### Future Updates
+- Make all dates dynamic and current using the date object
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LIVE DEMO -->
 
