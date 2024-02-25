@@ -140,7 +140,7 @@ const Home = () => {
           <div className="privacy flex column a-i-c desktop">
             <p className="privacy--text">
               &copy;
-              {currentYear}
+              {` ${currentYear} `}
               Elkanis & Partners. All rights reserved.
             </p>
             <div className="privacy--divider flex">
@@ -201,7 +201,7 @@ const Home = () => {
         <div className="privacy flex column a-i-c mobile">
           <p className="privacy--text">
             &copy;
-            {currentYear}
+            {` ${currentYear} `}
             Elkanis & Partners. All rights reserved.
           </p>
           <div className="privacy--divider flex">
