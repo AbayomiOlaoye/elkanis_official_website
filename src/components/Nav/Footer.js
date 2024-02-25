@@ -12,6 +12,7 @@ import '../sections/css/about.css';
 const FORM_ID = 'mrgvwvka';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -106,7 +107,9 @@ const Footer = () => {
         </div>
         <div className="privacy flex column a-i-c desktop">
           <p className="privacy--text">
-            &copy; 2023 Elkanis & Partners. All rights reserved.
+            &copy;
+            {` ${currentYear} `}
+            Elkanis & Partners. All rights reserved.
           </p>
           <div className="privacy--divider flex">
             <Link to="/privacy-policy" className="privacy--link">
@@ -164,7 +167,9 @@ const Footer = () => {
       </form>
       <div className="privacy flex column a-i-c mobile">
         <p className="privacy--text">
-          &copy; 2023 Elkanis & Partners. All rights reserved.
+          &copy;
+          {` ${currentYear} `}
+          Elkanis & Partners. All rights reserved.
         </p>
         <div className="privacy--divider flex">
           <Link to="/privacy-policy" className="privacy--link">
