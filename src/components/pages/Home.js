@@ -22,6 +22,8 @@ const Home = () => {
   const location = useLocation();
   const sectionRef = useRef(null);
 
+  const currentYear = new Date().getFullYear();
+
   const [animateContent, setAnimateContent] = useState(false);
 
   useEffect(() => {
@@ -137,7 +139,9 @@ const Home = () => {
           </div>
           <div className="privacy flex column a-i-c desktop">
             <p className="privacy--text">
-              &copy; 2023 Elkanis & Partners. All rights reserved.
+              &copy;
+              {currentYear}
+              Elkanis & Partners. All rights reserved.
             </p>
             <div className="privacy--divider flex">
               <Link to="/privacy-policy" className="privacy--link">
@@ -196,7 +200,9 @@ const Home = () => {
 
         <div className="privacy flex column a-i-c mobile">
           <p className="privacy--text">
-            &copy; 2023 Elkanis & Partners. All rights reserved.
+            &copy;
+            {currentYear}
+            Elkanis & Partners. All rights reserved.
           </p>
           <div className="privacy--divider flex">
             <Link to="/privacy-policy" className="privacy--link">
