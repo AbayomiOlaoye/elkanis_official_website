@@ -510,7 +510,8 @@ textarea.contact__form--input {
 
 .project--img {
   object-fit: cover;
-  max-height: 60%;
+  width: 100%;
+  min-height: 100%;
 }
 
 .project--img.trans:hover {
