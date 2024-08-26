@@ -1,14 +1,20 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Top from '../sections/jumbotron/top';
 import style from '../sections/css/terms.module.scss';
 import Footer from '../Nav/Footer';
 
 const Terms = () => (
-  <div className={`${style.fullContainer} flex column a-i-c`}>
+  <motion.div className={`${style.fullContainer} flex column a-i-c`}>
     <Top
       title="Terms & Conditions"
     />
-    <div className={`${style.container} w--80 flex column a-i-c j-c-c`}>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: '100%' }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+      className={`${style.container} w--80 flex column a-i-c j-c-c`}
+    >
       <div className={style.content}>
         <p>
           <b>Effective Date:</b>
@@ -166,9 +172,9 @@ const Terms = () => (
           understanding.
         </p>
       </div>
-    </div>
+    </motion.div>
     <Footer />
-  </div>
+  </motion.div>
 );
 
 export default Terms;

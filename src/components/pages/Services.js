@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { motion } from 'framer-motion';
 import Top from '../sections/jumbotron/top';
 import '../sections/css/about.css';
 import '../../index.css';
@@ -30,7 +31,14 @@ const Services = () => {
   }, []);
 
   return (
-    <div id="service-section" className="sub--container flex column j-c-c a-i-c" style={{ overflow: 'hidden', backgroundColor: '#fff' }}>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: '100%' }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+      id="service-section"
+      className="sub--container flex column j-c-c a-i-c"
+      style={{ overflow: 'hidden', backgroundColor: '#fff' }}
+    >
       <Top
         title="Services"
         img={precision}
@@ -40,7 +48,13 @@ const Services = () => {
         linkThree={{ link: 'Research', id: 'Research' }}
       />
 
-      <section className={`services about--content relative w--100 about--product page--content margin j-c-c a-i-c flex column ${styles.servicesSection}`} style={{ backgroundColor: '#fff' }}>
+      <motion.section
+        initial={{ width: 0 }}
+        animate={{ width: '100%' }}
+        exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+        className={`services about--content relative w--100 about--product page--content margin j-c-c a-i-c flex column ${styles.servicesSection}`}
+        style={{ backgroundColor: '#fff' }}
+      >
         <div className="agro--bg d-flex gap-one" data-aos="fade-down">
           <img
             src={agric}
@@ -209,10 +223,10 @@ const Services = () => {
           </div>
           <Button text="Request Service" action={() => handleOrder('Research & Consulting services')} />
         </article>
-      </section>
+      </motion.section>
 
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

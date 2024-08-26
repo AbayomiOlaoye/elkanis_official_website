@@ -15,8 +15,26 @@ import radio from '../assets/blogs/radio.webp';
 import radioDisc from '../assets/blogs/radio_disc.webp';
 import image from '../assets/blogs/image.png';
 import chairAgro from '../assets/blogs/chairman.jpeg';
+import elkanis from '../assets/blogs/elkanis.png';
 
 const blogData = [
+  {
+    id: uuidv4(),
+    day: '22',
+    month: 'Aug',
+    year: '2024',
+    title: 'Radio Program Recap: Empowering Livestock Farmers with El-kanis Heavy Weight Supplements',
+    img: elkanis,
+    content: [
+      "Today, we had the privilege of discussing the critical role of El-kanis Heavy Weight livestock supplements on air, highlighting how we're helping poultry farmers improve their operations and boost profitability.",
+      'Part of the discussion centered on how the supplement can lower Feed Conversion Ratio (FCR): We explored how our supplements are designed to optimize the FCR, meaning less feed is required for the same amount of weight gain in poultry. This efficiency is a game-changer for farmers, significantly cutting down feed costs—an expense that traditionally accounts for up to 90% of operational costs.',
+      "Balanced Nutrition for Better Growth: The importance of balanced nutrition can't be overstated. Our supplements ensure poultry receives all the essential nutrients for faster and healthier growth, reducing the time to market and allowing farmers to maximize their outputs.",
+      "Empowering Women and Youth: A major focus of our discussion was how El-kanis Heavy Weight supplements support women and youth in livestock farming. By lowering feed costs and increasing profitability, we're helping these groups overcome some of the biggest challenges in the industry, keeping them in business and thriving.",
+      "Driving Sustainable Agriculture: Our mission at El-kanis Agro is to create a sustainable and profitable agricultural sector. Through initiatives like these supplements, we're not just enhancing farm productivity; we're also contributing to food security and job creation across Nigeria.",
+      "Thank you to all the poultry farmers and agro inputs suppliers who patronize our products, and a special thanks to the wonderful El-kanisAgro team members for blending great supplements. Together, we're making strides towards a more prosperous future for our farmers.",
+      "Let's keep the conversation going—feel free to connect and reach out if you're interested in learning more about how El-kanis is transforming agriculture.",
+    ],
+  },
   {
     id: uuidv4(),
     day: '27',

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { motion } from 'framer-motion';
 import PROJECTS from '../../storage/projects';
 import Top from '../sections/jumbotron/top';
 import Footer from '../Nav/Footer';
@@ -62,12 +63,21 @@ const ProjectDetail = () => {
   };
 
   return (
-    <div className="sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7', overflow: 'hidden', lineHeight: '30px' }}>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: '100%' }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+      className="sub--container flex column j-c-c a-i-c"
+      style={{ backgroundColor: '#f9faf7', overflow: 'hidden', lineHeight: '30px' }}
+    >
       <Top
         title="Project Summary"
         img={project.img}
       />
-      <div
+      <motion.div
+        initial={{ width: 0 }}
+        animate={{ width: '100%' }}
+        exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
         className="pro--summary about--content about--product page--content j-c-c a-i-c grid w--100 g--32"
       >
         <div className="project--details w--80 d-flex column gap-one">
@@ -130,10 +140,10 @@ const ProjectDetail = () => {
             ))}
           </ul>
         </div>
-      </div>
+      </motion.div>
 
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

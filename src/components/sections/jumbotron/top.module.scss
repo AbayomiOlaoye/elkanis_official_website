@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
     top: 0;
     margin-top: 0;
-    height: 55vh;
+    height: 40vh;
 
     .topLink {
       color: #fff;
@@ -36,9 +36,9 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 50vh;
-    top: 55vh;
-    width: 80%;
+    height: 30vh;
+    top: 37vh;
+    width: 50%;
     background-color: #fff;
     object-fit: cover;
     z-index: 1;
@@ -50,7 +50,7 @@
   top: 10px;
   left: 0;
   width: 100%;
-  height: 290px;
+  height: 300px;
   background: rgba(42, 49, 12, 0.8);
   z-index: 2;
 
@@ -59,18 +59,16 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 80%;
+    width: 50%;
     left: 50%;
-    top: 55vh;
-    height: 50vh;
+    top: 37vh;
+    height: 30vh;
     transform: translate(-50%, -50%);
   }
 }
 
 .topHeader {
   position: absolute;
-  // top: 40vw;
-  // left: 10vh;
   line-height: 1.1;
   margin-top: 3rem;
   font-size: 58px;
@@ -81,10 +79,8 @@
 
   @media screen and (min-width: 768px) {
     font-size: 72px;
-    // left: 25vh;
-    // right: 10%;
     margin-top: 0;
-    top: 45vh;
+    top: 30vh;
     padding: 1rem;
     transform: translate(-50%, -50%);
   }

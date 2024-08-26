@@ -4,6 +4,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { AiOutlineFieldTime } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 import { TiMail } from 'react-icons/ti';
 import { CiLocationOn } from 'react-icons/ci';
 import { SlCallEnd } from 'react-icons/sl';
@@ -84,7 +85,13 @@ const Home = () => {
   };
 
   return (
-    <div className={`home--container w--100 ${animateContent ? 'slide-in' : ''}`} style={{ overflow: 'hidden' }}>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: '100%' }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+      className={`home--container w--100 ${animateContent ? 'slide-in' : ''}`}
+      style={{ overflow: 'hidden' }}
+    >
       <Hero />
       <Motivation />
       <Product />
@@ -214,7 +221,7 @@ const Home = () => {
           </div>
         </div>
       </footer>
-    </div>
+    </motion.div>
   );
 };
 

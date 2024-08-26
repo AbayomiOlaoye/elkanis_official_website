@@ -9,6 +9,7 @@ import { motion, useScroll, useSpring } from 'framer-motion';
 import Top from '../sections/jumbotron/top';
 import '../sections/css/sections.css';
 import '../sections/css/about.css';
+// import styles from './Blog.module.scss';
 import blogData from '../../storage/blog';
 import Footer from '../Nav/Footer';
 
@@ -59,7 +60,14 @@ const Blog = () => {
   });
 
   return (
-    <div id="blog-section" className="sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7', lineHeight: '24px', overflow: 'hidden' }}>
+    <motion.div
+      id="blog-section"
+      className="sub--container flex column j-c-c a-i-c"
+      style={{ backgroundColor: '#f9faf7', lineHeight: '24px', overflow: 'hidden' }}
+      initial={{ width: 0 }}
+      animate={{ width: '100%' }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+    >
       <Top
         title="Blogs"
         img={blog.img}
@@ -71,14 +79,14 @@ const Blog = () => {
           <motion.div className="progress-bar" style={{ scaleX }} />
           <div className="project--title--container d-flex gap-one a-i-c">
             <div className="blog--date d-flex column a-i-c" data-aos="fade-right" style={{ backgroundColor: '#444', color: '#fff', padding: '0.5rem 1rem' }}>
-              <h5 style={{ fontSize: '2.5vw' }}>{blog.day}</h5>
-              <h5 style={{ fontSize: '2.5vw', padding: '0.8rem' }}>{blog.month}</h5>
+              <h5 style={{ fontSize: '2vw' }}>{blog.day}</h5>
+              <h5 style={{ fontSize: '2vw', padding: '0.8rem' }}>{blog.month}</h5>
             </div>
             <h5
               className="project--title"
               data-aos="fade-left"
               style={{
-                fontSize: '2.5vw', padding: '3%', lineHeight: '1.9', color: '#fff', height: 'max-content',
+                fontSize: '2vw', padding: '3%', lineHeight: '1.5', color: '#fff', height: 'max-content',
               }}
             >
               {blog.title}
@@ -87,7 +95,13 @@ const Blog = () => {
 
           <img src={blog.img} alt={blog.img} className="project--img" />
 
-          <div className="project--text" data-aos="fade-up">
+          <div
+            className="project--text"
+            data-aos="fade-up"
+            style={{
+              lineHeight: '1.5',
+            }}
+          >
             {formatText}
           </div>
         </div>
@@ -116,7 +130,7 @@ const Blog = () => {
       </div>
 
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

@@ -7,6 +7,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { motion } from 'framer-motion';
 import Top from '../sections/jumbotron/top';
 import PROJECTS from '../../storage/projects';
 import Footer from '../Nav/Footer';
@@ -53,12 +54,26 @@ const Projects = () => {
   };
 
   return (
-    <div id="project-section" className="pro sub--container flex column j-c-c a-i-c" style={{ backgroundColor: '#f9faf7' }}>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: '100%' }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+      id="project-section"
+      className="pro sub--container flex column j-c-c a-i-c"
+      style={{ backgroundColor: '#f9faf7' }}
+    >
       <Top
         title="Projects"
         img={project}
       />
-      <div className="project--container w--80 grid" style={{ overflow: 'hidden' }} ref={containerRef}>
+      <motion.div
+        initial={{ width: 0 }}
+        animate={{ width: '100%' }}
+        exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+        className="project--container w--80 grid"
+        style={{ overflow: 'hidden' }}
+        ref={containerRef}
+      >
         {PROJECTS.map((project) => (
           <div
             className="project--card relative"
@@ -75,9 +90,9 @@ const Projects = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

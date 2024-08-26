@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'animate.css';
+import { motion } from 'framer-motion';
 import Top from '../sections/jumbotron/top';
 import Team from '../../storage/team';
 import Member from '../sub/member';
@@ -71,7 +72,14 @@ const About = () => {
   }, []);
 
   return (
-    <div id="about-us" className="sub--container about--bg flex column j-c-c a-i-c" style={{ overflow: 'hidden' }}>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: '100%' }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+      id="about-us"
+      className="sub--container about--bg flex column j-c-c a-i-c"
+      style={{ overflow: 'hidden' }}
+    >
       <Top title="About Us" id="AboutUs" img={about} />
       <div id="about--page" className={`about--content page--content margin j-c-c a-i-c flex column ${styles.abtDiv}`} data-aos="fade-left" style={{ overflow: 'hidden' }}>
         <p className={`about--text w--80 ${styles.abtPara}`}>
@@ -177,7 +185,7 @@ const About = () => {
       </article>
 
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

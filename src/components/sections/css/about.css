@@ -820,7 +820,7 @@ article.drive--us.g--32.d-flex {
   .top--links {
     display: flex;
     border-top: 1px solid #fff;
-    top: 60vh;
+    top: 41vh;
     width: max-content;
     padding-top: 0.5rem;
     z-index: 1000000000000000;
@@ -836,7 +836,7 @@ article.drive--us.g--32.d-flex {
 
   .page--content {
     /* margin-top: 10vh; */
-    padding-top: 30vh;
+    padding-top: 20vh;
   }
 
   .about--bg {

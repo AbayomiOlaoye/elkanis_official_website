@@ -4,6 +4,7 @@ import React, { useRef, useEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { motion } from 'framer-motion';
 import Top from '../sections/jumbotron/top';
 import '../sections/css/about.css';
 import Article from '../sub/Article';
@@ -60,7 +61,15 @@ const Products = () => {
   }, []);
 
   return (
-    <div id="product-section" className={`sub--container flex column j-c-c a-i-c ${styles.background}`} style={{ backgroundColor: '#f9faf7', overflow: 'hidden' }} ref={sectionRef}>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: '100%' }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+      id="product-section"
+      className={`sub--container flex column j-c-c a-i-c ${styles.background}`}
+      style={{ backgroundColor: '#f9faf7', overflow: 'hidden' }}
+      ref={sectionRef}
+    >
       <Top
         title="Products"
         id="Products"
@@ -196,7 +205,7 @@ const Products = () => {
       </section>
 
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 
