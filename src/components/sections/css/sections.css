@@ -466,6 +466,16 @@ textarea.contact__form--input {
   width: 80%;
 }
 
+.socials {
+  margin-top: 1.5rem;
+}
+
+.linkedin {
+  font-size: 2rem;
+  color: var(--primary--01);
+  margin: 1rem 0;
+}
+
 /* Projects */
 
 .project--container {

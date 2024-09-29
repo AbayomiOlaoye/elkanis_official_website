@@ -7,6 +7,7 @@ import { AiOutlineFieldTime } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 import { TiMail } from 'react-icons/ti';
 import { CiLocationOn } from 'react-icons/ci';
+import { FaLinkedin } from 'react-icons/fa';
 import { SlCallEnd } from 'react-icons/sl';
 import axios from 'axios';
 import Hero from '../sections/hero/Hero';
@@ -141,6 +142,18 @@ const Home = () => {
                 <p className="footer--text">
                   Mon - Fri: 8:00am - 5:00pm
                 </p>
+              </div>
+              <div className="socials">
+                <h3 className="socials--title">Follow Us for News & Updates</h3>
+                <a
+                  href="https://www.linkedin.com/company/elkanis-and-partners/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Follow us on LinkedIn"
+                  className="socials--link"
+                >
+                  <FaLinkedin className="linkedin" />
+                </a>
               </div>
             </small>
           </div>
