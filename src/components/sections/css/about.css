@@ -1326,6 +1326,17 @@ article.drive--us.g--32.d-flex {
     grid-column-gap: 3rem;
   }
 
+  .socials {
+    margin-top: 1.5rem;
+  }
+
+  .linkedin {
+    font-size: 2rem;
+    color: var(--primary--01);
+    margin: 1rem auto;
+    display: block;
+  }
+
   .privacy--text {
     color: #bfca90;
   }
