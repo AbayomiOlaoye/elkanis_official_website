@@ -24,7 +24,7 @@ import handleOrder from '../sub/buy';
 const Services = () => {
   useEffect(() => {
     AOS.init({
-      duration: 400,
+      duration: 300,
       easing: 'ease-in-out',
       once: true,
     });

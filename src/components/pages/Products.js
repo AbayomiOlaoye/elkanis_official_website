@@ -33,7 +33,7 @@ const Products = () => {
   const sectionRef = useRef(null);
 
   const scrollToSection = (sectionElement) => {
-    const scrollOffset = sectionElement.offsetTop - 50;
+    const scrollOffset = sectionElement.offsetTop - 20;
     window.scrollTo({
       top: scrollOffset,
       behavior: 'smooth',
@@ -54,7 +54,7 @@ const Products = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 400,
+      duration: 300,
       easing: 'ease',
       once: true,
     });
