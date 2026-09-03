@@ -101,7 +101,6 @@ const Products = () => {
 
       <article
         className={`drive--us g--32 d-flex fiems ${styles.sectionFour}`}
-        data-aos="fade-right"
       >
         <div className="rice--img--div w--100 d-flex a-i-c" id="Projects">
           <img src={silicon} alt={ARTICLES[1].id} className={styles.mobImg} />
