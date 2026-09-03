@@ -31,7 +31,7 @@ const ProductCard = ({ products }) => {
 
   useEffect(() => {
     AOS.init({
-      duration: 400,
+      duration: 300,
       once: true,
       easing: 'ease-in-out',
     });
@@ -94,7 +94,7 @@ const ProductCard = ({ products }) => {
   return (
     <>
       {productState.map((product, index) => (
-        <div data-aos="fade-up" className={`product--card--div d-flex g--32 ${styles.container}`} key={product.id} style={{ lineHeight: '25px' }}>
+        <div className={`product--card--div d-flex g--32 ${styles.container}`} key={product.id} style={{ lineHeight: '25px' }}>
           <div className={`product--img--div d-flex column ${styles.deskDiv}`}>
             <img src={product.productImage} alt={product.product} className="product--card--img" />
             <Button text="Place Order" action={() => handleOrder(product.id)} />

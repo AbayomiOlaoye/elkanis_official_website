@@ -78,7 +78,7 @@ const Products = () => {
         linkTwo={{ link: 'Rice', id: 'Rice' }}
         linkThree={{ link: 'FIEMS', id: 'Fiems' }}
       />
-      <div data-aos="zoom-in" className={`livestock about--content about--product w--100 page--content margin j-c-c a-i-c flex column ${styles.sectionOne}`}>
+      <div className={`livestock about--content about--product w--100 page--content margin j-c-c a-i-c flex column ${styles.sectionOne}`}>
         <p className={`about--text w--80 text--just ${styles.paraText}`}>
           El-kanis and Partners&lsquo; products are of the highest quality, produced with a
           commitment to sustainability and innovation. By utilizing cutting-edge technology and
@@ -90,12 +90,12 @@ const Products = () => {
         <Article article={ARTICLES[0]} img={supplements} id="Livestock" />
       </div>
 
-      <article data-aos="fade-left" className={`products g--32 d-flex column w--100 ${styles.sectionTwo}`}>
+      <article className={`products g--32 d-flex column w--100 ${styles.sectionTwo}`}>
         <img src={elkanisAgro} alt="El-kanis Agro logo" className={styles.agroImg} />
         <ProductCard products={PRODUCTS} />
       </article>
 
-      <div data-aos="fade-in" className={`about--product w--100 rice ${styles.sectionThree}`}>
+      <div className={`about--product w--100 rice ${styles.sectionThree}`}>
         <Article article={ARTICLES[2]} id="Rice" img={parboiled} />
       </div>
 
@@ -117,7 +117,6 @@ const Products = () => {
 
       <article
         id={id}
-        data-aos="zoom-in"
         className={`drive--us row--reverse addImg relative a-i-c w--100 g--48 d-flex ${styles.sectionFive}`}
       >
         <div className={`rice--img--div w--100 d-flex ${styles.styleDiv}`}>
