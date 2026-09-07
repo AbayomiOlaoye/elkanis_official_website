@@ -101,6 +101,7 @@ const Products = () => {
 
       <article
         className={`drive--us g--32 d-flex fiems ${styles.sectionFour}`}
+        data-aos="fade-right"
       >
         <div className="rice--img--div w--100 d-flex a-i-c" id="Projects">
           <img src={silicon} alt={ARTICLES[1].id} className={styles.mobImg} />
@@ -117,6 +118,7 @@ const Products = () => {
       <article
         id={id}
         className={`drive--us row--reverse addImg relative a-i-c w--100 g--48 d-flex ${styles.sectionFive}`}
+        data-aos="fade-right"
       >
         <div className={`rice--img--div w--100 d-flex ${styles.styleDiv}`}>
           <img src={fiems} alt="AKFIMS logo" className={styles.mobImgB} />
