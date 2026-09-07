@@ -105,7 +105,7 @@ const Services = () => {
             </li>
           </ul>
         </div>
-        <article className={`cultivate rice--processing relative w--90 d-flex column ${styles.sectionCultivation}`}>
+        <article data-aos="fade-right" className={`cultivate rice--processing relative w--90 d-flex column ${styles.sectionCultivation}`}>
           <div className={`pro agro--bg max relative d-flex row--reverse gap-one ${styles.contDiv}`} data-aos="fade-right">
             <img
               src={cultivation}
